@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+
+    <link rel="stylesheet" href="assets/css/main/global.css"/>
+    <link rel="stylesheet" href="assets/css/main/header.css"/>
+    <link rel="stylesheet" href="assets/css/main/main.css"/>
+    <link rel="stylesheet" href="assets/css/main/footer.css"/>
+
+    <link rel="icon" href="assets/images/logo/squarelogo.png" type="image/x-icon">
+    <title>Web Demo</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <div class="container">
+                <div class="header__wrapper py-4">
+                    <div class="logo__container mb-4 px-5 text-center">
+                        <a href="" class="header__logo">
+                            <img class="logo img-fluid" src="assets/images/logo/logo.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="header__nav">
+                        <nav class="nav__pc">
+                            <ul style="padding-left: 0;" class="d-flex justify-content-around">
+                                <li class="nav__link">
+                                    <a href="">Trang chủ</a>
+                                </li>
+                                <li class="nav__link">
+                                    <a href="">Hot sale</a>
+                                </li>
+                                <li class="nav__link">
+                                    <a href="">Sản phẩm mới</a>
+                                </li>
+                                <li class="nav__link">
+                                    <a href="">Thương hiệu</a>
+                                </li>
+                                <li class="nav__link">
+                                    <a href="">Hỗ trợ</a>
+                                </li>
+                                <li class="nav__link">
+                                    <a href="">Thanh toán</a>
+                                </li>
+                                <ul style="padding-left: 0;" class="nav__actions d-flex">
+                                    <li class="action mx-2">
+                                        <a href=""><img class="action__icon" src="assets/images/icon/search.png" alt=""></a>
+                                    </li>
+                                    <li class="action mx-2">
+                                        <a href=""><img class="action__icon" src="assets/images/icon/heart.png" alt=""></a>
+                                    </li>
+                                    <li class="action mx-2">
+                                        <a href="" class="cart">
+                                            <span class="quality">1</span>
+                                            <img class="action__icon" src="assets/images/icon/shoppingbag.png" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </ul>
+                        </nav>
+
+                        <nav class="nav__mobile ">
+                            <div class="d-flex justify-content-between">
+                                <label for="nav__mobile-menu" class="overlay d-none" id="nav__overlay"></label>
+
+                                <label for="nav__mobile-menu" class="nav__menubar" id="nav__menubar-open">
+                                    <img class="nav__mobile-openmenu" src="assets/images/icon/menubar.png" alt="">
+                                </label>
+                                
+                                <ul style="padding-left: 0; margin-bottom: 0;" class="nav__actions-mobile d-flex">
+                                    <li class="action mx-2">
+                                        <a href=""><img class="action-mobile__icon" src="assets/images/icon/search.png" alt=""></a>
+                                    </li>
+                                    <li class="action mx-2">
+                                        <a href=""><img class="action-mobile__icon" src="assets/images/icon/heart.png" alt=""></a>
+                                    </li>
+                                    <li class="action mx-2">
+                                        <a href="" class="cart-mobile">
+                                            <span class="quality">1</span>
+                                            <img class="action-mobile__icon" src="assets/images/icon/shoppingbag.png" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="nav__mobile-list pt-4 d-flex flex-column d-none" id="nav__mobile-list-open">
+                                <div class="nav__mobile-logo p-4">
+                                    <div class="d-flex mb-4">
+                                        <span id="nav__mobile-list-close"><img class="action-mobile__icon" src="assets/images/icon/close.png" alt=""></span>
+                                        <div class="text-center">
+                                            <img style="max-width: 65%; height: auto;" src="assets/images/logo/logo.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="form-control d-flex justify-content-between">
+                                        <input class="mw-100 py-1" type="text" placeholder="Sản phẩm bạn muốn tìm">
+                                        <img class="action-mobile__icon my-auto" src="assets/images/icon/search.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="px-4">
+                                    <ul class="nav__list-mobile">
+                                        <li class="nav__link-mobile pb-4">
+                                            <a href="">Trang chủ</a>
+                                        </li>
+                                        <li class="nav__link-mobile pb-4">
+                                            <a href="">Hot sale</a>
+                                        </li>
+                                        <li class="nav__link-mobile pb-4">
+                                            <a href="">Sản phẩm mới</a>
+                                        </li>
+                                        <li class="nav__link-mobile pb-4">
+                                            <a href="">Thương hiệu</a>
+                                        </li>
+                                        <li class="nav__link-mobile pb-4">
+                                            <a href="">Hỗ trợ</a>
+                                        </li>
+                                        <li class="nav__link-mobile pb-4">
+                                            <a href="">Thanh toán</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nav__mobile-footer p-4 mt-auto">
+                                    <p><a href="">Phone: 0123456789 (Mr.A)</a></p>
+                                    <p><a href="">Mail: mail@gmail.com</a></p>
+                                    <p><a href="https://www.facebook.com/mra/">Facebook: Mr.A</a></p>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+
+    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+    <script type="text/javascript" src="assets/js/main/main.js"></script>
+</body>
+</html>
