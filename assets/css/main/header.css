@@ -95,6 +95,7 @@
     right: 0;
     left: 0;
     background-color: #070f26; opacity: .7;
+    z-index: 100;
 
     animation: fadeIn linear 0.3s;
 }
@@ -105,6 +106,7 @@
     left: 0;
     width: calc(81.6vw);
     background-color: #fff;
+    z-index: 100;
 }
 .nav-close{
     transform: translateX(-100%);

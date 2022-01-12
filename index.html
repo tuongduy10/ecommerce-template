@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,14 +8,15 @@
 
     <link rel="stylesheet" href="assets/css/bootstrap.css">
 
-    <link rel="stylesheet" href="assets/css/main/global.css"/>
-    <link rel="stylesheet" href="assets/css/main/header.css"/>
-    <link rel="stylesheet" href="assets/css/main/main.css"/>
-    <link rel="stylesheet" href="assets/css/main/footer.css"/>
+    <link rel="stylesheet" href="assets/css/main/global.css" />
+    <link rel="stylesheet" href="assets/css/main/header.css" />
+    <link rel="stylesheet" href="assets/css/main/main.css" />
+    <link rel="stylesheet" href="assets/css/main/footer.css" />
 
     <link rel="icon" href="assets/images/logo/squarelogo.png" type="image/x-icon">
     <title>Web Demo</title>
 </head>
+
 <body>
     <header class="header">
         <div class="header__inner">
@@ -52,10 +54,12 @@
                                 </li>
                                 <ul style="padding-left: 0;" class="nav__actions d-flex py-4">
                                     <li class="action mx-2">
-                                        <a href=""><img class="action__icon" src="assets/images/icon/search.png" alt=""></a>
+                                        <a href=""><img class="action__icon" src="assets/images/icon/search.png"
+                                                alt=""></a>
                                     </li>
                                     <li class="action mx-2">
-                                        <a href=""><img class="action__icon" src="assets/images/icon/heart.png" alt=""></a>
+                                        <a href=""><img class="action__icon" src="assets/images/icon/heart.png"
+                                                alt=""></a>
                                     </li>
                                     <li class="action mx-2">
                                         <a href="" class="cart">
@@ -69,22 +73,25 @@
                         <!-- Navigation in mobile -->
                         <nav class="nav__mobile py-4">
                             <div class="d-flex justify-content-between">
-                                <label for="nav__mobile-menu" class="overlay d-none" id="nav__overlay"></label>                                
+                                <label for="nav__mobile-menu" class="overlay d-none" id="nav__overlay"></label>
                                 <label for="nav__mobile-menu" class="nav__menubar" id="nav__menubar-open">
                                     <img class="nav__mobile-openmenu" src="assets/images/icon/menubar.png" alt="">
                                 </label>
-                                
+
                                 <ul style="padding-left: 0; margin-bottom: 0;" class="nav__actions-mobile d-flex">
                                     <li class="action mx-2">
-                                        <a href=""><img class="action-mobile__icon" src="assets/images/icon/search.png" alt=""></a>
+                                        <a href=""><img class="action-mobile__icon" src="assets/images/icon/search.png"
+                                                alt=""></a>
                                     </li>
                                     <li class="action mx-2">
-                                        <a href=""><img class="action-mobile__icon" src="assets/images/icon/heart.png" alt=""></a>
+                                        <a href=""><img class="action-mobile__icon" src="assets/images/icon/heart.png"
+                                                alt=""></a>
                                     </li>
                                     <li class="action mx-2">
                                         <a href="" class="cart-mobile">
                                             <span class="quality">1</span>
-                                            <img class="action-mobile__icon" src="assets/images/icon/shoppingbag.png" alt="">
+                                            <img class="action-mobile__icon" src="assets/images/icon/shoppingbag.png"
+                                                alt="">
                                         </a>
                                     </li>
                                 </ul>
@@ -92,14 +99,17 @@
                             <div class="nav__mobile-list pt-4 d-flex flex-column nav-close" id="nav__mobile-list-open">
                                 <div class="nav__mobile-logo p-4">
                                     <div class="d-flex mb-4">
-                                        <span id="nav__mobile-list-close"><img class="action-mobile__icon" src="assets/images/icon/close.png" alt=""></span>
+                                        <span id="nav__mobile-list-close"><img class="action-mobile__icon"
+                                                src="assets/images/icon/close.png" alt=""></span>
                                         <div class="text-center">
-                                            <img style="max-width: 65%; height: auto;" src="assets/images/logo/logo.png" alt="">
+                                            <img style="max-width: 65%; height: auto;" src="assets/images/logo/logo.png"
+                                                alt="">
                                         </div>
                                     </div>
                                     <div class="form-control d-flex justify-content-between">
                                         <input class="mw-100 py-1" type="text" placeholder="Sản phẩm bạn muốn tìm">
-                                        <img class="action-mobile__icon my-auto" src="assets/images/icon/search.png" alt="">
+                                        <img class="action-mobile__icon my-auto" src="assets/images/icon/search.png"
+                                            alt="">
                                     </div>
                                 </div>
                                 <div class="px-4">
@@ -138,18 +148,50 @@
     </header>
 
     <main class="main">
+        <!-- Slide banner -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li style="color: black;" data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li style="color: black;" data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li style="color: black;" data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="assets/images/banner/homebanner1.jpg"
+                        alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/images/banner/homebanner2.jpg"
+                        alt="Second slide">
+                </div>
+                <div class="carousel-item ">
+                    <img class="d-block w-100" src="assets/images/banner/main-banner.png"
+                        alt="Third slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+        </div>
+
+
         <div class="container">
 
         </div>
     </main>
-    
+
     <footer class="footer">
         <div class="container">
             <div class="footer__inner">
                 <div class="py-4">
-                    <div class="d-flex flex-wrap">
-                        <div class="footer__info mx-auto">
-                            <span class="footer__info-title"><p>Giới thiệu</p></span>
+                    <div class="d-flex flex-wrap justify-content-between">
+                        <div class="footer__info">
+                            <span class="footer__info-title">
+                                <p>Giới thiệu</p>
+                            </span>
                             <ul class="footer__info-list">
                                 <li class="footer__info-link pb-2">
                                     <a href="">Định vị</a>
@@ -165,8 +207,10 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="footer__info mx-auto">
-                            <span class="footer__info-title"><p>Chính sách hỗ trợ</p></span>
+                        <div class="footer__info">
+                            <span class="footer__info-title">
+                                <p>Chính sách hỗ trợ</p>
+                            </span>
                             <ul class="footer__info-list">
                                 <li class="footer__info-link pb-2">
                                     <a href="">Chính sách bảo hàng</a>
@@ -182,8 +226,10 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="footer__info mx-auto">
-                            <span class="footer__info-title"><p>Liên hệ với chúng tôi</p></span>
+                        <div class="footer__info">
+                            <span class="footer__info-title">
+                                <p>Liên hệ với chúng tôi</p>
+                            </span>
                             <ul class="footer__info-list">
                                 <li class="footer__info-link pb-2">
                                     <a href="">Facebook</a>
@@ -199,10 +245,14 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="footer__info mx-auto">
-                            <span class="footer__info-title"><p>Hỗ trợ khách hàng</p></span>
+                        <div class="footer__info">
+                            <span class="footer__info-title">
+                                <p>Hỗ trợ khách hàng</p>
+                            </span>
                             <ul class="footer__info-list">
-                                <span class="footer__info-address"><p>Địa chỉ</p></span>
+                                <span class="footer__info-address">
+                                    <p>Địa chỉ</p>
+                                </span>
                                 <li class="footer__info-link pb-2">
                                     <a href="">Số 1 Lê Lợi, Phường 01, Quận 01, TP.Hồ Chí Minh</a>
                                 </li>
@@ -218,9 +268,23 @@
                 </div>
             </div>
         </div>
+        <div class="footer__copyright">
+            <div class="container">
+                <div class="py-4">
+                    <span class="footer__copyright-info" style="font-weight: bold;">2022</span>
+                    <p class="footer__copyright-info"><img class="footer__copyright-icon"
+                            src="assets/images/icon/copyright.png" alt=""> Copyright by Công ty TNHH A Company</p>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <script type="text/javascript" src="assets/js/bootstrap.js"></script>
     <script type="text/javascript" src="assets/js/main/main.js"></script>
+
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
