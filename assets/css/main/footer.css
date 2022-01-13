@@ -53,6 +53,7 @@ footer{
 }
 .footer__copyright-info{
     color: #a0a0a0;
+    margin-bottom: 0;
 }
 .footer__copyright-icon{
     max-height: calc(8px + (24 - 10) * ((100vw - 375px)/ (1920 - 375))); 
