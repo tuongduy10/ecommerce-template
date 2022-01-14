@@ -17,7 +17,18 @@
         width: 71px; height: 1px;
     }
 }
+.bran__logo{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 
+    height: 8.4375vw;
+    width: 20%;
+}
+.bran__logo img{
+    height: 100%; width: 100%;
+    object-fit: contain;
+}
 .bran__logo:hover {
     box-shadow: 0 10px 30px rgb(0 0 0 / 10%);
 }
@@ -37,13 +48,47 @@
     .bran-list__search{
         font-size: small;
     }
+    .bran__logo-list{
+        display: none;
+    }
+}
+@media only screen and (max-width: 600px){
+    .bran__list-item{
+        width: calc(50% - 10px) !important;
+        margin: 0 10px 10px 0px !important;
+        height: 24.8vw !important;
+        padding: 20px !important;
+    }
 }
 .bran__list{
     box-shadow: 0 10px 30px rgb(0 0 0 / 10%);
 }
-.bran-list__line{
+.bran__list-line{
     height: 1px; 
     margin: 0 auto;
 
     background-color: #ddd;
+}
+
+.bran__list-item{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 8.4375vw;
+    width: calc(25% - 1.04167vw);
+
+    margin: 0 0.52083vw 1.04167vw;
+    padding: 2vw;
+
+    background: #fafafa;
+}
+.bran__list-item img{
+    opacity: .5;
+    transition: all .3s ease;
+    height: 100%; width: 100%;
+    object-fit: contain;
+}
+.bran__list-item:hover img{
+    opacity: 1;
 }
