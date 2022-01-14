@@ -1,6 +1,10 @@
 .main{
     
 }
+
+.banner__container img{
+    object-fit: cover;
+}
 .line{
     height: 2px; width: 7.03125vw;
     margin: 0 auto;
@@ -17,6 +21,7 @@
         width: 71px; height: 1px;
     }
 }
+
 .bran__logo{
     display: inline-flex;
     align-items: center;
@@ -32,7 +37,6 @@
 .bran__logo:hover {
     box-shadow: 0 10px 30px rgb(0 0 0 / 10%);
 }
-
 .bran__viewmore{
     font-size: calc(6px + (24 - 10) * ((100vw - 375px)/ (1920 - 375)));
     padding: 10px 20px;
