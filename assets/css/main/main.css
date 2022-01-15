@@ -37,6 +37,7 @@
 .bran__logo:hover {
     box-shadow: 0 10px 30px rgb(0 0 0 / 10%);
 }
+
 .bran__viewmore{
     font-size: calc(6px + (24 - 10) * ((100vw - 375px)/ (1920 - 375)));
     padding: 10px 20px;
@@ -49,11 +50,17 @@
     .bran-list__title{
         font-size: smaller;
     }
+    .bran-list__searchform{
+        width: 100% !important;
+    }    
     .bran-list__search{
         font-size: small;
     }
     .bran__logo-list{
         display: none;
+    }
+    .bran__list-item img{
+        opacity: 1 !important;
     }
 }
 @media only screen and (max-width: 600px){
@@ -66,6 +73,12 @@
 }
 .bran__list{
     box-shadow: 0 10px 30px rgb(0 0 0 / 10%);
+}
+.bran-list__searchform{
+    width: 40%;
+}
+.search-bran{
+    background-color: #fafafa;
 }
 .bran__list-line{
     height: 1px; 
@@ -80,7 +93,7 @@
     justify-content: center;
 
     height: 8.4375vw;
-    width: calc(25% - 1.04167vw);
+    width: calc(20% - 1.04167vw);
 
     margin: 0 0.52083vw 1.04167vw;
     padding: 2vw;

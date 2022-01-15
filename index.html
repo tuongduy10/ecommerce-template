@@ -20,7 +20,7 @@
 <body>
     <header class="header">
         <div class="header__inner">
-            <div class="container">
+            <div class="custom-container">
                 <div class="header__wrapper pt-4">
                     <!-- Logo -->
                     <div class="logo__container px-5 text-center">
@@ -97,13 +97,13 @@
                                 </ul>
                             </div>
                             <div class="nav__mobile-list pt-4 d-flex flex-column nav-close" id="nav__mobile-list-open">
-                                <div class="nav__mobile-logo p-4">
-                                    <div class="d-flex mb-4">
-                                        <span id="nav__mobile-list-close"><img class="action-mobile__icon"
-                                                src="assets/images/icon/close.png" alt=""></span>
-                                        <div class="text-center">
-                                            <img style="max-width: 65%; height: auto;" src="assets/images/logo/logo.png"
-                                                alt="">
+                                <div class="p-4">
+                                    <div class="nav__mobile-logo d-flex mb-4">
+                                        <div class="w-100 text-center" style="position: relative;">
+                                            <span id="nav__mobile-list-close" style="left: 0; position: absolute;">
+                                                <img class="action-mobile__icon" src="assets/images/icon/close.png" alt="">
+                                            </span>
+                                            <a href=""><img style="max-width: 65%; height: auto;" src="assets/images/logo/logo.png" alt=""></a>
                                         </div>
                                     </div>
                                     <div class="form-control d-flex justify-content-between">
@@ -175,13 +175,13 @@
             </a>
         </div>
 
-        <div class="container py-4">
+        <div class="custom-container">
             <div class="bran__logo-list">
                 <div class="text-center">
                     <div class="line my-4"></div>
                     <h3 class="home-title mx-auto">Thương hiệu nổi bật</h3>
                 </div>
-                <div class="d-flex my-4">
+                <div class="bran__logo-slide-list d-flex my-4">
                     <a class="bran__logo p-4" href=""><img src="assets/images/logo/logosquare.jpg" alt=""></a>
                     <a class="bran__logo p-4" href=""><img src="assets/images/logo/logovertical1.png" alt=""></a>
                     <a class="bran__logo p-4" href=""><img src="assets/images/logo/tinysquarelogo.jpg" alt=""></a>
@@ -196,60 +196,48 @@
             <div class="bran__list">
                 <div class="w-100 my-4">
                     <div class="p-4">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <h3 class="bran-list__title">Tất cả thương hiệu</h3>
-                            <div class="form-control d-flex justify-content-between w-50">
-                                <input class="bran-list__search w-100" type="text"
-                                    placeholder="Thương hiệu bạn muốn tìm">
-                                <img class="action-mobile__icon my-auto" src="assets/images/icon/search.png" alt="">
+                        <div class="d-flex align-items-center justify-content-between flex-wrap">
+                            <h4 class="">Tất cả thương hiệu</h4>
+                            <div class="bran-list__searchform input-group rounded">
+                                <input type="search" class="bran-list__search form-control" placeholder="Thương hiệu bạn muốn tìm"
+                                    aria-label="Search" aria-describedby="search-addon" />
+                                <span class="search-bran input-group-text " role="button" id="search-addon">
+                                    <img class="action-mobile__icon my-auto" src="assets/images/icon/search.png" alt="">
+                                </span>
                             </div>
                         </div>
                         <div class="bran__list-line my-4"></div>
                         <div class="bran__list-items">
 
-                            <h3>A</h3>
+                            <h4>A</h4>
                             <div class="d-flex flex-wrap">
-                                <a class="bran__list-item" href=""><img src="assets/images/logo/logosquare.jpg"
-                                        alt=""></a>
-                                <a class="bran__list-item" href=""><img src="assets/images/logo/logovertical1.png"
-                                        alt=""></a>
-                                <a class="bran__list-item" href=""><img src="assets/images/logo/squarelogo.png"
-                                        alt=""></a>
+                                <a class="bran__list-item" href=""><img src="assets/images/logo/logosquare.jpg" alt=""></a>
+                                <a class="bran__list-item" href=""><img src="assets/images/logo/logovertical1.png" alt=""></a>
+                                <a class="bran__list-item" href=""><img src="assets/images/logo/squarelogo.png" alt=""></a>
                                 <a class="bran__list-item" href=""><img src="assets/images/logo/logo.png" alt=""></a>
-                                <a class="bran__list-item" href=""><img src="assets/images/logo/squarelogo.png"
-                                        alt=""></a>
+                                <a class="bran__list-item" href=""><img src="assets/images/logo/squarelogo.png" alt=""></a>
                                 <a class="bran__list-item" href=""><img src="assets/images/logo/logo.png" alt=""></a>
-                                <a class="bran__list-item" href=""><img src="assets/images/logo/logovertical1.png"
-                                        alt=""></a>
-                                <a class="bran__list-item" href=""><img src="assets/images/logo/tinysquarelogo.jpg"
-                                        alt=""></a>
+                                <a class="bran__list-item" href=""><img src="assets/images/logo/logovertical1.png" alt=""></a>
+                                <a class="bran__list-item" href=""><img src="assets/images/logo/tinysquarelogo.jpg" alt=""></a>
                             </div>
 
-                            <h3>B</h3>
+                            <h4>B</h4>
                             <div class="d-flex flex-wrap">
-                                <a class="bran__list-item" href=""><img src="assets/images/logo/logovertical1.png"
-                                        alt=""></a>
-                                <a class="bran__list-item" href=""><img src="assets/images/logo/logosquare.jpg"
-                                        alt=""></a>
-                                <a class="bran__list-item" href=""><img src="assets/images/logo/squarelogo.png"
-                                        alt=""></a>
+                                <a class="bran__list-item" href=""><img src="assets/images/logo/logovertical1.png" alt=""></a>
+                                <a class="bran__list-item" href=""><img src="assets/images/logo/logosquare.jpg" alt=""></a>
+                                <a class="bran__list-item" href=""><img src="assets/images/logo/squarelogo.png" alt=""></a>
                                 <a class="bran__list-item" href=""><img src="assets/images/logo/logo.png" alt=""></a>
-                                <a class="bran__list-item" href=""><img src="assets/images/logo/squarelogo.png"
-                                        alt=""></a>
+                                <a class="bran__list-item" href=""><img src="assets/images/logo/squarelogo.png" alt=""></a>
                                 <a class="bran__list-item" href=""><img src="assets/images/logo/logo.png" alt=""></a>
-                                <a class="bran__list-item" href=""><img src="assets/images/logo/logovertical1.png"
-                                        alt=""></a>
-                                <a class="bran__list-item" href=""><img src="assets/images/logo/tinysquarelogo.jpg"
-                                        alt=""></a>
+                                <a class="bran__list-item" href=""><img src="assets/images/logo/logovertical1.png" alt=""></a>
+                                <a class="bran__list-item" href=""><img src="assets/images/logo/tinysquarelogo.jpg" alt=""></a>
                             </div>
 
-                            <h3>C</h3>
+                            <h4>C</h4>
                             <div class="d-flex flex-wrap">
                                 <a class="bran__list-item" href=""><img src="assets/images/logo/logo.png" alt=""></a>
-                                <a class="bran__list-item" href=""><img src="assets/images/logo/logovertical1.png"
-                                        alt=""></a>
-                                <a class="bran__list-item" href=""><img src="assets/images/logo/tinysquarelogo.jpg"
-                                        alt=""></a>
+                                <a class="bran__list-item" href=""><img src="assets/images/logo/logovertical1.png" alt=""></a>
+                                <a class="bran__list-item" href=""><img src="assets/images/logo/tinysquarelogo.jpg" alt=""></a>
                             </div>
 
                         </div>
@@ -260,7 +248,7 @@
     </main>
 
     <footer class="footer">
-        <div class="container">
+        <div class="custom-container">
             <div class="footer__inner">
                 <div class="py-4">
                     <div class="d-flex flex-wrap justify-content-between">
@@ -345,7 +333,7 @@
             </div>
         </div>
         <div class="footer__copyright">
-            <div class="container">
+            <div class="custom-container">
                 <div class="py-4">
                     <span class="footer__copyright-info" style="font-weight: bold;">2022</span>
                     <p class="footer__copyright-info"><img class="footer__copyright-icon"

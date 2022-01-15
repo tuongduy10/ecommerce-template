@@ -97,7 +97,7 @@
     background-color: #070f26; opacity: .7;
     z-index: 100;
 
-    animation: fadeIn linear 0.3s;
+    animation: fadeIn linear 0.45s;
 }
 .nav__mobile-list{
     position: fixed;
@@ -110,11 +110,11 @@
 }
 .nav-close{
     transform: translateX(-100%);
-    transition: transform linear 0.3s;
+    transition: transform linear 0.45s;
 }
 .nav-open{
     transform: translateX(0%);
-    transition: transform linear 0.3s;
+    transition: transform linear 0.45s;
 }
 
 .nav__mobile-footer{
