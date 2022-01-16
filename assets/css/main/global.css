@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital@1&display=swap');
 /* Reset */
 *{
     margin: 0;
@@ -29,4 +29,27 @@ a {
     max-width: 1600px;
     padding: 0 10px;
     margin: 0 auto;
+}
+@media only screen and (max-width: 992px){
+    .custom-container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    .bran__list-name{
+        font-size: small;
+    }
+}
+@media only screen and (max-width: 1200px){
+    .custom-container {
+        max-width: 992px;
+    }
+}
+@media only screen and (max-width: 1400px){
+    .custom-container {
+        max-width: 1200px;
+    }
+}
+
+.bran__list-name{
+    font-family: 'Bodoni Moda', serif;
 }
