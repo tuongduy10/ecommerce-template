@@ -43,9 +43,6 @@ a:hover{
         max-width: 100%;
         padding: 0 20px;
     }
-    .bran__list-name{
-        font-size: small;
-    }
 }
 @media only screen and (max-width: 1200px){
     .custom-container {
