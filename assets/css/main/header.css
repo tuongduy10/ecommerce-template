@@ -68,7 +68,7 @@
 
     height: 3px;
     width: 00%;
-    background-color: #000;
+    background-color: #333;
     
     bottom: 0px;
     left: 0;
@@ -77,13 +77,15 @@
 .nav__link:hover a::after{
     width: 100%;
 }
-.nav__link:hover a{
-    color: #000 !important;
+.nav__link:hover a,
+.nav__link-mobile:hover a{
+    color: #333 !important;
 }
 
 .nav__link-mobile{
     font-size: calc(20px + (24 - 10) * ((100vw - 375px)/ (1920 - 375)));
 }
+
 .nav__mobile{
     display: none;
 }

@@ -2,7 +2,7 @@
     
 }
 .banner__container{
-    /* max-height: 500px; */
+    height: calc(15vw * 1.72);
 }
 .banner__container img{
     object-fit: contain;
@@ -91,9 +91,24 @@
 }
 .bran-list__searchform{
     width: 40%;
+    border: 1px solid rgb(221, 221, 221) ;
+}
+.bran-list__search{
+    border: none;
+}
+.bran-list__search:focus{
+    border-color: unset;
+    -webkit-box-shadow: unset;
+    box-shadow: unset;
+    outline: unset;
+}
+.bran-list__searchform:focus-within {
+    border: 1px solid #3b99fc;
+    box-shadow: 0 10px 30px rgb(0 0 0 / 10%);
 }
 .search-bran{
-    background-color: #fafafa;
+    background-color: unset;
+    border: unset;
 }
 .bran__list-line{
     height: 1px; 
