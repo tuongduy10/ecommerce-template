@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
 /* Reset */
 html,body{
@@ -106,4 +106,19 @@ a:hover{
     .slick-next{
         right: -2.22917vw;
     }
+}
+
+.product__filter h3{
+    font-family: 'Playfair Display', serif;
+}
+
+
+
+
+/* Variable */
+:root{
+    --black: #333;
+    --white: #fafafa;
+    --blue-dior: #3b99fc;
+
 }

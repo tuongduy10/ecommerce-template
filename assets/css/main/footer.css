@@ -1,3 +1,5 @@
+@import url(assets/css/main/global.css);
+
 footer{
     background: #fff;
 }
@@ -21,7 +23,7 @@ footer{
     color: #707070;
 }
 .footer__info-link:hover>a{
-    color: #333333;
+    color: var(--blue-dior);
 }
 
 @media only screen and (max-width: 768px){

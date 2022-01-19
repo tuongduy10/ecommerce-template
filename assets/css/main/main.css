@@ -1,3 +1,4 @@
+@import url(assets/css/main/global.css);
 /* .main{
     
 } */
@@ -172,13 +173,39 @@
                         text-decoration: none;
                     }
                     .web__directional li:hover a{
-                        color: #3b99fc;
+                        color: var(--blue-dior);
                     }
                 .web__directional li+li::before{
                     content: '/';
                     padding: 0 5px;
                     color: #a0a0a0;
                 }
+            .product__filter{
+
+            }
+                .product__filter{
+                    color: #383838;
+                }
+                    .filter__title:not(:last-child) {
+                        margin-bottom: calc(15px + (20 - 15) * ((100vw - 375px)/ (1920 - 375)));
+                    }
+                        .filter__title h3{
+                            font-size: 1.25vw;
+                            line-height: 1.30208vw;
+                            padding-bottom: 10px;
+                            border-bottom: 1px solid #ddd;
+                            font-family: "Playfair Display";
+                            color: inherit;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                        }
+                        .filter__title:hover h3{
+                            color: var(--blue-dior);
+                        }
+                        .filter__title:hover svg{
+                            stroke: var(--blue-dior);
+                        }
         .products__list{
             /* background-color: wheat; */
             height: 500px;
@@ -207,6 +234,13 @@
             .web__directional li+li::before{
                 padding: 0 5px 0 0;
             }
+        .product__filter{
+
+        }
+            .filter__title h3{
+                font-size: 14px;
+                line-height: 20px;
+            }
 }
 @media only screen and (max-width: 768px){
     .content__inner{
@@ -219,6 +253,12 @@
                 width: 100%;
                 margin-right: 0;
             }
+                .product__filter{
+                    display: none;
+                }
+                    .filter__title:not(:last-child) {
+                        margin-bottom: 0;
+                    }
 }
 @media only screen and (max-width: 600px){
 
