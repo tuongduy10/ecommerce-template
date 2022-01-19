@@ -144,40 +144,84 @@
                 opacity: 1;
             }
 
-
-.products__content{
-    background-color: #383838;
-    height: 500px;
-    width: 100%;
-
+.content__inner{
+    padding: 1.5rem;
 }
-    .products__menu{  
-        background-color: #3b99fc;
-
-        height: 500px;
-        width: 17.70833vw;
-        margin-right: 3.125vw;
-    }
-    .products__list{
-        background-color: wheat;
+    .products__content{
+        /* background-color: #383838; */
         height: 500px;
         width: 100%;
+
     }
+        .products__menu{  
+            /* background-color: #3b99fc; */
+            height: 500px;
+            width: 17.70833vw;
+            margin-right: 3.125vw;
+        }
+            .web__directional{
+                margin-bottom: 0.9375vw;
+            }
+                .web__directional li{
+                    display: inline;
+                    font-size: .83333vw;
+                    line-height: .98958vw;
+                }
+                    .web__directional li a{
+                        color: #a0a0a0;
+                        text-decoration: none;
+                    }
+                    .web__directional li:hover a{
+                        color: #3b99fc;
+                    }
+                .web__directional li+li::before{
+                    content: '/';
+                    padding: 0 5px;
+                    color: #a0a0a0;
+                }
+        .products__list{
+            /* background-color: wheat; */
+            height: 500px;
+            width: 100%;
+        }
+@media only screen and (max-width: 1200px){
+    .web__directional li{
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
 @media only screen and (max-width: 992px){
     .products__menu{
         width: 200px;
         margin-right: 30px;
     }
+        .web__directional{
+            margin: 0;
+            padding-bottom: 14px;
+        }
+            .web__directional li{
+                font-size: 12px;
+                line-height: 14px;
+            }
+            .web__directional li+li::before{
+                padding: 0 5px 0 0;
+            }
 }
 @media only screen and (max-width: 768px){
-    .products__content{
-        flex-direction: column;
+    .content__inner{
+        padding: 1.25rem;
     }
-        .products__menu{
-            width: 100%;
-            margin-right: 0;
+        .products__content{
+            flex-direction: column;
         }
+            .products__menu{
+                width: 100%;
+                margin-right: 0;
+            }
 }
 @media only screen and (max-width: 600px){
 
 }
+
+
