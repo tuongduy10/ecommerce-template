@@ -4,8 +4,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap');
 
 
-
 /* Reset */
+html,body{
+    width: 100%; height: 100%;
+    margin: 0px; padding: 0px;
+    overflow-x: hidden;
+}
 *{
     margin: 0;
     padding: 0;
@@ -22,7 +26,6 @@ body {
     font-family: 'Lexend Deca', sans-serif;
     font-size: 18px;
     color: #707070;
-    overflow-x: hidden;
 }
 a {    
     text-decoration: none;
@@ -59,4 +62,28 @@ a:hover{
     /* font-family: 'Bodoni Moda', serif; */
     /* font-family: 'Merriweather', serif; */
     font-family: 'Noto Serif', serif;
+}
+
+/* Slick slider */
+.slick-next,
+.slick-prev{
+    width: unset;
+    height: unset;
+    padding: 5px;
+
+    border: 1px solid #333;
+}
+.slick-next::before,
+.slick-prev::before{
+    display: none;
+}
+.slick-prev{
+    left: -55px
+}
+.slick-next{
+    right: -55px
+}
+
+.slick-list{
+    padding: 2rem 0 !important;
 }
