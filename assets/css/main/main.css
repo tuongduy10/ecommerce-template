@@ -40,12 +40,19 @@
     padding: 10px 20px;
     border: 0.5px solid #383838;
 }
+    .bran__viewmore:hover {
+        color: #3b99fc;
+        border-color: #3b99fc;
+    }
 @media only screen and (max-width: 992px){
     .line{
         width: 71px; height: 1px;
     }
 }
 @media only screen and (max-width: 768px){
+    .bran-list__searchform{
+        width: 100% !important;
+    } 
     .bran__viewmore{
         font-size: smaller
     }
@@ -79,9 +86,6 @@
         width: calc(50% - 10px) !important;
         margin: 0 10px 10px 0px !important;
     }
-    .bran-list__searchform{
-        width: 100% !important;
-    } 
     .bran__list-img{
         height: 13.4375vw !important;
     }
@@ -124,6 +128,9 @@
 
         border: unset;
     }
+        .bran__list-item:hover a{
+            color: #333
+        }
         .bran__list-img{
             height: 4.4375vw;
         }
@@ -144,8 +151,7 @@
     width: 100%;
 
 }
-    .products__menu{
-        
+    .products__menu{  
         background-color: #3b99fc;
 
         height: 500px;

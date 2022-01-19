@@ -78,6 +78,14 @@ a:hover{
 
     border: 1px solid #333;
 }
+    .slick-next:hover,
+    .slick-prev:hover{
+        border-color: #3b99fc;
+    }
+    .slick-next:hover svg,
+    .slick-prev:hover svg {
+        stroke: #3b99fc;
+    }
 .slick-next::before,
 .slick-prev::before{
     display: none;
