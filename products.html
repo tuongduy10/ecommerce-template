@@ -44,7 +44,6 @@
                             <img class="logo img-fluid" src="assets/images/logo/logo.png" alt="">
                         </a>
                     </div>
-
                     <!-- Navigation -->
                     <div class="header__nav">
                         <!-- Navigation in pc -->
@@ -124,10 +123,13 @@
                                                     src="assets/images/logo/logo.png" alt=""></a>
                                         </div>
                                     </div>
-                                    <div class="form-control d-flex justify-content-between">
-                                        <input class="w-100 py-1" type="text" placeholder="Sản phẩm bạn muốn tìm">
-                                        <img class="action-mobile__icon my-auto" src="assets/images/icon/search.png"
-                                            alt="">
+                                    <div class="searchform input-group rounded w-100">
+                                        <input type="search" class="form-control" placeholder="Sản phẩm bạn muốn tìm"
+                                            aria-label="Search" aria-describedby="search-addon" />
+                                        <span class="input-group-text" role="button" id="search-addon">
+                                            <img class="action-mobile__icon my-auto" src="assets/images/icon/search.png"
+                                                alt="">
+                                        </span>
                                     </div>
                                 </div>
                                 <div class="px-4">
@@ -196,83 +198,69 @@
         <div class="custom-container">
             <div class="content__wrapper">
                 <div class="content__inner w-100 my-4">
+                    <ul class="web__directional">
+                        <li><a href="/index.html">Trang chủ</a></li>
+                        <li><a href="">Thương hiệu</a></li>
+                        <li><a href="">Thế giới di động</a></li>
+                    </ul>
                     <div class="products__content d-flex">
                         <div class="products__menu">
-                            <ul class="web__directional">
-                                <li><a href="/index.html">Trang chủ</a></li>
-                                <li><a href="">Thương hiệu</a></li>
-                                <li><a href="">Thế giới di động</a></li>
-                            </ul>
                             <div class="product__filter">
                                 <div class="filter__title">
-                                    <a href="">
-                                        <h3>Điện thoại di động <svg xmlns='http://www.w3.org/2000/svg' width='24'
-                                                height='24' viewBox='0 0 24 24' fill='none' stroke='#333'
-                                                stroke-width='1' stroke-linecap='round' stroke-linejoin='round'
-                                                class='feather feather-chevron-right'>
-                                                <polyline points='9 18 15 12 9 6'></polyline>
-                                            </svg></h3>
-                                    </a>
+                                    <h3>Điện thoại di động <svg xmlns='http://www.w3.org/2000/svg' width='24'
+                                            height='24' viewBox='0 0 24 24' fill='none' stroke='#333' stroke-width='1'
+                                            stroke-linecap='round' stroke-linejoin='round'
+                                            class='feather feather-chevron-right'>
+                                            <polyline points='9 18 15 12 9 6'></polyline>
+                                        </svg></h3>
                                 </div>
                                 <div class="filter__title">
-                                    <a href="">
-                                        <h3>Latop <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24'
-                                                viewBox='0 0 24 24' fill='none' stroke='#333' stroke-width='1'
-                                                stroke-linecap='round' stroke-linejoin='round'
-                                                class='feather feather-chevron-right'>
-                                                <polyline points='9 18 15 12 9 6'></polyline>
-                                            </svg></h3>
-                                    </a>
+                                    <h3>Latop <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24'
+                                            viewBox='0 0 24 24' fill='none' stroke='#333' stroke-width='1'
+                                            stroke-linecap='round' stroke-linejoin='round'
+                                            class='feather feather-chevron-right'>
+                                            <polyline points='9 18 15 12 9 6'></polyline>
+                                        </svg></h3>
                                 </div>
                                 <div class="filter__title">
-                                    <a href="">
-                                        <h3>Tablet <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24'
-                                                viewBox='0 0 24 24' fill='none' stroke='#333' stroke-width='1'
-                                                stroke-linecap='round' stroke-linejoin='round'
-                                                class='feather feather-chevron-right'>
-                                                <polyline points='9 18 15 12 9 6'></polyline>
-                                            </svg></h3>
-                                    </a>
+                                    <h3>Tablet <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24'
+                                            viewBox='0 0 24 24' fill='none' stroke='#333' stroke-width='1'
+                                            stroke-linecap='round' stroke-linejoin='round'
+                                            class='feather feather-chevron-right'>
+                                            <polyline points='9 18 15 12 9 6'></polyline>
+                                        </svg></h3>
                                 </div>
                                 <div class="filter__title">
-                                    <a href="">
-                                        <h3>Đồng hồ <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24'
-                                                viewBox='0 0 24 24' fill='none' stroke='#333' stroke-width='1'
-                                                stroke-linecap='round' stroke-linejoin='round'
-                                                class='feather feather-chevron-right'>
-                                                <polyline points='9 18 15 12 9 6'></polyline>
-                                            </svg></h3>
-                                    </a>
+                                    <h3>Đồng hồ <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24'
+                                            viewBox='0 0 24 24' fill='none' stroke='#333' stroke-width='1'
+                                            stroke-linecap='round' stroke-linejoin='round'
+                                            class='feather feather-chevron-right'>
+                                            <polyline points='9 18 15 12 9 6'></polyline>
+                                        </svg></h3>
                                 </div>
                                 <div class="filter__title">
-                                    <a href="">
-                                        <h3>Sạc dự phòng <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24'
-                                                viewBox='0 0 24 24' fill='none' stroke='#333' stroke-width='1'
-                                                stroke-linecap='round' stroke-linejoin='round'
-                                                class='feather feather-chevron-right'>
-                                                <polyline points='9 18 15 12 9 6'></polyline>
-                                            </svg></h3>
-                                    </a>
+                                    <h3>Sạc dự phòng <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24'
+                                            viewBox='0 0 24 24' fill='none' stroke='#333' stroke-width='1'
+                                            stroke-linecap='round' stroke-linejoin='round'
+                                            class='feather feather-chevron-right'>
+                                            <polyline points='9 18 15 12 9 6'></polyline>
+                                        </svg></h3>
                                 </div>
                                 <div class="filter__title">
-                                    <a href="">
-                                        <h3>Phụ kiện <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24'
-                                                viewBox='0 0 24 24' fill='none' stroke='#333' stroke-width='1'
-                                                stroke-linecap='round' stroke-linejoin='round'
-                                                class='feather feather-chevron-right'>
-                                                <polyline points='9 18 15 12 9 6'></polyline>
-                                            </svg></h3>
-                                    </a>
+                                    <h3>Phụ kiện <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24'
+                                            viewBox='0 0 24 24' fill='none' stroke='#333' stroke-width='1'
+                                            stroke-linecap='round' stroke-linejoin='round'
+                                            class='feather feather-chevron-right'>
+                                            <polyline points='9 18 15 12 9 6'></polyline>
+                                        </svg></h3>
                                 </div>
                                 <div class="filter__title">
-                                    <a href="">
-                                        <h3>Ốp lưng <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24'
-                                                viewBox='0 0 24 24' fill='none' stroke='#333' stroke-width='1'
-                                                stroke-linecap='round' stroke-linejoin='round'
-                                                class='feather feather-chevron-right'>
-                                                <polyline points='9 18 15 12 9 6'></polyline>
-                                            </svg></h3>
-                                    </a>
+                                    <h3>Ốp lưng <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24'
+                                            viewBox='0 0 24 24' fill='none' stroke='#333' stroke-width='1'
+                                            stroke-linecap='round' stroke-linejoin='round'
+                                            class='feather feather-chevron-right'>
+                                            <polyline points='9 18 15 12 9 6'></polyline>
+                                        </svg></h3>
                                 </div>
                             </div>
                         </div>
@@ -281,49 +269,54 @@
                                 <div class="order__item-wrapper">
                                     <div class="order__item-dropdown">
                                         Mẫu mới nhất
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-chevron-down svg-order">
+                                            <polyline points="6 9 12 15 18 9"></polyline>
+                                        </svg>
                                     </div>
-                                    <div class="order__item-dropdown_menu open">
+                                    <div class="order__item-dropdown_menu">
                                         <div class="order__item-dropdown_items">
                                             <a href="" class="">
                                                 Giá thấp - cao
                                                 <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24'
-                                                viewBox='0 0 24 24' fill='none' stroke='#333' stroke-width='1'
-                                                stroke-linecap='round' stroke-linejoin='round'
-                                                class='feather feather-chevron-right'>
-                                                <polyline points='9 18 15 12 9 6'></polyline>
-                                            </svg>
+                                                    viewBox='0 0 24 24' fill='none' stroke='#333' stroke-width='1'
+                                                    stroke-linecap='round' stroke-linejoin='round'
+                                                    class='feather feather-chevron-right'>
+                                                    <polyline points='9 18 15 12 9 6'></polyline>
+                                                </svg>
                                             </a>
                                             <a href="" class="">
                                                 Giá cao - thấp
                                                 <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24'
-                                                viewBox='0 0 24 24' fill='none' stroke='#333' stroke-width='1'
-                                                stroke-linecap='round' stroke-linejoin='round'
-                                                class='feather feather-chevron-right'>
-                                                <polyline points='9 18 15 12 9 6'></polyline>
-                                            </svg>
+                                                    viewBox='0 0 24 24' fill='none' stroke='#333' stroke-width='1'
+                                                    stroke-linecap='round' stroke-linejoin='round'
+                                                    class='feather feather-chevron-right'>
+                                                    <polyline points='9 18 15 12 9 6'></polyline>
+                                                </svg>
                                             </a>
                                             <a href="" class="">
                                                 Đang giảm giá %
                                                 <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24'
-                                                viewBox='0 0 24 24' fill='none' stroke='#333' stroke-width='1'
-                                                stroke-linecap='round' stroke-linejoin='round'
-                                                class='feather feather-chevron-right'>
-                                                <polyline points='9 18 15 12 9 6'></polyline>
-                                            </svg>
+                                                    viewBox='0 0 24 24' fill='none' stroke='#333' stroke-width='1'
+                                                    stroke-linecap='round' stroke-linejoin='round'
+                                                    class='feather feather-chevron-right'>
+                                                    <polyline points='9 18 15 12 9 6'></polyline>
+                                                </svg>
                                             </a>
                                             <a href="" class="d-none">
                                                 Mẫu mới nhât
                                                 <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24'
-                                                viewBox='0 0 24 24' fill='none' stroke='#333' stroke-width='1'
-                                                stroke-linecap='round' stroke-linejoin='round'
-                                                class='feather feather-chevron-right'>
-                                                <polyline points='9 18 15 12 9 6'></polyline>
-                                            </svg>
+                                                    viewBox='0 0 24 24' fill='none' stroke='#333' stroke-width='1'
+                                                    stroke-linecap='round' stroke-linejoin='round'
+                                                    class='feather feather-chevron-right'>
+                                                    <polyline points='9 18 15 12 9 6'></polyline>
+                                                </svg>
                                             </a>
                                         </div>
                                     </div>
-                                
+
                                 </div>
                             </div>
                         </div>

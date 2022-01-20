@@ -73,12 +73,33 @@ a:hover{
         padding: 0 20px;
     }
 }
-
 .bran__list-name{
     /* font-family: 'Bodoni Moda', serif; */
     /* font-family: 'Merriweather', serif; */
     font-family: 'Noto Serif', serif;
 }
+
+.searchform{
+    width: 40%;
+    border: 1px solid rgb(221, 221, 221) ;
+}
+    .searchform:focus-within {
+        border: 1px solid var(--blue-dior);
+        box-shadow: 0 10px 30px rgb(0 0 0 / 10%);
+    }
+    .searchform input{
+        border: none;
+    }
+        .searchform input:focus{
+            border-color: unset;
+            -webkit-box-shadow: unset;
+            box-shadow: unset;
+            outline: unset;
+        }
+    .searchform span{
+        background-color: unset;
+        border: unset;
+    }
 
 /* Slick slider */
 .slick-next,

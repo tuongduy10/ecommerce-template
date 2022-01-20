@@ -51,7 +51,7 @@
     }
 }
 @media only screen and (max-width: 768px){
-    .bran-list__searchform{
+    .searchform{
         width: 100% !important;
     } 
     .bran__viewmore{
@@ -60,7 +60,7 @@
     .bran-list__title{
         font-size: smaller;
     }  
-    .bran-list__search{
+    .searchform input{
         font-size: smaller;
     }
     .bran__logo-list>*{
@@ -94,7 +94,7 @@
 .content__wrapper{
     box-shadow: 0 10px 30px rgb(0 0 0 / 10%);
 }
-    .bran-list__searchform{
+    /* .bran-list__searchform{
         width: 40%;
         border: 1px solid rgb(221, 221, 221) ;
     }
@@ -114,7 +114,7 @@
         .search-bran{
             background-color: unset;
             border: unset;
-        }
+        } */
 .bran__list-line{
     height: 1px; 
     margin: 0 auto;
@@ -156,7 +156,7 @@
             margin-right: 3.125vw;
         }
             .web__directional{
-                margin-bottom: 0.9375vw;
+                margin-bottom: 1.5rem;
             }
                 .web__directional li{
                     display: inline;
@@ -241,17 +241,20 @@
                         overflow: hidden;
                         transition: all .3s ease;
                         cursor: pointer;
-                    }
+                    }   
                         .order__item-dropdown svg{
                             display: inline-block;
                             margin-left: calc(0px + (60 - 0) * ((100vw - 375px)/ (1920 - 375)));
                             transition: all .3s ease;
                         } 
+                        .svg-up{
+                            transform: rotate(-180deg);
+                        }
                     .order__item-dropdown_menu{
                         opacity: 1;
                         visibility: hidden;
                         position: absolute;
-                        z-index: 100;
+                        z-index: 99;
                         left: 0;
                         top: 100%;
                         width: 124%;
@@ -288,7 +291,6 @@
                                 position: relative;
                                 text-decoration: none;
                                 cursor: pointer;
-                                transition: all .3s ease;
                             }
                             .order__item-dropdown_items a:not(:last-child){
                                 border-bottom: solid 1px #d4d4d4;
@@ -330,10 +332,10 @@
         width: 200px;
         margin-right: 30px;
     }
-        .web__directional{
+        /* .web__directional{
             margin: 0;
             padding-bottom: 14px;
-        }
+        } */
             .web__directional li{
                 font-size: 12px;
                 line-height: 14px;
@@ -357,6 +359,9 @@
     .content__inner{
         padding: 1.25rem;
     }
+        .web__directional{
+            margin-bottom: 9px;
+        }
         .products__content{
             flex-direction: column;
         }
