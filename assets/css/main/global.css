@@ -21,6 +21,17 @@ ul, ol {
     margin: 0;
     padding: 0
 }
+/* Reset Bootstrap */
+.form-select{
+    border: 1px solid #333;
+    
+    padding: 10px;
+    
+    border-color: unset;
+    -webkit-box-shadow: unset;
+    box-shadow: unset;
+    outline: unset;
+}
 /* Default body */
 body {
     font-family: 'Lexend Deca', sans-serif;
