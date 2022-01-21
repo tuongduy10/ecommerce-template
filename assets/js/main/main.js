@@ -34,23 +34,31 @@ $(".order__item-wrapper").hover(
         $(".svg-order").removeClass("svg-up");
     }
 );
-$(".order__item-wrapper").focus(function () {
+$(".order__item-wrapper").click(function () {
     $(".order__item-dropdown_menu").addClass("open");
     $(".svg-order").addClass("svg-up");
 })
 $(".order__item").click(function () {
-    $(".order__item").removeClass('d-none')
     let text = $(this).text()
-
+    $(".order__item").removeClass('d-none')
     $(".order__item-dropdown")
         .html(text +
                 `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                     viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1"
                     stroke-linecap="round" stroke-linejoin="round"
-                    class="feather feather-chevron-down svg-order svg-up">
+                    class="feather feather-chevron-down svg-order">
                     <polyline points="6 9 12 15 18 9"></polyline>
                 </svg>`)
-
     $(this).addClass('d-none')
+    $(".order__item-dropdown_menu").removeClass('open')
     return false
+})
+
+$(".test").click(function(e){
+    alert(e)
+    if(!$('.filter__inner').hasClass('d-none')){
+        $('.filter__inner').addClass('d-none')
+    }else{
+        $(".test ~ .filter__inner").removeClass('d-none')
+    }
 })

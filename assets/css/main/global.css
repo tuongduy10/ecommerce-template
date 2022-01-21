@@ -101,7 +101,6 @@ a:hover{
         background-color: unset;
         border: unset;
     }
-
 /* Slick slider*/
 .slick-next,
 .slick-prev{
@@ -247,9 +246,14 @@ a:hover{
 
 }
 @media only screen and (max-width: 992px){
-
+    .searchform input{
+        font-size: 12px;
+    }
 }
 @media only screen and (max-width: 768px){
+    .searchform input{
+        font-size: 14px;
+    }
     .order__item-wrapper{
         margin-right: 0;
         width: calc(50% - 11px);
@@ -259,7 +263,6 @@ a:hover{
             border: solid 1px #d4d4d4;
         }
 }
-
 /* Variable */
 :root{
     --black: #333;
