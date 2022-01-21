@@ -96,8 +96,10 @@
 
                                 <ul style="padding-left: 0; margin-bottom: 0;" class="nav__actions-mobile d-flex">
                                     <li class="action mx-2">
-                                        <a href=""><img class="action-mobile__icon" src="assets/images/icon/search.png"
-                                                alt=""></a>
+                                        <a href="" class="header__mobile-searchicon">
+                                            <img class="action-mobile__icon" src="assets/images/icon/search.png"
+                                                alt="">
+                                        </a>
                                     </li>
                                     <li class="action mx-2">
                                         <a href=""><img class="action-mobile__icon" src="assets/images/icon/heart.png"
@@ -125,7 +127,7 @@
                                         </div>
                                     </div>
                                     <div class="searchform input-group rounded w-100">
-                                        <input type="search" class="form-control"
+                                        <input type="search" id="search-input" class="form-control"
                                             placeholder="Sản phẩm bạn muốn tìm" aria-label="Search"
                                             aria-describedby="search-addon" />
                                         <span class="input-group-text" role="button" id="search-addon">
@@ -240,7 +242,60 @@
             <div class="content__wrapper">
                 <div class="w-100 my-4 p-4">
                     <div class="d-flex align-items-center justify-content-between flex-wrap">
-                        <h4 class="">Tất cả thương hiệu</h4>
+                        <div class="bran__filter d-flex align-items-center">
+                            <h3 class="mb-0">Hiển thị</h3>
+                            <div class="order__item-wrapper" >
+                                <div class="order__item-dropdown">A, B, C, D, E<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="feather feather-chevron-down svg-order">
+                                        <polyline points="6 9 12 15 18 9"></polyline>
+                                    </svg></div>
+                                <div class="order__item-dropdown_menu">
+                                    <div class="order__item-dropdown_items">
+                                        <a href="" class="order__item d-none">A, B, C, D, E<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24'
+                                                viewBox='0 0 24 24' fill='none' stroke='#333' stroke-width='1'
+                                                stroke-linecap='round' stroke-linejoin='round'
+                                                class='feather feather-chevron-right'>
+                                                <polyline points='9 18 15 12 9 6'></polyline>
+                                            </svg>
+                                        </a>
+                                        <a href="" class="order__item">F, G, H, I, J<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24'
+                                            viewBox='0 0 24 24' fill='none' stroke='#333' stroke-width='1'
+                                            stroke-linecap='round' stroke-linejoin='round'
+                                            class='feather feather-chevron-right'>
+                                            <polyline points='9 18 15 12 9 6'></polyline>
+                                        </svg></a>
+                                        <a href="" class="order__item">K, L, M, N, O<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24'
+                                                viewBox='0 0 24 24' fill='none' stroke='#333' stroke-width='1'
+                                                stroke-linecap='round' stroke-linejoin='round'
+                                                class='feather feather-chevron-right'>
+                                                <polyline points='9 18 15 12 9 6'></polyline>
+                                            </svg></a>
+                                        <a href="" class="order__item">P, Q, R, S, T<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24'
+                                                viewBox='0 0 24 24' fill='none' stroke='#333' stroke-width='1'
+                                                stroke-linecap='round' stroke-linejoin='round'
+                                                class='feather feather-chevron-right'>
+                                                <polyline points='9 18 15 12 9 6'></polyline>
+                                            </svg></a>
+                                        <a href="" class="order__item">U, V, W, X, Y, Z<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24'
+                                                viewBox='0 0 24 24' fill='none' stroke='#333' stroke-width='1'
+                                                stroke-linecap='round' stroke-linejoin='round'
+                                                class='feather feather-chevron-right'>
+                                                <polyline points='9 18 15 12 9 6'></polyline>
+                                            </svg></a>
+                                        <a href="" class="order__item">Tất cả<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24'
+                                                viewBox='0 0 24 24' fill='none' stroke='#333' stroke-width='1'
+                                                stroke-linecap='round' stroke-linejoin='round'
+                                                class='feather feather-chevron-right'>
+                                                <polyline points='9 18 15 12 9 6'></polyline>
+                                            </svg></a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        
                         <div class="searchform input-group rounded">
                             <input type="search" class="form-control"
                                 placeholder="Thương hiệu bạn muốn tìm" aria-label="Search"
@@ -250,9 +305,10 @@
                             </span>
                         </div>
                     </div>
+
                     <div class="bran__list-line my-4"></div>
                     <div class="bran__list-items">
-
+                        
                         <h4>A</h4>
                         <div class="d-flex flex-wrap">
                             <div class="bran__list-item card">

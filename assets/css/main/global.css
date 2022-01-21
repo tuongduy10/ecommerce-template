@@ -79,6 +79,7 @@ a:hover{
     font-family: 'Noto Serif', serif;
 }
 
+/* Search form */
 .searchform{
     width: 40%;
     border: 1px solid rgb(221, 221, 221) ;
@@ -101,7 +102,7 @@ a:hover{
         border: unset;
     }
 
-/* Slick slider */
+/* Slick slider*/
 .slick-next,
 .slick-prev{
     width: unset;
@@ -144,13 +145,124 @@ a:hover{
     font-family: 'Playfair Display', serif;
 }
 
+/* Dropdown form */
+.order__item-wrapper{
+    margin-right: 16px;
+    position: relative;
+    display: inline-block;
+}
+    .order__item-dropdown{
+        position: relative;
 
+        width: 100%;
+        padding: 12px calc(12px + (18 - 12) * ((100vw - 375px)/ (1920 - 375))) 8px;
+        font-weight: 400;
+        font-size: calc(14px + (20 - 14) * ((100vw - 375px)/ (1920 - 375)));
+        line-height: calc(17px + (25 - 17) * ((100vw - 375px)/ (1920 - 375)));
 
+        color: #383838;
+        background-color: #fff;
+        border: solid 1px #383838;
+        
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+
+        overflow: hidden;
+        transition: all .3s ease;
+        cursor: pointer;
+    }   
+        .order__item-dropdown svg{
+            display: inline-block;
+            margin-left: calc(0px + (60 - 0) * ((100vw - 375px)/ (1920 - 375)));
+            transition: all .3s ease;
+        } 
+        .svg-up{
+            transform: rotate(-180deg);
+        }
+    .order__item-dropdown_menu{
+        opacity: 1;
+        visibility: hidden;
+        position: absolute;
+        z-index: 99;
+        left: 0;
+        top: 100%;
+        width: 124%;
+        min-width: 100%;
+        padding-bottom: 1px;
+        background-color: #fff;
+        box-sizing: border-box;
+        border: solid 1px #383838;
+        overflow: hidden;
+        box-shadow: 0 2px 6px 1px rgb(181 181 181 / 50%);
+        transform: translateY(4px);
+        transition: all .3s ease;
+    }
+    .open{
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }   
+        .order__item-dropdown_items{
+            font-size: 0;
+            max-height: 300px;
+            min-width: 100%;
+            overflow-y: auto;
+            overflow-x: hidden;
+            padding: 0 18px 5px;
+        }
+            .order__item-dropdown_items a{
+                width: 100%;
+                color: #383838;
+                font-size: calc(14px + (20 - 14) * ((100vw - 375px)/ (1920 - 375)));
+                line-height: 1.2;
+                padding: calc(10px + (14 - 10) * ((100vw - 375px)/ (1920 - 375))) 29px calc(10px + (14 - 10) * ((100vw - 375px)/ (1920 - 375))) 0;
+                display: block;
+                position: relative;
+                text-decoration: none;
+                cursor: pointer;
+            }
+            .order__item-dropdown_items a:not(:last-child){
+                border-bottom: solid 1px #d4d4d4;
+            }
+            .order__item-dropdown_items a svg {
+                position: absolute;
+
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            .order__item-dropdown_items a:hover{
+                color: var(--blue-dior);
+            }
+            .order__item-dropdown_items a:hover svg{
+                stroke: var(--blue-dior);
+            }
+        .order__item-dropdown svg,
+        .order__item-dropdown_items a svg{
+            height: calc(16px + (18 - 12) * ((100vw - 375px)/ (1920 - 375)));
+            width: calc(16px + (18 - 12) * ((100vw - 375px)/ (1920 - 375)));
+        }
+@media only screen and (max-width: 1200px){
+
+}
+@media only screen and (max-width: 992px){
+
+}
+@media only screen and (max-width: 768px){
+    .order__item-wrapper{
+        margin-right: 0;
+        width: calc(50% - 11px);
+    }   
+        .order__item-dropdown_menu,
+        .order__item-dropdown{
+            border: solid 1px #d4d4d4;
+        }
+}
 
 /* Variable */
 :root{
     --black: #333;
     --white: #fafafa;
     --blue-dior: #3b99fc;
-
 }
