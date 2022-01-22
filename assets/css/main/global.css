@@ -74,8 +74,6 @@ a:hover{
     }
 }
 .bran__list-name{
-    /* font-family: 'Bodoni Moda', serif; */
-    /* font-family: 'Merriweather', serif; */
     font-family: 'Noto Serif', serif;
 }
 
@@ -262,6 +260,71 @@ a:hover{
         .order__item-dropdown{
             border: solid 1px #d4d4d4;
         }
+}
+
+
+/* Scroll bar */
+.filter--scrollbar::-webkit-scrollbar {
+    width: 7px;
+    background-color: #ddd;
+}
+.filter--scrollbar::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: #707070;
+}
+/* Checkbox */
+/* .checkbox input{
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    margin: 0em;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+.checkbox input[type=checkbox]:before {
+    content: '';
+    position: absolute;
+    transform: scale(.7);
+    width: calc(9px + (13 - 9) * ((100vw - 375px)/ (1920 - 375)));
+    height: calc(9px + (13 - 9) * ((100vw - 375px)/ (1920 - 375)));
+    background: 0 0;
+    transition: all .3s ease;
+}
+.checkbox input[type=checkbox]:after {
+    content: '';
+    display: block;
+    width: calc(13px + (19 - 13) * ((100vw - 375px)/ (1920 - 375)));
+    height: calc(13px + (19 - 13) * ((100vw - 375px)/ (1920 - 375)));
+    border: 1px solid #383838;
+    -webkit-transition: 240ms;
+    -o-transition: 240ms;
+    transition: 240ms;
+}
+.checkbox input[type=checkbox]:checked:before {
+    background: var(--blue-dior);
+    transform: scale(1);
+}
+.checkbox input[type=checkbox]:checked:after {
+    border: 1px solid var(--blue-dior);
+} */
+.checkbox input[type=checkbox]{
+    width: calc(14px + (13 - 9) * ((100vw - 375px)/ (1920 - 375)));
+    height: calc(14px + (13 - 9) * ((100vw - 375px)/ (1920 - 375)));
 }
 /* Variable */
 :root{
