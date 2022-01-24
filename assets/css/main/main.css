@@ -365,6 +365,33 @@
                         .pagination-item.active {
                             background: #383838;
                         }
+                .filter__item-wrapper{
+                    width: calc(50% - 11px);
+                }
+                    .filter__dropdown{
+                        position: relative;
+                        width: 100%;
+                        padding: 12px calc(12px + (18 - 12) * ((100vw - 375px)/ (1920 - 375))) 8px;
+                        color: #383838;
+                        background-color: #fff;
+                        border: solid 1px #383838;
+                        font-weight: 400;
+                        font-size: calc(14px + (20 - 14) * ((100vw - 375px)/ (1920 - 375)));
+                        line-height: calc(17px + (25 - 17) * ((100vw - 375px)/ (1920 - 375)));
+                        display: inline-flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        overflow: hidden;
+                        transition: all .3s ease;
+                        cursor: pointer;
+                    }
+                    .filter__dropdown svg{
+                        display: inline-block;
+                        margin-left: calc(0px + (60 - 0) * ((100vw - 375px)/ (1920 - 375)));
+                        width: calc(16px + (18 - 12) * ((100vw - 375px)/ (1920 - 375)));
+                        height: calc(16px + (18 - 12) * ((100vw - 375px)/ (1920 - 375)));
+                        transition: all .3s ease;
+                    }
                     
 @media only screen and (max-width: 1200px){
     .web__directional li{
@@ -465,6 +492,13 @@
                     border-bottom: solid 1px #ddd;
                     padding: 9px 0;
                 }
+                    .filter__item-wrapper{
+                        margin-right: 0;
+                        width: calc(50% - 11px);
+                    }
+                    .filter__dropdown{
+                        border: solid 1px #d4d4d4;
+                    }
 }
 
 

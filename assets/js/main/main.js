@@ -25,7 +25,7 @@ function openNavMobileList() {
 }
 
 // Select form handler
-$(".order__item-wrapper").hover(
+$(".order__button").hover(
     function () {
         $(".order__item-dropdown_menu").addClass("open");
         $(".svg-order").addClass("svg-up");
