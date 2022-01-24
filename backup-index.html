@@ -4,15 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-3.0.1.min.js"></script>
+    <!-- Slick slider -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- Personal Style -->
     <link rel="stylesheet" href="assets/css/main/global.css" />
     <link rel="stylesheet" href="assets/css/main/header.css" />
     <link rel="stylesheet" href="assets/css/main/main.css" />
@@ -29,7 +40,7 @@
                 <div class="header__wrapper pt-4">
                     <!-- Logo -->
                     <div class="logo__container px-5 text-center">
-                        <a href="" class="header__logo">
+                        <a href="/WebDemo/index.html" class="header__logo">
                             <img class="logo img-fluid" src="assets/images/logo/logo.png" alt="">
                         </a>
                     </div>
@@ -40,7 +51,7 @@
                         <nav class="nav__pc">
                             <ul style="padding-left: 0;" class="d-flex justify-content-around">
                                 <li class="nav__link">
-                                    <a href="" class="py-4">Trang chủ</a>
+                                    <a href="/WebDemo/index.html" class="py-4">Trang chủ</a>
                                 </li>
                                 <li class="nav__link">
                                     <a href="" class="py-4">Hot sale</a>
@@ -49,7 +60,7 @@
                                     <a href="" class="py-4">Sản phẩm mới</a>
                                 </li>
                                 <li class="nav__link">
-                                    <a href="" class="py-4">Thương hiệu</a>
+                                    <a href="/WebDemo/products.html" class="py-4">Thương hiệu</a>
                                 </li>
                                 <li class="nav__link">
                                     <a href="" class="py-4">Hỗ trợ</a>
@@ -76,7 +87,7 @@
                             </ul>
                         </nav>
                         <!-- Navigation in mobile -->
-                        <nav class="nav__mobile py-4">
+                        <nav class="nav__mobile py-2">
                             <div class="d-flex justify-content-between">
                                 <label for="nav__mobile-menu" class="overlay d-none" id="nav__overlay"></label>
                                 <label for="nav__mobile-menu" class="nav__menubar" id="nav__menubar-open">
@@ -85,8 +96,10 @@
 
                                 <ul style="padding-left: 0; margin-bottom: 0;" class="nav__actions-mobile d-flex">
                                     <li class="action mx-2">
-                                        <a href=""><img class="action-mobile__icon" src="assets/images/icon/search.png"
-                                                alt=""></a>
+                                        <a href="" class="header__mobile-searchicon">
+                                            <img class="action-mobile__icon" src="assets/images/icon/search.png"
+                                                alt="">
+                                        </a>
                                     </li>
                                     <li class="action mx-2">
                                         <a href=""><img class="action-mobile__icon" src="assets/images/icon/heart.png"
@@ -113,10 +126,13 @@
                                                     src="assets/images/logo/logo.png" alt=""></a>
                                         </div>
                                     </div>
-                                    <div class="form-control d-flex justify-content-between">
-                                        <input class="w-100 py-1" type="text" placeholder="Sản phẩm bạn muốn tìm">
-                                        <img class="action-mobile__icon my-auto" src="assets/images/icon/search.png"
-                                            alt="">
+                                    <div class="searchform input-group rounded w-100">
+                                        <input type="search" id="search-input" class="form-control"
+                                            placeholder="Sản phẩm bạn muốn tìm" aria-label="Search"
+                                            aria-describedby="search-addon" />
+                                        <span class="input-group-text" role="button" id="search-addon">
+                                            <img class="action-mobile__icon my-auto" src="assets/images/icon/search.png" alt="">
+                                        </span>
                                     </div>
                                 </div>
                                 <div class="px-4">
@@ -513,10 +529,10 @@
                                     <a href="">Sứ mệnh và tầm nhìn</a>
                                 </li>
                                 <li class="footer__info-link pb-2">
-                                    <a href="">Delivery</a>
+                                    <a href="">Return</a>
                                 </li>
                                 <li class="footer__info-link pb-2">
-                                    <a href="">Returns</a>
+                                    <a href="">FAQs</a>
                                 </li>
                             </ul>
                         </div>
@@ -535,7 +551,7 @@
                                     <a href="">Chính sách thanh toán</a>
                                 </li>
                                 <li class="footer__info-link pb-2">
-                                    <a href="">FAQs</a>
+                                    <a href="">Chính sách giao hàng</a>
                                 </li>
                             </ul>
                         </div>
@@ -567,13 +583,13 @@
                                     <p>Địa chỉ</p>
                                 </span>
                                 <li class="footer__info-link pb-2">
-                                    <a href="">Số 1 Lê Lợi, Phường 01, Quận 01, TP.Hồ Chí Minh</a>
+                                    <a>Số 1 Lê Lợi, Phường 01, Quận 01, TP.Hồ Chí Minh</a>
                                 </li>
                                 <li class="footer__info-link pb-2">
-                                    <a href="">Điện thoại: 0123456789</a>
+                                    <a>Điện thoại: 0123456789</a>
                                 </li>
                                 <li class="footer__info-link pb-2">
-                                    <a href="">Mail: mail@gmail.com</a>
+                                    <a>Mail: mail@gmail.com</a>
                                 </li>
                             </ul>
                         </div>
@@ -592,16 +608,29 @@
         </div>
     </footer>
 
+    <!-- Personal Script -->
     <script type="text/javascript" src="assets/js/main/main.js"></script>
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+    <!-- Ajax -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.autoplay').slick({
+                slidesToShow: 5,
+                slidesToScroll: 5,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                prevArrow: "<button type='button' class='slick-prev pull-left'><svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='#333' stroke-width='1' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevron-left'><polyline points='15 18 9 12 15 6'></polyline></svg></button>",
+                nextArrow: "<button type='button' class='slick-next pull-right'><svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='#333' stroke-width='1' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevron-right'><polyline points='9 18 15 12 9 6'></polyline></svg></button>"
+            });
+        });
+    </script>
+
 </body>
 </html>

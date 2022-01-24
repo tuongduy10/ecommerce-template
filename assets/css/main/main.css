@@ -158,6 +158,7 @@
     }
         .products__menu{  
             width: 17.70833vw;
+            /* width: 20%; */
             margin-right: 3.125vw;
         }
             .web__directional{
@@ -200,6 +201,7 @@
                             display: flex;
                             align-items: center;
                             justify-content: space-between;
+                            text-transform: uppercase;
                         }
                         .filter__block:hover h3{
                             color: var(--blue-dior);
@@ -285,7 +287,7 @@
                                     flex-wrap: wrap;
                                 } */
         .products__list{
-            width: 100%;
+            width: calc(100% - 17.70833vw);
         }
             .filter__control{
                 padding-top: calc(15px + (28 - 15) * ((100vw - 375px)/ (1920 - 375)));
@@ -295,6 +297,74 @@
                 display: flex;
                 align-items: center;
             }
+                .filter__number{
+                    color: #383838;
+                    font-size: calc(14px + (20 - 14) * ((100vw - 375px)/ (1920 - 375)));
+                    line-height: 1.2;
+                    display: flex;
+                    align-items: center;
+                    margin-right: calc(10px + (40 - 10) * ((100vw - 375px)/ (1920 - 375)));
+                }
+                .filter__number .text{
+                    color: inherit;
+                    margin-right: 14px;
+                }
+                .filter__number span{
+                    display: inline-block;
+                    color: inherit;
+                }
+                .filter__number .number span:first-child{
+                    position: relative;
+                }
+                .filter__number .number span:first-child::before{
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    height: 1px;
+                    width: 100%;
+                    background: #383838;
+                    transition: all .3s ease;
+                }
+                .filter__number .number span:last-child{
+                    color: #a0a0a0;
+                }
+                .filter__pagination{
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    flex: 1;
+                }
+                    .pagination{
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: flex;
+                        padding-left: 0;
+                        list-style: none;
+                    }
+                        .pagination-item{
+                            cursor: pointer;
+                            display: inline-flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: calc(35px + (45 - 35) * ((100vw - 375px)/ (1920 - 375)));
+                            height: calc(35px + (45 - 35) * ((100vw - 375px)/ (1920 - 375)));
+                            background: #d4d4d4;
+                            color: #fff;
+                            margin: 0 calc(2.5px + (13 - 2.5) * ((100vw - 375px)/ (1920 - 375)));
+                        }
+                        .pagination-item.next, 
+                        .pagination-item.previous {
+                            background: #fff;
+                            border: solid 1px #383838;
+                            color: #383838;
+                        }
+                        .pagination-item.active {
+                            cursor: default;
+                        }
+                        .pagination-item.active {
+                            background: #383838;
+                        }
                     
 @media only screen and (max-width: 1200px){
     .web__directional li{
@@ -387,7 +457,9 @@
                             display: none;
                             border-bottom: solid 1px #d4d4d4;
                         }
-            
+            .products__list{
+                width: 100%;
+            }
                 .filter__control{
                     border-top: solid 1px #ddd;
                     border-bottom: solid 1px #ddd;
