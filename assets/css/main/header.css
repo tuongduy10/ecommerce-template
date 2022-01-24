@@ -124,13 +124,17 @@
             .nav__mobile-footer p:hover a{
                 color: var(--blue-dior);
             }
-
-@media (max-width: 1023px){
+@media only screen and (max-width: 992px){
     .nav__pc{
         display: none;
     }
     .nav__mobile{
         display: block;
+    }
+    .cart span,
+    .cart-mobile span{
+        top: 0;
+        right: -60%; 
     }
 }
 @keyframes fadeIn {
