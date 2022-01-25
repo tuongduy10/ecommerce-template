@@ -4,8 +4,11 @@
 .header{
     background-color: #fff;
 }
+    .header__top{
+        background-color:  #f6f6f6;
+    }
     .header__inner{
-        box-shadow: 0 10px 30px rgb(0 0 0 / 10%);
+        /* box-shadow: 0 10px 30px rgb(0 0 0 / 10%); */
     }
         .logo{
             max-height: 50px;
@@ -21,8 +24,9 @@
         .cart span,
         .cart-mobile span{
             position: absolute;
-            top: -50%;
-            right: -50%; 
+            
+            bottom: -10%;
+            right: -30%; 
 
             display: flex;
             align-items: center;
@@ -32,9 +36,9 @@
             color: #fff;
         }
         .cart span{
-            width: 20px;
-            height: 20px;
-            font-size: 14px;
+            width: 18px;
+            height: 18px;
+            font-size: 12px;
             line-height: 1;
         }
         .cart-mobile span{
@@ -44,12 +48,6 @@
             line-height: 1;
         }
     /* Header__Navigation-list (PC/Mobile): text size, resize */
-.nav__mobile-openmenu,
-.action-mobile__icon{
-    max-height: calc(16px + (24 - 10) * ((100vw - 375px)/ (1920 - 375)));
-    max-width: calc(16px + (24 - 10) * ((100vw - 375px)/ (1920 - 375)));
-}
-
 .nav__link,
 .nav__link-mobile{
     text-transform: uppercase;
@@ -133,8 +131,8 @@
     }
     .cart span,
     .cart-mobile span{
-        top: 0;
-        right: -60%; 
+        top: 60%;
+        right: -20%; 
     }
 }
 @keyframes fadeIn {

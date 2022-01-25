@@ -96,7 +96,7 @@ a:hover{
             outline: unset;
         }
     .searchform span{
-        background-color: unset;
+        background-color: #fff;
         border: unset;
     }
 /* Slick slider*/
@@ -326,6 +326,12 @@ a:hover{
     width: calc(14px + (13 - 9) * ((100vw - 375px)/ (1920 - 375)));
     height: calc(14px + (13 - 9) * ((100vw - 375px)/ (1920 - 375)));
 }
+
+/* SVG Container */
+.svg-container{
+    height: 24px;
+}
+
 /* Variable */
 :root{
     --black: #333;
