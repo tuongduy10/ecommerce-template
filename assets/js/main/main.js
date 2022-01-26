@@ -3,8 +3,10 @@ $(window).scroll(function () {
     let y_scroll_pos = window.pageYOffset
     if (y_scroll_pos > scroll_pos){
         $('.nav__pc').addClass('sticky')
+        $('.nav__fake').removeClass('d-none')
     } else {
         $('.nav__pc').removeClass('sticky')
+        $('.nav__fake').addClass('d-none')
     }
 })
 
