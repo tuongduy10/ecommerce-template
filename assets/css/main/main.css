@@ -120,6 +120,10 @@
     .bran__filter .order__item-dropdown_menu .order__item-dropdown_items a:hover{
         color: var(--blue-dior);
     }
+
+    .content__wrapper .searchform{
+        width: 40%;
+    }
 .bran__list-line{
     height: 1px; 
     margin: 0 auto;
@@ -366,6 +370,7 @@
                             background: #383838;
                         }
                 .filter__item-wrapper{
+                    display: none;
                     width: calc(50% - 11px);
                 }
                     .filter__dropdown{

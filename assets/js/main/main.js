@@ -1,3 +1,13 @@
+const scroll_pos = $('.nav__pc').offset().top
+$(window).scroll(function () {
+    let y_scroll_pos = window.pageYOffset
+    if (y_scroll_pos > scroll_pos){
+        $('.nav__pc').addClass('sticky')
+    } else {
+        $('.nav__pc').removeClass('sticky')
+    }
+})
+
 document.getElementById('nav__menubar-open').onclick = function () {
     openNavMobileList()
 }
@@ -44,20 +54,20 @@ $(".order__item").click(function () {
     $(".order__item").removeClass('d-none')
     $(".order__item-dropdown")
         .html(text +
-                `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                     viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1"
                     stroke-linecap="round" stroke-linejoin="round"
                     class="feather feather-chevron-down svg-order">
                     <polyline points="6 9 12 15 18 9"></polyline>
-                </svg>`)   
+                </svg>`)
     $(this).addClass('d-none')
     $(".order__item-dropdown_menu").removeClass('open')
 })
 
-$(".test").click(function(e){
-    if(!$('.filter__inner').hasClass('d-none')){
+$(".test").click(function (e) {
+    if (!$('.filter__inner').hasClass('d-none')) {
         $('.filter__inner').addClass('d-none')
-    }else{
+    } else {
         $(".test ~ .filter__inner").removeClass('d-none')
     }
 })

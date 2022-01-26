@@ -38,20 +38,34 @@
         <div class="header__top">
             <div class="justify-content-between align-items-center d-flex py-2 px-4">
                     <div class="d-flex">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-help-circle"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
-                        <a href="" class="svg-container mb-0 mr-4">
-                            Hỗ trợ
+                        <a href="" class="header__top-link mr-4">
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-help-circle"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                            </span>
+                            <span class="text">
+                                Hỗ trợ
+                            </span>
                         </a>
-                        <a href="" class="svg-container mb-0 mr-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-smartphone"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
-                            0123456789
+                        <a href="" class="header__top-link mr-4">
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-smartphone"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+                            </span>
+                            <span class="text">
+                                0123456789
+                            </span>
                         </a>
-                        <a href="" class="svg-container mb-0 mr-4">Tài khoản của tôi</a>
-                        <a href="" class="svg-container mb-0">Liên hệ với chúng tôi</a>
+                        <a href="" class="header__top-link mr-4">
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            </span>
+                            <span class="text">
+                                TP. Hồ Chí Minh
+                            </span>
+                        </a>
                     </div>
     
                     <ul style="padding-left: 0;" class="nav__actions d-flex align-items-center">
-                        <div class="searchform input-group rounded w-100">
+                        <div class="searchform input-group rounded">
                             <input type="search" id="search-input" class="form-control"
                                 placeholder="Sản phẩm bạn muốn tìm" aria-label="Search"
                                 aria-describedby="search-addon" />
@@ -59,130 +73,145 @@
                                 <svg class="action-mobile__icon my-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
                             </span>
                         </div>
-                        <li class="action svg-container mx-2">
+                        <!-- <li class="action svg-container ml-2">
                             <a href="">
                                 <svg class="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
                             </a>
                         </li>
-                        <li class="action svg-container mx-2">
+                        <li class="action svg-container ml-4">
                             <a href="" class="cart">
                                 <span class="quality">1</span>
                                 <svg classs="action__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
                             </a>
                         </li>
+                        <li class="action svg-container ml-4">
+                            <a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                            </a>
+                        </li> -->
+                        <a href="" class="header__top-link ml-2">
+                            <span class="icon">
+                                <svg class="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                            </span>
+                        </a>
+                        <a href="" class="header__top-link ml-4">
+                            <span class="icon cart">
+                                <span class="quality">1</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                            </span>
+                        </a>
+                        <a href="" class="header__top-link ml-4">
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                            </span>
+                        </a>
                     </ul>
-                
             </div>
         </div>
         <div class="header__inner">
             <div class="custom-container">
-                <div class="header__wrapper pt-4">
-                    <!-- Logo -->
-                    <div class="logo__container px-5 text-center">
-                        <a href="/WebDemo/index.html" class="header__logo">
-                            <img class="logo img-fluid" src="assets/images/logo/logo.png" alt="">
+                <!-- Logo -->
+                <div class="logo__container text-center px-5 pt-4">
+                    <a href="/WebDemo/index.html" class="header__logo">
+                        <img class="logo img-fluid" src="assets/images/logo/logo.png" alt="">
+                    </a>
+                </div>
+                <!-- Navigation -->
+                <!-- Navigation in mobile -->
+                <nav class="nav__mobile">
+                    <div class="d-flex justify-content-between py-2">
+                        <label for="nav__mobile-menu" class="overlay d-none" id="nav__overlay" style="margin: 0;"></label>
+                        <label for="nav__mobile-menu" class="nav__menubar mb-0" id="nav__menubar-open">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                        </label>
+
+                        <a href="" class="header__mobile-searchicon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                        </a>
+                        
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                        </a>
+
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                        </a>
+
+                        <a href="" class="cart-mobile">
+                            <span class="quality">1</span>
+                            <svg classs="cart-mobile" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
                         </a>
                     </div>
-
-                    <!-- Navigation -->
-                    <div class="header__nav">
-                        <!-- Navigation in pc -->
-                        <nav class="nav__pc">
-                            <ul style="padding-left: 0;" class="d-flex justify-content-center">
-                                <li class="nav__link mx-4">
-                                    <a href="/WebDemo/index.html" class="py-4">Trang chủ</a>
+                    <div class="nav__mobile-list pt-4 d-flex flex-column nav-close" id="nav__mobile-list-open">
+                        <div class="p-4">
+                            <div class="nav__mobile-logo d-flex mb-4">
+                                <div class="w-100 text-center" style="position: relative;">
+                                    <span id="nav__mobile-list-close" style="left: 0; position: absolute;">
+                                        <img class="action-mobile__icon" src="assets/images/icon/close.png"
+                                            alt="">
+                                    </span>
+                                    <a href=""><img style="max-width: 65%; height: auto;"
+                                            src="assets/images/logo/logo.png" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="searchform input-group rounded w-100">
+                                <input type="search" id="search-input" class="form-control"
+                                    placeholder="Sản phẩm bạn muốn tìm" aria-label="Search"
+                                    aria-describedby="search-addon" />
+                                <span class="input-group-text" role="button" id="search-addon">
+                                    <img class="action-mobile__icon my-auto" src="assets/images/icon/search.png" alt="">
+                                </span>
+                            </div>
+                        </div>
+                        <div class="px-4">
+                            <ul class="nav__list-mobile">
+                                <li class="nav__link-mobile pb-4">
+                                    <a href="">Trang chủ</a>
                                 </li>
-                                <li class="nav__link mx-4">
-                                    <a href="" class="py-4">Hot sale</a>
+                                <li class="nav__link-mobile pb-4">
+                                    <a href="">Hot sale</a>
                                 </li>
-                                <li class="nav__link mx-4">
-                                    <a href="" class="py-4">Sản phẩm mới</a>
+                                <li class="nav__link-mobile pb-4">
+                                    <a href="">Sản phẩm mới</a>
                                 </li>
-                                <li class="nav__link mx-4">
-                                    <a href="/WebDemo/products.html" class="py-4">Thương hiệu</a>
+                                <li class="nav__link-mobile pb-4">
+                                    <a href="">Thương hiệu</a>
                                 </li>
-                                <li class="nav__link mx-4">
-                                    <a href="" class="py-4">Thanh toán</a>
+                                <li class="nav__link-mobile pb-4">
+                                    <a href="">Hỗ trợ</a>
+                                </li>
+                                <li class="nav__link-mobile pb-4">
+                                    <a href="">Thanh toán</a>
                                 </li>
                             </ul>
-                        </nav>
-                        <!-- Navigation in mobile -->
-                        <nav class="nav__mobile">
-                            <div class="d-flex justify-content-between py-2">
-                                <label for="nav__mobile-menu" class="overlay d-none" id="nav__overlay"></label>
-                                <label for="nav__mobile-menu" class="nav__menubar mb-0" id="nav__menubar-open">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
-                                </label>
-
-                                <a href="" class="header__mobile-searchicon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-                                </a>
-                                
-                                <a href="">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-                                </a>
-
-                                <a href="">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
-                                </a>
-
-                                <a href="" class="cart-mobile">
-                                    <span class="quality">1</span>
-                                    <svg classs="cart-mobile" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
-                                </a>
-                            </div>
-                            <div class="nav__mobile-list pt-4 d-flex flex-column nav-close" id="nav__mobile-list-open">
-                                <div class="p-4">
-                                    <div class="nav__mobile-logo d-flex mb-4">
-                                        <div class="w-100 text-center" style="position: relative;">
-                                            <span id="nav__mobile-list-close" style="left: 0; position: absolute;">
-                                                <img class="action-mobile__icon" src="assets/images/icon/close.png"
-                                                    alt="">
-                                            </span>
-                                            <a href=""><img style="max-width: 65%; height: auto;"
-                                                    src="assets/images/logo/logo.png" alt=""></a>
-                                        </div>
-                                    </div>
-                                    <div class="searchform input-group rounded w-100">
-                                        <input type="search" id="search-input" class="form-control"
-                                            placeholder="Sản phẩm bạn muốn tìm" aria-label="Search"
-                                            aria-describedby="search-addon" />
-                                        <span class="input-group-text" role="button" id="search-addon">
-                                            <img class="action-mobile__icon my-auto" src="assets/images/icon/search.png" alt="">
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="px-4">
-                                    <ul class="nav__list-mobile">
-                                        <li class="nav__link-mobile pb-4">
-                                            <a href="">Trang chủ</a>
-                                        </li>
-                                        <li class="nav__link-mobile pb-4">
-                                            <a href="">Hot sale</a>
-                                        </li>
-                                        <li class="nav__link-mobile pb-4">
-                                            <a href="">Sản phẩm mới</a>
-                                        </li>
-                                        <li class="nav__link-mobile pb-4">
-                                            <a href="">Thương hiệu</a>
-                                        </li>
-                                        <li class="nav__link-mobile pb-4">
-                                            <a href="">Hỗ trợ</a>
-                                        </li>
-                                        <li class="nav__link-mobile pb-4">
-                                            <a href="">Thanh toán</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="nav__mobile-footer p-4 mt-auto">
-                                    <p><a href="">Phone: 0123456789 (Mr.A)</a></p>
-                                    <p><a href="">Mail: mail@gmail.com</a></p>
-                                    <p><a href="https://www.facebook.com/mra/">Facebook: Mr.A</a></p>
-                                </div>
-                            </div>
-                        </nav>
+                        </div>
+                        <div class="nav__mobile-footer p-4 mt-auto">
+                            <p><a href="">Phone: 0123456789 (Mr.A)</a></p>
+                            <p><a href="">Mail: mail@gmail.com</a></p>
+                            <p><a href="https://www.facebook.com/mra/">Facebook: Mr.A</a></p>
+                        </div>
                     </div>
-                </div>
+                </nav>
+                <!-- Navigation in pc -->
+                <nav class="nav__pc">
+                    <ul style="padding-left: 0;" class="d-flex justify-content-center">
+                        <li class="nav__link mx-4">
+                            <a href="/WebDemo/index.html" class="py-4">Trang chủ</a>
+                        </li>
+                        <li class="nav__link mx-4">
+                            <a href="" class="py-4">Hot sale</a>
+                        </li>
+                        <li class="nav__link mx-4">
+                            <a href="" class="py-4">Sản phẩm mới</a>
+                        </li>
+                        <li class="nav__link mx-4">
+                            <a href="/WebDemo/products.html" class="py-4">Thương hiệu</a>
+                        </li>
+                        <li class="nav__link mx-4">
+                            <a href="" class="py-4">Thanh toán</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </header>
@@ -505,9 +534,6 @@
                                     <a href="">Messenger</a>
                                 </li>
                                 <li class="footer__info-link pb-2">
-                                    <a href="">Zalo</a>
-                                </li>
-                                <li class="footer__info-link pb-2">
                                     <a href="">Youtube</a>
                                 </li>
                             </ul>
@@ -517,9 +543,6 @@
                                 <p>Thông tin liên hệ</p>
                             </span>
                             <ul class="footer__info-list">
-                                <span class="footer__info-address">
-                                    <p>Địa chỉ</p>
-                                </span>
                                 <li class="footer__info-link pb-2">
                                     <a>Số 1 Lê Lợi, Phường 01, Quận 01, TP.Hồ Chí Minh</a>
                                 </li>
@@ -568,6 +591,7 @@
                 nextArrow: "<button type='button' class='slick-next pull-right'><svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='#333' stroke-width='1' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevron-right'><polyline points='9 18 15 12 9 6'></polyline></svg></button>"
             });
         });
+
     </script>
 
 </body>
