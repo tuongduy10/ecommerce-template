@@ -23,7 +23,7 @@ ul, ol {
 }
 .sticky{
     position: fixed;
-    padding: 0 20px;
+    /* padding: 0 20px; */
 
     top: 0;
     right: 0;
@@ -39,7 +39,7 @@ ul, ol {
     padding-top: 4.5rem;
 }
 .main-mobile{
-    padding-top: 2rem;
+    padding-top: 4.5rem;
 }
 
 /* Reset Bootstrap */
