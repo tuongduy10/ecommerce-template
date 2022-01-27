@@ -23,6 +23,7 @@ ul, ol {
 }
 .sticky{
     position: fixed;
+    padding: 0 20px;
 
     top: 0;
     right: 0;
@@ -32,6 +33,13 @@ ul, ol {
     background-color: #fff;
     box-shadow: 0 10px 30px rgb(0 0 0 / 10%);
     border-bottom: 1px solid #ddd;
+}
+
+.main-pc{
+    padding-top: 4.5rem;
+}
+.main-mobile{
+    padding-top: 2rem;
 }
 
 /* Reset Bootstrap */

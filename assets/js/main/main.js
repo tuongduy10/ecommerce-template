@@ -1,12 +1,29 @@
-const scroll_pos = $('.nav__pc').offset().top
+var navpc__pos = $('.nav__pc-items').offset().top
+var navmobile__pos = $('.nav__mobile').offset().top
 $(window).scroll(function () {
-    let y_scroll_pos = window.pageYOffset
-    if (y_scroll_pos > scroll_pos){
-        $('.nav__pc').addClass('sticky')
-        $('.nav__fake').removeClass('d-none')
-    } else {
-        $('.nav__pc').removeClass('sticky')
-        $('.nav__fake').addClass('d-none')
+    var y_scroll_pos_pc = window.pageYOffset
+    var y_scroll_pos_mobile = window.pageYOffset
+    var scroll_pc = navpc__pos
+    var scroll_mobile = navmobile__pos
+
+    if ($('.nav__mobile').css('display') === 'none') {
+        if (y_scroll_pos_pc > scroll_pc) {
+            $('.nav__pc-items').addClass('sticky')
+            $('.main').addClass('main-pc')
+        } else {
+            $('.nav__pc-items').removeClass('sticky')
+            $('.main').removeClass('main-pc')
+        }
+    }
+
+    if ($('.nav__pc').css('display') === 'none') {
+        if (y_scroll_pos_mobile > scroll_mobile) {
+            $('.nav__mobile').addClass('sticky')
+            $('.main').addClass('main-mobile')
+        } else {
+            $('.nav__mobile').removeClass('sticky')
+            $('.main').removeClass('main-mobile')
+        }
     }
 })
 
@@ -21,10 +38,27 @@ document.getElementById('nav__mobile-list-close').onclick = function () {
 }
 
 $(".header__mobile-searchicon").click(function () {
-    openNavMobileList()
-    $("#search-input").focus()
+    if($('.searchform__wrapper').hasClass('d-none')){
+        $('.searchform__wrapper').removeClass('d-none')
+    }else {
+        $('.searchform__wrapper').addClass('d-none')
+    }
+
     return false
 })
+
+
+
+// $(".header__mobile-searchicon").click(function () {
+//     if($('.searchform__wrapper').hasClass('searchform-close')){
+//         $('.searchform__wrapper').removeClass('searchform-close')
+//         $('.searchform__wrapper').addClass('searchform-open')
+//     }else {
+//         $('.searchform__wrapper').removeClass('searchform-open')
+//         $('.searchform__wrapper').addClass('searchform-close')
+//     }
+//     return false
+// })
 
 function closeNavMobileList() {
     document.getElementById('nav__overlay').className = document.getElementById('nav__overlay').className.replace('d-block', 'd-none')
