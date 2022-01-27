@@ -25,6 +25,8 @@ $(window).scroll(function () {
             $('.main').removeClass('main-mobile')
         }
     }
+
+    $('.searchform__wrapper').addClass('d-none')
 })
 
 document.getElementById('nav__menubar-open').onclick = function () {
@@ -40,6 +42,7 @@ document.getElementById('nav__mobile-list-close').onclick = function () {
 $(".header__mobile-searchicon").click(function () {
     if($('.searchform__wrapper').hasClass('d-none')){
         $('.searchform__wrapper').removeClass('d-none')
+        $('.searchform__wrapper input').focus()
     }else {
         $('.searchform__wrapper').addClass('d-none')
     }

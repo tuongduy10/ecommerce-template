@@ -165,6 +165,11 @@
             .nav__mobile-footer p:hover a{
                 color: var(--blue-dior);
             }
+
+            .nav__rel{
+                position: relative;
+            }
+
     .searchform__wrapper{
         position: fixed;
         padding: 0 20px;
