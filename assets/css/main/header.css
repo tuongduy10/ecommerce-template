@@ -191,6 +191,10 @@
         padding: 0.375rem 0.75rem;
         margin: 0;
     }
+    .searchresult a{
+        font-size: 12px;
+        text-decoration: underline !important;
+    }
     .search__overlay{
         position: absolute;
         z-index: 10;
@@ -215,7 +219,7 @@
     }
     .cart span,
     .cart-mobile span{
-        top: 40%;
+        top: 50%;
         right: -20%; 
     }
 }

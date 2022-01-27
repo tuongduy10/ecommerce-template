@@ -34,12 +34,15 @@ $(window).scroll(function () {
 document.getElementById('nav__menubar-open').onclick = function () {
     openNavMobileList()
     closeSearchForm()
+    $('body').css('overflow','hidden')
 }
 document.getElementById('nav__overlay').onclick = function () {
     closeNavMobileList()
+    $('body').css('overflow','auto')
 }
 document.getElementById('nav__mobile-list-close').onclick = function () {
     closeNavMobileList()
+    $('body').css('overflow','auto')
 }
 
 $(".header__mobile-searchicon").click(function () {
