@@ -1,7 +1,7 @@
 @import url(assets/css/main/global.css);
-/* .main{
-    
-} */
+.main{
+    /* height: 100%; */
+}
 .banner__container{
     height: calc(15vw * 1.72);
 }

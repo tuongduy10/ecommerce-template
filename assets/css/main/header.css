@@ -2,7 +2,16 @@
 
 /* Header (image, icon, text): color and size */
 .header{
+    position: fixed;
+
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+
     background-color: #fff;
+    box-shadow: 0 10px 30px rgb(0 0 0 / 10%);
+    border-bottom: 1px solid #ddd;
 }
     .header__top{
         border-bottom: 1px solid #ddd;
@@ -191,9 +200,15 @@
         padding: 0.375rem 0.75rem;
         margin: 0;
     }
-    .searchresult a{
+    .search-viewmore{
         font-size: 12px;
         text-decoration: underline !important;
+    }
+    .icon-active{
+        stroke: var(--blue-dior);
+    }
+    .searchresult a:hover{
+        color: var(--blue-dior);
     }
     .search__overlay{
         position: absolute;
@@ -210,9 +225,11 @@
 
 @media only screen and (max-width: 992px){  
     .nav__pc,
-    .nav__fake-pc,
     .header__top{
         display: none;
+    }
+    .main{
+        padding-top: 4.5rem;
     }
     .nav__mobile{
         display: block;
