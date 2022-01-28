@@ -36,7 +36,7 @@
 <body>
     <header class="header">
         <div class="header__top">
-            <div class="justify-content-between align-items-center d-flex py-1 px-4">
+            <div class="justify-content-between align-items-center d-flex pt-1 px-4">
                     <div class="d-flex">
                         <a href="" class="header__top-link mr-4">
                             <span class="icon">
@@ -54,12 +54,20 @@
                                 0123456789
                             </span>
                         </a>
-                        <a href="" class="header__top-link mr-4">
+                        <!-- <a href="" class="header__top-link mr-4">
                             <span class="icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
                             </span>
                             <span class="text">
                                 TP. Hồ Chí Minh
+                            </span>
+                        </a> -->
+                        <a href="" class="header__top-link mr-4">
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                            </span>
+                            <span class="text">
+                                Tài khoản của tôi
                             </span>
                         </a>
                     </div>
@@ -100,18 +108,18 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
                             </span>
                         </a>
-                        <a href="" class="header__top-link ml-4">
+                        <!-- <a href="" class="header__top-link ml-4">
                             <span class="icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
                             </span>
-                        </a>
+                        </a> -->
                     </ul>
             </div>
         </div>
         <div class="header__inner">
             <div class="custom-container">
                 <!-- Logo -->
-                <div class="logo__container text-center px-5 pt-2">
+                <div class="logo__container text-center px-5" style="position: fixed; top: 0; right: 0; left: 0;">
                     <a href="/WebDemo/index.html" class="header__logo">
                         <img class="logo img-fluid" src="assets/images/logo/logo.png" alt="">
                     </a>
@@ -210,19 +218,19 @@
                 <nav class="nav__pc">
                     <ul class="nav__pc-items nav__default d-flex justify-content-center">
                         <li class="nav__link mx-4">
-                            <a href="/WebDemo/index.html" class="py-2">Trang chủ</a>
+                            <a href="/WebDemo/index.html" class="py-3">Trang chủ</a>
                         </li>
                         <li class="nav__link mx-4">
-                            <a href="" class="py-2">Hot sale</a>
+                            <a href="" class="py-3">Hot sale</a>
                         </li>
                         <li class="nav__link mx-4">
-                            <a href="" class="py-2">Sản phẩm mới</a>
+                            <a href="" class="py-3">Sản phẩm mới</a>
                         </li>
                         <li class="nav__link mx-4">
-                            <a href="/WebDemo/products.html" class="py-2">Thương hiệu</a>
+                            <a href="/WebDemo/products.html" class="py-3">Thương hiệu</a>
                         </li>
                         <li class="nav__link mx-4">
-                            <a href="" class="py-2">Thanh toán</a>
+                            <a href="" class="py-3">Thanh toán</a>
                         </li>
                     </ul>
                 </nav>
@@ -542,14 +550,20 @@
                             </span>
                             <ul class="footer__info-list">
                                 <li class="footer__info-link pb-2">
-                                    <a href="">Facebook</a>
+                                    <a href=""><i class="fab fa-facebook-square"></i> Facebook</a>
                                 </li>
                                 <li class="footer__info-link pb-2">
-                                    <a href="">Messenger</a>
+                                    <a href=""><i class="fab fa-facebook-messenger"></i> Messenger</a>
                                 </li>
                                 <li class="footer__info-link pb-2">
-                                    <a href="">Youtube</a>
+                                    <a href=""><i class="fab fa-youtube-square"></i> Youtube</a>
                                 </li>
+                                <li class="footer__info-link pb-2">
+                                    <a href=""><i class="fab fa-instagram-square"></i> Instagram</a>
+                                </li>
+                                
+
+                                
                             </ul>
                         </div>
                         <div class="footer__info">
@@ -558,13 +572,22 @@
                             </span>
                             <ul class="footer__info-list">
                                 <li class="footer__info-link pb-2">
-                                    <a>Số 1 Lê Lợi, Phường 01, Quận 01, TP.Hồ Chí Minh</a>
+                                    <a>
+                                        <i class="fas fa-mobile-alt"></i>
+                                        Zalo: 0123456789
+                                    </a>
                                 </li>
                                 <li class="footer__info-link pb-2">
-                                    <a>Điện thoại: 0123456789</a>
+                                    <a>
+                                        <i class="far fa-envelope"></i>
+                                        Mail: mail@gmail.com
+                                    </a>
                                 </li>
                                 <li class="footer__info-link pb-2">
-                                    <a>Mail: mail@gmail.com</a>
+                                    <a>
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        Số 1 Lê Lợi, Phường 01, Quận 01, TP.Hồ Chí Minh
+                                    </a>
                                 </li>
                             </ul>
                         </div>

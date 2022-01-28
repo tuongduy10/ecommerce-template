@@ -1,5 +1,10 @@
 @import url(assets/css/main/global.css);
 
+.logo__container,
+.nav__pc{
+    padding-top: 0.25rem;
+}
+
 /* Header (image, icon, text): color and size */
 .header{
     position: fixed;
@@ -14,7 +19,7 @@
     /* border-bottom: 1px solid #ddd; */
 }
     .header__top{
-        border-bottom: 1px solid #ddd;
+        /* border-bottom: 1px solid #ddd; */
     }
         .header__top-link,
         .header__top input{
@@ -58,7 +63,7 @@
                 color: #a0a0a0
             }
         .logo{
-            max-height: 50px;
+            max-height: 55px;
         }
             .action__icon{
                 max-height: calc(10px + (24 - 10) * ((100vw - 375px)/ (1920 - 375)));
