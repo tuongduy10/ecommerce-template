@@ -36,104 +36,107 @@
 <body>
     <header class="header">
         <div class="header__top">
-            <div class="justify-content-between align-items-center d-flex pt-1 px-4">
-                    <div class="d-flex">
-                        <a href="" class="header__top-link mr-4">
-                            <span class="icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-help-circle"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
-                            </span>
+            <div class="header__top-content align-items-center d-flex pt-2">
+                <!-- Logo -->
+                <div class="logo__container text-center px-5 mx-auto">
+                    <a href="/WebDemo/index.html" class="header__logo">
+                        <img class="logo img-fluid" src="assets/images/logo/swarovski.png" alt="">
+                    </a>
+                </div>
+                <div class="header__top-info">
+                    <a href="" class="header__top-link">
+                        <span class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="#333" stroke-width="1" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-help-circle">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                            </svg>
+                        </span>
+                        <span class="text">
+                            Hỗ trợ
+                        </span>
+                    </a>
+                    <a href="" class="header__top-link">
+                        <span class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="#333" stroke-width="1" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-smartphone">
+                                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                                <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                            </svg>
+                        </span>
+                        <span class="text">
+                            0123456789
+                        </span>
+                    </a>
+                    <a href="" class="header__top-link">
+                        <span class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="#333" stroke-width="1" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-user">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                        </span>
+                        <span class="text">
+                            Tài khoản của tôi
+                        </span>
+                    </a>
+                </div>
+                <ul class="header__top-action align-items-center">
+                    <li>
+                        <a class="header-searchform header__top-link">
                             <span class="text">
-                                Hỗ trợ
+                                <input type="text" placeholder="Thương hiệu/ Dịch vụ/ Sản phẩm cần tìm">
+                            </span>
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
                             </span>
                         </a>
-                        <a href="" class="header__top-link mr-4">
+                    </li>
+                    <li>
+                        <a href="" class="header__top-link">
                             <span class="icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-smartphone"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
-                            </span>
-                            <span class="text">
-                                0123456789
+                                <svg class="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="#333" stroke-width="1" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-heart">
+                                    <path
+                                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                    </path>
+                                </svg>
                             </span>
                         </a>
-                        <!-- <a href="" class="header__top-link mr-4">
-                            <span class="icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                            </span>
-                            <span class="text">
-                                TP. Hồ Chí Minh
-                            </span>
-                        </a> -->
-                        <a href="" class="header__top-link mr-4">
-                            <span class="icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-                            </span>
-                            <span class="text">
-                                Tài khoản của tôi
-                            </span>
-                        </a>
-                    </div>
-    
-                    <ul style="padding-left: 0;" class="nav__actions d-flex align-items-center">
-                        <div class="searchform input-group rounded">
-                            <input type="search" id="search-input" class="form-control"
-                                placeholder="Sản phẩm bạn muốn tìm" aria-label="Search"
-                                aria-describedby="search-addon" />
-                            <span class="input-group-text" role="button" id="search-addon">
-                                <svg class="action-mobile__icon my-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-                            </span>
-                        </div>
-                        <!-- <li class="action svg-container ml-2">
-                            <a href="">
-                                <svg class="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
-                            </a>
-                        </li>
-                        <li class="action svg-container ml-4">
-                            <a href="" class="cart">
-                                <span class="quality">1</span>
-                                <svg classs="action__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
-                            </a>
-                        </li>
-                        <li class="action svg-container ml-4">
-                            <a href="">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-                            </a>
-                        </li> -->
-                        <a href="" class="header__top-link ml-2">
-                            <span class="icon">
-                                <svg class="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
-                            </span>
-                        </a>
-                        <a href="" class="header__top-link ml-4">
+                    </li>
+                    <li>
+                        <a href="" class="header__top-link">
                             <span class="icon cart">
                                 <span class="quality">1</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="#333" stroke-width="1" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-shopping-bag">
+                                    <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                                    <path d="M16 10a4 4 0 0 1-8 0"></path>
+                                </svg>
                             </span>
                         </a>
-                        <!-- <a href="" class="header__top-link ml-4">
-                            <span class="icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-                            </span>
-                        </a> -->
-                    </ul>
+                    </li>                    
+                </ul>
             </div>
         </div>
         <div class="header__inner">
             <div class="custom-container">
-                <!-- Logo -->
-                <div class="logo__container text-center px-5" style="position: fixed; top: 0; right: 0; left: 0;">
-                    <a href="/WebDemo/index.html" class="header__logo">
-                        <img class="logo img-fluid" src="assets/images/logo/logo.png" alt="">
-                    </a>
-                </div>
                 <!-- Navigation -->
                 <!-- Navigation in mobile -->
-                <nav class="nav__mobile"> 
+                <nav class="nav__mobile">
                     <div class="nav__mobile-list d-flex flex-column nav-close" id="nav__mobile-list-open">
                         <div class="p-4">
                             <div class="nav__mobile-logo d-flex">
                                 <div class="w-100 text-center" style="position: relative;">
                                     <span id="nav__mobile-list-close" style="left: 0; position: absolute;">
-                                        <img class="action-mobile__icon" src="assets/images/icon/close.png"
-                                            alt="">
+                                        <img class="action-mobile__icon" src="assets/images/icon/close.png" alt="">
                                     </span>
                                     <a href=""><img style="max-width: 65%; height: auto;"
                                             src="assets/images/logo/logo.png" alt=""></a>
@@ -157,6 +160,12 @@
                                 <li class="nav__link-mobile pb-4">
                                     <a href="">Thanh toán</a>
                                 </li>
+                                <li class="nav__link-mobile pb-4">
+                                    <a href="">Hàng order</a>
+                                </li>
+                                <li class="nav__link-mobile pb-4">
+                                    <a href="">Hàng có sẵn</a>
+                                </li>
                             </ul>
                         </div>
                         <div class="nav__mobile-footer p-4 mt-auto">
@@ -165,27 +174,56 @@
                             <p><a href="https://www.facebook.com/mra/">Facebook: Mr.A</a></p>
                         </div>
                     </div>
-                    <div class="d-flex justify-content-between py-2">
-                        <label for="nav__mobile-menu" class="overlay d-none" id="nav__overlay" style="margin: 0;"></label>
+                    <div class="nav__mobile-action d-flex justify-content-between py-2">
+                        <label for="nav__mobile-menu" class="overlay d-none" id="nav__overlay"
+                            style="margin: 0;"></label>
                         <label for="nav__mobile-menu" class="nav__menubar mb-0" id="nav__menubar-open">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="#333" stroke-width="1" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-menu">
+                                <line x1="3" y1="12" x2="21" y2="12"></line>
+                                <line x1="3" y1="6" x2="21" y2="6"></line>
+                                <line x1="3" y1="18" x2="21" y2="18"></line>
+                            </svg>
                         </label>
 
                         <a class="header__mobile-searchicon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-                        </a>
-                        
-                        <a>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="#333" stroke-width="1" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-search">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
                         </a>
 
                         <a>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="#333" stroke-width="1" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-user">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                        </a>
+
+                        <a>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="#333" stroke-width="1" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-heart">
+                                <path
+                                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                </path>
+                            </svg>
                         </a>
 
                         <a class="cart-mobile">
                             <span class="quality">1</span>
-                            <svg classs="cart-mobile" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                            <svg classs="cart-mobile" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-shopping-bag">
+                                <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                                <line x1="3" y1="6" x2="21" y2="6"></line>
+                                <path d="M16 10a4 4 0 0 1-8 0"></path>
+                            </svg>
                         </a>
                     </div>
                     <div class="searchform__wrapper py-2 d-none">
@@ -235,7 +273,7 @@
                     </ul>
                 </nav>
             </div>
-            
+
         </div>
     </header>
 
@@ -278,7 +316,8 @@
                 <div class="autoplay d-flex">
                     <a class="bran__logo p-4" href="/WebDemo/products.html"><img src="assets/images/logo/tgdd.png"
                             alt=""></a>
-                    <a class="bran__logo p-4" href="/WebDemo/products.html"><img src="assets/images/logo/gc.png" alt=""></a>
+                    <a class="bran__logo p-4" href="/WebDemo/products.html"><img src="assets/images/logo/gc.png"
+                            alt=""></a>
                     <a class="bran__logo p-4" href="/WebDemo/products.html"><img src="assets/images/logo/toshiba.png"
                             alt=""></a>
                     <a class="bran__logo p-4" href="/WebDemo/products.html"><img src="assets/images/logo/logo.png"
@@ -286,18 +325,23 @@
                     <a class="bran__logo p-4" href="/WebDemo/products.html"><img src="assets/images/logo/vnal.png"
                             alt=""></a>
 
-                    <a class="bran__logo p-4" href="/WebDemo/products.html"><img src="assets/images/logo/pl.png" alt=""></a>
-                    <a class="bran__logo p-4" href="/WebDemo/products.html"><img src="assets/images/logo/gc.png" alt=""></a>
-                    <a class="bran__logo p-4" href="/WebDemo/products.html"><img src="assets/images/logo/sf.png" alt=""></a>
+                    <a class="bran__logo p-4" href="/WebDemo/products.html"><img src="assets/images/logo/pl.png"
+                            alt=""></a>
+                    <a class="bran__logo p-4" href="/WebDemo/products.html"><img src="assets/images/logo/gc.png"
+                            alt=""></a>
+                    <a class="bran__logo p-4" href="/WebDemo/products.html"><img src="assets/images/logo/sf.png"
+                            alt=""></a>
                     <a class="bran__logo p-4" href="/WebDemo/products.html"><img src="assets/images/logo/logo.png"
                             alt=""></a>
                     <a class="bran__logo p-4" href="/WebDemo/products.html"><img src="assets/images/logo/vnal.png"
                             alt=""></a>
 
-                    <a class="bran__logo p-4" href="/WebDemo/products.html"><img src="assets/images/logo/pl.png" alt=""></a>
-                    <a class="bran__logo p-4" href="/WebDemo/products.html"><img src="assets/images/logo/gc.png" alt=""></a>
-                    <a class="bran__logo p-4" href="/WebDemo/products.html"><img src="assets/images/logo/tinysquarelogo.jpg"
+                    <a class="bran__logo p-4" href="/WebDemo/products.html"><img src="assets/images/logo/pl.png"
                             alt=""></a>
+                    <a class="bran__logo p-4" href="/WebDemo/products.html"><img src="assets/images/logo/gc.png"
+                            alt=""></a>
+                    <a class="bran__logo p-4" href="/WebDemo/products.html"><img
+                            src="assets/images/logo/tinysquarelogo.jpg" alt=""></a>
                     <a class="bran__logo p-4" href="/WebDemo/products.html"><img src="assets/images/logo/logo.png"
                             alt=""></a>
                     <a class="bran__logo p-4" href="/WebDemo/products.html"><img src="assets/images/logo/vnal.png"
@@ -315,49 +359,50 @@
                         <!-- Sort Bran by Alphabet -->
                         <div class="bran__filter d-flex align-items-center">
                             <h3 class="mb-0">Hiển thị theo bởi</h3>
-                            <div class="order__item-wrapper order__button" >
-                                <div class="order__item-dropdown">A, B, C, D, E<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                        viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1"
-                                        stroke-linecap="round" stroke-linejoin="round"
+                            <div class="order__item-wrapper order__button">
+                                <div class="order__item-dropdown">A, B, C, D, E<svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#333"
+                                        stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
                                         class="feather feather-chevron-down svg-order">
                                         <polyline points="6 9 12 15 18 9"></polyline>
                                     </svg></div>
                                 <div class="order__item-dropdown_menu">
                                     <div class="order__item-dropdown_items">
-                                        <a class="order__item d-none">A, B, C, D, E<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24'
+                                        <a class="order__item d-none">A, B, C, D, E<svg
+                                                xmlns='http://www.w3.org/2000/svg' width='24' height='24'
                                                 viewBox='0 0 24 24' fill='none' stroke='#333' stroke-width='1'
                                                 stroke-linecap='round' stroke-linejoin='round'
                                                 class='feather feather-chevron-right'>
                                                 <polyline points='9 18 15 12 9 6'></polyline>
                                             </svg>
                                         </a>
-                                        <a class="order__item">F, G, H, I, J<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24'
-                                            viewBox='0 0 24 24' fill='none' stroke='#333' stroke-width='1'
-                                            stroke-linecap='round' stroke-linejoin='round'
-                                            class='feather feather-chevron-right'>
-                                            <polyline points='9 18 15 12 9 6'></polyline>
-                                        </svg></a>
-                                        <a class="order__item">K, L, M, N, O<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24'
-                                                viewBox='0 0 24 24' fill='none' stroke='#333' stroke-width='1'
-                                                stroke-linecap='round' stroke-linejoin='round'
+                                        <a class="order__item">F, G, H, I, J<svg xmlns='http://www.w3.org/2000/svg'
+                                                width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='#333'
+                                                stroke-width='1' stroke-linecap='round' stroke-linejoin='round'
                                                 class='feather feather-chevron-right'>
                                                 <polyline points='9 18 15 12 9 6'></polyline>
                                             </svg></a>
-                                        <a class="order__item">P, Q, R, S, T<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24'
-                                                viewBox='0 0 24 24' fill='none' stroke='#333' stroke-width='1'
-                                                stroke-linecap='round' stroke-linejoin='round'
+                                        <a class="order__item">K, L, M, N, O<svg xmlns='http://www.w3.org/2000/svg'
+                                                width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='#333'
+                                                stroke-width='1' stroke-linecap='round' stroke-linejoin='round'
                                                 class='feather feather-chevron-right'>
                                                 <polyline points='9 18 15 12 9 6'></polyline>
                                             </svg></a>
-                                        <a class="order__item">U, V, W, X, Y, Z<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24'
-                                                viewBox='0 0 24 24' fill='none' stroke='#333' stroke-width='1'
-                                                stroke-linecap='round' stroke-linejoin='round'
+                                        <a class="order__item">P, Q, R, S, T<svg xmlns='http://www.w3.org/2000/svg'
+                                                width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='#333'
+                                                stroke-width='1' stroke-linecap='round' stroke-linejoin='round'
                                                 class='feather feather-chevron-right'>
                                                 <polyline points='9 18 15 12 9 6'></polyline>
                                             </svg></a>
-                                        <a class="order__item">Tất cả<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24'
-                                                viewBox='0 0 24 24' fill='none' stroke='#333' stroke-width='1'
-                                                stroke-linecap='round' stroke-linejoin='round'
+                                        <a class="order__item">U, V, W, X, Y, Z<svg xmlns='http://www.w3.org/2000/svg'
+                                                width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='#333'
+                                                stroke-width='1' stroke-linecap='round' stroke-linejoin='round'
+                                                class='feather feather-chevron-right'>
+                                                <polyline points='9 18 15 12 9 6'></polyline>
+                                            </svg></a>
+                                        <a class="order__item">Tất cả<svg xmlns='http://www.w3.org/2000/svg' width='24'
+                                                height='24' viewBox='0 0 24 24' fill='none' stroke='#333'
+                                                stroke-width='1' stroke-linecap='round' stroke-linejoin='round'
                                                 class='feather feather-chevron-right'>
                                                 <polyline points='9 18 15 12 9 6'></polyline>
                                             </svg></a>
@@ -366,21 +411,12 @@
 
                             </div>
                         </div>
-                        <!-- Search Form -->
-                        <div class="searchform input-group rounded">
-                            <input type="search" class="form-control"
-                                placeholder="Thương hiệu bạn muốn tìm" aria-label="Search"
-                                aria-describedby="search-addon" />
-                            <span class="input-group-text" role="button" id="search-addon">
-                                <svg class="action-mobile__icon my-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-                            </span>
-                        </div>
                     </div>
 
                     <div class="bran__list-line my-4"></div>
                     <!-- Bran list content -->
                     <div class="bran__list-items">
-                        
+
                         <h4>A</h4>
                         <div class="d-flex flex-wrap">
                             <div class="bran__list-item card">
@@ -388,8 +424,7 @@
                                     <div class="bran__list-img py-2 px-4">
                                         <img src="assets/images/logo/sf.png" class="card-img-top" alt="...">
                                     </div>
-                                    <div
-                                        class="card-body text-center p-2 align-items-center justify-content-center">
+                                    <div class="card-body text-center p-2 align-items-center justify-content-center">
                                         <h5 class="bran__list-name card-title mb-0">Salvatore Ferragamo</h5>
                                         <h6 class="bran__list-type card-text">Phụ kiện và trang sức</h6>
                                     </div>
@@ -412,8 +447,7 @@
                                         <img src="assets/images/logo/pl.png" class="card-img-top d-inline-block"
                                             alt="...">
                                     </div>
-                                    <div
-                                        class="card-body text-center p-2 align-items-center justify-content-center">
+                                    <div class="card-body text-center p-2 align-items-center justify-content-center">
                                         <h5 class="bran__list-name card-title mb-0">Phúc Long</h5>
                                         <h6 class="bran__list-type card-text">Dịch vụ ăn uống</h6>
                                     </div>
@@ -426,8 +460,7 @@
                                         <img src="assets/images/logo/tgdd.png" class="card-img-top d-inline-block"
                                             alt="...">
                                     </div>
-                                    <div
-                                        class="card-body text-center p-2 align-items-center justify-content-center">
+                                    <div class="card-body text-center p-2 align-items-center justify-content-center">
                                         <h5 class="bran__list-name card-title mb-0">Thế giới di động</h5>
                                         <h6 class="bran__list-type card-text">Điện thoại di động</h6>
                                     </div>
@@ -440,8 +473,7 @@
                                         <img src="assets/images/logo/gc.png" class="card-img-top d-inline-block"
                                             alt="...">
                                     </div>
-                                    <div
-                                        class="card-body text-center p-2 align-items-center justify-content-center">
+                                    <div class="card-body text-center p-2 align-items-center justify-content-center">
                                         <h5 class="bran__list-name card-title mb-0">Gong Cha</h5>
                                         <h6 class="bran__list-type card-text">Hải sản</h6>
                                     </div>
@@ -451,11 +483,10 @@
                             <div class="bran__list-item card">
                                 <a href="/WebDemo/products.html">
                                     <div class="bran__list-img py-2 px-4">
-                                        <img src="assets/images/logo/victorinox.png"
-                                            class="card-img-top d-inline-block" alt="...">
+                                        <img src="assets/images/logo/victorinox.png" class="card-img-top d-inline-block"
+                                            alt="...">
                                     </div>
-                                    <div
-                                        class="card-body text-center p-2 align-items-center justify-content-center">
+                                    <div class="card-body text-center p-2 align-items-center justify-content-center">
                                         <h5 class="bran__list-name card-title mb-0">Victorinox Swiss Army</h5>
                                         <h6 class="bran__list-type card-text">Trang sức và phụ kiện</h6>
                                     </div>
@@ -465,11 +496,10 @@
                             <div class="bran__list-item card">
                                 <a href="/WebDemo/products.html">
                                     <div class="bran__list-img py-2 px-4">
-                                        <img src="assets/images/logo/toshiba.png"
-                                            class="card-img-top d-inline-block" alt="...">
+                                        <img src="assets/images/logo/toshiba.png" class="card-img-top d-inline-block"
+                                            alt="...">
                                     </div>
-                                    <div
-                                        class="card-body text-center p-2 align-items-center justify-content-center">
+                                    <div class="card-body text-center p-2 align-items-center justify-content-center">
                                         <h5 class="bran__list-name card-title mb-0">Toshiba</h5>
                                         <h6 class="bran__list-type card-text">Điện lạnh</h6>
                                     </div>
@@ -482,8 +512,7 @@
                                         <img src="assets/images/logo/logo.png" class="card-img-top d-inline-block"
                                             alt="...">
                                     </div>
-                                    <div
-                                        class="card-body text-center p-2 align-items-center justify-content-center">
+                                    <div class="card-body text-center p-2 align-items-center justify-content-center">
                                         <h5 class="bran__list-name card-title mb-0">Like Watch</h5>
                                         <h6 class="bran__list-type card-text">Đồng hồ</h6>
                                     </div>
@@ -550,20 +579,21 @@
                             </span>
                             <ul class="footer__info-list">
                                 <li class="footer__info-link pb-2">
-                                    <a href=""><i class="fab fa-facebook-square"></i> Facebook</a>
+                                    <a href="">
+                                        <i class="fab fa-facebook-square"></i> Facebook</a>
+                                </li> 
+                                <li class="footer__info-link pb-2">
+                                    <a href="">
+                                        <i class="fab fa-youtube-square"></i> Youtube</a>
                                 </li>
                                 <li class="footer__info-link pb-2">
-                                    <a href=""><i class="fab fa-facebook-messenger"></i> Messenger</a>
+                                    <a href="">
+                                        <i class="fab fa-instagram-square"></i> Instagram</a>
                                 </li>
                                 <li class="footer__info-link pb-2">
-                                    <a href=""><i class="fab fa-youtube-square"></i> Youtube</a>
+                                    <a href="">
+                                        <i class="fab fa-facebook-messenger"></i> Messenger</a>
                                 </li>
-                                <li class="footer__info-link pb-2">
-                                    <a href=""><i class="fab fa-instagram-square"></i> Instagram</a>
-                                </li>
-                                
-
-                                
                             </ul>
                         </div>
                         <div class="footer__info">
@@ -584,9 +614,9 @@
                                     </a>
                                 </li>
                                 <li class="footer__info-link pb-2">
-                                    <a>
+                                    <a href="https://goo.gl/maps/tnZ1983YvzTU4j6s6" target="_blank">
                                         <i class="fas fa-map-marker-alt"></i>
-                                        Số 1 Lê Lợi, Phường 01, Quận 01, TP.Hồ Chí Minh
+                                        Số 365/39A Hậu Giang, Phường 11, Quận 06, TP.Hồ Chí Minh
                                     </a>
                                 </li>
                             </ul>
@@ -599,8 +629,8 @@
             <div class="custom-container">
                 <div class="py-4">
                     <!-- <span class="footer__copyright-info" style="font-weight: bold;"></span> -->
-                    <p class="footer__copyright-info"><img class="footer__copyright-icon"
-                            src="assets/images/icon/copyright.png" alt=""> 2022 - Copyright by Công ty TNHH A Company</p>
+                    <p class="footer__copyright-info"><i class="far fa-copyright"></i> 2022 - Copyright by Công ty TNHH
+                        A Company</p>
                 </div>
             </div>
         </div>
@@ -632,4 +662,5 @@
     </script>
 
 </body>
+
 </html>

@@ -221,8 +221,8 @@
                             stroke: var(--blue-dior);
                         }
                     .filter__inner{
-                        padding-top: calc(20px + (24 - 20) * ((100vw - 375px)/ (1920 - 375)));
-                        padding-bottom: calc(20px + (40 - 20) * ((100vw - 375px)/ (1920 - 375))); 
+                        padding-top: calc(10px + (24 - 20) * ((100vw - 375px)/ (1920 - 375)));
+                        padding-bottom: calc(10px + (40 - 20) * ((100vw - 375px)/ (1920 - 375))); 
                     }
                         .filter__list,
                         .filter__sub-list{
@@ -235,8 +235,15 @@
                                 overflow: hidden;
                                 padding-bottom: 2px;
                             }
+                                .filter__item p{
+                                    font-size: 1.2vw;
+                                    font-weight: 500;
+                                }
+                                .sub-item-cate{
+                                    font-size: 1vw;
+                                }
                             .filter__item:not(:last-child){
-                                margin-bottom: calc(15px + (20 - 15) * ((100vw - 375px)/ (1920 - 375)));
+                                margin-bottom: calc(5px + (20 - 15) * ((100vw - 375px)/ (1920 - 375)));
                             }
                             .filter__item::before{
                                 content: '';
@@ -250,10 +257,11 @@
                                 transition: all .3s ease;
                             }   
                                 .checkbox input{
-                                    margin-right: calc(10px + (15 - 10) * ((100vw - 375px)/ (1920 - 375)));
+                                    margin-left: calc(12px + (15 - 10) * ((100vw - 375px)/ (1920 - 375)));
+                                    margin-right: calc(4px + (15 - 10) * ((100vw - 375px)/ (1920 - 375)));
                                 }
                                 .checkbox label>div{
-                                    margin-right: 15px;
+                                    margin-right: 5px;
                                     line-height: 22px;
                                 }
                                 .checkbox label{
@@ -293,6 +301,9 @@
                                     align-items: center;
                                     flex-wrap: wrap;
                                 } */
+                                .filter__sub-item:hover{
+                                    color: var(--blue-dior);
+                                }
         .products__list{
             width: calc(100% - 17.70833vw);
         }

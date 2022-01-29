@@ -1,10 +1,5 @@
 @import url(assets/css/main/global.css);
 
-.logo__container,
-.nav__pc{
-    padding-top: 0.25rem;
-}
-
 /* Header (image, icon, text): color and size */
 .header{
     position: fixed;
@@ -18,11 +13,31 @@
     box-shadow: 0 10px 30px rgb(0 0 0 / 10%);
     /* border-bottom: 1px solid #ddd; */
 }
-    .header__top{
-        /* border-bottom: 1px solid #ddd; */
+    .header__top-content{
+        position: relative;
     }
+        .header__top-info,
+        .header__top-action{
+            position: fixed;
+            display: flex;
+        }
+        .header__top-info{
+            left: 0;
+            padding-left: 20px;
+        }
+        .header__top-action{
+            right: 0;
+            padding-right: 20px;
+        }
+            .header__top-info a{
+                margin-right: 1.5rem;
+            }
+            .header__top-action li{
+                margin-left: 1.5rem;
+            }
         .header__top-link,
-        .header__top input{
+        .header__top input,
+        .header__top-action li{
             font-size: calc(4px + (24 - 10) * ((100vw - 375px)/ (1920 - 375)));
         }
         .header__top span{
@@ -47,21 +62,34 @@
         .header__top-link:hover svg{
             stroke: var(--blue-dior);
         }
-            .header__top .searchform,
-            .header__top .searchform ::-webkit-input-placeholder{
-                color: #fff;
-                border-color: #fff;
-                background-color: #fff;
+            .header__top-action{
+                justify-content: flex-end;
             }
-            .header__top .searchform:hover,
-            .header__top .searchform:focus-within{
-                border-color: var(--blue-dior);
-                box-shadow: 0 10px 30px rgb(0 0 0 / 10%);
-            }
-            .header__top .searchform:hover ::-webkit-input-placeholder,
-            .header__top .searchform:focus-within ::-webkit-input-placeholder{
-                color: #a0a0a0
-            }
+                .header-searchform{
+                    padding-bottom: 5px;
+                    border-bottom: 1px solid #fff;
+                    color: #fff;
+                }
+                .header-searchform input{
+                    width: 23.5rem;
+                }
+                .header-searchform ::-webkit-input-placeholder{
+                    color: #fff;
+                }
+                .header-searchform:hover,
+                .header-searchform:focus-within{
+                    border-color: var(--blue-dior);
+                }
+                .header-searchform:hover ::-webkit-input-placeholder,
+                .header-searchform:focus-within ::-webkit-input-placeholder{
+                    color: #a0a0a0;
+                }
+                .header-searchform:focus-within svg {
+                    stroke: var(--blue-dior);
+                }
+                .header-searchform input:focus{
+                    outline: none;
+                }
         .logo{
             max-height: 55px;
         }
@@ -227,11 +255,37 @@
 
         animation: fadeIn linear 0.45s;
     }
-
+    
+@media only screen and (max-width: 1700px){
+    .header__top-info a{
+        margin-right: 1rem;
+    }
+    .header__top-action li{
+        margin-left: 1rem;
+    }
+    .header-searchform input{
+        width: 20.5rem;
+    }
+}
+@media only screen and (max-width: 1400px){
+    .header__top-info a{
+        margin-right: 0.75rem;
+    }
+    .header__top-action li{
+        margin-left: 0.75rem;
+    }
+    .header-searchform input{
+        width: 16.5rem;
+    }
+}
 @media only screen and (max-width: 992px){  
-    .nav__pc,
-    .header__top{
+    .header__top-info,
+    .header__top-action,
+    .nav__pc{
         display: none;
+    }
+    .logo{
+        max-height: 50px;
     }
     .main{
         padding-top: 4.5rem;
@@ -254,3 +308,6 @@
     }
 }
 
+.footer__info-link i {
+    width: 24px;
+}
