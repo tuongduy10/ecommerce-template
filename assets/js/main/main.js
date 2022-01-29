@@ -37,7 +37,7 @@
 $(window).load(mainPaddingTop())
 $(window).resize(mainPaddingTop())
 function mainPaddingTop(){
-    $('.main').css('padding-top', $('.header').height())
+    $('main').css('padding-top', $('header').height())
 }
 
 
