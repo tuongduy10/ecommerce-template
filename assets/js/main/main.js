@@ -33,13 +33,13 @@
 // if($(window).width() <=  768){
 //     $('.nav__mobile').css('padding-top', $('.logo__container').height())
 // }
-$('.main').css('padding-top', $('.header').height())
-$(window).resize(function(){
+// alert($('.header').height())
+$(window).load(mainPaddingTop())
+$(window).resize(mainPaddingTop())
+function mainPaddingTop(){
     $('.main').css('padding-top', $('.header').height())
-    // if($(window).width() <=  768){
-    //     $('.nav__mobile').css('padding-top', $('.logo__container').height())
-    // }
-})
+}
+
 
 document.getElementById('nav__menubar-open').onclick = function () {
     openNavMobileList()
