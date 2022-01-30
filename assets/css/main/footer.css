@@ -25,6 +25,9 @@ footer{
 .footer__info-link a:hover{
     color: var(--blue-dior);
 }
+.footer__info-link i {
+    width: 24px;
+}
 
 @media only screen and (max-width: 768px){
     .footer__info-title{
@@ -39,6 +42,9 @@ footer{
         padding-right: 10px;
         margin-bottom: 30px;
     }
+        .footer__info-link i {
+            width: 16px;
+        }
     .footer__copyright-info {
         font-size: 14px;
         line-height: 17px;

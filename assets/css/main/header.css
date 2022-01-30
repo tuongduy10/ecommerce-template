@@ -4,9 +4,8 @@
 .header{
     position: fixed;
 
-    top: 0;
-    right: 0;
-    left: 0;
+    top: 0px;
+    width: 100%;
     z-index: 100; 
 
     background-color: #fff;
@@ -18,7 +17,7 @@
     }
         .header__top-info,
         .header__top-action{
-            position: fixed;
+            position: absolute;
             display: flex;
         }
         .header__top-info{
@@ -303,8 +302,4 @@
     to {
         opacity: .7;
     }
-}
-
-.footer__info-link i {
-    width: 24px;
 }

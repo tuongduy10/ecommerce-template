@@ -1,44 +1,44 @@
-// var navpc__pos = $('.nav__pc-items').offset().top
-// var navmobile__pos = $('.header').offset().top
-// $(window).scroll(function () {
-//     var y_scroll_pos_pc = window.pageYOffset
-//     var y_scroll_pos_mobile = window.pageYOffset
-//     var scroll_pc = navpc__pos
-//     var scroll_mobile = navmobile__pos
+(function( win ){
+	var doc = win.document;
+	// If there's a hash, or addEventListener is undefined, stop here
+	if( !location.hash && win.addEventListener ){
+		//scroll to 1
+		win.scrollTo( 0, 1 );
+		var scrollTop = 1,
+        getScrollTop = function(){
+            return win.pageYOffset || doc.compatMode === "CSS1Compat" && doc.documentElement.scrollTop || doc.body.scrollTop || 0;
+        },
+        //reset to 0 on bodyready, if needed
+        bodycheck = setInterval(function(){
+            if( doc.body ){
+                clearInterval( bodycheck );
+                scrollTop = getScrollTop();
+                win.scrollTo( 0, scrollTop === 1 ? 0 : 1 );
+            }	
+        }, 15 );
+		win.addEventListener( "load", function(){
+			setTimeout(function(){
+				//at load, if user hasn't scrolled more than 20 or so...
+				if( getScrollTop() < 20 ){
+					//reset to hide addr bar at onload
+					win.scrollTo( 0, scrollTop === 1 ? 0 : 1 );
+				}
+			}, 0);
+		}, false );
+	}
+})( this );
 
-//     if ($('.nav__mobile').css('display') === 'none') {
-//         if (y_scroll_pos_pc > scroll_pc) {
-//             $('.nav__pc-items').addClass('sticky')
-//             $('.main').addClass('main-pc')
-//         } else {
-//             $('.nav__pc-items').removeClass('sticky')
-//             $('.main').removeClass('main-pc')
-//         }
-//     }
 
-//     if ($('.nav__pc').css('display') === 'none') {
-//         if (y_scroll_pos_mobile > scroll_mobile) {
-//             $('.header').addClass('sticky')
-//             $('.main').addClass('main-mobile')
-//         } else {
-//             $('.header').removeClass('sticky')
-//             $('.main').removeClass('main-mobile')
-//         }
-//     }
-
-//     if(!$('.searchform__wrapper').hasClass('d-none')){
-//         $('.searchform__wrapper').addClass('d-none')
-//     }
-// })
-// if($(window).width() <=  768){
-//     $('.nav__mobile').css('padding-top', $('.logo__container').height())
-// }
-// alert($('.header').height())
-$(window).load(mainPaddingTop())
-$(window).resize(mainPaddingTop())
 function mainPaddingTop(){
-    $('main').css('margin-top', $('header').height())
+    var height = $('header').height() + 'px'
+    $('main').css('padding-top', height)
 }
+$(document).ready(function(){    
+    mainPaddingTop()
+    $(window).resize(function(){
+        mainPaddingTop()
+    })
+})
 
 
 document.getElementById('nav__menubar-open').onclick = function () {
