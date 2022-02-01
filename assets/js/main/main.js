@@ -1,45 +1,13 @@
-(function( win ){
-	var doc = win.document;
-	// If there's a hash, or addEventListener is undefined, stop here
-	if( !location.hash && win.addEventListener ){
-		//scroll to 1
-		win.scrollTo( 0, 1 );
-		var scrollTop = 1,
-        getScrollTop = function(){
-            return win.pageYOffset || doc.compatMode === "CSS1Compat" && doc.documentElement.scrollTop || doc.body.scrollTop || 0;
-        },
-        //reset to 0 on bodyready, if needed
-        bodycheck = setInterval(function(){
-            if( doc.body ){
-                clearInterval( bodycheck );
-                scrollTop = getScrollTop();
-                win.scrollTo( 0, scrollTop === 1 ? 0 : 1 );
-            }	
-        }, 15 );
-		win.addEventListener( "load", function(){
-			setTimeout(function(){
-				//at load, if user hasn't scrolled more than 20 or so...
-				if( getScrollTop() < 20 ){
-					//reset to hide addr bar at onload
-					win.scrollTo( 0, scrollTop === 1 ? 0 : 1 );
-				}
-			}, 0);
-		}, false );
-	}
-})( this );
-
-
-function mainPaddingTop(){
-    var height = $('header').height() + 'px'
-    $('main').css('padding-top', height)
-}
-$(document).ready(function(){    
-    mainPaddingTop()
+$(document).ready(function(){
+    $(window).scroll(function(){
+        $('.header').addClass('sticky-header')
+        $('.main').css('margin-top', $('.header').height())
+    })
     $(window).resize(function(){
-        mainPaddingTop()
+        $('.header').addClass('sticky-header')
+        $('.main').css('margin-top', $('.header').height())
     })
 })
-
 
 document.getElementById('nav__menubar-open').onclick = function () {
     openNavMobileList()
@@ -125,14 +93,14 @@ $(".order__item").click(function () {
 })
 
 $(".test").click(function (e) {
-    if (!$(this).siblings().hasClass('d-none')) {
-        $(this).siblings().addClass('d-none')
-    } else {
+    // Show
+    if ($(this).siblings().hasClass('d-none')) {
         $(this).siblings().removeClass('d-none')
+        $(this).children('svg').addClass('svg-right')
+    } 
+    // Hide
+    else {
+        $(this).siblings().addClass('d-none')
+        $(this).children('svg').removeClass('svg-right')
     }
-})
-
-window.addEventListener('resize', () => {
-    document.querySelector(':root').style
-        .setProperty('--vw', window.innerWidth / 100 + 'px');
 })

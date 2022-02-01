@@ -213,6 +213,11 @@
                         .filter__block svg{
                             height: 1.25vw;
                             width: 1.25vw;
+                            transition: all .3s ease;
+                        }
+                        .svg-right{
+                            transform: rotate(-90deg);
+                            transition: all .3s ease;
                         }
                         .filter__block:hover svg{
                             stroke: var(--blue-dior);
@@ -267,37 +272,11 @@
                                     /* line-height: 1; */
                                 }
                                 .checkbox span{
-                                    font-size: calc(14px + (18 - 14) * ((100vw - 375px)/ (1920 - 375)));
+                                    font-size: 1vw;
                                     /* line-height: 1; */
+                                    margin-right: 5px;
                                     color: #d4d4d4;
                                 }
-                                /* .checkbox{
-                                    display: flex;
-                                    align-items: flex-start;
-                                    color: #383838;
-                                }
-                                .checkbox input{
-                                    position: relative;
-                                    border: none;
-                                    margin: 3px calc(10px + (15 - 10) * ((100vw - 375px)/ (1920 - 375))) 0 0;
-                                    -webkit-appearance: none;
-                                    appearance: none;
-                                    cursor: pointer;
-                                    outline: 0;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: center;
-                                }
-                                .checkbox label{
-                                    cursor: pointer;
-                                    font-size: calc(14px + (20 - 14) * ((100vw - 375px)/ (1920 - 375)));
-                                    line-height: 1;
-                                    color: inherit;
-                                    flex: 1;
-                                    display: flex;
-                                    align-items: center;
-                                    flex-wrap: wrap;
-                                } */
                                 .filter__sub-item:hover{
                                     color: var(--blue-dior);
                                 }
@@ -452,6 +431,12 @@
                 font-size: 14px;
                 line-height: 20px;
             }
+            .filter__item p,
+            .sub-item-cate,
+            .checkbox span{
+                font-size: 12px;
+            }
+            
 }
 @media only screen and (max-width: 768px){
 .bran__filter{

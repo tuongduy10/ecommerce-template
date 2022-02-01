@@ -21,25 +21,6 @@ ul, ol {
     margin: 0;
     padding: 0
 }
-/* .sticky{
-    position: fixed;
-
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 100;
-
-    background-color: #fff;
-    box-shadow: 0 10px 30px rgb(0 0 0 / 10%);
-    border-bottom: 1px solid #ddd;
-}
-
-.main-pc{
-    padding-top: 4.5rem;
-}
-.main-mobile{
-    padding-top: 4.5rem;
-} */
 
 /* Reset Bootstrap */
 .form-select{

@@ -2,16 +2,15 @@
 
 /* Header (image, icon, text): color and size */
 .header{
-    position: fixed;
-
-    top: 0px;
-    width: 100%;
-    z-index: 100; 
-
     background-color: #fff;
     box-shadow: 0 10px 30px rgb(0 0 0 / 10%);
-    /* border-bottom: 1px solid #ddd; */
 }
+    .sticky-header{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+    }
     .header__top-content{
         position: relative;
     }
@@ -127,92 +126,96 @@
                 line-height: 1;
             }
     /* Header__Navigation-list (PC/Mobile): text size, resize */
-.nav__link,
-.nav__link-mobile{
-    text-transform: uppercase;
-    color: #a0a0a0;
+.nav__pc-items{
+    justify-content: center;
 }
-.nav__link{
-    font-size: calc(10px + (24 - 10) * ((100vw - 375px)/ (1920 - 375)));
-}
-.nav__link a{
-    position: relative;
-    display: block;
-}
-.nav__link a::after{
-    position: absolute;
-    content: "";
-
-    height: 3px;
-    width: 0%;
-    background-color: var(--blue-dior);
-    
-    bottom: 0px;
-    left: 0;
-    transition: all 0.3s ease-in-out;
-}
-.nav__link:hover a::after{
-    width: 100%;
-}
-.nav__link:hover a,
-.nav__link-mobile:hover a{
-    color: var(--blue-dior) !important;
-}
-
-.nav__link-mobile{
-    font-size: calc(20px + (24 - 10) * ((100vw - 375px)/ (1920 - 375)));
-}
-
-.nav__mobile{
-    display: none;
-}
-    .nav__mobile .searchform{
-        box-shadow: unset;
+    .nav__link,
+    .nav__link-mobile{
+        text-transform: uppercase;
+        color: #a0a0a0;
     }
-    .nav__mobile a,
-    .nav__menubar{
-        height: 24px;
-        width: 24px;
+    .nav__link{
+        font-size: calc(10px + (24 - 10) * ((100vw - 375px)/ (1920 - 375)));
+        margin: 0 1.5rem;
     }
-    .overlay{
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        right: 0;
+    .nav__link a{
+        position: relative;
+        display: block;
+    }
+    .nav__link a::after{
+        position: absolute;
+        content: "";
+
+        height: 3px;
+        width: 0%;
+        background-color: var(--blue-dior);
+        
+        bottom: 0px;
         left: 0;
-        background-color: #070f26; opacity: .7;
-        z-index: 90;
-
-        animation: fadeIn linear 0.45s;
+        transition: all 0.3s ease-in-out;
     }
-    .nav__mobile-list{
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        width: calc(81.6vw);
-        background-color: #fff;
-        z-index: 100;
+    .nav__link:hover a::after{
+        width: 100%;
     }
-        .nav-close{
-            transform: translateX(-100%);
-            transition: transform linear 0.45s;
-        }
-        .nav-open{
-            transform: translateX(0%);
-            transition: transform linear 0.45s;
-        }
+    .nav__link:hover a,
+    .nav__link-mobile:hover a{
+        color: var(--blue-dior) !important;
+    }
 
-        .nav__mobile-footer{
-            background: #f9f9f9;
+    .nav__link-mobile{
+        font-size: calc(20px + (24 - 10) * ((100vw - 375px)/ (1920 - 375)));
+    }
+
+    .nav__mobile{
+        display: none;
+    }
+        .nav__mobile .searchform{
+            box-shadow: unset;
         }
-            .nav__mobile-footer p:hover a{
-                color: var(--blue-dior);
+        .nav__mobile a,
+        .nav__menubar{
+            height: 24px;
+            width: 24px;
+        }
+        .overlay{
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background-color: #070f26; opacity: .7;
+            z-index: 90;
+
+            animation: fadeIn linear 0.45s;
+        }
+        .nav__mobile-list{
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: calc(81.6vw);
+            background-color: #fff;
+            z-index: 100;
+        }
+            .nav-close{
+                transform: translateX(-100%);
+                transition: transform linear 0.45s;
+            }
+            .nav-open{
+                transform: translateX(0%);
+                transition: transform linear 0.45s;
             }
 
-            .nav__rel{
-                position: relative;
+            .nav__mobile-footer{
+                background: #f9f9f9;
             }
+                .nav__mobile-footer p:hover a{
+                    color: var(--blue-dior);
+                }
+
+                .nav__rel{
+                    position: relative;
+                }
 
     .searchform__wrapper{
         position: fixed;
@@ -273,8 +276,16 @@
     .header__top-action li{
         margin-left: 0.75rem;
     }
+    .nav__link{
+        margin: 0 1rem;
+    }
     .header-searchform input{
         width: 16.5rem;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .nav__link{
+        margin: 0 0.75rem;
     }
 }
 @media only screen and (max-width: 992px){  
