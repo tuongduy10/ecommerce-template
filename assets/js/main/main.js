@@ -22,6 +22,7 @@ document.getElementById('nav__mobile-list-close').onclick = function () {
     closeNavMobileList()
     $('body').css('overflow', 'auto')
 }
+$('.nav__list-mobile-wrapper').css('height', $('.nav__mobile-list').outerHeight() - $('.nav__mobile-logo').outerHeight() - $('.nav__mobile-account').outerHeight() - $('.nav__mobile-footer').outerHeight())
 
 $(".header__mobile-searchicon").click(function () {
     if ($('.searchform__wrapper').hasClass('d-none')) {
@@ -54,7 +55,6 @@ function closeNavMobileList() {
 function openNavMobileList() {
     document.getElementById('nav__overlay').className = document.getElementById('nav__overlay').className.replace('d-none', 'd-block')
     document.getElementById('nav__mobile-list-open').className = document.getElementById('nav__mobile-list-open').className.replace('nav-close', 'nav-open')
-
 }
 
 // Select form handler

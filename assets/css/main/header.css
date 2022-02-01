@@ -3,7 +3,7 @@
 /* Header (image, icon, text): color and size */
 .header{
     background-color: #fff;
-    box-shadow: 0 10px 30px rgb(0 0 0 / 10%);
+    border-bottom: 1px solid #f8f8f8;
 }
     .sticky-header{
         position: fixed;
@@ -21,7 +21,7 @@
         }
         .header__top-info{
             left: 0;
-            padding-left: 20px;
+            padding-left: 20px; 
         }
         .header__top-action{
             right: 0;
@@ -204,18 +204,32 @@
             .nav-open{
                 transform: translateX(0%);
                 transition: transform linear 0.45s;
+                height: 100%;
+            }
+        .nav__mobile-account{
+            border-bottom: 1px solid #ddd;
+        }
+            .nav__mobile-account .icon{
+                margin-right: 10px;
+            }
+            .nav__mobile-account a:hover{
+                color: var(--blue-dior);
+            }
+            .nav__mobile-account a:hover svg{
+                stroke: var(--blue-dior);
+            }
+        .nav__mobile-footer{
+            background: #f9f9f9;
+            position: absolute;
+            bottom: 0;
+        }
+            .nav__mobile-footer p:hover a{
+                color: var(--blue-dior);
             }
 
-            .nav__mobile-footer{
-                background: #f9f9f9;
+            .nav__rel{
+                position: relative;
             }
-                .nav__mobile-footer p:hover a{
-                    color: var(--blue-dior);
-                }
-
-                .nav__rel{
-                    position: relative;
-                }
 
     .searchform__wrapper{
         position: fixed;

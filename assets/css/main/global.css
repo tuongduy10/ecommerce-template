@@ -10,7 +10,7 @@ html,body{
     margin: 0px; padding: 0px;
     /* overflow: hidden; */
 }
-*{
+*{ 
     margin: 0;
     padding: 0;
     border: 0;
@@ -336,4 +336,6 @@ a:hover{
     --black: #333;
     --white: #fafafa;
     --blue-dior: #3b99fc;
+
+    --font-title: 'Noto Serif', serif;
 }
