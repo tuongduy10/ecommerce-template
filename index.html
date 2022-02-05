@@ -103,7 +103,8 @@
                     </li>
                     <li>
                         <a href="" class="header__top-link">
-                            <span class="icon">
+                            <span class="icon favorite">
+                                <span class="quality">1</span>
                                 <svg class="" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                     viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1"
                                     stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart">
@@ -151,8 +152,33 @@
                                         alt=""></a>
                             </div>
                         </div>
-                        <div class="nav__mobile-account px-4">
-                            <ul class="">
+                        <div class="nav__list-mobile-wrapper p-4">
+                            <ul class="nav__list-mobile h-100" style="overflow:hidden;overflow-y:scroll;">
+                                <li class="nav__link-mobile pb-4">
+                                    <a href="">Trang chủ</a>
+                                </li>
+                                <li class="nav__link-mobile pb-4">
+                                    <a href="">Hot sale</a>
+                                </li>
+                                <li class="nav__link-mobile pb-4">
+                                    <a href="">Sản phẩm mới</a>
+                                </li>
+                                <li class="nav__link-mobile pb-4">
+                                    <a href="/products.html">Thương hiệu</a>
+                                </li>
+                                <li class="nav__link-mobile pb-4">
+                                    <a href="">Thanh toán</a>
+                                </li>
+                                <li class="nav__link-mobile pb-4">
+                                    <a href="">Hàng order</a>
+                                </li>
+                                <li class="nav__link-mobile pb-4">
+                                    <a href="">Hàng có sẵn</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="nav__mobile-footer w-100">
+                            <ul class="nav__mobile-account p-4">
                                 <li class="pb-4">
                                     <a href="/sign-up.html" class="d-flex w-100">
                                         <span class="icon">
@@ -169,7 +195,7 @@
                                         </span>
                                     </a>
                                 </li>
-                                <li class="pb-4">
+                                <li class="">
                                     <a href="/sign-up.html" class="d-flex w-100">
                                         <span class="icon">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -186,7 +212,7 @@
                                         </span>
                                     </a>
                                 </li>
-                                <!-- <li class="pb-4">
+                                <!-- <li class="">
                                     <a href="/sign-up.html" class="d-flex w-100">
                                         <span class="icon">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -204,57 +230,11 @@
                                     </a>
                                 </li> -->
                             </ul>
-                        </div>
-                        <div class="nav__list-mobile-wrapper p-4">
-                            <ul class="nav__list-mobile h-100" style="overflow:hidden;overflow-y:scroll;">
-                                <li class="nav__link-mobile pb-4">
-                                    <a href="">Trang chủ</a>
-                                </li>
-                                <li class="nav__link-mobile pb-4">
-                                    <a href="">Hot sale</a>
-                                </li>
-                                <li class="nav__link-mobile pb-4">
-                                    <a href="">Sản phẩm mới</a>
-                                </li>
-                                <li class="nav__link-mobile pb-4">
-                                    <a href="">Thương hiệu</a>
-                                </li>
-                                <li class="nav__link-mobile pb-4">
-                                    <a href="">Thanh toán</a>
-                                </li>
-                                <li class="nav__link-mobile pb-4">
-                                    <a href="">Hàng order</a>
-                                </li>
-                                <li class="nav__link-mobile pb-4">
-                                    <a href="">Hàng có sẵn</a>
-                                </li>
-                                <li class="nav__link-mobile pb-4">
-                                    <a href="">Trang chủ</a>
-                                </li>
-                                <li class="nav__link-mobile pb-4">
-                                    <a href="">Hot sale</a>
-                                </li>
-                                <li class="nav__link-mobile pb-4">
-                                    <a href="">Sản phẩm mới</a>
-                                </li>
-                                <li class="nav__link-mobile pb-4">
-                                    <a href="">Thương hiệu</a>
-                                </li>
-                                <li class="nav__link-mobile pb-4">
-                                    <a href="">Thanh toán</a>
-                                </li>
-                                <li class="nav__link-mobile pb-4">
-                                    <a href="">Hàng order</a>
-                                </li>
-                                <li class="nav__link-mobile pb-4">
-                                    <a href="">Hàng có sẵn</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="nav__mobile-footer p-4 w-100">
-                            <p><a href="">Phone: 0123456789 (Mr.A)</a></p>
-                            <p><a href="">Mail: mail@gmail.com</a></p>
-                            <p><a href="https://www.facebook.com/mra/">Facebook: Mr.A</a></p>
+                            <div class="nav__mobile-info p-4">
+                                <p><a href="">Phone: 0123456789 (Mr.A)</a></p>
+                                <p><a href="">Mail: mail@gmail.com</a></p>
+                                <p><a href="https://www.facebook.com/mra/">Facebook: Mr.A</a></p>
+                            </div>
                         </div>
                     </div>
                     <div class="nav__mobile-action d-flex justify-content-between py-2">
@@ -288,7 +268,8 @@
                             </svg>
                         </a>
 
-                        <a>
+                        <a class="favorite-mobile">
+                            <span class="quality">1</span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="#333" stroke-width="1" stroke-linecap="round"
                                 stroke-linejoin="round" class="feather feather-heart">
@@ -337,21 +318,27 @@
                 <div class="search__overlay d-none"></div>
                 <!-- Navigation in pc -->
                 <nav class="nav__pc">
-                    <ul class="nav__pc-items nav__default d-flex justify-content-center">
-                        <li class="nav__link mx-4">
+                    <ul class="nav__pc-items nav__default d-flex">
+                        <li class="nav__link">
                             <a href="/WebDemo/index.html" class="py-3">Trang chủ</a>
                         </li>
-                        <li class="nav__link mx-4">
+                        <li class="nav__link">
                             <a href="" class="py-3">Hot sale</a>
                         </li>
-                        <li class="nav__link mx-4">
+                        <li class="nav__link">
                             <a href="" class="py-3">Sản phẩm mới</a>
                         </li>
-                        <li class="nav__link mx-4">
+                        <li class="nav__link">
                             <a href="/WebDemo/products.html" class="py-3">Thương hiệu</a>
                         </li>
-                        <li class="nav__link mx-4">
+                        <li class="nav__link">
                             <a href="" class="py-3">Thanh toán</a>
+                        </li>
+                        <li class="nav__link">
+                            <a href="" class="py-3">Hàng order</a>
+                        </li>
+                        <li class="nav__link">
+                            <a href="" class="py-3">Hàng có sẵn</a>
                         </li>
                     </ul>
                 </nav>

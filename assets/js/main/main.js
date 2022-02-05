@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    $('.nav__list-mobile-wrapper').css('height', $('.nav__mobile-list').outerHeight() - $('.nav__mobile-logo').outerHeight() - $('.nav__mobile-footer').outerHeight())
     $(window).scroll(function(){
         $('.header').addClass('sticky-header')
         $('.main').css('margin-top', $('.header').height())
@@ -6,6 +7,7 @@ $(document).ready(function(){
     $(window).resize(function(){
         $('.header').addClass('sticky-header')
         $('.main').css('margin-top', $('.header').height())
+        $('.nav__list-mobile-wrapper').css('height', $('.nav__mobile-list').outerHeight() - $('.nav__mobile-logo').outerHeight() - $('.nav__mobile-footer').outerHeight())
     })
 })
 
@@ -22,7 +24,6 @@ document.getElementById('nav__mobile-list-close').onclick = function () {
     closeNavMobileList()
     $('body').css('overflow', 'auto')
 }
-$('.nav__list-mobile-wrapper').css('height', $('.nav__mobile-list').outerHeight() - $('.nav__mobile-logo').outerHeight() - $('.nav__mobile-account').outerHeight() - $('.nav__mobile-footer').outerHeight())
 
 $(".header__mobile-searchicon").click(function () {
     if ($('.searchform__wrapper').hasClass('d-none')) {

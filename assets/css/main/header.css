@@ -3,7 +3,7 @@
 /* Header (image, icon, text): color and size */
 .header{
     background-color: #fff;
-    border-bottom: 1px solid #f8f8f8;
+    border-bottom: 1px solid #ddd;
 }
     .sticky-header{
         position: fixed;
@@ -96,35 +96,48 @@
                 max-width: calc(10px + (24 - 10) * ((100vw - 375px)/ (1920 - 375)));
             }
             .cart,
-            .cart-mobile{
+            .favorite,
+            .cart-mobile,
+            .favorite-mobile{
                 position: relative;
             }
-            .cart span,
-            .cart-mobile span{
-                position: absolute;
-                
-                bottom: -30%;
-                right: -30%; 
-
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border-radius: 50%;
-                background: #de2b2b;
-                color: #fff;
-            }
-            .cart span{
-                width: calc(4px + (24 - 10) * ((100vw - 375px)/ (1920 - 375)));;
-                height: calc(4px + (24 - 10) * ((100vw - 375px)/ (1920 - 375)));;
-                font-size: 0.75rem;
-                line-height: 1;
-            }
-            .cart-mobile span{
-                width: 16px;
-                height: 16px;
-                font-size: 10px;
-                line-height: 1;
-            }
+                .cart span,
+                .cart-mobile span,
+                .favorite span{
+                    bottom: -30%;
+                    right: -30%; 
+                }
+                .favorite-mobile span{
+                    bottom: -18%;
+                    right: -30%; 
+                }
+                .cart span,
+                .favorite span,
+                .cart-mobile span,
+                .favorite-mobile span{
+                    position: absolute;
+                    
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    background: #de2b2b;
+                    color: #fff;
+                }
+                .cart span,
+                .favorite span{
+                    width: calc(4px + (24 - 10) * ((100vw - 375px)/ (1920 - 375)));;
+                    height: calc(4px + (24 - 10) * ((100vw - 375px)/ (1920 - 375)));;
+                    font-size: 0.75rem;
+                    line-height: 1;
+                }
+                .cart-mobile span,
+                .favorite-mobile span{
+                    width: 16px;
+                    height: 16px;
+                    font-size: 10px;
+                    line-height: 1;
+                }
     /* Header__Navigation-list (PC/Mobile): text size, resize */
 .nav__pc-items{
     justify-content: center;
@@ -206,8 +219,8 @@
                 transition: transform linear 0.45s;
                 height: 100%;
             }
-        .nav__mobile-account{
-            border-bottom: 1px solid #ddd;
+        .nav__list-mobile-wrapper{
+            border-top: 1px solid #ddd;
         }
             .nav__mobile-account .icon{
                 margin-right: 10px;
@@ -219,18 +232,22 @@
                 stroke: var(--blue-dior);
             }
         .nav__mobile-footer{
-            background: #f9f9f9;
             position: absolute;
             bottom: 0;
         }
+            .nav__mobile-footer ul{
+                border-top: 1px solid #ddd;
+            }
             .nav__mobile-footer p:hover a{
                 color: var(--blue-dior);
+            }
+            .nav__mobile-info{
+                background-color: #f9f9f9;
             }
 
             .nav__rel{
                 position: relative;
             }
-
     .searchform__wrapper{
         position: fixed;
         padding: 0 20px;

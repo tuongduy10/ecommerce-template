@@ -506,24 +506,32 @@
 /* Signup */
 .signup__wrapper{
     margin-bottom: 300px;
+    box-shadow: 0 10px 30px rgb(0 0 0 / 10%);
 }
-    .signup__wrapper input{
-        border: 1px solid #333;
-        padding: 5px 10px;
-    }
-    .signup__wrapper input:focus-within{
-        outline: none;
-        border: 1px solid var(--blue-dior);
-        box-shadow: 0 10px 30px rgb(0 0 0 / 10%);
-    }
     .signup__wrapper .web__directional{
+        padding-bottom: 9px;
         border-bottom: 1px solid #ddd;
     }
         .signup__inner{
             max-width: 300px;
-        }   
+        }  
+        .signup__inner input,
+        .signup__inner button{
+            font-size: calc(4px + (24 - 10) * ((100vw - 375px)/ (1920 - 375)))
+        }
+            .signup__inner input{
+                border: 1px solid #ddd;
+                padding: 5px 10px;
+            }
+            .signup__inner input:focus-within{
+                outline: none;
+                border: 1px solid var(--blue-dior);
+                box-shadow: 0 10px 30px rgb(0 0 0 / 10%);
+            } 
             .signup__inner h3{
+                font-size: calc(10px + (24 - 10) * ((100vw - 375px)/ (1920 - 375)));
                 color: #383838;
+                margin-bottom: 1.5rem;
             }
             .signup__inner button:focus{
                 outline: none;
@@ -536,12 +544,24 @@
                 padding: 5px 10px;
                 cursor: pointer;
             }
+            .signup__inner button:hover{
+                box-shadow: 0 10px 30px rgb(0 0 0 / 10%);
+            }
     .verifycode-signup{
         visibility: hidden;
     }
     .verifycode-signup input{
         width: 65%;
     }
-
+@media only screen and (max-width: 768px){
+    .signup__inner h3{
+        font-size: 16px;
+        margin-bottom: 0.5rem;
+    }
+    .signup__inner input,
+    .signup__inner button{
+        font-size: 14px;
+    }
+}
 
 
