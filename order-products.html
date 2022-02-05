@@ -71,7 +71,7 @@
                             0123456789
                         </span>
                     </a>
-                    <a href="/sign-up.html" class="header__top-link">
+                    <a href="" class="header__top-link">
                         <span class="icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="#333" stroke-width="1" stroke-linecap="round"
@@ -92,22 +92,16 @@
                                 <input type="text" placeholder="Thương hiệu/ Dịch vụ/ Sản phẩm cần tìm">
                             </span>
                             <span class="icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="#333" stroke-width="1" stroke-linecap="round"
-                                    stroke-linejoin="round" class="feather feather-search">
-                                    <circle cx="11" cy="11" r="8"></circle>
-                                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
                             </span>
                         </a>
                     </li>
                     <li>
                         <a href="" class="header__top-link">
-                            <span class="icon favorite">
-                                <span class="quality">1</span>
-                                <svg class="" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                    viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1"
-                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart">
+                            <span class="icon">
+                                <svg class="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="#333" stroke-width="1" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-heart">
                                     <path
                                         d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
                                     </path>
@@ -128,7 +122,7 @@
                                 </svg>
                             </span>
                         </a>
-                    </li>
+                    </li>                    
                 </ul>
             </div>
         </div>
@@ -138,22 +132,19 @@
                 <!-- Navigation in mobile -->
                 <nav class="nav__mobile">
                     <div class="nav__mobile-list d-flex flex-column nav-close" id="nav__mobile-list-open">
-                        <div class="nav__mobile-logo d-flex p-4">
-                            <div class="w-100 text-center" style="position: relative;">
-                                <span id="nav__mobile-list-close" style="left: 0; position: absolute;">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" stroke="#333" stroke-width="1" stroke-linecap="round"
-                                        stroke-linejoin="round" class="feather feather-x">
-                                        <line x1="18" y1="6" x2="6" y2="18"></line>
-                                        <line x1="6" y1="6" x2="18" y2="18"></line>
-                                    </svg>
-                                </span>
-                                <a href=""><img style="max-height: 50px;" src="assets/images/logo/swarovski.png"
-                                        alt=""></a>
+                        <div class="p-4">
+                            <div class="nav__mobile-logo d-flex">
+                                <div class="w-100 text-center" style="position: relative;">
+                                    <span id="nav__mobile-list-close" style="left: 0; position: absolute;">
+                                        <img class="action-mobile__icon" src="assets/images/icon/close.png" alt="">
+                                    </span>
+                                    <a href=""><img style="max-width: 65%; height: auto;"
+                                            src="assets/images/logo/logo.png" alt=""></a>
+                                </div>
                             </div>
                         </div>
-                        <div class="nav__list-mobile-wrapper p-4">
-                            <ul class="nav__list-mobile h-100" style="overflow:hidden;overflow-y:scroll;">
+                        <div class="px-4">
+                            <ul class="nav__list-mobile">
                                 <li class="nav__link-mobile pb-4">
                                     <a href="">Trang chủ</a>
                                 </li>
@@ -164,77 +155,23 @@
                                     <a href="">Sản phẩm mới</a>
                                 </li>
                                 <li class="nav__link-mobile pb-4">
-                                    <a href="/products.html">Thương hiệu</a>
+                                    <a href="">Thương hiệu</a>
                                 </li>
                                 <li class="nav__link-mobile pb-4">
                                     <a href="">Thanh toán</a>
                                 </li>
                                 <li class="nav__link-mobile pb-4">
-                                    <a href="/order-products.html">Hàng order</a>
+                                    <a href="">Hàng order</a>
                                 </li>
                                 <li class="nav__link-mobile pb-4">
                                     <a href="">Hàng có sẵn</a>
                                 </li>
                             </ul>
                         </div>
-                        <div class="nav__mobile-footer w-100">
-                            <ul class="nav__mobile-account p-4">
-                                <li class="pb-4">
-                                    <a href="/sign-up.html" class="d-flex w-100">
-                                        <span class="icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1"
-                                                stroke-linecap="round" stroke-linejoin="round"
-                                                class="feather feather-user">
-                                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                                                <circle cx="12" cy="7" r="4"></circle>
-                                            </svg>
-                                        </span>
-                                        <span class="text">
-                                            Tài khoản của tôi
-                                        </span>
-                                    </a>
-                                </li>
-                                <li class="">
-                                    <a href="/sign-up.html" class="d-flex w-100">
-                                        <span class="icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1"
-                                                stroke-linecap="round" stroke-linejoin="round"
-                                                class="feather feather-log-out">
-                                                <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
-                                                <polyline points="16 17 21 12 16 7"></polyline>
-                                                <line x1="21" y1="12" x2="9" y2="12"></line>
-                                            </svg>
-                                        </span>
-                                        <span class="text">
-                                            Đăng xuất
-                                        </span>
-                                    </a>
-                                </li>
-                                <!-- <li class="">
-                                    <a href="/sign-up.html" class="d-flex w-100">
-                                        <span class="icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1"
-                                                stroke-linecap="round" stroke-linejoin="round"
-                                                class="feather feather-log-in">
-                                                <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
-                                                <polyline points="10 17 15 12 10 7"></polyline>
-                                                <line x1="15" y1="12" x2="3" y2="12"></line>
-                                            </svg>
-                                        </span>
-                                        <span class="text">
-                                            Đăng nhập
-                                        </span>
-                                    </a>
-                                </li> -->
-                            </ul>
-                            <div class="nav__mobile-info p-4">
-                                <p><a href="">Phone: 0123456789 (Mr.A)</a></p>
-                                <p><a href="">Mail: mail@gmail.com</a></p>
-                                <p><a href="https://www.facebook.com/mra/">Facebook: Mr.A</a></p>
-                            </div>
+                        <div class="nav__mobile-footer p-4 mt-auto">
+                            <p><a href="">Phone: 0123456789 (Mr.A)</a></p>
+                            <p><a href="">Mail: mail@gmail.com</a></p>
+                            <p><a href="https://www.facebook.com/mra/">Facebook: Mr.A</a></p>
                         </div>
                     </div>
                     <div class="nav__mobile-action d-flex justify-content-between py-2">
@@ -268,8 +205,7 @@
                             </svg>
                         </a>
 
-                        <a class="favorite-mobile">
-                            <span class="quality">1</span>
+                        <a>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="#333" stroke-width="1" stroke-linecap="round"
                                 stroke-linejoin="round" class="feather feather-heart">
@@ -335,7 +271,7 @@
                             <a href="" class="py-3">Thanh toán</a>
                         </li>
                         <li class="nav__link">
-                            <a href="/order-products.html" class="py-3">Hàng order</a>
+                            <a href="" class="py-3">Hàng order</a>
                         </li>
                         <li class="nav__link">
                             <a href="" class="py-3">Hàng có sẵn</a>
@@ -374,226 +310,121 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
             </a>
         </div>
-        <!-- Main content -->
+        <!-- Main contain -->
         <div class="custom-container">
-            <!-- Bran list slider -->
             <div class="bran__logo-list">
                 <div class="text-center">
                     <div class="line my-4"></div>
-                    <h3 class="home-title mx-auto">Thương hiệu nổi bật</h3>
-                </div>
-
-                <div class="autoplay d-flex">
-                    <a class="bran__logo p-4" href="/WebDemo/products.html"><img src="assets/images/logo/tgdd.png"
-                            alt=""></a>
-                    <a class="bran__logo p-4" href="/WebDemo/products.html"><img src="assets/images/logo/gc.png"
-                            alt=""></a>
-                    <a class="bran__logo p-4" href="/WebDemo/products.html"><img src="assets/images/logo/toshiba.png"
-                            alt=""></a>
-                    <a class="bran__logo p-4" href="/WebDemo/products.html"><img src="assets/images/logo/logo.png"
-                            alt=""></a>
-                    <a class="bran__logo p-4" href="/WebDemo/products.html"><img src="assets/images/logo/vnal.png"
-                            alt=""></a>
-
-                    <a class="bran__logo p-4" href="/WebDemo/products.html"><img src="assets/images/logo/pl.png"
-                            alt=""></a>
-                    <a class="bran__logo p-4" href="/WebDemo/products.html"><img src="assets/images/logo/gc.png"
-                            alt=""></a>
-                    <a class="bran__logo p-4" href="/WebDemo/products.html"><img src="assets/images/logo/sf.png"
-                            alt=""></a>
-                    <a class="bran__logo p-4" href="/WebDemo/products.html"><img src="assets/images/logo/logo.png"
-                            alt=""></a>
-                    <a class="bran__logo p-4" href="/WebDemo/products.html"><img src="assets/images/logo/vnal.png"
-                            alt=""></a>
-
-                    <a class="bran__logo p-4" href="/WebDemo/products.html"><img src="assets/images/logo/pl.png"
-                            alt=""></a>
-                    <a class="bran__logo p-4" href="/WebDemo/products.html"><img src="assets/images/logo/gc.png"
-                            alt=""></a>
-                    <a class="bran__logo p-4" href="/WebDemo/products.html"><img
-                            src="assets/images/logo/tinysquarelogo.jpg" alt=""></a>
-                    <a class="bran__logo p-4" href="/WebDemo/products.html"><img src="assets/images/logo/logo.png"
-                            alt=""></a>
-                    <a class="bran__logo p-4" href="/WebDemo/products.html"><img src="assets/images/logo/vnal.png"
-                            alt=""></a>
-                </div>
-
-                <div class="w-100 text-center d-block">
-                    <a class="bran__viewmore d-inline-block" href="/products.html">Xem thêm</a>
+                    <h3 class="home-title mx-auto">Hàng order</h3>
                 </div>
             </div>
-            <!-- Bran list -->
+
             <div class="content__wrapper">
-                <div class="w-100 my-4 p-4">
-                    <div class="d-flex align-items-center justify-content-between flex-wrap">
-                        <!-- Sort Bran by Alphabet -->
-                        <div class="bran__filter d-flex align-items-center">
-                            <h3 class="mb-0">Hiển thị theo bởi</h3>
-                            <div class="order__item-wrapper order__button">
-                                <div class="order__item-dropdown">A, B, C, D, E<svg xmlns="http://www.w3.org/2000/svg"
-                                        width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#333"
-                                        stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
-                                        class="feather feather-chevron-down svg-order">
-                                        <polyline points="6 9 12 15 18 9"></polyline>
-                                    </svg></div>
-                                <div class="order__item-dropdown_menu">
-                                    <div class="order__item-dropdown_items">
-                                        <a class="order__item d-none">A, B, C, D, E<svg
-                                                xmlns='http://www.w3.org/2000/svg' width='24' height='24'
-                                                viewBox='0 0 24 24' fill='none' stroke='#333' stroke-width='1'
-                                                stroke-linecap='round' stroke-linejoin='round'
-                                                class='feather feather-chevron-right'>
-                                                <polyline points='9 18 15 12 9 6'></polyline>
-                                            </svg>
-                                        </a>
-                                        <a class="order__item">F, G, H, I, J<svg xmlns='http://www.w3.org/2000/svg'
-                                                width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='#333'
-                                                stroke-width='1' stroke-linecap='round' stroke-linejoin='round'
-                                                class='feather feather-chevron-right'>
-                                                <polyline points='9 18 15 12 9 6'></polyline>
-                                            </svg></a>
-                                        <a class="order__item">K, L, M, N, O<svg xmlns='http://www.w3.org/2000/svg'
-                                                width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='#333'
-                                                stroke-width='1' stroke-linecap='round' stroke-linejoin='round'
-                                                class='feather feather-chevron-right'>
-                                                <polyline points='9 18 15 12 9 6'></polyline>
-                                            </svg></a>
-                                        <a class="order__item">P, Q, R, S, T<svg xmlns='http://www.w3.org/2000/svg'
-                                                width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='#333'
-                                                stroke-width='1' stroke-linecap='round' stroke-linejoin='round'
-                                                class='feather feather-chevron-right'>
-                                                <polyline points='9 18 15 12 9 6'></polyline>
-                                            </svg></a>
-                                        <a class="order__item">U, V, W, X, Y, Z<svg xmlns='http://www.w3.org/2000/svg'
-                                                width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='#333'
-                                                stroke-width='1' stroke-linecap='round' stroke-linejoin='round'
-                                                class='feather feather-chevron-right'>
-                                                <polyline points='9 18 15 12 9 6'></polyline>
-                                            </svg></a>
-                                        <a class="order__item">Tất cả<svg xmlns='http://www.w3.org/2000/svg' width='24'
-                                                height='24' viewBox='0 0 24 24' fill='none' stroke='#333'
-                                                stroke-width='1' stroke-linecap='round' stroke-linejoin='round'
-                                                class='feather feather-chevron-right'>
-                                                <polyline points='9 18 15 12 9 6'></polyline>
-                                            </svg></a>
+                <div class="content__inner w-100 my-4">
+                    <ul class="web__directional">
+                        <li><a href="/index.html">Trang chủ</a></li>
+                        <li><a href="/order-products.html">Hàng order</a></li>
+                    </ul>
+                    <div class="products__content d-flex">
+                        <div class="products__list w-100">
+                            <div class="filter__control">
+                                <div class="filter__item-wrapper">
+                                    <div class="filter__dropdown">
+                                        Chọn lọc
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-chevron-down svg-order">
+                                            <polyline points="6 9 12 15 18 9"></polyline>
+                                        </svg>
                                     </div>
                                 </div>
-
+                                <!-- Dropdown order list-->
+                                <div class="order__item-wrapper order__button">
+                                    <div class="order__item-dropdown">
+                                        Mẫu mới nhất
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-chevron-down svg-order">
+                                            <polyline points="6 9 12 15 18 9"></polyline>
+                                        </svg>
+                                    </div>
+                                    <div class="order__item-dropdown_menu">
+                                        <div class="order__item-dropdown_items">
+                                            <a class="order__item d-none">Mẫu mới nhât<svg
+                                                    xmlns='http://www.w3.org/2000/svg' width='24' height='24'
+                                                    viewBox='0 0 24 24' fill='none' stroke='#333' stroke-width='1'
+                                                    stroke-linecap='round' stroke-linejoin='round'
+                                                    class='feather feather-chevron-right'>
+                                                    <polyline points='9 18 15 12 9 6'></polyline>
+                                                </svg></a>
+                                            <a class="order__item">Giá thấp - cao<svg xmlns='http://www.w3.org/2000/svg'
+                                                    width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='#333'
+                                                    stroke-width='1' stroke-linecap='round' stroke-linejoin='round'
+                                                    class='feather feather-chevron-right'>
+                                                    <polyline points='9 18 15 12 9 6'></polyline>
+                                                </svg></a>
+                                            <a class="order__item">Giá cao - thấp<svg xmlns='http://www.w3.org/2000/svg'
+                                                    width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='#333'
+                                                    stroke-width='1' stroke-linecap='round' stroke-linejoin='round'
+                                                    class='feather feather-chevron-right'>
+                                                    <polyline points='9 18 15 12 9 6'></polyline>
+                                                </svg></a>
+                                            <a class="order__item">Đang giảm giá %<svg
+                                                    xmlns='http://www.w3.org/2000/svg' width='24' height='24'
+                                                    viewBox='0 0 24 24' fill='none' stroke='#333' stroke-width='1'
+                                                    stroke-linecap='round' stroke-linejoin='round'
+                                                    class='feather feather-chevron-right'>
+                                                    <polyline points='9 18 15 12 9 6'></polyline>
+                                                </svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Number / total -->
+                                <div class="filter__number">
+                                    <div class="text">Hiển thị: </div>
+                                    <div class="number">
+                                        <span>999</span>
+                                        /
+                                        <span class="totalItems">1000</span>
+                                    </div>
+                                </div>
+                                <!-- Pagination -->
+                                <div class="filter__pagination">
+                                    <ul class="pagination">
+                                        <li class="pagination-item pagination-item__page previous" data-page="1">
+                                            <a class="pagination-link pagination-item__page" style="height: 24px;"> 
+                                                <svg xmlns='http://www.w3.org/2000/svg' width='24' 
+                                                    height='24' viewBox='0 0 24 24' fill='none' stroke='#333' 
+                                                    stroke-width='1' stroke-linecap='round' stroke-linejoin='round' 
+                                                    class='feather feather-chevron-left'><polyline points='15 18 9 12 15 6'></polyline>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="pagination-item pagination-item__page" data-page="1">
+                                            <a class="pagination-link">1</a>
+                                        </li>
+                                        <li class="pagination-item pagination-item__page active" data-page="2">
+                                            <a class="pagination-link">2</a>
+                                        </li>
+                                        <li class="pagination-item pagination-item__page" data-page="3">
+                                            <a class="pagination-link">3</a>
+                                        </li>
+                                        <li class="pagination-item pagination-item__page next" data-page="3">
+                                            <a class="pagination-link" style="height: 24px;">
+                                                <svg xmlns='http://www.w3.org/2000/svg' width='24'
+                                                    height='24' viewBox='0 0 24 24' fill='none' stroke='#333' stroke-width='1'
+                                                    stroke-linecap='round' stroke-linejoin='round'
+                                                    class='feather feather-chevron-right'>
+                                                    <polyline points='9 18 15 12 9 6'></polyline>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="bran__list-line my-4"></div>
-                    <!-- Bran list content -->
-                    <div class="bran__list-items">
-
-                        <h4>A</h4>
-                        <div class="d-flex flex-wrap">
-                            <div class="bran__list-item card">
-                                <a href="/WebDemo/products.html">
-                                    <div class="bran__list-img py-2 px-4">
-                                        <img src="assets/images/logo/sf.png" class="card-img-top" alt="...">
-                                    </div>
-                                    <div class="card-body text-center p-2 align-items-center justify-content-center">
-                                        <h5 class="bran__list-name card-title mb-0">Salvatore Ferragamo</h5>
-                                        <h6 class="bran__list-type card-text">Phụ kiện và trang sức</h6>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="bran__list-item card">
-                                <a href="/WebDemo/products.html">
-                                    <div class="bran__list-img py-2 px-4">
-                                        <img src="assets/images/logo/vnal.png" class="card-img-top" alt="...">
-                                    </div>
-                                    <div class="card-body text-center p-2 align-items-center justify-content-center">
-                                        <h5 class="bran__list-name card-title mb-0">Vietnam Airlines</h5>
-                                        <h6 class="bran__list-type card-text">Hãng hàng không</h6>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="bran__list-item card">
-                                <a href="/WebDemo/products.html">
-                                    <div class="bran__list-img py-2 px-4">
-                                        <img src="assets/images/logo/pl.png" class="card-img-top d-inline-block"
-                                            alt="...">
-                                    </div>
-                                    <div class="card-body text-center p-2 align-items-center justify-content-center">
-                                        <h5 class="bran__list-name card-title mb-0">Phúc Long</h5>
-                                        <h6 class="bran__list-type card-text">Dịch vụ ăn uống</h6>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="bran__list-item card">
-                                <a href="/WebDemo/products.html">
-                                    <div class="bran__list-img py-2 px-4">
-                                        <img src="assets/images/logo/tgdd.png" class="card-img-top d-inline-block"
-                                            alt="...">
-                                    </div>
-                                    <div class="card-body text-center p-2 align-items-center justify-content-center">
-                                        <h5 class="bran__list-name card-title mb-0">Thế giới di động</h5>
-                                        <h6 class="bran__list-type card-text">Điện thoại di động</h6>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="bran__list-item card">
-                                <a href="/WebDemo/products.html">
-                                    <div class="bran__list-img py-2 px-4">
-                                        <img src="assets/images/logo/gc.png" class="card-img-top d-inline-block"
-                                            alt="...">
-                                    </div>
-                                    <div class="card-body text-center p-2 align-items-center justify-content-center">
-                                        <h5 class="bran__list-name card-title mb-0">Gong Cha</h5>
-                                        <h6 class="bran__list-type card-text">Hải sản</h6>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="bran__list-item card">
-                                <a href="/WebDemo/products.html">
-                                    <div class="bran__list-img py-2 px-4">
-                                        <img src="assets/images/logo/victorinox.png" class="card-img-top d-inline-block"
-                                            alt="...">
-                                    </div>
-                                    <div class="card-body text-center p-2 align-items-center justify-content-center">
-                                        <h5 class="bran__list-name card-title mb-0">Victorinox Swiss Army</h5>
-                                        <h6 class="bran__list-type card-text">Trang sức và phụ kiện</h6>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="bran__list-item card">
-                                <a href="/WebDemo/products.html">
-                                    <div class="bran__list-img py-2 px-4">
-                                        <img src="assets/images/logo/toshiba.png" class="card-img-top d-inline-block"
-                                            alt="...">
-                                    </div>
-                                    <div class="card-body text-center p-2 align-items-center justify-content-center">
-                                        <h5 class="bran__list-name card-title mb-0">Toshiba</h5>
-                                        <h6 class="bran__list-type card-text">Điện lạnh</h6>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="bran__list-item card">
-                                <a href="/WebDemo/products.html">
-                                    <div class="bran__list-img py-2 px-4">
-                                        <img src="assets/images/logo/logo.png" class="card-img-top d-inline-block"
-                                            alt="...">
-                                    </div>
-                                    <div class="card-body text-center p-2 align-items-center justify-content-center">
-                                        <h5 class="bran__list-name card-title mb-0">Like Watch</h5>
-                                        <h6 class="bran__list-type card-text">Đồng hồ</h6>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="w-100 text-center d-block">
-                                <a class="bran__viewmore d-inline-block" href="">Xem thêm</a>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
             </div>
@@ -651,7 +482,7 @@
                                 <li class="footer__info-link pb-2">
                                     <a href="">
                                         <i class="fab fa-facebook-square"></i> Facebook</a>
-                                </li>
+                                </li> 
                                 <li class="footer__info-link pb-2">
                                     <a href="">
                                         <i class="fab fa-youtube-square"></i> Youtube</a>
@@ -728,7 +559,6 @@
                 nextArrow: "<button type='button' class='slick-next pull-right'><svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='#333' stroke-width='1' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevron-right'><polyline points='9 18 15 12 9 6'></polyline></svg></button>"
             });
         });
-
     </script>
 
 </body>

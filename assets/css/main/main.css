@@ -282,8 +282,9 @@
                                 }
         .products__list{
             width: calc(100% - 17.70833vw);
-        }
-            .filter__control{
+        }   
+            .filter__control-top,
+            .filter__control-bottom{
                 padding-top: calc(15px + (28 - 15) * ((100vw - 375px)/ (1920 - 375)));
                 padding-bottom: calc(15px + (28 - 15) * ((100vw - 375px)/ (1920 - 375)));
                 border-bottom: solid 1px #383838;
@@ -393,7 +394,7 @@
         font-size: 14px;
         line-height: 18px;
     }
-    .filter__control{
+    .filter__control-top{
         flex-wrap: wrap;
         justify-content: space-between;
         margin-bottom: 0;
@@ -488,10 +489,14 @@
             .products__list{
                 width: 100%;
             }
-                .filter__control{
+                .filter__control-top,
+                .filter__control-bottom{
                     border-top: solid 1px #ddd;
                     border-bottom: solid 1px #ddd;
                     padding: 9px 0;
+                }
+                .filter__control-bottom{
+                    border-top: none;
                 }
                     .filter__item-wrapper{
                         margin-right: 0;
