@@ -272,6 +272,12 @@ a:hover{
     width: 7px;
     background-color: #ddd;
 }
+.nav--scrollbar::-webkit-scrollbar{
+    width: 4px;
+    background-color: #ddd;
+}
+
+.nav--scrollbar::-webkit-scrollbar-thumb,
 .filter--scrollbar::-webkit-scrollbar-thumb {
     border-radius: 8px;
     background-color: #707070;

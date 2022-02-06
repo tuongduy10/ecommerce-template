@@ -3,7 +3,7 @@
 /* Header (image, icon, text): color and size */
 .header{
     background-color: #fff;
-    border-bottom: 1px solid #ddd;
+    box-shadow: 0 10px 30px rgb(0 0 0 / 10%);
 }
     .sticky-header{
         position: fixed;
