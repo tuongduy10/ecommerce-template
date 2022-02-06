@@ -511,7 +511,7 @@
 /* Signup */
 .signup__wrapper{
     margin-bottom: 300px;
-    box-shadow: 0 10px 30px rgb(0 0 0 / 10%);
+    /* box-shadow: 0 10px 30px rgb(0 0 0 / 10%); */
 }
     .signup__wrapper .web__directional{
         padding-bottom: 9px;
