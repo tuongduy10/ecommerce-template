@@ -64,19 +64,20 @@
                 justify-content: flex-end;
             }
                 .header-searchform{
-                    padding-bottom: 5px;
+                    padding-bottom: 6px;
                     border-bottom: 1px solid #fff;
                     color: #fff;
                 }
                 .header-searchform input{
                     width: 23.5rem;
                 }
+                .header-searchform svg{
+                    cursor: pointer;
+                    transition: stroke 0.3s ease;
+                }
                 .header-searchform ::-webkit-input-placeholder{
                     color: #fff;
-                }
-                .header-searchform:hover,
-                .header-searchform:focus-within{
-                    border-color: var(--blue-dior);
+                    transition: color 0.2s ease;
                 }
                 .header-searchform:hover ::-webkit-input-placeholder,
                 .header-searchform:focus-within ::-webkit-input-placeholder{
@@ -87,6 +88,24 @@
                 }
                 .header-searchform input:focus{
                     outline: none;
+                }
+
+                .header-searchform{
+                    position: relative;
+                }
+                .header-searchform::after{
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    height: 1px;
+                    width: 0;
+                    background: var(--blue-dior);
+                    transition: all 0.4s ease-in-out;
+                }
+                .header-searchform:hover::after,
+                .header-searchform:focus-within::after{
+                    width: 100%;
                 }
         .logo{
             max-height: 55px;
