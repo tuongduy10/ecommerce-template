@@ -192,7 +192,7 @@
                     color: #383838;
                 }
                     .filter__block:not(:last-child) {
-                        margin-bottom: calc(15px + (20 - 15) * ((100vw - 375px)/ (1920 - 375)));
+                        /* margin-bottom: calc(15px + (20 - 15) * ((100vw - 375px)/ (1920 - 375))); */
                     }
                         .filter__block h3{
                             font-size: 1.25vw;
@@ -222,13 +222,17 @@
                         .filter__block:hover svg{
                             stroke: var(--blue-dior);
                         }
-                    .filter__inner{
+                    /* .filter__inner{
                         padding-top: calc(10px + (24 - 20) * ((100vw - 375px)/ (1920 - 375)));
                         padding-bottom: calc(10px + (40 - 20) * ((100vw - 375px)/ (1920 - 375))); 
-                    }
+                    } */
+                        .filter__list{
+                            max-height: 0;
+                            margin: calc(10px + (24 - 20) * ((100vw - 375px)/ (1920 - 375))) 0;
+                            transition: max-height 0.3s ease;
+                        }
                         .filter__list,
                         .filter__sub-list{
-                            max-height: calc(185px + (310 - 185) * ((100vw - 375px)/ (1920 - 375)));
                             overflow: hidden;
                             overflow-y: auto;
                         }   
@@ -283,6 +287,7 @@
         .products__list{
             width: calc(100% - 17.70833vw);
         }   
+            
             .filter__control-top,
             .filter__control-bottom{
                 padding-top: calc(15px + (28 - 15) * ((100vw - 375px)/ (1920 - 375)));

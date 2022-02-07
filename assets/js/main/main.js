@@ -93,15 +93,29 @@ $(".order__item").click(function () {
     // $(".order__item-dropdown_menu").removeClass('open')
 })
 
+// $(".test").click(function (e) {
+//     // Show
+//     if ($(this).siblings().hasClass('d-none')) {
+//         $(this).siblings().removeClass('d-none')
+//         $(this).children('svg').addClass('svg-right')
+//         // $(this).siblings().find('.filter__list').css('max-height', 500 + 'px')
+//     } 
+//     // Hide
+//     else {
+//         $(this).siblings().addClass('d-none')
+//         $(this).children('svg').removeClass('svg-right')
+//         // $(this).siblings().find('.filter__list').css('max-height',0)
+//     }
+// })
+
 $(".test").click(function (e) {
-    // Show
-    if ($(this).siblings().hasClass('d-none')) {
-        $(this).siblings().removeClass('d-none')
+    $('.filter__list').css('max-height','0')  
+    $('.test').children('svg').removeClass('svg-right')
+    if($(this).siblings('.filter__list').height() == 0){
+        $(this).siblings('.filter__list').css('max-height','calc(185px + (310 - 185) * ((100vw - 375px)/ (1920 - 375)))')  
         $(this).children('svg').addClass('svg-right')
-    } 
-    // Hide
-    else {
-        $(this).siblings().addClass('d-none')
+    }else{
+        $(this).siblings('.filter__list').css('max-height','0')  
         $(this).children('svg').removeClass('svg-right')
     }
 })
