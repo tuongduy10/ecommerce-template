@@ -211,15 +211,33 @@ a:hover{
             font-size: calc(16px + (18 - 16) * ((100vw - 375px)/ (1920 - 375)));
             text-decoration: underline;
             color: #383838;
-            margin-bottom: 10px;
+            /* margin-bottom: 10px; */
+            padding-bottom: calc(10px + (14 - 10) * ((100vw - 375px)/ (1920 - 375)));
         }
         .filter__menu-items{
             padding: 0 18px;
         }
-        .filter__item{
-            padding-top: 5px;
-            border-bottom: 1px solid #ddd;
-        }
+                .filter__item-title{
+                    border-bottom: 1px solid #ddd;
+                }
+                .filter__block-mobile:hover svg,
+                .filter__block-mobile:hover .filter__item-title{
+                    cursor: pointer;
+                    color: var(--blue-dior);
+                    stroke: var(--blue-dior);
+                }
+                    .filter__items-mobile{
+                        /* max-height: 0; */
+                        margin: 10px 0;
+                        overflow: hidden;
+                        overflow-y: auto;
+                        transition: max-height .3s ease;
+                        max-height: 150px;
+                    }
+                        .filter__sub-items-mobile{
+                            padding-left: 20px;
+                        }
+
     .order__item-dropdown_menu{
         opacity: 1;
         visibility: hidden;

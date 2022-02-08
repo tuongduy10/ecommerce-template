@@ -532,8 +532,8 @@
                         <div class="products__list">
                             <div class="filter__control-top">
                                 <!-- Dropdown order list-->
-                                <div class="product__filter-wrapper filter__button">
-                                    <div class="product__filter-dropdown">
+                                <div class="product__filter-wrapper">
+                                    <div class="product__filter-dropdown filter__button">
                                         Chọn lọc
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                             viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1"
@@ -544,11 +544,44 @@
                                     </div>
                                     <div class="product__filter-dropdown-menu">
                                         <div class="filter__menu-wrapper">
-                                            <div class="filter__menu-items dropdown-remove">
-                                                <div class="dropdown-remove">Đóng</div>                                              
-                                            </div>
                                             <div class="filter__menu-items">
-                                                <div class="filter__item">Đồng hồ</div> 
+                                                <div class="filter__block-mobile dropdown-remove text-center">
+                                                    <a class="filter__mobile-close">Đóng</a>
+                                                </div> 
+                                                <div class="filter__block-mobile">
+                                                    <p class="filter__item-title mb-0 d-flex justify-content-between align-items-center">Đồng Hồ
+                                                        <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='#333' stroke-width='1' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevron-right'><polyline points='9 18 15 12 9 6'></polyline></svg>
+                                                    </p>
+                                                    <ul class="filter__items-mobile">
+                                                        <li class="filter__item-mobile">
+                                                            <p class="mb-0"><i class="fas fa-caret-down"></i> Loại dây</p>
+                                                            <ul class="filter__sub-items-mobile">
+                                                                <li>
+                                                                    <input id="checkbox__mobile-daykimloai" type="checkbox"> <label class="mb-0" for="checkbox__mobile-daykimloai">Dây kim loại</label> 
+                                                                </li>
+                                                                <li>
+                                                                    <input id="checkbox__mobile-dayda" type="checkbox"> <label class="mb-0" for="checkbox__mobile-dayda">Dây da</label>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="filter__item-mobile">
+                                                            <p class="mb-0"><i class="fas fa-caret-down"></i> Kích thước</p>
+                                                            <ul class="filter__sub-items-mobile">
+                                                                <li>
+                                                                    <input id="checkbox__mobile-44" type="checkbox"> <label class="mb-0" for="checkbox__mobile-44">44</label>
+                                                                </li>
+                                                                <li>
+                                                                    <input id="checkbox__mobile-42" type="checkbox"> <label class="mb-0" for="checkbox__mobile-42">42</label>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div> 
+                                                <div class="filter__block-mobile">
+                                                    <p class="filter__item-title mb-0 d-flex justify-content-between align-items-center">Điện thoại
+                                                        <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='#333' stroke-width='1' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevron-right'><polyline points='9 18 15 12 9 6'></polyline></svg>
+                                                    </p>
+                                                </div>                                            
                                             </div>
                                         </div>
                                     </div>

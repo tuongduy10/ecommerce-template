@@ -116,3 +116,6 @@ $(".filter__title").click(function (e) {
         $(this).children('svg').removeClass('svg-right')
     }
 })
+$('.filter__mobile-close').click(function(){
+    $('.product__filter-dropdown-menu').removeClass('open')
+})
