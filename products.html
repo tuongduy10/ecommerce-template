@@ -317,8 +317,8 @@
         </div>
         <!-- Main contain -->
         <div class="custom-container">
-            <div class="content__wrapper products">
-                <div class="content__inner w-100 my-4">
+            <div class="content__wrapper products__content-wrapper">
+                <div class="content__inner w-100">
                     <ul class="web__directional">
                         <li><a href="/index.html">Trang chủ</a></li>
                         <li><a href="">Thương hiệu</a></li>
@@ -328,7 +328,7 @@
                         <div class="products__menu">
                             <div class="product__filter">
                                 <div class="filter__block">
-                                    <h3 class="test">Đồng hồ <svg xmlns='http://www.w3.org/2000/svg' width='24'
+                                    <h3 class="filter__title">Đồng hồ <svg xmlns='http://www.w3.org/2000/svg' width='24'
                                             height='24' viewBox='0 0 24 24' fill='none' stroke='#333' stroke-width='1'
                                             stroke-linecap='round' stroke-linejoin='round'
                                             class='feather feather-chevron-right'>
@@ -428,7 +428,7 @@
                                     </ul>
                                 </div>
                                 <div class="filter__block">
-                                    <h3 class="test">Điện thoại <svg xmlns='http://www.w3.org/2000/svg' width='24'
+                                    <h3 class="filter__title">Điện thoại <svg xmlns='http://www.w3.org/2000/svg' width='24'
                                             height='24' viewBox='0 0 24 24' fill='none' stroke='#333' stroke-width='1'
                                             stroke-linecap='round' stroke-linejoin='round'
                                             class='feather feather-chevron-right'>
@@ -531,18 +531,28 @@
                         </div>
                         <div class="products__list">
                             <div class="filter__control-top">
-                                <div class="filter__item-wrapper">
-                                    <div class="filter__dropdown">
+                                <!-- Dropdown order list-->
+                                <div class="product__filter-wrapper filter__button">
+                                    <div class="product__filter-dropdown">
                                         Chọn lọc
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                             viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1"
                                             stroke-linecap="round" stroke-linejoin="round"
-                                            class="feather feather-chevron-down svg-order">
+                                            class="feather feather-chevron-down svg-filter">
                                             <polyline points="6 9 12 15 18 9"></polyline>
                                         </svg>
                                     </div>
+                                    <div class="product__filter-dropdown-menu">
+                                        <div class="filter__menu-wrapper">
+                                            <div class="filter__menu-items dropdown-remove">
+                                                <div class="dropdown-remove">Đóng</div>                                              
+                                            </div>
+                                            <div class="filter__menu-items">
+                                                <div class="filter__item">Đồng hồ</div> 
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <!-- Dropdown order list-->
                                 <div class="order__item-wrapper order__button">
                                     <div class="order__item-dropdown">
                                         Mẫu mới nhất
@@ -628,8 +638,38 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="" style="height: 350px;">
+                            <div class="product__grid-wrapper">
+                                <div class="product__grid-inner w-100 d-flex flex-wrap">
+                                    <div class="product">
+                                        <a class="" href=""></a>
+                                    </div>
+                                    <div class="product">
 
+                                    </div>
+                                    <div class="product">
+
+                                    </div>
+
+                                    <div class="product">
+
+                                    </div>
+                                    <div class="product">
+
+                                    </div>
+                                    <div class="product">
+
+                                    </div>
+
+                                    <div class="product">
+
+                                    </div>
+                                    <div class="product">
+
+                                    </div>
+                                    <div class="product">
+
+                                    </div>
+                                </div>
                             </div>
                             <div class="filter__control-bottom">
                                 <!-- Number / total -->

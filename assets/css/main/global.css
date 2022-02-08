@@ -147,11 +147,20 @@ a:hover{
 }
 
 /* Dropdown form */
+.product__filter-wrapper{
+    display: none;
+}
+.order__item-wrapper{
+    position: relative;
+}
+.product__filter-wrapper,
 .order__item-wrapper{
     margin-right: 16px;
-    position: relative;
+}   
+.order__item-wrapper{
     display: inline-block;
-}
+}   
+    .product__filter-dropdown,
     .order__item-dropdown{
         position: relative;
 
@@ -173,6 +182,7 @@ a:hover{
         transition: all .3s ease;
         cursor: pointer;
     }   
+        .product__filter-dropdown svg,
         .order__item-dropdown svg{
             display: inline-block;
             margin-left: calc(0px + (60 - 0) * ((100vw - 375px)/ (1920 - 375)));
@@ -180,6 +190,35 @@ a:hover{
         } 
         .svg-up{
             transform: rotate(-180deg);
+        }
+    .product__filter-dropdown-menu{
+        position: absolute;
+
+        opacity: 1;
+        visibility: hidden;
+
+        width: 100%;
+        padding: 27px 10px 34px;
+        z-index: 80;
+        background-color: #f8f8f8;
+        border: 1px solid #d4d4d4;
+        transform: translateY(6px);
+
+        overflow: hidden;
+        transition: all .3s ease;
+    }   
+        .dropdown-remove{
+            font-size: calc(16px + (18 - 16) * ((100vw - 375px)/ (1920 - 375)));
+            text-decoration: underline;
+            color: #383838;
+            margin-bottom: 10px;
+        }
+        .filter__menu-items{
+            padding: 0 18px;
+        }
+        .filter__item{
+            padding-top: 5px;
+            border-bottom: 1px solid #ddd;
         }
     .order__item-dropdown_menu{
         opacity: 1;
@@ -234,11 +273,12 @@ a:hover{
                 transform: translateY(-50%);
             }
             .order__item-dropdown_items a:hover{
-                color: var(--blue-dior);
+                color: var(--blue-dior) !important;
             }
             .order__item-dropdown_items a:hover svg{
                 stroke: var(--blue-dior);
             }
+        .product__filter-dropdown svg,
         .order__item-dropdown svg,
         .order__item-dropdown_items a svg{
             height: calc(16px + (18 - 12) * ((100vw - 375px)/ (1920 - 375)));
@@ -253,13 +293,22 @@ a:hover{
     }
 }
 @media only screen and (max-width: 768px){
+    .product__filter-wrapper{
+        display: block;
+    }
     .searchform input{
         font-size: 14px;
     }
+    .order__item-dropdown_menu{
+        right: 0;
+        left: unset;
+    }
+    .product__filter-wrapper,
     .order__item-wrapper{
         margin-right: 0;
         width: calc(50% - 11px);
     }   
+        .product__filter-dropdown,
         .order__item-dropdown_menu,
         .order__item-dropdown{
             border: solid 1px #d4d4d4;
