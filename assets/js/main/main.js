@@ -119,3 +119,14 @@ $(".filter__title").click(function (e) {
 $('.filter__mobile-close').click(function(){
     $('.product__filter-dropdown-menu').removeClass('open')
 })
+$('.filter__item-title').click(function(){
+    $('.filter__items-mobile').css('max-height','0')
+    $('.filter__item-title').find('svg').removeClass('svg-right')
+    if($(this).siblings('.filter__items-mobile').height() == 0){
+        $(this).siblings('.filter__items-mobile').css('max-height','150px')
+        $(this).find('svg').addClass('svg-right')
+    }else{
+        $(this).siblings('.filter__items-mobile').css('max-height','0')
+        $(this).find('svg').removeClass('svg-right')
+    }
+})

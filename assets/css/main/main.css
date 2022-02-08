@@ -591,9 +591,83 @@
 }
 .product{
     width: calc(100% / 3);
-    height: 690px;
-    border: 1px solid #ddd;
+    /* height: 690px; */
+    /* border: 1px solid #ddd; */
 }
+.product:hover{
+    box-shadow: 0 10px 30px rgb(0 0 0 / 10%);
+}
+    .product-img{
+        box-sizing: border-box;
+        height: calc(158px + (468 - 233) * ((100vw - 375px)/ (1920 - 375)));
+        position: relative;
+        display: block;
+        width: 100%;
+        overflow: hidden;
+        text-align: center;
+    }
+        .product-img img{
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            display: inline-block;
+            margin: auto;
+            max-width: 100%;
+            max-height: 100%;
+            background-position: 50%;
+            background-repeat: no-repeat;
+            background-size: contain;
+            -o-object-fit: contain;
+            object-fit: contain;
+        }
+            .product__info-benefit a{
+                font-size: .83333vw;
+                line-height: 1.04167vw;
+                color: var(--blue-dior);
+            }
+        .product__info-detail{
+            padding: 10px calc(7px + (20 - 7) * ((100vw - 375px)/ (1920 - 375))) 15px;
+        }
+            .product-name{
+                text-overflow: ellipsis;
+                font-size: 18px;
+                line-height: 22px;
+                color: #707070;
+                margin-bottom: 1.04167vw;
+            }
+            .product-price{
+                font-size: 20px;
+                line-height: 24px;
+                color: #4d4d4d;
+            }
+            .product-subprice{
+                font-size: 16px;
+                line-height: 19px;
+                text-decoration: line-through;
+                color: #a0a0a0;
+                margin-bottom: 0.625vw;
+            }
+            .product-btn{
+                height: calc(43px + (54 - 43) * ((100vw - 375px)/ (1920 - 375)));
+                margin-top: 0.78125vw;
+            }
+                .product-btn a{
+                    transform: scale(1);
+                    opacity: 1;
+                    transition: all .5s ease;
+
+                    background: #fff;
+                    color: var(--blue-dior);
+                    border: 1px solid #383838;
+
+                    display: inline-block;
+                    font-size: .9375vw;
+                    line-height: 1;
+                    padding: 0.75521vw 2.8125vw;
+                    border: 1px solid #ddd;
+                }
 @media only screen and (max-width: 992px){
     .product{
         width: 50%;

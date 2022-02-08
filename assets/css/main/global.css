@@ -226,13 +226,16 @@ a:hover{
                     color: var(--blue-dior);
                     stroke: var(--blue-dior);
                 }
+                    .filter__item-title{
+
+                    }
                     .filter__items-mobile{
-                        /* max-height: 0; */
+                        max-height: 0;
                         margin: 10px 0;
                         overflow: hidden;
                         overflow-y: auto;
                         transition: max-height .3s ease;
-                        max-height: 150px;
+                        /* max-height: 150px; */
                     }
                         .filter__sub-items-mobile{
                             padding-left: 20px;
