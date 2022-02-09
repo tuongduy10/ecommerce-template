@@ -140,3 +140,12 @@ $('.filter-close').click(function(){
     $('body').css('overflow', 'auto')
     $('.product__filter-dropdown-menu').removeClass('filter-open')
 })
+$('.add-to-wishlist').click(function(){
+    var val = $(this).attr('fill')
+    if(val == 'true'){
+        $(this).attr('fill','none')
+        return
+    }
+
+    $(this).attr('fill','true')
+})
