@@ -590,7 +590,7 @@
     padding: calc(16px + (78 - 16) * ((100vw - 375px)/ (1920 - 375))) 0 calc(30px + (25 - 30) * ((100vw - 375px)/ (1920 - 375)));
 }
 .product{
-    width: 30%;
+    width: 33%;
     /* height: 690px; */
     /* border: 1px solid #ddd; */
 }
@@ -599,7 +599,7 @@
 }
     .product-img{
         box-sizing: border-box;
-        height: calc(158px + (468 - 233) * ((100vw - 375px)/ (1920 - 375)));
+        height: calc(233px + (468 - 233) * ((100vw - 375px)/ (1920 - 375)));
         position: relative;
         display: block;
         width: 100%;
