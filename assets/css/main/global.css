@@ -192,21 +192,28 @@ a:hover{
             transform: rotate(-180deg);
         }
     .product__filter-dropdown-menu{
-        position: absolute;
-
-        opacity: 1;
-        visibility: hidden;
-
-        width: 100%;
-        padding: 27px 10px 34px;
-        z-index: 80;
-        background-color: #f8f8f8;
-        border: 1px solid #d4d4d4;
-        transform: translateY(6px);
-
-        overflow: hidden;
-        transition: all .3s ease;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background-color: #fff;
+        width: calc(64.6vw);
+        z-index: 101;
+        transform: translateX(100%);
+        transition: transform linear 0.45s;
     }   
+        .filter-open{
+            transform: translateX(0%);
+            transition: transform linear 0.45s;
+        }
+        .product__filter-header{
+            position: relative;
+        }
+        .product__filter-header svg{
+            position: absolute;
+            top: 0.75rem;
+            right: 1.25rem;
+        }
         .dropdown-remove{
             font-size: calc(16px + (18 - 16) * ((100vw - 375px)/ (1920 - 375)));
             text-decoration: underline;
@@ -319,10 +326,6 @@ a:hover{
     }
     .searchform input{
         font-size: 14px;
-    }
-    .order__item-dropdown_menu{
-        right: 0;
-        left: unset;
     }
     .product__filter-wrapper,
     .order__item-wrapper{
