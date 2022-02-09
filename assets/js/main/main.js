@@ -120,7 +120,7 @@ $(".filter__title").click(function (e) {
 })
 $('.filter__item-title').click(function(){
     $('.filter__items-mobile').css('max-height','0')
-    $(this).children('svg').removeClass('svg-right')
+    $('.filter__item-title').children('svg').removeClass('svg-right')
     if($(this).siblings('.filter__items-mobile').height() == 0){
         $(this).siblings('.filter__items-mobile').css('max-height','calc(185px + (310 - 185) * ((100vw - 375px)/ (1920 - 375)))')
         $(this).children('svg').addClass('svg-right')
