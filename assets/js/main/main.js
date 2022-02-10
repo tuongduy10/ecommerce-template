@@ -140,12 +140,19 @@ $('.filter-close').click(function(){
     $('body').css('overflow', 'auto')
     $('.product__filter-dropdown-menu').removeClass('filter-open')
 })
-$('.add-to-wishlist').click(function(){
-    var val = $(this).attr('fill')
-    if(val == 'true'){
+$('.add-to-wishlist').hover(
+    function(){
+        $(this).attr('fill','true')
+    },
+    function(){
         $(this).attr('fill','none')
+    }
+)
+$('.add-to-wishlist').click(function(){
+    if($(this).hasClass('fill')) {
+        $(this).removeClass('fill')
         return
     }
-
-    $(this).attr('fill','true')
+       
+    $(this).addClass('fill')
 })
