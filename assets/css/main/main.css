@@ -636,14 +636,7 @@
         text-align: center;
     }
         .product-heart{
-            position: absolute;
-            background-color: white;
-            border-radius: 50px;
-            padding: 5px;
-            border: 1px solid #ddd;
-            height: 32px;
-            width: 32px;
-            left: 20px;
+
         }
             .fill{
                 fill: #333;
