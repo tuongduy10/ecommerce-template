@@ -92,16 +92,21 @@
                                 <input type="text" placeholder="Thương hiệu/ Dịch vụ/ Sản phẩm cần tìm">
                             </span>
                             <span class="icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="#333" stroke-width="1" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-search">
+                                    <circle cx="11" cy="11" r="8"></circle>
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                </svg>
                             </span>
                         </a>
                     </li>
                     <li>
                         <a href="" class="header__top-link">
                             <span class="icon">
-                                <svg class="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="#333" stroke-width="1" stroke-linecap="round"
-                                    stroke-linejoin="round" class="feather feather-heart">
+                                <svg class="" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1"
+                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart">
                                     <path
                                         d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
                                     </path>
@@ -122,7 +127,7 @@
                                 </svg>
                             </span>
                         </a>
-                    </li>                    
+                    </li>
                 </ul>
             </div>
         </div>
@@ -161,7 +166,7 @@
                                     <a href="">Thanh toán</a>
                                 </li>
                                 <li class="nav__link-mobile pb-4">
-                                    <a href="">Hàng order</a>
+                                    <a href="/order-products.html">Hàng order</a>
                                 </li>
                                 <li class="nav__link-mobile pb-4">
                                     <a href="">Hàng có sẵn</a>
@@ -254,54 +259,62 @@
                 <div class="search__overlay d-none"></div>
                 <!-- Navigation in pc -->
                 <nav class="nav__pc">
-                    <ul class="nav__pc-items nav__default d-flex justify-content-center">
-                        <li class="nav__link mx-4">
+                    <ul class="nav__pc-items nav__default d-flex">
+                        <li class="nav__link">
                             <a href="/WebDemo/index.html" class="py-3">Trang chủ</a>
                         </li>
-                        <li class="nav__link mx-4">
+                        <li class="nav__link">
                             <a href="" class="py-3">Hot sale</a>
                         </li>
-                        <li class="nav__link mx-4">
+                        <li class="nav__link">
                             <a href="" class="py-3">Sản phẩm mới</a>
                         </li>
-                        <li class="nav__link mx-4">
+                        <li class="nav__link">
                             <a href="/WebDemo/products.html" class="py-3">Thương hiệu</a>
                         </li>
-                        <li class="nav__link mx-4">
+                        <li class="nav__link">
                             <a href="" class="py-3">Thanh toán</a>
+                        </li>
+                        <li class="nav__link">
+                            <a href="/order-products.html" class="py-3">Hàng order</a>
+                        </li>
+                        <li class="nav__link">
+                            <a href="" class="py-3">Hàng có sẵn</a>
                         </li>
                     </ul>
                 </nav>
             </div>
-
         </div>
     </header>
 
     <main class="main">
-        <!-- Main content -->
-        <div class="custom-container py-4">
-            <div class="signup__wrapper p-4">
-                <ul class="web__directional">
-                    <li><a href="/index.html">Trang chủ</a></li>
-                    <li><a href="">Đăng ký</a></li>
-                </ul>
-                <div class="signup__inner mx-auto">
-                    <form class="d-flex flex-column">
-                        <h3 class="text-center">Tạo tài khoản</h3>
-                        <input class="mb-2 w-100" type="text" id="number" placeholder="Số điện thoại">
-                        <div class="mb-2" id="recaptcha-container"></div>
-                        <button type="button" onclick="test()">Xác minh</button>
-                    </form>
-                    <form class="verifycode-signup d-flex pt-2 justify-content-between">
-                        <input type="text" id="verificationCode" placeholder="Nhập mã OTP">
-                        <button type="button" onclick="test2()">Tiếp theo</button>
-                    </form>
-                    <form class="d-flex flex-column pt-2">
-                        <h3 class="text-center">SĐT: 0397974403</h3>
-                        <input class="mb-2 w-100" type="password" placeholder="Nhập mật khẩu">
-                        <input class="mb-2 w-100" type="password" placeholder="Nhập lại mật khẩu">
-                        <button type="button" onclick="test2()">Xác nhận</button>
-                    </form>
+        <!-- Main contain -->
+        <div class="custom-container">
+            <div class="content__wrapper products__content-wrapper">
+                <div class="content__inner w-100">
+                    <ul class="web__directional">
+                        <li><a href="/index.html">Trang chủ</a></li>
+                        <li><a href="">Thế giới di động</a></li>
+                        <li><a href="">Samsung Galaxy S21 Ultra 5G</a></li>
+                    </ul>
+                    <div class="products__content">
+                        <div class="detail-top">
+                            <div class="product__slider">
+                                <div class="product__main-wrapper">
+                                    <div class="product__main-image">
+                                        <img src="assets/images/products/s20u.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="product__list-items">
+                                    
+                                </div>
+                            </div>
+                            <div class="product__info">
+
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -358,7 +371,7 @@
                                 <li class="footer__info-link pb-2">
                                     <a href="">
                                         <i class="fab fa-facebook-square"></i> Facebook</a>
-                                </li> 
+                                </li>
                                 <li class="footer__info-link pb-2">
                                     <a href="">
                                         <i class="fab fa-youtube-square"></i> Youtube</a>
@@ -424,60 +437,18 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
-    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase.js"></script>
-    <script>
-        // Your web app's Firebase configuration
-        const firebaseConfig = {
-            apiKey: "AIzaSyAfm5iGMdqzyywA8SIgeb3yVxagAvXx37k",
-            authDomain: "webdemo-36ffd.firebaseapp.com",
-            projectId: "webdemo-36ffd",
-            storageBucket: "webdemo-36ffd.appspot.com",
-            messagingSenderId: "990883187347",
-            appId: "1:990883187347:web:322028298811b48a5adb66",
-            measurementId: "G-GDXSSSDVE9"
-        };
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-        window.onload = function () {
-            render();
-        };
-        function render() {
-            window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-container');
-            recaptchaVerifier.render();
-        }
-        function phoneAuth() {
-            //get the number
-            var number = document.getElementById('number').value;
-            var scnum = '+84' + number
-            //phone number authentication function of firebase
-            //it takes two parameter first one is number,,,second one is recaptcha
-            firebase.auth().signInWithPhoneNumber(scnum, window.recaptchaVerifier).then(function (confirmationResult) {
-                //s is in lowercase
-                window.confirmationResult = confirmationResult;
-                coderesult = confirmationResult;
-                console.log(coderesult);
-                alert("Message sent");
-                $('.verifycode-signup').css('display','block')
-            }).catch(function (error) {
-                alert(error.message);
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.autoplay').slick({
+                slidesToShow: 5,
+                slidesToScroll: 5,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                prevArrow: "<button type='button' class='slick-prev pull-left'><svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='#333' stroke-width='1' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevron-left'><polyline points='15 18 9 12 15 6'></polyline></svg></button>",
+                nextArrow: "<button type='button' class='slick-next pull-right'><svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='#333' stroke-width='1' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevron-right'><polyline points='9 18 15 12 9 6'></polyline></svg></button>"
             });
-        }
-        function codeverify() {
-            var code = document.getElementById('verificationCode').value;
-            coderesult.confirm(code).then(function (result) {
-                alert("Successfully registered");
-                var user = result.user;
-                console.log(user);
-            }).catch(function (error) {
-                alert(error.message);
-            });
-        }
-        function test(){
-            $('.verifycode-signup').css('visibility','visible')
-        }
-        function test2(){
-
-        }
+        });
     </script>
+
 </body>
 </html>

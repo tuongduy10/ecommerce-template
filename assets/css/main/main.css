@@ -158,7 +158,7 @@
             }
 
 .content__inner{
-    padding: 1.5rem;
+    padding: 1.5rem 0;
 }
     .products__content{
         width: 100%;
@@ -636,7 +636,8 @@
         text-align: center;
     }
         .product-heart{
-
+            height: 20px;
+            width: 20px;
         }
             .fill{
                 fill: #333;
@@ -693,7 +694,7 @@
                 font-size: 20px;
                 line-height: 24px;
                 color: #4d4d4d;
-                margin-bottom: 0.625vw;
+                /* margin-bottom: 0.625vw; */
             }     
             .product-btn{
                 height: calc(43px + (54 - 43) * ((100vw - 375px)/ (1920 - 375)));
@@ -714,9 +715,24 @@
                     padding: 0.75521vw 2.8125vw;
                     border: 1px solid #383838;
                 }
+                .product-btn:hover a{
+                    box-shadow: 0 10px 30px rgb(0 0 0 / 10%);
+                }
+
+@media only screen and  (max-width: 1200px){
+    .product-subprice {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .product-price {
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 8px;
+    }
+}
 @media only screen and (max-width: 992px){
     .product{
-        width: calc(50% - 3px);
+        width: calc(50% - 4px);
     }
     .product-btn a{
         font-size: 1.81452vw;
@@ -739,17 +755,31 @@
         padding-bottom: 0;
         margin-bottom: 10px;
     }
-    .product-subprice {
-        font-size: 12px;
-        line-height: 14px;
-    }
-    .product-price {
-        font-size: 16px;
-        line-height: 19px;
-        margin-bottom: 8px;
-    }
-    
     .product-btn{
         display: none;
     }
+}
+
+/* Product detail */
+.detail-top {
+    background-color: red;
+
+    display: flex;
+    width: 100%;
+    margin-bottom: calc(30px + (54 - 30) * ((100vw - 375px)/ (1920 - 375)));
+}
+
+
+.blog__content-detail ul{
+    list-style-type: circle !important;
+    padding-left: calc(42px + (56 - 42) * ((100vw - 375px)/ (1920 - 375)));
+    margin-bottom: calc(30px + (40 - 30) * ((100vw - 375px)/ (1920 - 375)));
+}
+
+
+
+.add-to-wishlist{
+    position: absolute;
+    top: 16px;
+    right: 16px;
 }
