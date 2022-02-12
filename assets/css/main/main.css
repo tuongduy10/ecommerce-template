@@ -767,8 +767,28 @@
 
 /* Product detail */
 .product__slider{
-    width: 58%;
+    width: 50%;
 }
+.product__slider-nav{
+    width: 500px;
+}
+    .slider__nav-item{
+        width: 115px !important;
+        height: 115px;
+    }
+    .slider__nav-item{
+        margin-right: 10px;
+    }
+    .slider__nav-item:not(:first-child){
+
+    }
+    .slider__nav-item:not(:last-child){
+        
+    }
+    .slider__nav-item img{
+        width: auto;
+        height: 100%;
+    }
 
 
 .blog__content-detail ul{
