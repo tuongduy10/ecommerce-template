@@ -1,6 +1,6 @@
 @import url(assets/css/main/global.css);
 .banner__container{
-    height: calc(15vw * 1.72);
+    height: calc(22vw * 1.72);
 }
     .banner__container img{
         object-fit: contain;
@@ -597,9 +597,9 @@
     background-color: #fff;
 }
     .add-to-wishlist{
-        position: absolute;
+        /* position: absolute;
         top: 16px;
-        right: 16px;
+        right: 16px; */  
     }
     .product-disc{
         position: absolute;

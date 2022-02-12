@@ -201,6 +201,7 @@ a:hover{
         z-index: 101;
         transform: translateX(100%);
         transition: transform linear 0.45s;
+        width: calc(81.6vw);
     }   
         .filter-open{
             transform: translateX(0%);
