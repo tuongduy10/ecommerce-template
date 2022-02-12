@@ -298,24 +298,57 @@
                         <li><a href="">Samsung Galaxy S21 Ultra 5G</a></li>
                     </ul>
                     <div class="products__content">
-                        <div class="detail-top d-flex">
-                            <div class="product__slider d-flex align-items-center">
-                                <div class="product__main-img">
-                                    <img src="assets/images/products/jacket1.jpg" alt="">
+                        <div class="detail-top d-flex flex-wrap">
+                            <div class="product__slider">
+                                <div class="product__slider-for text-center slider-for" style="height: 500px; width: 500px;">
+                                    <img style="height: auto; width: 100%;" src="assets/images/products/jacket1.jpg" alt="">
+                                    <img style="height: auto; width: 100%;" src="assets/images/products/jacket2.jpg" alt="">
+                                    <img style="height: auto; width: 100%;" src="assets/images/products/jacket3.jpg" alt="">
+                                    <img style="height: auto; width: 100%;" src="assets/images/products/jacket4.jpg" alt="">
                                 </div>
-                                <div class="slider__wrapper d-flex">
-                                    <a class="slider-item" href=""><img src="assets/images/products/jacket1.jpg"
-                                            alt=""></a>
-                                    <a class="slider-item" href=""><img src="assets/images/products/jacket2.jpg"
-                                            alt=""></a>
-                                    <a class="slider-item" href=""><img src="assets/images/products/jacket3.jpg"
-                                            alt=""></a>
-                                    <!-- <a class="slider-item py-2" href=""><img src="assets/images/products/jacket4.jpg"
-                                            alt=""></a>
-                                    <a class="slider-item" href=""><img src="assets/images/products/jacket1.jpg"
-                                            alt=""></a>
-                                    <a class="slider-item" href=""><img src="assets/images/products/jacket2.jpg"
-                                            alt=""></a> -->
+                                <div class="product__slider-nav d-flex slider-nav">
+                                    <div class="slider__nav-item" style="height: 100px; width: 100px;">
+                                        <img style="height: 100%; width: 100px;" src="assets/images/products/jacket1.jpg" alt="">
+                                    </div>
+                                    <div class="slider__nav-item" style="height: 100px; width: 100px;">
+                                        <img style="height: 100%; width: 100px;" src="assets/images/products/jacket2.jpg" alt="">
+                                    </div>
+                                    <div class="slider__nav-item" style="height: 100px; width: 100px;">
+                                        <img style="height: 100%; width: 100px;" src="assets/images/products/jacket3.jpg" alt="">
+                                    </div>
+                                    <div class="slider__nav-item" style="height: 100px; width: 100px;">
+                                        <img style="height: 100%; width: 100px;" src="assets/images/products/jacket4.jpg" alt="">
+                                    </div>
+                                    <div class="slider__nav-item" style="height: 100px; width: 100px;">
+                                        <img style="height: 100%; width: 100px;" src="assets/images/products/jacket3.jpg" alt="">
+                                    </div>
+                                    <div class="slider__nav-item" style="height: 100px; width: 100px;">
+                                        <img style="height: 100%; width: 100px;" src="assets/images/products/jacket4.jpg" alt="">
+                                    </div>
+                                    <div class="slider__nav-item" style="height: 100px; width: 100px;">
+                                        <img style="height: 100%; width: 100px;" src="assets/images/products/jacket3.jpg" alt="">
+                                    </div>
+                                    <div class="slider__nav-item" style="height: 100px; width: 100px;">
+                                        <img style="height: 100%; width: 100px;" src="assets/images/products/jacket4.jpg" alt="">
+                                    </div>
+                                    <div class="slider__nav-item" style="height: 100px; width: 100px;">
+                                        <img style="height: 100%; width: 100px;" src="assets/images/products/jacket3.jpg" alt="">
+                                    </div>
+                                    <div class="slider__nav-item" style="height: 100px; width: 100px;">
+                                        <img style="height: 100%; width: 100px;" src="assets/images/products/jacket4.jpg" alt="">
+                                    </div>
+                                    <div class="slider__nav-item" style="height: 100px; width: 100px;">
+                                        <img style="height: 100%; width: 100px;" src="assets/images/products/jacket3.jpg" alt="">
+                                    </div>
+                                    <div class="slider__nav-item" style="height: 100px; width: 100px;">
+                                        <img style="height: 100%; width: 100px;" src="assets/images/products/jacket4.jpg" alt="">
+                                    </div>
+                                    <div class="slider__nav-item" style="height: 100px; width: 100px;">
+                                        <img style="height: 100%; width: 100px;" src="assets/images/products/jacket3.jpg" alt="">
+                                    </div>
+                                    <div class="slider__nav-item" style="height: 100px; width: 100px;">
+                                        <img style="height: 100%; width: 100px;" src="assets/images/products/jacket4.jpg" alt="">
+                                    </div>
                                 </div>
                             </div>
                             <div class="product__info">
@@ -453,6 +486,23 @@
                 slidesToScroll: 5,
                 autoplay: true,
                 autoplaySpeed: 3000,
+                prevArrow: "<button type='button' class='slick-prev pull-left'><svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='#333' stroke-width='1' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevron-left'><polyline points='15 18 9 12 15 6'></polyline></svg></button>",
+                nextArrow: "<button type='button' class='slick-next pull-right'><svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='#333' stroke-width='1' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevron-right'><polyline points='9 18 15 12 9 6'></polyline></svg></button>"
+            });
+            $('.slider-for').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                fade: true,
+                asNavFor: '.slider-nav'
+            });
+            $('.slider-nav').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                asNavFor: '.slider-for',
+                dots: true,
+                centerMode: true,
+                focusOnSelect: true,
                 prevArrow: "<button type='button' class='slick-prev pull-left'><svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='#333' stroke-width='1' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevron-left'><polyline points='15 18 9 12 15 6'></polyline></svg></button>",
                 nextArrow: "<button type='button' class='slick-next pull-right'><svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='#333' stroke-width='1' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevron-right'><polyline points='9 18 15 12 9 6'></polyline></svg></button>"
             });
