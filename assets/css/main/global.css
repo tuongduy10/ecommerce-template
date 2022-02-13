@@ -406,6 +406,12 @@ a:hover{
 .checkbox input[type=checkbox]:checked:after {
     border: 1px solid var(--blue-dior);
 } */
+/* Pagination */
+.pagination-item{
+    border-radius: 50%;
+}
+
+/* Checkbox */
 .checkbox input[type=checkbox]{
     width: calc(14px + (13 - 9) * ((100vw - 375px)/ (1920 - 375)));
     height: calc(14px + (13 - 9) * ((100vw - 375px)/ (1920 - 375)));

@@ -113,10 +113,7 @@ $(".filter__title").click(function (e) {
         $(this).siblings('.filter__list').css('max-height','calc(185px + (310 - 185) * ((100vw - 375px)/ (1920 - 375)))')  
         $(this).children('svg').addClass('svg-right')
     
-    }// else{
-    //     $(this).siblings('.filter__list').css('max-height','0')  
-    //     $(this).children('svg').removeClass('svg-right')
-    // }
+    }
 })
 $('.filter__item-title').click(function(){
     $('.filter__items-mobile').css('max-height','0')
@@ -153,6 +150,10 @@ $('.add-to-wishlist').click(function(){
         $(this).removeClass('fill')
         return
     }
-       
     $(this).addClass('fill')
+})
+
+$('.slider__item img').click(function(){
+    let src = $(this).attr('src')
+    $('.main__picture-inner img').attr('src',src)
 })
