@@ -157,3 +157,9 @@ $('.slider__item img').click(function(){
     let src = $(this).attr('src')
     $('.main__picture-inner img').attr('src',src)
 })
+
+$('.test').click(function() {
+   $(".slider__list").animate({
+        scrollTop:  0
+   })
+})

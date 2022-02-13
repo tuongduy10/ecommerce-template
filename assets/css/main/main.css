@@ -475,13 +475,15 @@
     .bran__filter .order__item-wrapper{
         width: 100%;
     }
+    .filter__control-top .order__item-dropdown{
+        min-width: unset;
+    }
         .bran__filter .order__item-dropdown{
             font-size: 12px;
         }
         .bran__filter .order__item-dropdown_menu .order__item-dropdown_items a{
             font-size: 12px;
         }
-
     .content__inner{
         padding: 1.25rem 0;
     }
@@ -525,6 +527,20 @@
                     .filter__dropdown{
                         border: solid 1px #d4d4d4;
                     }
+        .filter__pagination{
+            width: calc(50% - 11px);
+            justify-content: unset;
+            flex: unset;
+        }
+        .pagination{
+            width: 100%;
+            justify-content: space-between;
+        }
+        .pagination-item{
+            width: calc(30px + (45 - 35) * ((100vw - 375px)/ (1920 - 375)));
+            height: calc(30px + (45 - 35) * ((100vw - 375px)/ (1920 - 375)));
+            font-size: 14px;
+        }
 }
 
 /* Signup */
@@ -776,9 +792,12 @@
 }
 .slider__list{
     margin-right: 10px;
+    padding: 5px 0;
     width: 150px;
     height: 600px;
     overflow-y: scroll;
+
+    align-items: center;
 
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
