@@ -160,6 +160,6 @@ $('.slider__item img').click(function(){
 
 $('.test').click(function() {
    $(".slider__list").animate({
-        scrollTop:  0
+        scrollTop: 210
    })
 })

@@ -614,20 +614,33 @@
     margin-bottom: 6px; 
     background-color: #fff;
 }
-    .add-to-wishlist{
-        /* position: absolute;
-        top: 16px;
-        right: 16px; */  
+    .product-heart{
+        position: absolute;
+        top: 5px;
+        right: 10px;  
+        /* padding: 5px; */
+        border-radius: 50%;
+        background-color: white;
+        /* border: 1px solid #333; */
+        height: 24px;
+        width: 24px;
     }
     .product-label{
         position: absolute;
         top: 0;
-        right: 0;
+        left: 0;
     }
         .product-label span{
-            background-color: #ddd;
+            background-color: #ececec;
             padding: 5px 10px;
-            margin-left: 10px;
+            margin-right: 10px;
+            border:1px solid #ddd;
+        }
+        .test-label span{
+            background-color: #ececec;
+            padding: 5px 10px;
+            margin-right: 10px;
+            border:1px solid #ddd;
         }
         
     .product-disc{
