@@ -619,6 +619,17 @@
         top: 16px;
         right: 16px; */  
     }
+    .product-label{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+        .product-label span{
+            background-color: #ddd;
+            padding: 5px 10px;
+            margin-left: 10px;
+        }
+        
     .product-disc{
         position: absolute;
         top: 0;
@@ -780,6 +791,9 @@
     }
     .product-btn{
         display: none;
+    }
+    .product-label span{
+        font-size: 14px;
     }
 }
 
