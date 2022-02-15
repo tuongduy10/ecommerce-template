@@ -15,10 +15,12 @@ document.getElementById('nav__menubar-open').onclick = function () {
     openNavMobileList()
     closeSearchForm()
     $('body').css('overflow', 'hidden')
+    // $('html').css('overflow', 'hidden')
 }
 document.getElementById('nav__overlay').onclick = function () {
     closeNavMobileList()
     $('body').css('overflow', 'auto')
+    // $('html').css('overflow','auto')
     $('.product__filter-dropdown-menu').removeClass('filter-open')
 }
 document.getElementById('nav__mobile-list-close').onclick = function () {
@@ -59,19 +61,6 @@ function openNavMobileList() {
     document.getElementById('nav__mobile-list-open').className = document.getElementById('nav__mobile-list-open').className.replace('nav-close', 'nav-open')
 }
 
-// Select form handler
-// $('.filter__button').click(function(){
-//     // Open
-//     if(!$('.product__filter-dropdown-menu').hasClass('open')){
-//         $('.product__filter-dropdown-menu').addClass('open')
-//         $(".svg-filter").addClass("svg-up");
-//     }
-//     // Close
-//     else{
-//         $('.product__filter-dropdown-menu').removeClass('open')
-//         $(".svg-filter").removeClass("svg-up");
-//     }
-// })
 $(".order__button").hover(
     function () {
         $(".order__item-dropdown_menu").addClass("open");

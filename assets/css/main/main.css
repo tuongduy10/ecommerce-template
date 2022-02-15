@@ -519,6 +519,7 @@
                 }
                 .filter__control-bottom{
                     border-top: none;
+                    justify-content: space-between;
                 }
                     .filter__item-wrapper{
                         margin-right: 0;
@@ -607,6 +608,24 @@
 .product__grid-wrapper{
     padding: calc(16px + (78 - 16) * ((100vw - 375px)/ (1920 - 375))) 0 calc(30px + (25 - 30) * ((100vw - 375px)/ (1920 - 375)));
 }
+.product__grid-title::after,
+.product__grid-title::before{
+    background-color: #ddd;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 10%;
+}
+.product__grid-title::before{
+    right: 0.5em;
+    margin-left: -50%;
+}
+.product__grid-title::after{
+    left: 0.5em;
+    margin-right: -50%;
+}
 .product{
     position: relative;
     width: calc(100% / 3 - 4px);
@@ -615,20 +634,14 @@
     background-color: #fff;
 }
     .product-heart{
-        position: absolute;
-        top: 5px;
-        right: 10px;  
-        /* padding: 5px; */
-        border-radius: 50%;
-        background-color: white;
-        /* border: 1px solid #333; */
-        height: 24px;
-        width: 24px;
+        margin-right: 10px;
     }
     .product-label{
         position: absolute;
         top: 0;
-        left: 0;
+        right: 0;
+
+        align-items: center;
     }
         .product-label span{
             background-color: #ececec;
@@ -789,6 +802,10 @@
         width: 20px;
         height: 20px;
     }
+    .product-label span{
+        font-size: 12px;
+        margin-right: 6px;
+    }
 }
 @media only screen and (max-width: 768px){
     .product-brand{
@@ -804,9 +821,6 @@
     }
     .product-btn{
         display: none;
-    }
-    .product-label span{
-        font-size: 14px;
     }
 }
 
@@ -857,8 +871,10 @@
 
 
 .blog__content-detail ul{
-    list-style-type: circle !important;
     padding-left: calc(42px + (56 - 42) * ((100vw - 375px)/ (1920 - 375)));
     margin-bottom: calc(30px + (40 - 30) * ((100vw - 375px)/ (1920 - 375)));
+}
+.blog__content-detail li {
+    list-style: disc;
 }
 
