@@ -643,6 +643,8 @@
 }
     .product-heart{
         margin-right: 10px;
+        height: 24px;
+        width: 24px;
     }
     .product-label{
         position: absolute;
@@ -658,11 +660,11 @@
             border:1px solid #ddd;
         } */
         .product-label span{
-            background-color: #ececec;
-            padding: 3px 6px;
+            background-color: #ac0833;
+            padding: 2px 6px;
             margin-right: 10px;
-            border:1px solid #ddd;
             font-size: 14px;
+            color: #fff;
         }
         
     .product-disc{
@@ -704,10 +706,6 @@
         overflow: hidden;
         text-align: center;
     }
-        .product-heart{
-            height: 20px;
-            width: 20px;
-        }
             .fill{
                 fill: #333;
             }
