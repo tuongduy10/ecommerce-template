@@ -403,6 +403,12 @@
                     }
                     
 @media only screen and (max-width: 1200px){
+    .content__inner{
+        padding: 1.25rem 0;
+    }
+    .web__directional{
+        margin-bottom: 1.25rem;
+    }
     .web__directional li{
         font-size: 14px;
         line-height: 18px;
@@ -485,7 +491,7 @@
             font-size: 12px;
         }
     .content__inner{
-        padding: 1.25rem 0;
+        padding: 9px 0;
     }
         .web__directional{
             margin-bottom: 9px;
@@ -835,51 +841,9 @@
 }
 
 /* Product detail */
-.product__slider{
-    /* overflow: hidden !important; */
-}
-.slider{
-    overflow: hidden !important;
-}
-.slider__list{
-    margin-right: 10px;
-    padding: 5px 0;
-    width: 150px;
-    height: 600px;
-    overflow-y: scroll;
-
-    align-items: center;
-
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-
-    -ms-overflow-style: none; /*Hide scrollbar on firefox*/
-    scrollbar-width: none; /*Hide scrollbar on firefox*/
-}
-.slider__list::-webkit-scrollbar{
-    display: none; /*Hide scrollbar on chrome, safari, ...*/
-}
-    .slider__item{
-        cursor: pointer;
-        padding: 5px 0;
-    }
-    .slider__item img{
-        height: auto;
-        width: 100%;
-    }
 
 
-.main__picture-inner{
-    width: 600px;
-    height: 600px;
-    text-align: center;
-}
-.main__picture-inner img{
-    height: 100%;
-    width: auto;
-}
-
-
+/* Blog */
 .blog__content-detail ul{
     padding-left: calc(42px + (56 - 42) * ((100vw - 375px)/ (1920 - 375)));
     margin-bottom: calc(30px + (40 - 30) * ((100vw - 375px)/ (1920 - 375)));

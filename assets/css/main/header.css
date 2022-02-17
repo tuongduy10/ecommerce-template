@@ -54,6 +54,27 @@
             vertical-align: middle;
             display: inline-block;
         }
+            .header__top-link .icon{
+                position: relative;
+            }
+            .header__top-link .icon .quality{
+                position: absolute;
+                    
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                background: #ac0833;
+                color: #fff;
+
+                width: calc(4px + (24 - 10) * ((100vw - 375px)/ (1920 - 375)));;
+                height: calc(4px + (24 - 10) * ((100vw - 375px)/ (1920 - 375)));;
+                font-size: 0.75rem;
+                line-height: 1;
+
+                bottom: -40%;
+                left: 60%;
+            }
         .header__top-link:hover{
             color: var(--blue-dior);
         }
@@ -116,6 +137,7 @@
             }
             .cart,
             .favorite,
+            .profile-mobile,
             .cart-mobile,
             .favorite-mobile{
                 position: relative;
@@ -126,12 +148,14 @@
                     bottom: -30%;
                     right: -30%; 
                 }
+                .profile-mobile span,
                 .favorite-mobile span{
                     bottom: -18%;
                     right: -30%; 
                 }
                 .cart span,
                 .favorite span,
+                .profile-mobile span,
                 .cart-mobile span,
                 .favorite-mobile span{
                     position: absolute;
@@ -143,6 +167,7 @@
                     background: #ac0833;
                     color: #fff;
                 }
+                .profile-mobile span,
                 .cart span,
                 .favorite span{
                     width: calc(4px + (24 - 10) * ((100vw - 375px)/ (1920 - 375)));;
@@ -150,6 +175,7 @@
                     font-size: 0.75rem;
                     line-height: 1;
                 }
+                .profile-mobile span,
                 .cart-mobile span,
                 .favorite-mobile span{
                     width: 16px;
@@ -243,7 +269,27 @@
         }
             .nav__mobile-account .icon{
                 margin-right: 10px;
+                position: relative;
             }
+                .nav__mobile-account .icon .quality{
+                    position: absolute;
+                    position: absolute;
+                    
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    background: #ac0833;
+                    color: #fff;
+
+                    width: 16px;
+                    height: 16px;
+                    font-size: 0.75rem;
+                    line-height: 1;
+
+                    bottom: -30%;
+                    right: -30%;
+                }
             .nav__mobile-account a:hover{
                 color: var(--blue-dior);
             }
