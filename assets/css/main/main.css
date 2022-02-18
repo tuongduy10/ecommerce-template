@@ -841,14 +841,264 @@
 }
 
 /* Product detail */
+.product-card {
+    background-color: #fff;
+    border: none
+}
 
+.product-slider {
+    width: 100%
+}
+
+ul.lightSlider {
+    list-style: none outside none;
+    padding-left: 0;
+    margin-bottom: 0
+}
+
+ul.lightSlider li {
+    display: block;
+    float: left;
+    margin-right: 6px;
+    cursor: pointer
+}
+
+.products__content img {
+    display: block;
+    height: auto;
+    width: 100%
+}
+
+hr {
+    color: #ddd
+}
+
+.badge {
+    padding: 5px !important;
+    padding-bottom: 6px !important
+}
+
+.badge i {
+    font-size: 10px
+}
+
+.profile-image {
+    width: 35px
+}
+
+.date span {
+    font-size: 12px
+}
+
+.product-buttons button{
+    cursor: pointer;
+    text-transform: uppercase;
+    border: 1px solid #333;
+    background-color: #fff;
+
+    padding: calc(13px + (24 - 13) * ((100vw - 375px)/ (1920 - 375)));
+}
+.product-buttons button:hover{
+    border-color: var(--blue-dior);
+    color: var(--blue-dior);
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px
+}
+
+.bullet-text {
+    /* font-size: 12px */
+}
+
+.my-color {
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+
+label.radio {
+    cursor: pointer
+}
+
+label.radio input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    pointer-events: none
+}
+
+label.radio span {
+    border: 2px solid #8f37aa;
+    display: inline-block;
+    color: #8f37aa;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    text-transform: uppercase;
+    transition: 0.5s all
+}
+
+label.radio .red {
+    background-color: red;
+    border-color: red
+}
+
+label.radio .blue {
+    background-color: blue;
+    border-color: blue
+}
+
+label.radio .green {
+    background-color: green;
+    border-color: green
+}
+
+label.radio .orange {
+    background-color: orange;
+    border-color: orange
+}
+
+label.radio input:checked+span {
+    color: #fff;
+    position: relative
+}
+
+label.radio input:checked+span::before {
+    opacity: 1;
+    content: '\2713';
+    position: absolute;
+    font-size: 13px;
+    font-weight: bold;
+    left: 4px
+}
+.card-body {
+    padding: 0.3rem 0.3rem 0.2rem
+}
+.about{
+    font-size: calc(14px + (20 - 14) * ((100vw - 375px)/ (1920 - 375)));
+    line-height: calc(17px + (24 - 17) * ((100vw - 375px)/ (1920 - 375)));
+}
+.about > *{
+    color: #383838
+}
+.product-image{
+    padding-right: 1.5rem !important;
+}
+.product-info{
+
+}
+    .product-id{
+        margin-bottom: calc(5px + (8 - 5) * ((100vw - 375px)/ (1920 - 375)));
+        font-weight: 600;
+    }
+    .product-noti{
+        color: #a0a0a0;
+        margin-bottom: 20px;
+    }
+    .product-name{
+        font-size: calc(20px + (45 - 20) * ((100vw - 375px)/ (1920 - 375)));
+        line-height: calc(24px + (54 - 24) * ((100vw - 375px)/ (1920 - 375)));
+        margin-bottom: calc(5px + (11 - 5) * ((100vw - 375px)/ (1920 - 375)));
+    }
+    .product-brand{
+        margin-bottom: calc(21px + (44 - 21) * ((100vw - 375px)/ (1920 - 375)));
+        font-size: calc(18px + (35 - 18) * ((100vw - 375px)/ (1920 - 375)));
+        line-height: calc(22px + (42 - 22) * ((100vw - 375px)/ (1920 - 375)));
+        font-weight: 500;
+    }
+    .product-discount{  
+        color: var(--blue-dior);
+        font-size: calc(16px + (24 - 16) * ((100vw - 375px)/ (1920 - 375)));
+        line-height: 25px;
+        margin-bottom: calc(30px + (37 - 30) * ((100vw - 375px)/ (1920 - 375)));
+    }
+    .product-action{
+        margin-bottom: calc(5px + (8 - 5) * ((100vw - 375px)/ (1920 - 375)));
+        font-size: calc(14px + (20 - 14) * ((100vw - 375px)/ (1920 - 375)));
+        line-height: calc(17px + (24 - 17) * ((100vw - 375px)/ (1920 - 375)));    
+    }   
+        .product-action .icon{
+            margin-right: calc(13px + (22 - 13) * ((100vw - 375px)/ (1920 - 375)));
+        }
+        .product-action a:not(:last-child){
+            margin-right: calc(18px + (144 - 18) * ((100vw - 375px)/ (1920 - 375)));
+        }
+    .product-price{
+        margin-bottom: calc(30px + (37 - 30) * ((100vw - 375px)/ (1920 - 375)));
+    }
+    .product-price *{
+        font-size: calc(16px + (24 - 16) * ((100vw - 375px)/ (1920 - 375)));
+    }
+    .product-availableprice{
+        margin-bottom: calc(5px + (8 - 5) * ((100vw - 375px)/ (1920 - 375)));;
+    }
+        .product-price p{
+            color: #707070;
+            /* width: calc(100px + (150 - 100) * ((100vw - 375px)/ (1920 - 375))); */
+        }
+        .product-price strike{
+            color: #a0a0a0;
+        }
+@media only screen and (max-width: 768px){
+    .product-image{
+        padding-right: 0 !important;
+    }
+    .product-info{
+        margin-top: 1.5rem;
+    }
+}
 
 /* Blog */
-.blog__content-detail ul{
-    padding-left: calc(42px + (56 - 42) * ((100vw - 375px)/ (1920 - 375)));
-    margin-bottom: calc(30px + (40 - 30) * ((100vw - 375px)/ (1920 - 375)));
+.blog-content{
+    width: calc(100% - 17.70833vw - 3.125vw);
 }
-.blog__content-detail li {
-    list-style: disc;
+    .blog-header{
+        font-size: calc(22px + (50 - 24) * ((100vw - 375px)/ (1920 - 375)));
+        line-height: calc(35px + (60 - 35) * ((100vw - 375px)/ (1920 - 375)));
+        margin-bottom: calc(30px + (40 - 30) * ((100vw - 375px)/ (1920 - 375)));
+        color: #383838;
+    }
+    .blog__content-detail ul{
+        padding-left: calc(42px + (56 - 42) * ((100vw - 375px)/ (1920 - 375)));
+        margin-bottom: calc(30px + (40 - 30) * ((100vw - 375px)/ (1920 - 375)));
+    }
+    .blog__content-detail li {
+        font-size: calc(18px + (28 - 20) * ((100vw - 375px)/ (1920 - 375)));
+        color: #383838;
+        line-height: calc(28px + (40 - 30) * ((100vw - 375px)/ (1920 - 375)));
+        margin-bottom: calc(15px + (30 - 15) * ((100vw - 375px)/ (1920 - 375)));
+    }
+        .blog__sub-content{
+            list-style: disc;
+        }
+/* Login */
+
+/* Reset focus */
+.login-form input:focus{
+    border-color: unset;
+    -webkit-box-shadow: unset;
+    box-shadow: unset;
+    outline: unset;
+}
+.login-form input{
+    border-radius: 0;
+    border: 1px solid #333;
+}
+.login button:hover,
+.login-form input:focus{
+    box-shadow: 0 10px 30px rgb(0 0 0 / 10%);
+}
+.login button{
+    cursor: pointer;
+    color: #fff;
+    background-color: var(--blue-dior);
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
 }
 

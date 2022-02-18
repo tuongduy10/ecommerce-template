@@ -22,8 +22,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Lightslider -->
-    <link rel='stylesheet' href='https://sachinchoolur.github.io/lightslider/dist/css/lightslider.css'>
 
     <!-- Personal Style -->
     <link rel="stylesheet" href="assets/css/main/global.css" />
@@ -214,6 +212,7 @@
                                         </span>
                                     </a>
                                 </li>
+                                <!-- Don't remove this -->
                                 <!-- <li class="">
                                     <a href="/sign-up.html" class="d-flex w-100">
                                         <span class="icon">
@@ -350,188 +349,49 @@
     </header>
 
     <main class="main">
-        <!-- Main contain -->
-        <div class="custom-container">
-            <div class="content__wrapper products__content-wrapper">
-                <div class="content__inner w-100">
-                    <ul class="web__directional">
-                        <li><a href="/index.html">Trang chủ</a></li>
-                        <li><a href="">Samsung</a></li>
-                        <li><a href="">Samsung Galaxy S21 Ultra 5G</a></li>
-                    </ul>
-                    <div class="products__content">
-                        <div class="mt-2 mb-3">
-                            <div class="row no-gutters">
-                                <div class="product-image col-md-5">
-                                    <div class="product-card">
-                                        <div class="product-slider">
-                                            <ul id="lightSlider">
-                                                <li data-thumb="assets/images/products/watch4.jpg"> <img
-                                                        src="assets/images/products/watch4.jpg" /> </li>
-                                                <li data-thumb="assets/images/products/jacket2.jpg"> <img
-                                                        src="assets//images/products/jacket2.jpg" /> </li>
-                                                <li data-thumb="assets/images/products/jacket3.jpg"> <img
-                                                        src="assets/images/products/jacket3.jpg" /> </li>
-                                                <li data-thumb="assets/images/products/jacket4.jpg"> <img
-                                                        src="assets/images/products/jacket4.jpg" /> </li>
-                                                <li data-thumb="assets/images/products/jacket1.jpg"> <img
-                                                        src="assets/images/products/jacket1.jpg" /> </li>
-                                                <li data-thumb="assets/images/products/jacket3.jpg"> <img
-                                                        src="assets/images/products/jacket3.jpg" /> </li>
-                                                <li data-thumb="assets/images/products/jacket2.jpg"> <img
-                                                        src="assets/images/products/jacket2.jpg" /> </li>
-                                                <li data-thumb="assets/images/products/jacket4.jpg"> <img
-                                                        src="assets/images/products/jacket4.jpg" /> </li>
-                                                <li data-thumb="assets/images/products/jacket2.jpg"> <img
-                                                        src="assets/images/products/jacket2.jpg" /> </li>
-                                                <li data-thumb="assets/images/products/jacket3.jpg"> <img
-                                                        src="assets/images/products/jacket3.jpg" /> </li>
-                                                <li data-thumb="assets/images/products/jacket1.jpg"> <img
-                                                        src="assets/images/products/jacket1.jpg" /> </li>
-                                                <li data-thumb="assets/images/products/jacket2.jpg"> <img
-                                                        src="assets/images/products/jacket2.jpg" /> </li>
-                                                <li data-thumb="assets/images/products/jacket4.jpg"> <img
-                                                        src="assets/images/products/jacket4.jpg" /> </li>
-                                                <li data-thumb="assets/images/products/jacket3.jpg"> <img
-                                                        src="assets/images/products/jacket3.jpg" /> </li>
-                                                <li data-thumb="assets/images/products/jacket2.jpg"> <img
-                                                        src="assets/images/products/jacket2.jpg" /> </li>
-                                            </ul>
-                                        </div>
+        <!-- Main content -->
+        <div class="custom-container py-4">
+            <div class="signup__wrapper">
+                <ul class="web__directional">
+                    <li><a href="/index.html">Trang chủ</a></li>
+                    <li><a href="">Đăng nhập</a></li>
+                </ul>
+                <section class="vh-100">
+                    <div class="container-fluid h-custom">
+                        <div class="row d-flex justify-content-center align-items-center h-100">
+                            <div class="col-md-9 col-lg-6 col-xl-5">
+                                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+                                    class="img-fluid" alt="Sample image">
+                            </div>
+                            <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+                                <form class="login-form">
+                                    <!-- Email input -->
+                                    <div class="mb-4">
+                                        <input type="text" id="form3Example3" class="form-control form-control-lg"
+                                            placeholder="Nhập số điện thoại" />
                                     </div>
-                                    <!-- <div class="product-card mt-2">
-                                        <h6>Reviews</h6>
-                                        <div class="d-flex flex-row">
-                                            <div class="stars"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div> <span class="ml-1 font-weight-bold">4.6</span>
-                                        </div>
-                                        <hr>
-                                        <div class="badges"> <span class="badge bg-dark ">All (230)</span> <span class="badge bg-dark "> <i class="fa fa-image"></i> 23 </span> <span class="badge bg-dark "> <i class="fa fa-comments-o"></i> 23 </span> <span class="badge bg-warning"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <span class="ml-1">2,123</span> </span> </div>
-                                        <hr>
-                                        <div class="comment-section">
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <div class="d-flex flex-row align-items-center"> <img src="https://i.imgur.com/o5uMfKo.jpg" class="rounded-circle profile-image">
-                                                    <div class="d-flex flex-column ml-1 comment-profile">
-                                                        <div class="comment-ratings"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div> <span class="username">Lori Benneth</span>
-                                                    </div>
-                                                </div>
-                                                <div class="date"> <span class="text-muted">2 May</span> </div>
-                                            </div>
-                                            <hr>
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <div class="d-flex flex-row align-items-center"> <img src="https://i.imgur.com/tmdHXOY.jpg" class="rounded-circle profile-image">
-                                                    <div class="d-flex flex-column ml-1 comment-profile">
-                                                        <div class="comment-ratings"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div> <span class="username">Timona Simaung</span>
-                                                    </div>
-                                                </div>
-                                                <div class="date"> <span class="text-muted">12 May</span> </div>
-                                            </div>
-                                        </div>
+                                    <!-- Password input -->
+                                    <div class="mb-3">
+                                        <input type="password" id="form3Example4" class="form-control form-control-lg"
+                                            placeholder="Nhập mật khẩu" />
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <a href="#!" class="text-body">Tạo tài khoản mới</a>
+                                        <a href="#!" class="text-body">Quên mật khẩu ?</a>
+                                    </div>
+
+                                    <div class="login text-center text-lg-start mt-4 pt-2">
+                                        <button>Đăng nhập</button>
+                                    </div>
+                                    <!-- <div class="text-center text-lg-start mt-4 pt-2">
+                                         <button type="button" class="btn btn-primary btn-lg "
+                                            style="padding-left: 2.5rem; padding-right: 2.5rem;">Đăng nhập</button>
                                     </div> -->
-                                </div>
-                                <div class="product-info col-md-7">
-                                    <div class="product-card">
-                                        <div class="about">
-                                            <div class="product-id">Mã: 18022022</div>
-                                            <div class="product-noti">*Tư vấn sản phẩm: 03979774403</div>
-                                            <div class="product-name">Samsung Galaxy S21 Ultra 5G</div>
-                                            <div class="product-brand">Shop Demo 01</div>
-
-                                            <div class="product-desciption">
-                                                <div class="bullets">
-                                                    <div class="d-flex align-items-center">
-                                                        <span class="dot"></span>
-                                                        <span class="bullet-text">Miễn phí giao hàng</span>
-                                                    </div>
-                                                    <div class="d-flex align-items-center">
-                                                        <span class="dot"></span>
-                                                        <span class="bullet-text">Bảo hành 2 năm</span>
-                                                    </div>
-                                                    <div class="d-flex align-items-center">
-                                                        <span class="dot"></span>
-                                                        <span class="bullet-text">Đổi trả miễn phí</span>
-                                                    </div>
-                                                    <div class="d-flex align-items-center">
-                                                        <span class="dot"></span>
-                                                        <span class="bullet-text">Giao hàng miễn phí</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <hr>
-                                        <div class="product-options">
-                                            <!-- Product options -->
-
-                                            <div class="product-price">
-                                                <div class="product-discount d-flex align-items-center">
-                                                    <span class="bullet-text">Giảm 15%</span>
-                                                </div>
-                                                <div class="product-availableprice form-check">
-                                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                                        id="flexRadioDefault1">
-                                                    <label class="form-check-label d-flex justify-content-between" for="flexRadioDefault1">
-                                                        <p class="mb-0">Có sẵn: </p>
-                                                        <span>
-                                                            <strike class="mr-2">13.000.000 đ</strike>
-                                                            12.500.000 đ
-                                                        </span>
-                                                    </label>
-                                                </div>
-                                                <div class="product-orderprice form-check">
-                                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                                        id="flexRadioDefault2" checked>
-                                                    <label class="form-check-label d-flex justify-content-between" for="flexRadioDefault2">
-                                                        <p class="mb-0">Đặt trước: </p>
-                                                        <span>
-                                                            <strike class="mr-2">12.000.000 đ</strike>
-                                                            11.500.000 đ
-                                                        </span>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="product-action d-flex justify-content-between">
-                                            <a class="d-flex">
-                                                <span class="icon" style="height: 24px;">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                        viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1"
-                                                        stroke-linecap="round" stroke-linejoin="round"
-                                                        class="feather feather-heart">
-                                                        <path
-                                                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
-                                                        </path>
-                                                    </svg>
-                                                </span>
-                                                <span class="text">YÊU THÍCH</span>
-                                            </a>
-
-                                            <a class="d-flex">
-                                                <span class="icon" style="height: 24px;">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                        viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1"
-                                                        stroke-linecap="round" stroke-linejoin="round"
-                                                        class="feather feather-phone">
-                                                        <path
-                                                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
-                                                        </path>
-                                                    </svg>
-                                                </span>
-                                                <span class="text">0397974403</span>
-                                            </a>
-                                        </div>
-                                        <div class="product-buttons">
-                                            <button class="btn-addtocart w-100 mb-2">
-                                                Thêm vào giỏ hàng
-                                            </button>
-                                            <button class="btn-buynow">
-                                                Mua ngay
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
+                                </form>
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
             </div>
         </div>
     </main>
@@ -653,44 +513,61 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('.autoplay').slick({
-                slidesToShow: 5,
-                slidesToScroll: 5,
-                autoplay: true,
-                autoplaySpeed: 3000,
-                prevArrow: "<button type='button' class='slick-prev pull-left'><svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='#333' stroke-width='1' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevron-left'><polyline points='15 18 9 12 15 6'></polyline></svg></button>",
-                nextArrow: "<button type='button' class='slick-next pull-right'><svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='#333' stroke-width='1' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevron-right'><polyline points='9 18 15 12 9 6'></polyline></svg></button>"
-            });
-            $('.slider-for').slick({
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                arrows: false,
-                fade: true,
-                asNavFor: '.slider-nav'
-            });
-            $('.slider-nav').slick({
-                slidesToShow: 4,
-                slidesToScroll: 1,
-                asNavFor: '.slider-for',
-                dots: true,
-                centerMode: true,
-                focusOnSelect: true,
-            });
-        });
-    </script>
-    <script src='https://sachinchoolur.github.io/lightslider/dist/js/lightslider.js'></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase.js"></script>
     <script>
-        $('#lightSlider').lightSlider({
-            gallery: true,
-            item: 1,
-            loop: true,
-            slideMargin: 0,
-            thumbItem: 9
-        });
-    </script>
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyAfm5iGMdqzyywA8SIgeb3yVxagAvXx37k",
+            authDomain: "webdemo-36ffd.firebaseapp.com",
+            projectId: "webdemo-36ffd",
+            storageBucket: "webdemo-36ffd.appspot.com",
+            messagingSenderId: "990883187347",
+            appId: "1:990883187347:web:322028298811b48a5adb66",
+            measurementId: "G-GDXSSSDVE9"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        window.onload = function () {
+            render();
+        };
+        function render() {
+            window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-container');
+            recaptchaVerifier.render();
+        }
+        function phoneAuth() {
+            //get the number
+            var number = document.getElementById('number').value;
+            var scnum = '+84' + number
+            //phone number authentication function of firebase
+            //it takes two parameter first one is number,,,second one is recaptcha
+            firebase.auth().signInWithPhoneNumber(scnum, window.recaptchaVerifier).then(function (confirmationResult) {
+                //s is in lowercase
+                window.confirmationResult = confirmationResult;
+                coderesult = confirmationResult;
+                console.log(coderesult);
+                alert("Message sent");
+                $('.verifycode-signup').css('display', 'block')
+            }).catch(function (error) {
+                alert(error.message);
+            });
+        }
+        function codeverify() {
+            var code = document.getElementById('verificationCode').value;
+            coderesult.confirm(code).then(function (result) {
+                alert("Successfully registered");
+                var user = result.user;
+                console.log(user);
+            }).catch(function (error) {
+                alert(error.message);
+            });
+        }
+        function test() {
+            $('.verifycode-signup').css('visibility', 'visible')
+        }
+        function test2() {
 
+        }
+    </script>
 </body>
 
 </html>
