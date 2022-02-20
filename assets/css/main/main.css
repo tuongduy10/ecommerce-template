@@ -841,12 +841,12 @@
 }
 
 /* Product detail */
-.product-card {
+.product__detail-card {
     background-color: #fff;
     border: none
 }
 
-.product-slider {
+.product__detail-slider {
     width: 100%
 }
 
@@ -863,7 +863,7 @@ ul.lightSlider li {
     cursor: pointer
 }
 
-.products__content img {
+.products__detail-content img {
     display: block;
     height: auto;
     width: 100%
@@ -882,7 +882,7 @@ hr {
     font-size: 10px
 }
 
-.profile-image {
+.profile__detail-image {
     width: 35px
 }
 
@@ -890,7 +890,7 @@ hr {
     font-size: 12px
 }
 
-.product-buttons button{
+.product__detail-buttons button{
     cursor: pointer;
     text-transform: uppercase;
     border: 1px solid #333;
@@ -898,7 +898,7 @@ hr {
 
     padding: calc(13px + (24 - 13) * ((100vw - 375px)/ (1920 - 375)));
 }
-.product-buttons button:hover{
+.product__detail-buttons button:hover{
     border-color: var(--blue-dior);
     color: var(--blue-dior);
 }
@@ -913,7 +913,7 @@ hr {
 }
 
 .bullet-text {
-    /* font-size: 12px */
+    font-size: calc(16px + (20 - 14) * ((100vw - 375px)/ (1920 - 375)));
 }
 
 .my-color {
@@ -987,69 +987,73 @@ label.radio input:checked+span::before {
 .about > *{
     color: #383838
 }
-.product-image{
+.product__detail-image{
     padding-right: 1.5rem !important;
 }
-.product-info{
+.product__detail-info{
 
 }
-    .product-id{
+    .product__detail-id{
         margin-bottom: calc(5px + (8 - 5) * ((100vw - 375px)/ (1920 - 375)));
         font-weight: 600;
     }
-    .product-noti{
+    .product__detail-noti{
         color: #a0a0a0;
         margin-bottom: 20px;
     }
-    .product-name{
+    .product__detail-name{
         font-size: calc(20px + (45 - 20) * ((100vw - 375px)/ (1920 - 375)));
         line-height: calc(24px + (54 - 24) * ((100vw - 375px)/ (1920 - 375)));
         margin-bottom: calc(5px + (11 - 5) * ((100vw - 375px)/ (1920 - 375)));
     }
-    .product-brand{
+    .product__detail-brand{
         margin-bottom: calc(21px + (44 - 21) * ((100vw - 375px)/ (1920 - 375)));
         font-size: calc(18px + (35 - 18) * ((100vw - 375px)/ (1920 - 375)));
         line-height: calc(22px + (42 - 22) * ((100vw - 375px)/ (1920 - 375)));
         font-weight: 500;
     }
-    .product-discount{  
+    .product__detail-discount{  
         color: var(--blue-dior);
         font-size: calc(16px + (24 - 16) * ((100vw - 375px)/ (1920 - 375)));
         line-height: 25px;
         margin-bottom: calc(30px + (37 - 30) * ((100vw - 375px)/ (1920 - 375)));
     }
-    .product-action{
+    .product__detail-action{
         margin-bottom: calc(5px + (8 - 5) * ((100vw - 375px)/ (1920 - 375)));
         font-size: calc(14px + (20 - 14) * ((100vw - 375px)/ (1920 - 375)));
         line-height: calc(17px + (24 - 17) * ((100vw - 375px)/ (1920 - 375)));    
     }   
-        .product-action .icon{
-            margin-right: calc(13px + (22 - 13) * ((100vw - 375px)/ (1920 - 375)));
+        .product__detail-action .icon{
+            margin-right: calc(7px + (22 - 13) * ((100vw - 375px)/ (1920 - 375)));
         }
-        .product-action a:not(:last-child){
+        .product__detail-action a:not(:last-child){
             margin-right: calc(18px + (144 - 18) * ((100vw - 375px)/ (1920 - 375)));
         }
-    .product-price{
+    .product__detail-price{
         margin-bottom: calc(30px + (37 - 30) * ((100vw - 375px)/ (1920 - 375)));
     }
-    .product-price *{
+    .product__detail-price *{
         font-size: calc(16px + (24 - 16) * ((100vw - 375px)/ (1920 - 375)));
     }
-    .product-availableprice{
+    .product__detail-availableprice{
         margin-bottom: calc(5px + (8 - 5) * ((100vw - 375px)/ (1920 - 375)));;
     }
-        .product-price p{
+        .product__detail-price p{
             color: #707070;
             /* width: calc(100px + (150 - 100) * ((100vw - 375px)/ (1920 - 375))); */
         }
-        .product-price strike{
+        .product__detail-price strike{
             color: #a0a0a0;
         }
+
+    .product__detail-bottom{
+        width: 60%;
+    }
 @media only screen and (max-width: 768px){
-    .product-image{
+    .product__detail-image{
         padding-right: 0 !important;
     }
-    .product-info{
+    .product__detail-info{
         margin-top: 1.5rem;
     }
 }
