@@ -34,11 +34,16 @@
     <!-- <link rel="icon" href="assets/images/logo/squarelogo.png" type="image/x-icon"> -->
     <title>Web Demo</title>
     <style>
-        .lSAction > .lSPrev{
+        .lSAction>.lSPrev {
             background-image: url("assets/images/icon/left.png");
         }
-        .lSAction > .lSNext{
+
+        .lSAction>.lSNext {
             background-image: url("assets/images/icon/right.png");
+        }
+
+        .lSSlideOuter .lSPager.lSGallery li.active {
+            border: 2px solid var(--blue-dior);
         }
     </style>
 </head>
@@ -407,276 +412,20 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <!-- <div class="product-card mt-2">
-                                        <h6>Reviews</h6>
-                                        <div class="d-flex flex-row">
-                                            <div class="stars"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div> <span class="ml-1 font-weight-bold">4.6</span>
-                                        </div>
-                                        <hr>
-                                        <div class="badges"> <span class="badge bg-dark ">All (230)</span> <span class="badge bg-dark "> <i class="fa fa-image"></i> 23 </span> <span class="badge bg-dark "> <i class="fa fa-comments-o"></i> 23 </span> <span class="badge bg-warning"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <span class="ml-1">2,123</span> </span> </div>
-                                        <hr>
-                                        <div class="comment-section">
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <div class="d-flex flex-row align-items-center"> <img src="https://i.imgur.com/o5uMfKo.jpg" class="rounded-circle profile-image">
-                                                    <div class="d-flex flex-column ml-1 comment-profile">
-                                                        <div class="comment-ratings"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div> <span class="username">Lori Benneth</span>
-                                                    </div>
-                                                </div>
-                                                <div class="date"> <span class="text-muted">2 May</span> </div>
-                                            </div>
-                                            <hr>
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <div class="d-flex flex-row align-items-center"> <img src="https://i.imgur.com/tmdHXOY.jpg" class="rounded-circle profile-image">
-                                                    <div class="d-flex flex-column ml-1 comment-profile">
-                                                        <div class="comment-ratings"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div> <span class="username">Timona Simaung</span>
-                                                    </div>
-                                                </div>
-                                                <div class="date"> <span class="text-muted">12 May</span> </div>
-                                            </div>
-                                        </div>
-                                    </div> -->
                                 </div>
                                 <div class="product__detail-info col-md-7">
                                     <div class="product__detail-card">
                                         <div class="about">
-                                            <div class="product__detail-id d-flex mb-2">
-                                                <a class="d-flex" href="">
-                                                    <div>Mã sản phẩm: 22082022</div>
-                                                </a>
+                                            <div class="product__detail-id d-flex">
+                                                <a class="d-flex" href="">Mã sản phẩm: 22082022</a>
                                             </div>
-                                            <div class="d-flex mb-4" style="width: 100%;">
-                                                <a class="d-flex" style="width: 49%;">
-                                                    <span class="icon mr-2" style="height: 20px;" vertical-align: ;>
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                            viewBox="0 0 24 24" fill="none" stroke="#333"
-                                                            stroke-width="1" stroke-linecap="round"
-                                                            stroke-linejoin="round" class="feather feather-phone">
-                                                            <path
-                                                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
-                                                            </path>
-                                                        </svg>
-                                                    </span>
-                                                    <span class="text mb-0">0397974403</span>
-                                                </a>
-
-                                                <a class="d-flex" style="width: 49%;">
-                                                    <span class="icon mr-2" style="height: 20px; vertical-align: ;">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                            viewBox="0 0 24 24" fill="none" stroke="#333"
-                                                            stroke-width="1" stroke-linecap="round"
-                                                            stroke-linejoin="round" class="feather feather-heart">
-                                                            <path
-                                                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
-                                                            </path>
-                                                        </svg>
-                                                    </span>
-                                                    <span class="text mb-0">YÊU THÍCH</span>
-                                                </a>
-                                            </div>
-                                            <!-- <div class="product__detail-noti">*Tư vấn sản phẩm: 03979774403</div> -->
-                                            <div class="product__detail-name">Samsung Galaxy S21 Ultra 5G</div>
-                                            <div class="product__detail-brand">Shop Demo 01</div>
-
-                                            <div class="product__detail-desciption">
-                                                <div class="bullets">
-                                                    <div class="d-flex align-items-center mb-2">
-                                                        <!-- <span class="dot"></span> -->
-                                                        <!-- <span class="mr-2">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="32"
-                                                                height="32" viewBox="0 0 24 24" fill="none"
-                                                                stroke="currentColor" stroke-width="1"
-                                                                stroke-linecap="round" stroke-linejoin="round"
-                                                                class="feather feather-check-circle">
-                                                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                                                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                                                            </svg>
-                                                        </span> -->
-                                                        <span class="mr-2">
-                                                            <img src="assets/images/icon/medal.png" alt="">
-                                                        </span>
-                                                        <span class="bullet-text">Sản phẩm chính hãng</span>
-                                                    </div>
-                                                    <div class="d-flex align-items-center mb-2">
-                                                        <!-- <span class="dot"></span> -->
-                                                        <!-- <span class="mr-2">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="32"
-                                                                height="32" viewBox="0 0 24 24" fill="none"
-                                                                stroke="currentColor" stroke-width="1"
-                                                                stroke-linecap="round" stroke-linejoin="round"
-                                                                class="feather feather-award">
-                                                                <circle cx="12" cy="8" r="7"></circle>
-                                                                <polyline
-                                                                    points="8.21 13.89 7 23 12 20 17 23 15.79 13.88">
-                                                                </polyline>
-                                                            </svg>
-                                                        </span> -->
-                                                        <span class="mr-2">
-                                                            <img src="assets/images/icon/baohanh.png" alt="">
-                                                        </span>
-                                                        <span class="bullet-text">Bảo hành 2 năm</span>
-                                                    </div>
-                                                    <div class="d-flex align-items-center mb-2">
-                                                        <!-- <span class="dot"></span> -->
-                                                        <span class="mr-2">
-                                                            <img src="assets/images/icon/return.png" alt="">
-                                                        </span>
-                                                        <span class="bullet-text">Đổi trả miễn phí</span>
-                                                    </div>
-                                                    <div class="d-flex align-items-center mb-2">
-                                                        <!-- <span class="dot"></span> -->
-                                                        <span class="mr-2">
-                                                            <img style=""
-                                                                src="assets/images/icon/giaohang.png" alt="">
-                                                        </span>
-                                                        <!-- <span class="mr-2">
+                                            <div class="d-flex mb-4">
+                                                <div class="w-50">
+                                                    <a class="product__detail-action">
+                                                        <span class="icon mr-2">
                                                             <svg xmlns="http://www.w3.org/2000/svg" width="24"
                                                                 height="24" viewBox="0 0 24 24" fill="none"
-                                                                stroke="currentColor" stroke-width="1"
-                                                                stroke-linecap="round" stroke-linejoin="round"
-                                                                class="feather feather-truck">
-                                                                <rect x="1" y="3" width="15" height="13"></rect>
-                                                                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8">
-                                                                </polygon>
-                                                                <circle cx="5.5" cy="18.5" r="2.5"></circle>
-                                                                <circle cx="18.5" cy="18.5" r="2.5"></circle>
-                                                            </svg>
-                                                        </span> -->
-                                                        <span class="bullet-text">Giao hàng miễn phí</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <hr>
-                                        <div class="product__detail-bottom">
-                                            <div class="product__detail-options">
-                                                <!-- Product options -->
-                                                <div style="margin-bottom: calc(30px + (37 - 30) * ((100vw - 375px)/ (1920 - 375)));">
-                                                    <div class="d-flex mb-2">
-                                                        <div style="width: 200px">Size:</div>
-                                                        <div class="order__item-wrapper order__button">
-                                                            <div class="order__item-dropdown">
-                                                                L
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                                                    height="24" viewBox="0 0 24 24" fill="none"
-                                                                    stroke="#333" stroke-width="1" stroke-linecap="round"
-                                                                    stroke-linejoin="round"
-                                                                    class="feather feather-chevron-down svg-order">
-                                                                    <polyline points="6 9 12 15 18 9"></polyline>
-                                                                </svg>
-                                                            </div>
-                                                            <div class="order__item-dropdown_menu">
-                                                                <div class="order__item-dropdown_items">
-                                                                    <a class="order__item d-none">XL<svg
-                                                                            xmlns='http://www.w3.org/2000/svg' width='24'
-                                                                            height='24' viewBox='0 0 24 24' fill='none'
-                                                                            stroke='#333' stroke-width='1'
-                                                                            stroke-linecap='round' stroke-linejoin='round'
-                                                                            class='feather feather-chevron-right'>
-                                                                            <polyline points='9 18 15 12 9 6'></polyline>
-                                                                        </svg></a>
-                                                                    <a class="order__item">XXL<svg
-                                                                            xmlns='http://www.w3.org/2000/svg' width='24'
-                                                                            height='24' viewBox='0 0 24 24' fill='none'
-                                                                            stroke='#333' stroke-width='1'
-                                                                            stroke-linecap='round' stroke-linejoin='round'
-                                                                            class='feather feather-chevron-right'>
-                                                                            <polyline points='9 18 15 12 9 6'></polyline>
-                                                                        </svg></a>
-                                                                    <a class="order__item">S<svg
-                                                                            xmlns='http://www.w3.org/2000/svg' width='24'
-                                                                            height='24' viewBox='0 0 24 24' fill='none'
-                                                                            stroke='#333' stroke-width='1'
-                                                                            stroke-linecap='round' stroke-linejoin='round'
-                                                                            class='feather feather-chevron-right'>
-                                                                            <polyline points='9 18 15 12 9 6'></polyline>
-                                                                        </svg></a>
-                                                                    <a class="order__item">M<svg
-                                                                            xmlns='http://www.w3.org/2000/svg' width='24'
-                                                                            height='24' viewBox='0 0 24 24' fill='none'
-                                                                            stroke='#333' stroke-width='1'
-                                                                            stroke-linecap='round' stroke-linejoin='round'
-                                                                            class='feather feather-chevron-right'>
-                                                                            <polyline points='9 18 15 12 9 6'></polyline>
-                                                                        </svg></a>
-                                                                    <a class="order__item">L<svg
-                                                                            xmlns='http://www.w3.org/2000/svg' width='24'
-                                                                            height='24' viewBox='0 0 24 24' fill='none'
-                                                                            stroke='#333' stroke-width='1'
-                                                                            stroke-linecap='round' stroke-linejoin='round'
-                                                                            class='feather feather-chevron-right'>
-                                                                            <polyline points='9 18 15 12 9 6'></polyline>
-                                                                        </svg></a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-    
-                                                    <div class="d-flex mb-2">
-                                                        <div style="width: 200px">Màu sắc:</div>
-                                                        <div class="order__item-wrapper order__button">
-                                                            <div class="order__item-dropdown">
-                                                                L
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                                                    height="24" viewBox="0 0 24 24" fill="none"
-                                                                    stroke="#333" stroke-width="1" stroke-linecap="round"
-                                                                    stroke-linejoin="round"
-                                                                    class="feather feather-chevron-down svg-order">
-                                                                    <polyline points="6 9 12 15 18 9"></polyline>
-                                                                </svg>
-                                                            </div>
-                                                            <div class="order__item-dropdown_menu">
-                                                                <div class="order__item-dropdown_items">
-                                                                    <a class="order__item d-none">XL<svg
-                                                                            xmlns='http://www.w3.org/2000/svg' width='24'
-                                                                            height='24' viewBox='0 0 24 24' fill='none'
-                                                                            stroke='#333' stroke-width='1'
-                                                                            stroke-linecap='round' stroke-linejoin='round'
-                                                                            class='feather feather-chevron-right'>
-                                                                            <polyline points='9 18 15 12 9 6'></polyline>
-                                                                        </svg></a>
-                                                                    <a class="order__item">XXL<svg
-                                                                            xmlns='http://www.w3.org/2000/svg' width='24'
-                                                                            height='24' viewBox='0 0 24 24' fill='none'
-                                                                            stroke='#333' stroke-width='1'
-                                                                            stroke-linecap='round' stroke-linejoin='round'
-                                                                            class='feather feather-chevron-right'>
-                                                                            <polyline points='9 18 15 12 9 6'></polyline>
-                                                                        </svg></a>
-                                                                    <a class="order__item">S<svg
-                                                                            xmlns='http://www.w3.org/2000/svg' width='24'
-                                                                            height='24' viewBox='0 0 24 24' fill='none'
-                                                                            stroke='#333' stroke-width='1'
-                                                                            stroke-linecap='round' stroke-linejoin='round'
-                                                                            class='feather feather-chevron-right'>
-                                                                            <polyline points='9 18 15 12 9 6'></polyline>
-                                                                        </svg></a>
-                                                                    <a class="order__item">M<svg
-                                                                            xmlns='http://www.w3.org/2000/svg' width='24'
-                                                                            height='24' viewBox='0 0 24 24' fill='none'
-                                                                            stroke='#333' stroke-width='1'
-                                                                            stroke-linecap='round' stroke-linejoin='round'
-                                                                            class='feather feather-chevron-right'>
-                                                                            <polyline points='9 18 15 12 9 6'></polyline>
-                                                                        </svg></a>
-                                                                    <a class="order__item">L<svg
-                                                                            xmlns='http://www.w3.org/2000/svg' width='24'
-                                                                            height='24' viewBox='0 0 24 24' fill='none'
-                                                                            stroke='#333' stroke-width='1'
-                                                                            stroke-linecap='round' stroke-linejoin='round'
-                                                                            class='feather feather-chevron-right'>
-                                                                            <polyline points='9 18 15 12 9 6'></polyline>
-                                                                        </svg></a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- <div class="product__detail-action">
-                                                    <a class="d-flex" style="width: 49%;">
-                                                        <span class="icon" style="height: 24px;">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                                viewBox="0 0 24 24" fill="none" stroke="#333"
-                                                                stroke-width="1" stroke-linecap="round"
+                                                                stroke="#333" stroke-width="1" stroke-linecap="round"
                                                                 stroke-linejoin="round" class="feather feather-heart">
                                                                 <path
                                                                     d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
@@ -685,12 +434,13 @@
                                                         </span>
                                                         <span class="text">YÊU THÍCH</span>
                                                     </a>
-    
-                                                    <a class="d-flex" style="width: 49%;">
-                                                        <span class="icon" style="height: 24px;">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                                viewBox="0 0 24 24" fill="none" stroke="#333"
-                                                                stroke-width="1" stroke-linecap="round"
+                                                </div>
+                                                <div class="w-50">
+                                                    <a class="product__detail-action">
+                                                        <span class="icon mr-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                height="24" viewBox="0 0 24 24" fill="none"
+                                                                stroke="#333" stroke-width="1" stroke-linecap="round"
                                                                 stroke-linejoin="round" class="feather feather-phone">
                                                                 <path
                                                                     d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
@@ -699,43 +449,109 @@
                                                         </span>
                                                         <span class="text">0397974403</span>
                                                     </a>
-                                                </div> -->
-                                                <!--  -->
-                                                <div class="product__detail-price">
-                                                    <div class="product__detail-discount d-flex align-items-center" style="margin-bottom: 10px;">
-                                                        <span class="bullet-text">Giảm 15%</span>
+                                                </div>
+                                            </div>
+                                            <!-- <div class="product__detail-noti">*Tư vấn sản phẩm: 03979774403</div> -->
+                                            <div class="product__detail-name">Samsung Galaxy S21 Ultra 5G</div>
+                                            <div class="product__detail-brand">
+                                                <a href="">Shop Demo 01</a>
+                                            </div>
+
+                                            <div class="product__detail-desciption">
+                                                <div class="bullets">
+                                                    <div class="d-flex align-items-center mb-2">
+                                                        <span class="mr-2">
+                                                            <img src="assets/images/icon/medal.png" alt="">
+                                                        </span>
+                                                        <span class="bullet-text">Sản phẩm chính hãng</span>
                                                     </div>
-                                                    <div class="product-availableprice form-check">
-                                                        <input class="form-check-input" type="radio"
-                                                            name="flexRadioDefault" id="flexRadioDefault1">
-                                                        <label class="form-check-label d-flex justify-content-between"
-                                                            for="flexRadioDefault1">
-                                                            <p class="mb-0">Có sẵn: </p>
-                                                            <span>
-                                                                <strike class="mr-2">13.000.000 đ</strike>
-                                                                12.500.000 đ
-                                                            </span>
-                                                        </label>
+                                                    <div class="d-flex align-items-center mb-2">
+                                                        <span class="mr-2">
+                                                            <img src="assets/images/icon/baohanh.png" alt="">
+                                                        </span>
+                                                        <span class="bullet-text">Bảo hành 2 năm</span>
                                                     </div>
-                                                    <div class="product__detail-orderprice form-check">
-                                                        <input class="form-check-input" type="radio"
-                                                            name="flexRadioDefault" id="flexRadioDefault2" checked>
-                                                        <label class="form-check-label d-flex justify-content-between"
-                                                            for="flexRadioDefault2">
-                                                            <p class="mb-0">Đặt trước: </p>
-                                                            <span>
-                                                                <strike class="mr-2">12.000.000 đ</strike>
-                                                                11.500.000 đ
-                                                            </span>
-                                                        </label>
+                                                    <div class="d-flex align-items-center mb-2">
+                                                        <span class="mr-2">
+                                                            <img src="assets/images/icon/return.png" alt="">
+                                                        </span>
+                                                        <span class="bullet-text">Đổi trả miễn phí</span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center mb-2">
+                                                        <span class="mr-2">
+                                                            <img src="assets/images/icon/giaohang.png" alt="">
+                                                        </span>
+                                                        <span class="bullet-text">Giao hàng miễn phí</span>
                                                     </div>
                                                 </div>
                                             </div>
+                                        </div>
+                                        <hr>
+                                        <div class="product__detail-bottom">
+                                            <!-- Product options -->
+                                            <div class="product__detail-options">
+                                                <div class="options option-quality d-flex mb-2 align-items-center">
+                                                    <div class="option-title">Số lượng: </div>
+                                                    <input type="number" value="1" min="1" max="50"
+                                                        style="border: 1px solid #333;">
+                                                </div>
+                                                <div class="options option-size d-flex mb-2 align-items-center">
+                                                    <div class="option-title">Size: </div>
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>Chọn size</option>
+                                                        <option value="1">S</option>
+                                                        <option value="2">M</option>
+                                                        <option value="3">L</option>
+                                                        <option value="3">XL</option>
+                                                        <option value="3">XXL</option>
+                                                    </select>
+                                                </div>
+                                                <div class="options option-color d-flex mb-2 align-items-center">
+                                                    <div class="option-title">Màu sắc: </div>
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>Chọn màu</option>
+                                                        <option value="1">Xanh</option>
+                                                        <option value="2">Đỏ</option>
+                                                        <option value="3">Tím</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="product__detail-price">
+                                                <span class="sales-value">Giảm 15%</span>
+                                                <div class="option-price form-check form-check-inline w-100">
+                                                    <div class="option-title">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                                        <label class="form-check-label" for="inlineRadio1">Có
+                                                            sẵn:</label>
+                                                    </div>
+                                                    <label class="form-check-label" for="inlineRadio1">
+                                                        <strike class="mr-2">12.000.000 đ</strike>
+                                                        11.500.000 đ
+                                                    </label>
+                                                </div>
+                                                <div class="option-price form-check form-check-inline w-100">
+                                                    <div class="option-title">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                                        <label class="form-check-label" for="inlineRadio2">Đặt
+                                                            trước:</label>
+                                                    </div>
+                                                    <label class="form-check-label" for="inlineRadio2">
+                                                        <strike class="mr-2">13.000.000 đ</strike>
+                                                        12.500.000 đ
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <!-- Price -->
                                             <div class="product__detail-buttons justify-content-between w-100">
-                                                <button class="btn-addtocart mb-2" style="width: 49%; background-color: #333; color: #fff;">
+                                                <button class="btn-addtocart mb-2"
+                                                    style="width: 49%; background-color: #333; color: #fff;">
                                                     Thêm vào giỏ
                                                 </button>
-                                                <button class="btn-buynow" style="width: 49%; background-color: #333; color: #fff;">
+                                                <button class="btn-buynow"
+                                                    style="width: 49%; background-color: #333; color: #fff;">
                                                     Mua ngay
                                                 </button>
                                             </div>
@@ -750,55 +566,40 @@
                             <h3 class="home-title mx-auto">Hình ảnh thực tế</h3>
                             <div class="line w-100" style="background-color: #e0e0e0;"></div>
                         </div>
-        
+
                         <div class="autoplay d-flex">
                             <a class="bran__logo p-4" href="/WebDemo/products.html">
-                                <img src="assets/images/products/jacket1.jpg"
-                                    alt=""></a>
+                                <img src="assets/images/products/jacket1.jpg" alt=""></a>
                             <a class="bran__logo p-4" href="/WebDemo/products.html">
-                                <img src="assets/images/products/jacket2.jpg"
-                                    alt=""></a>
+                                <img src="assets/images/products/jacket2.jpg" alt=""></a>
                             <a class="bran__logo p-4" href="/WebDemo/products.html">
-                                <img src="assets/images/products/jacket3.jpg"
-                                    alt=""></a>
+                                <img src="assets/images/products/jacket3.jpg" alt=""></a>
                             <a class="bran__logo p-4" href="/WebDemo/products.html">
-                                <img src="assets/images/products/jacket4.jpg"
-                                    alt=""></a>
+                                <img src="assets/images/products/jacket4.jpg" alt=""></a>
                             <a class="bran__logo p-4" href="/WebDemo/products.html">
-                                <img src="assets/images/products/jacket3.jpg"
-                                    alt=""></a>
-        
+                                <img src="assets/images/products/jacket3.jpg" alt=""></a>
+
                             <a class="bran__logo p-4" href="/WebDemo/products.html">
-                                <img src="assets/images/products/watch2.jpg"
-                                    alt=""></a>
+                                <img src="assets/images/products/watch2.jpg" alt=""></a>
                             <a class="bran__logo p-4" href="/WebDemo/products.html">
-                                <img src="assets/images/products/watch3.jpg"
-                                    alt=""></a>
+                                <img src="assets/images/products/watch3.jpg" alt=""></a>
                             <a class="bran__logo p-4" href="/WebDemo/products.html">
-                                <img src="assets/images/products/watch4.jpg"
-                                    alt=""></a>
+                                <img src="assets/images/products/watch4.jpg" alt=""></a>
                             <a class="bran__logo p-4" href="/WebDemo/products.html">
-                                <img src="assets/images/products/pro1.png"
-                                    alt=""></a>
+                                <img src="assets/images/products/pro1.png" alt=""></a>
                             <a class="bran__logo p-4" href="/WebDemo/products.html">
-                                <img src="assets/images/products/jacket3.jpg"
-                                    alt=""></a>
-        
+                                <img src="assets/images/products/jacket3.jpg" alt=""></a>
+
                             <a class="bran__logo p-4" href="/WebDemo/products.html">
-                                <img src="assets/images/products/watch4.jpg"
-                                    alt=""></a>
+                                <img src="assets/images/products/watch4.jpg" alt=""></a>
                             <a class="bran__logo p-4" href="/WebDemo/products.html">
-                                <img src="assets/images/products/jacket1.jpg"
-                                    alt=""></a>
+                                <img src="assets/images/products/jacket1.jpg" alt=""></a>
                             <a class="bran__logo p-4" href="/WebDemo/products.html">
-                                <img
-                                    src="assets/images/logo/tinysquarelogo.jpg" alt=""></a>
+                                <img src="assets/images/logo/tinysquarelogo.jpg" alt=""></a>
                             <a class="bran__logo p-4" href="/WebDemo/products.html">
-                                <img src="assets/images/products/jacket3.jpg"
-                                    alt=""></a>
+                                <img src="assets/images/products/jacket3.jpg" alt=""></a>
                             <a class="bran__logo p-4" href="/WebDemo/products.html">
-                                <img src="assets/images/products/watch3.jpg"
-                                    alt=""></a>
+                                <img src="assets/images/products/watch3.jpg" alt=""></a>
                         </div>
                     </div>
                 </div>
