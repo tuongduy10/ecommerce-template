@@ -1061,9 +1061,17 @@ label.radio input:checked+span::before {
             color: var(--blue-dior);
         }
         .option-title{
+            position: relative;
             font-size: calc(16px + (24 - 16) * ((100vw - 375px)/ (1920 - 375)));
             width: 148px;
         }
+            .option-title input{
+                position: absolute !important;
+                height: 100%;
+            }
+            .option-title label{
+                margin-left: 16px;
+            }
         .product__detail-options .options-wrapper{
             position: relative;
             width: 11.5rem;
