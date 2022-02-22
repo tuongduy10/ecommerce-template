@@ -142,13 +142,15 @@ $('.add-to-wishlist').click(function(){
     $(this).addClass('fill')
 })
 
-$('.slider__item img').click(function(){
-    let src = $(this).attr('src')
-    $('.main__picture-inner img').attr('src',src)
+$('.options-wrapper select').on('click',function(){
+    if(!$(this).siblings('svg').hasClass('svg-up')){
+        $(this).siblings('svg').addClass('svg-up') 
+        return
+    }
+    $(this).siblings('svg').removeClass('svg-up')
 })
-
-$('.test').click(function() {
-   $(".slider__list").animate({
-        scrollTop: 210
-   })
+$('.options-wrapper select').on('focusout',function(){
+    if($(this).siblings('svg').hasClass('svg-up')){
+        $(this).siblings('svg').removeClass('svg-up') 
+    }
 })

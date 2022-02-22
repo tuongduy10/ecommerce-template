@@ -893,6 +893,7 @@ hr {
 .product__detail-buttons button{
     cursor: pointer;
     text-transform: uppercase;
+    font-weight: 700;
     border: 1px solid #333;
     background-color: #fff;
 
@@ -1045,6 +1046,13 @@ label.radio input:checked+span::before {
         .product__detail-action a:not(:last-child){
             margin-right: calc(18px + (144 - 18) * ((100vw - 375px)/ (1920 - 375)));
         }
+    .product__detail-bottom input{
+        padding: 4px;
+        border: 1px solid #333;
+    }
+    .product__detail-bottom input:focus{
+        outline: none;
+    }
     .product__detail-options{
         margin-bottom: calc(30px + (37 - 30) * ((100vw - 375px)/ (1920 - 375)));
     }   
@@ -1053,10 +1061,35 @@ label.radio input:checked+span::before {
         }
         .option-title{
             font-size: calc(16px + (24 - 16) * ((100vw - 375px)/ (1920 - 375)));
-            width: 200px;
+            width: 148px;
+        }
+        .product__detail-options .options-wrapper{
+            position: relative;
+            width: 11.5rem;
+        }
+        .options-wrapper .options,
+        .options-wrapper svg{
+            cursor: pointer;
+        }
+            .options-wrapper svg{
+                transition: all .3s ease;
+            }
+                .options{
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    text-indent: 1px;
+                    text-overflow: '';
+                }
+        .product__detail-options .options-wrapper svg{
+            position: absolute;
+            right: 4px;
+            height: 100%;
         }
         .option-price label{
             cursor: pointer;
+        }
+        .product__detail-price .form-check-input{
+            margin-right: 0 !important;
         }
     .product__detail-price{
         margin-bottom: calc(30px + (37 - 30) * ((100vw - 375px)/ (1920 - 375)));
@@ -1094,6 +1127,9 @@ label.radio input:checked+span::before {
     }
     .product__detail-price .option-price{
         justify-content: space-between;
+    }
+    .product__detail-buttons button{
+        font-size: 14px;
     }
 }
 

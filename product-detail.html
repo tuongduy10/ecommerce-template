@@ -45,6 +45,9 @@
         .lSSlideOuter .lSPager.lSGallery li.active {
             border: 2px solid var(--blue-dior);
         }
+        .slick-list{
+            width: 100%;
+        }
     </style>
 </head>
 
@@ -377,7 +380,7 @@
                             <div class="row no-gutters">
                                 <div class="product__detail-image col-md-5">
                                     <div class="product__detail-card">
-                                        <div class="product__detail-slider">
+                                        <div class="product__detail-slider mb-2">
                                             <ul id="lightSlider">
                                                 <li data-thumb="assets/images/products/watch4.jpg"> <img
                                                         src="assets/images/products/watch4.jpg" /> </li>
@@ -411,30 +414,16 @@
                                                         src="assets/images/products/jacket2.jpg" /> </li>
                                             </ul>
                                         </div>
+                                        <a href="" style="text-decoration: underline;">Hướng dẫn chọn size</a>
                                     </div>
                                 </div>
                                 <div class="product__detail-info col-md-7">
                                     <div class="product__detail-card">
                                         <div class="about">
                                             <div class="product__detail-id d-flex">
-                                                <a class="d-flex" href="">Mã sản phẩm: 22082022</a>
+                                                <a class="d-flex">Mã sản phẩm: 22082022</a>
                                             </div>
                                             <div class="d-flex mb-4">
-                                                <div class="w-50">
-                                                    <a class="product__detail-action">
-                                                        <span class="icon mr-2">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                                                height="24" viewBox="0 0 24 24" fill="none"
-                                                                stroke="#333" stroke-width="1" stroke-linecap="round"
-                                                                stroke-linejoin="round" class="feather feather-heart">
-                                                                <path
-                                                                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
-                                                                </path>
-                                                            </svg>
-                                                        </span>
-                                                        <span class="text">YÊU THÍCH</span>
-                                                    </a>
-                                                </div>
                                                 <div class="w-50">
                                                     <a class="product__detail-action">
                                                         <span class="icon mr-2">
@@ -450,8 +439,22 @@
                                                         <span class="text">0397974403</span>
                                                     </a>
                                                 </div>
+                                                <div class="w-50">
+                                                    <a class="product__detail-action">
+                                                        <span class="icon mr-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                height="24" viewBox="0 0 24 24" fill="none"
+                                                                stroke="#333" stroke-width="1" stroke-linecap="round"
+                                                                stroke-linejoin="round" class="feather feather-heart">
+                                                                <path
+                                                                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                                                </path>
+                                                            </svg>
+                                                        </span>
+                                                        <span class="text">Yêu Thích</span>
+                                                    </a>
+                                                </div>
                                             </div>
-                                            <!-- <div class="product__detail-noti">*Tư vấn sản phẩm: 03979774403</div> -->
                                             <div class="product__detail-name">Samsung Galaxy S21 Ultra 5G</div>
                                             <div class="product__detail-brand">
                                                 <a href="">Shop Demo 01</a>
@@ -490,30 +493,50 @@
                                         <div class="product__detail-bottom">
                                             <!-- Product options -->
                                             <div class="product__detail-options">
-                                                <div class="options option-quality d-flex mb-2 align-items-center">
-                                                    <div class="option-title">Số lượng: </div>
-                                                    <input type="number" value="1" min="1" max="50"
-                                                        style="border: 1px solid #333;">
+                                                <div class="option-quality d-flex mb-2 align-items-center">
+                                                    <div class="option-title">Số lượng</div>
+                                                    <input class="text-center" type="number" value="1" min="1" max="50">
                                                 </div>
-                                                <div class="options option-size d-flex mb-2 align-items-center">
-                                                    <div class="option-title">Size: </div>
-                                                    <select class="form-select" aria-label="Default select example">
-                                                        <option selected>Chọn size</option>
-                                                        <option value="1">S</option>
-                                                        <option value="2">M</option>
-                                                        <option value="3">L</option>
-                                                        <option value="3">XL</option>
-                                                        <option value="3">XXL</option>
-                                                    </select>
+                                                <div class="option-size d-flex mb-2 align-items-center">
+                                                    <div class="option-title">Size</div>
+                                                    <div class="options-wrapper">
+                                                        <select class="options form-select w-100"
+                                                            aria-label="Default select example">
+                                                            <option disabled selected>- Chọn -</option>
+                                                            <option value="1">S</option>
+                                                            <option value="2">M</option>
+                                                            <option value="3">L</option>
+                                                            <option value="4">XL</option>
+                                                            <option value="4">XXL</option>
+                                                        </select>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                            viewBox="0 0 24 24" fill="none" stroke="#333"
+                                                            stroke-width="1" stroke-linecap="round"
+                                                            stroke-linejoin="round"
+                                                            class="feather feather-chevron-down">
+                                                            <polyline points="6 9 12 15 18 9"></polyline>
+                                                        </svg>
+                                                    </div>
                                                 </div>
-                                                <div class="options option-color d-flex mb-2 align-items-center">
-                                                    <div class="option-title">Màu sắc: </div>
-                                                    <select class="form-select" aria-label="Default select example">
-                                                        <option selected>Chọn màu</option>
-                                                        <option value="1">Xanh</option>
-                                                        <option value="2">Đỏ</option>
-                                                        <option value="3">Tím</option>
-                                                    </select>
+                                                <div class="option-color d-flex mb-2 align-items-center">
+                                                    <div class="option-title">Màu sắc</div>
+                                                    <div class="options-wrapper">
+                                                        <select class="options form-select w-100"
+                                                            aria-label="Default select example">
+                                                            <option disabled selected>- Chọn -</option>
+                                                            <option value="1">Xanh</option>
+                                                            <option value="2">Đỏ</option>
+                                                            <option value="3">Tím</option>
+                                                            <option value="4">Vàng</option>
+                                                        </select>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                            viewBox="0 0 24 24" fill="none" stroke="#333"
+                                                            stroke-width="1" stroke-linecap="round"
+                                                            stroke-linejoin="round"
+                                                            class="feather feather-chevron-down">
+                                                            <polyline points="6 9 12 15 18 9"></polyline>
+                                                        </svg>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="product__detail-price">
@@ -523,7 +546,7 @@
                                                         <input class="form-check-input" type="radio"
                                                             name="inlineRadioOptions" id="inlineRadio1" value="option1">
                                                         <label class="form-check-label" for="inlineRadio1">Có
-                                                            sẵn:</label>
+                                                            sẵn</label>
                                                     </div>
                                                     <label class="form-check-label" for="inlineRadio1">
                                                         <strike class="mr-2">12.000.000 đ</strike>
@@ -535,7 +558,7 @@
                                                         <input class="form-check-input" type="radio"
                                                             name="inlineRadioOptions" id="inlineRadio2" value="option2">
                                                         <label class="form-check-label" for="inlineRadio2">Đặt
-                                                            trước:</label>
+                                                            trước</label>
                                                     </div>
                                                     <label class="form-check-label" for="inlineRadio2">
                                                         <strike class="mr-2">13.000.000 đ</strike>
@@ -561,46 +584,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="bran__logo-list" style="margin-top: 90px;">
-                        <div class="text-center">
-                            <h3 class="home-title mx-auto">Hình ảnh thực tế</h3>
-                            <div class="line w-100" style="background-color: #e0e0e0;"></div>
-                        </div>
+                    <div class="">
 
-                        <div class="autoplay d-flex">
-                            <a class="bran__logo p-4" href="/WebDemo/products.html">
-                                <img src="assets/images/products/jacket1.jpg" alt=""></a>
-                            <a class="bran__logo p-4" href="/WebDemo/products.html">
-                                <img src="assets/images/products/jacket2.jpg" alt=""></a>
-                            <a class="bran__logo p-4" href="/WebDemo/products.html">
-                                <img src="assets/images/products/jacket3.jpg" alt=""></a>
-                            <a class="bran__logo p-4" href="/WebDemo/products.html">
-                                <img src="assets/images/products/jacket4.jpg" alt=""></a>
-                            <a class="bran__logo p-4" href="/WebDemo/products.html">
-                                <img src="assets/images/products/jacket3.jpg" alt=""></a>
-
-                            <a class="bran__logo p-4" href="/WebDemo/products.html">
-                                <img src="assets/images/products/watch2.jpg" alt=""></a>
-                            <a class="bran__logo p-4" href="/WebDemo/products.html">
-                                <img src="assets/images/products/watch3.jpg" alt=""></a>
-                            <a class="bran__logo p-4" href="/WebDemo/products.html">
-                                <img src="assets/images/products/watch4.jpg" alt=""></a>
-                            <a class="bran__logo p-4" href="/WebDemo/products.html">
-                                <img src="assets/images/products/pro1.png" alt=""></a>
-                            <a class="bran__logo p-4" href="/WebDemo/products.html">
-                                <img src="assets/images/products/jacket3.jpg" alt=""></a>
-
-                            <a class="bran__logo p-4" href="/WebDemo/products.html">
-                                <img src="assets/images/products/watch4.jpg" alt=""></a>
-                            <a class="bran__logo p-4" href="/WebDemo/products.html">
-                                <img src="assets/images/products/jacket1.jpg" alt=""></a>
-                            <a class="bran__logo p-4" href="/WebDemo/products.html">
-                                <img src="assets/images/logo/tinysquarelogo.jpg" alt=""></a>
-                            <a class="bran__logo p-4" href="/WebDemo/products.html">
-                                <img src="assets/images/products/jacket3.jpg" alt=""></a>
-                            <a class="bran__logo p-4" href="/WebDemo/products.html">
-                                <img src="assets/images/products/watch3.jpg" alt=""></a>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -727,7 +712,7 @@
     <script type="text/javascript">
         $(document).ready(function () {
             $('.autoplay').slick({
-                slidesToShow: 5,
+                slidesToShow: 6,
                 slidesToScroll: 5,
                 autoplay: true,
                 autoplaySpeed: 3000,
