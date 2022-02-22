@@ -1049,6 +1049,7 @@ label.radio input:checked+span::before {
     .product__detail-bottom input{
         padding: 4px;
         border: 1px solid #333;
+        font-size: calc(14px + (24 - 16) * ((100vw - 375px)/ (1920 - 375)));
     }
     .product__detail-bottom input:focus{
         outline: none;
@@ -1066,6 +1067,9 @@ label.radio input:checked+span::before {
         .product__detail-options .options-wrapper{
             position: relative;
             width: 11.5rem;
+        }
+        .product__detail-options .options-wrapper select{
+            font-size: calc(14px + (24 - 16) * ((100vw - 375px)/ (1920 - 375)));
         }
         .options-wrapper .options,
         .options-wrapper svg{
@@ -1109,10 +1113,13 @@ label.radio input:checked+span::before {
         }
 @media only screen and (max-width: 992px) {
     .option-title{
-        width: 136px;
+        width: 119px;
     }
 }
 @media only screen and (max-width: 768px){
+    .option-title{
+        width: 103px;
+    }
     .product__detail-image{
         padding-right: 0 !important;
     }
@@ -1122,12 +1129,15 @@ label.radio input:checked+span::before {
     .product__detail-options .options{
         justify-content: space-between;
     }
-    .product__detail-price .option-title{
+        .product__detail-options .options-wrapper{
+            width: 6.5rem;
+        }
+    /* .product__detail-price .option-title{
         width: unset;
     }
     .product__detail-price .option-price{
         justify-content: space-between;
-    }
+    } */
     .product__detail-buttons button{
         font-size: 14px;
     }
