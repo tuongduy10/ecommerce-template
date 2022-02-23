@@ -37,6 +37,7 @@
         .lSAction>.lSPrev {
             background-image: url("assets/images/icon/left.png");
         }
+
         .lSAction>.lSNext {
             background-image: url("assets/images/icon/right.png");
         }
@@ -44,25 +45,38 @@
         .lSSlideOuter .lSPager.lSGallery li.active {
             border: 2px solid var(--blue-dior);
         }
-        .lSPager li{
+
+        .lSPager li {
             height: 100%;
         }
-        .lSSlideOuter .lSPager.lSGallery img{
+
+        .lSSlideOuter .lSPager.lSGallery img {
             height: 100%;
             max-width: unset;
             width: auto;
             margin: 0 auto;
         }
 
-        
-        /* #lightSlider li{
+        .lSSlide .lslide {
             height: 100%;
         }
-        #lightSlider li img{
+
+        .lSSlide .lslide img {
             height: 100%;
-            object-fit: cover;
+            width: auto;
             margin: 0 auto;
-        } */
+        }
+
+        .product__images-slider .lslide,
+        .product__images-slider .clone{
+            height: 100%;
+            text-align: center;
+        }
+        .product__images-slider .lslide img,
+        .product__images-slider .clone img{
+            width: auto;
+            height: 100%;
+        }
     </style>
 </head>
 
@@ -396,72 +410,49 @@
                             <a href="">Samsung Galaxy S21 Ultra 5G</a>
                         </li>
                     </ul>
-                    <div class="products__detail-content">
-                            <div class="row no-gutters">
-                                <div class="product__detail-image col-md-5">
-                                    <div class="product__detail-card">
-                                        <div class="product__detail-slider mb-2">
-                                            <ul id="lightSlider">
-                                                <li data-thumb="assets/images/products/watch4.jpg"> 
-                                                    <img src="assets/images/products/watch4.jpg" /> 
-                                                </li>
-                                                <li data-thumb="assets/images/products/pro1.png"> 
-                                                    <img src="assets//images/products/pro1.png" /> 
-                                                </li>
-                                                <li data-thumb="assets/images/products/jacket3.jpg"> 
-                                                    <img src="assets/images/products/jacket3.jpg" /> 
-                                                </li>
-                                                <li data-thumb="assets/images/products/jacket4.jpg"> 
-                                                    <img src="assets/images/products/jacket4.jpg" /> 
-                                                </li>
-                                                <li data-thumb="assets/images/products/jacket1.jpg"> 
-                                                    <img src="assets/images/products/jacket1.jpg" /> 
-                                                </li>
-                                                <li data-thumb="assets/images/products/jacket3.jpg"> 
-                                                    <img src="assets/images/products/jacket3.jpg" /> 
-                                                </li>
-                                                <li data-thumb="assets/images/products/jacket2.jpg"> 
-                                                    <img src="assets/images/products/jacket2.jpg" /> 
-                                                </li>
-                                                <li data-thumb="assets/images/products/jacket4.jpg"> 
-                                                    <img src="assets/images/products/jacket4.jpg" /> 
-                                                </li>
-                                                <li data-thumb="assets/images/products/jacket2.jpg"> 
-                                                    <img src="assets/images/products/jacket2.jpg" /> 
-                                                </li>
-                                                <li data-thumb="assets/images/products/jacket3.jpg"> 
-                                                    <img src="assets/images/products/jacket3.jpg" /> 
-                                                </li>
-                                                <li data-thumb="assets/images/products/jacket1.jpg"> 
-                                                    <img src="assets/images/products/jacket1.jpg" /> 
-                                                </li>
-                                                <li data-thumb="assets/images/products/jacket2.jpg"> 
-                                                    <img src="assets/images/products/jacket2.jpg" /> 
-                                                </li>
-                                                <li data-thumb="assets/images/products/jacket4.jpg"> 
-                                                    <img src="assets/images/products/jacket4.jpg" /> 
-                                                </li>
-                                                <li data-thumb="assets/images/products/jacket3.jpg"> 
-                                                    <img src="assets/images/products/jacket3.jpg" /> 
-                                                </li>
-                                                <li data-thumb="assets/images/products/jacket2.jpg"> 
-                                                    <img src="assets/images/products/jacket2.jpg" /> 
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <a href="" style="text-decoration: underline;">Hướng dẫn chọn size</a>
+                    <div class="product__detail-content">
+                        <div class="row no-gutters">
+                            <div class="product__detail-image col-md-5">
+                                <div class="product__detail-card">
+                                    <div class="product__detail-slider mb-2">
+                                        <ul class="lightSlider">
+                                            <li data-thumb="assets/images/products/watch2.jpg">
+                                                <img src="assets/images/products/watch2.jpg" />
+                                            </li>
+                                            <li data-thumb="assets/images/products/pro1.png">
+                                                <img src="assets//images/products/pro1.png" />
+                                            </li>
+                                            <li data-thumb="assets/images/products/jacket4.jpg">
+                                                <img src="assets/images/products/jacket4.jpg" />
+                                            </li>
+                                            <li data-thumb="assets/images/products/watch3.jpg">
+                                                <img src="assets/images/products/watch3.jpg" />
+                                            </li>
+                                            <li data-thumb="assets/images/products/jacket3.jpg">
+                                                <img src="assets//images/products/jacket3.jpg" />
+                                            </li>
+                                            <li data-thumb="assets/images/products/jacket2.jpg">
+                                                <img src="assets/images/products/jacket2.jpg" />
+                                            </li>
+                                            <li data-thumb="assets/images/products/watch4.jpg">
+                                                <img src="assets//images/products/watch4.jpg" />
+                                            </li>
+                                        </ul>
                                     </div>
+                                    <a class="size-guide" href="" style="text-decoration: underline;">Hướng dẫn chọn
+                                        size</a>
                                 </div>
-                                <div class="product__detail-info col-md-7">
-                                    <div class="product__detail-card">
-                                        <div class="about">
-                                            <div class="product__detail-id d-flex">
-                                                <a class="d-flex">Mã sản phẩm: 22082022</a>
-                                            </div>
-                                            <div class="d-flex mb-4">
-                                                <div class="w-50">
-                                                    <a class="product__detail-action">
-                                                        <span class="icon mr-2">
+                            </div>
+                            <div class="product__detail-info col-md-7">
+                                <div class="product__detail-card">
+                                    <div class="about">
+                                        <div class="product__detail-id d-flex">
+                                            <a class="d-flex">Mã sản phẩm: 22082022</a>
+                                        </div>
+                                        <div class="d-flex mb-4">
+                                            <div class="w-50">
+                                                <a class="product__detail-action">
+                                                    <span class="icon mr-2">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                             viewBox="0 0 24 24" fill="none" stroke="#333"
                                                             stroke-width="1" stroke-linecap="round"
@@ -529,11 +520,11 @@
                                         <!-- Product options -->
                                         <div class="product__detail-options">
                                             <div class="option-quality d-flex mb-2 align-items-center">
-                                                <div class="option-title">Số lượng</div>
+                                                <div class="option-title">Chọn số lượng</div>
                                                 <input class="text-center" type="number" value="1" min="1" max="50">
                                             </div>
                                             <div class="option-size d-flex mb-2 align-items-center">
-                                                <div class="option-title">Size</div>
+                                                <div class="option-title">Chọn size</div>
                                                 <div class="options-wrapper">
                                                     <select class="options form-select w-100"
                                                         aria-label="Default select example">
@@ -553,7 +544,7 @@
                                                 </div>
                                             </div>
                                             <div class="option-color d-flex mb-2 align-items-center">
-                                                <div class="option-title">Màu sắc</div>
+                                                <div class="option-title">Chọn màu sắc</div>
                                                 <div class="options-wrapper">
                                                     <select class="options form-select w-100"
                                                         aria-label="Default select example">
@@ -581,9 +572,11 @@
                                                     <label class="form-check-label" for="inlineRadio1">Có
                                                         sẵn</label>
                                                 </div>
-                                                <label class="form-check-label" for="inlineRadio1">
-                                                    <strike class="mr-2">12.000.000 đ</strike>
-                                                    11.500.000 đ
+                                                <label class="form-check-label d-flex align-items-center" for="inlineRadio1">
+                                                    <span class="price mr-2">12.500.000 đ</span>
+                                                    <span class="saleprice">
+                                                        <strike>13.000.000 đ</strike>
+                                                    </span>
                                                 </label>
                                             </div>
                                             <div class="option-price form-check form-check-inline w-100">
@@ -593,9 +586,11 @@
                                                     <label class="form-check-label" for="inlineRadio2">Đặt
                                                         trước</label>
                                                 </div>
-                                                <label class="form-check-label" for="inlineRadio2">
-                                                    <strike class="mr-2">13.000.000 đ</strike>
-                                                    12.500.000 đ
+                                                <label class="form-check-label d-flex align-items-center" for="inlineRadio2">
+                                                    <span class="price mr-2">11.500.000 đ</span>
+                                                    <span class="saleprice">
+                                                        <strike>12.000.000 đ</strike>
+                                                    </span>
                                                 </label>
                                             </div>
                                         </div>
@@ -616,9 +611,34 @@
                             </div>
                         </div>
                     </div>
-                    <div class="product__images-slider">
-
-                    </div>
+                    <!-- <div class="product__images-slider">
+                        <ul id="content-slider">
+                            <li>
+                                <img src="/assets/images/products/jacket1.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="/assets/images/products/pro1.png" alt="">
+                            </li>
+                            <li>
+                                <img src="/assets/images/products/jacket3.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="/assets/images/products/healthycare.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="/assets/images/products/healthycare.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="/assets/images/products/healthycare.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="/assets/images/products/healthycare.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="/assets/images/products/healthycare.jpg" alt="">
+                            </li>
+                        </ul>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -744,22 +764,26 @@
     <script type="text/javascript">
         $(document).ready(function () {
             $('.lSPager').css('height', $('.lSPager li').width() + 4)
-            $(window).resize(function(){
+            $(window).resize(function () {
                 $('.lSPager').css('height', $('.lSPager li').width() + 4)
             })
         });
     </script>
     <script src='https://sachinchoolur.github.io/lightslider/dist/js/lightslider.js'></script>
     <script>
-        $('#lightSlider').lightSlider({
+        $('.lightSlider').lightSlider({
             gallery: true,
             item: 1,
             loop: true,
             slideMargin: 0,
             thumbItem: 6
         });
+        $('#content-slider').lightSlider({
+            keyPress:false,
+            item:5,
+            loop:true 
+        })
     </script>
-
 </body>
 
 </html>

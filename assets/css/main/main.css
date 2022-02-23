@@ -188,9 +188,6 @@
                     padding: 0 5px;
                     color: #a0a0a0;
                 }
-            .product__filter{
-
-            }
                 .product__filter{
                     color: #383838;
                 }
@@ -444,9 +441,6 @@
             .web__directional li+li::before{
                 padding: 0 5px 0 0;
             }
-        .product__filter{
-            
-        }
             .filter__block svg{
                 height: 14px;
                 width: 14px;
@@ -863,7 +857,7 @@ ul.lightSlider li {
     cursor: pointer
 }
 
-.products__detail-content img {
+.product__detail-content img {
     display: block;
     height: auto;
     width: 100%
@@ -917,67 +911,6 @@ hr {
     font-size: calc(16px + (20 - 14) * ((100vw - 375px)/ (1920 - 375)));
 }
 
-.my-color {
-    margin-top: 10px;
-    margin-bottom: 10px
-}
-
-label.radio {
-    cursor: pointer
-}
-
-label.radio input {
-    position: absolute;
-    top: 0;
-    left: 0;
-    visibility: hidden;
-    pointer-events: none
-}
-
-label.radio span {
-    border: 2px solid #8f37aa;
-    display: inline-block;
-    color: #8f37aa;
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
-    text-transform: uppercase;
-    transition: 0.5s all
-}
-
-label.radio .red {
-    background-color: red;
-    border-color: red
-}
-
-label.radio .blue {
-    background-color: blue;
-    border-color: blue
-}
-
-label.radio .green {
-    background-color: green;
-    border-color: green
-}
-
-label.radio .orange {
-    background-color: orange;
-    border-color: orange
-}
-
-label.radio input:checked+span {
-    color: #fff;
-    position: relative
-}
-
-label.radio input:checked+span::before {
-    opacity: 1;
-    content: '\2713';
-    position: absolute;
-    font-size: 13px;
-    font-weight: bold;
-    left: 4px
-}
 .card-body {
     padding: 0.3rem 0.3rem 0.2rem
 }
@@ -988,9 +921,15 @@ label.radio input:checked+span::before {
 .about > *{
     color: #383838
 }
+.product__detail-content{
+    margin-bottom: calc(30px + (37 - 30) * ((100vw - 375px)/ (1920 - 375)));
+}
 .product__detail-image{
     padding-right: 1.5rem !important;
 }
+    .size-guide{
+        font-size: calc(16px + (24 - 16) * ((100vw - 375px)/ (1920 - 375)));
+    }
 .product__detail-info a:hover,
 .product__detail-info a:hover svg,
 .product__detail-info a:hover span{
@@ -1046,6 +985,10 @@ label.radio input:checked+span::before {
         .product__detail-action a:not(:last-child){
             margin-right: calc(18px + (144 - 18) * ((100vw - 375px)/ (1920 - 375)));
         }
+    .product__detail-bottom input,
+    .product__detail-bottom select{
+        border-radius: 5px;
+    }
     .product__detail-bottom input{
         padding: 4px;
         border: 1px solid #333;
@@ -1060,17 +1003,20 @@ label.radio input:checked+span::before {
         .sales-value{
             color: var(--blue-dior);
         }
+        .options-wrapper select{
+            background-color: #fff;
+        }
         .option-title{
             position: relative;
             font-size: calc(16px + (24 - 16) * ((100vw - 375px)/ (1920 - 375)));
-            width: 148px;
+            width: 173px;
         }
             .option-title input{
                 position: absolute !important;
                 height: 100%;
             }
             .option-title label{
-                margin-left: 16px;
+                margin-left: 26px;
             }
         .product__detail-options .options-wrapper{
             position: relative;
@@ -1109,24 +1055,33 @@ label.radio input:checked+span::before {
     .product__detail-price *{
         font-size: calc(16px + (24 - 16) * ((100vw - 375px)/ (1920 - 375)));
     }
-    .product__detail-availableprice{
-        margin-bottom: calc(5px + (8 - 5) * ((100vw - 375px)/ (1920 - 375)));;
+    .price{
+        font-size: calc(22px + (24 - 16) * ((100vw - 375px)/ (1920 - 375)));
+    }
+    .saleprice strike{
+        font-size: calc(12px + (24 - 16) * ((100vw - 375px)/ (1920 - 375)));
     }
         .product__detail-price p{
             color: #707070;
             /* width: calc(100px + (150 - 100) * ((100vw - 375px)/ (1920 - 375))); */
+        }
+        .product__detail-price span {
+            color: var(--blue-dior);
         }
         .product__detail-price strike{
             color: #a0a0a0;
         }
 @media only screen and (max-width: 992px) {
     .option-title{
-        width: 119px;
+        width: 137px;
     }
 }
 @media only screen and (max-width: 768px){
     .option-title{
-        width: 103px;
+        width: 123px;
+    }
+    .option-title label{
+        margin-left: 24px;
     }
     .product__detail-image{
         padding-right: 0 !important;
