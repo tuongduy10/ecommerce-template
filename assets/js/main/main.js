@@ -203,5 +203,33 @@ $('.control__tab-comment').click(function(){
     $('.tab__product-comment').removeClass('active');
 })
 
+$('.rating .stars span').click(function(){
+    if(!$(this).hasClass('rated')){
+        $('.rating .stars span').removeClass('checked');
+        $('.rating .stars span').removeClass('rated');
+
+        $(this).addClass('rated');
+        $('.rating .stars span').each(function(index, element){
+            $(element).addClass('checked')
+            if($(this).hasClass('rated')){
+                return false;
+            }
+        })        
+    }else{
+        $(this).removeClass('rated');
+        $('.rating .stars span').each(function(index, element){
+            $(element).removeClass('checked');
+        })
+    }
+})
+
+$('.write-comment').click(function(){
+    if($('.tab__content-block').hasClass('d-none')){
+        $('.tab__content-block').removeClass('d-none');
+        return;
+    }
+    $('.tab__content-block').addClass('d-none');
+})
+
 
 

@@ -20,6 +20,19 @@ ul, ol {
     margin: 0;
     padding: 0
 }
+/* input,
+textarea{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    border-radius: 0;
+} */
+textarea:focus-within,
+input:focus-within,
+button:focus-within{
+    outline: none;
+}
 
 /* Reset Bootstrap */
 .form-select{
