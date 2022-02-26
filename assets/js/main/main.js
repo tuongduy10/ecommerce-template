@@ -154,3 +154,54 @@ $('.options-wrapper select').on('focusout',function(){
         $(this).siblings('svg').removeClass('svg-up') 
     }
 })
+
+$('.product__sale-code').click(function(){
+    if($('.product__sale-bottom').hasClass('d-none')){
+        $('.product__sale-bottom').removeClass('d-none');
+    }else{
+        $('.product__sale-bottom').addClass('d-none')
+    }
+
+    if($(this).find('svg').hasClass('svg-up')){
+        $(this).find('svg').removeClass('svg-up')
+    }else{
+        $(this).find('svg').addClass('svg-up')
+    }
+})
+
+$(document).ready(function(){
+    $('.getcode').on('click', function(){
+        // let code = $('.salecode').text()
+        // navigator.clipboard.writeText(code);
+        
+        // $('.getcode').text('Đã lấy mã')
+        var $temp = $("<input>");
+        $("body").append($temp);
+        $temp.val($('.salecode').text()).select();
+        document.execCommand("copy");
+        $temp.remove();
+        $('.getcode').text('Đã lấy mã')
+    })
+})
+
+$('.control__tab-info').click(function(){
+    $('.content-tab').removeClass('active');
+    if(!$('.tab__product-info').hasClass('active')){
+        $('.tab__product-info').addClass('active');
+        return;
+    }
+
+    $('.tab__product-info').removeClass('active');
+})
+$('.control__tab-comment').click(function(){
+    $('.content-tab').removeClass('active');
+    if(!$('.tab__product-comment').hasClass('active')){
+        $('.tab__product-comment').addClass('active');
+        return;
+    }
+
+    $('.tab__product-comment').removeClass('active');
+})
+
+
+

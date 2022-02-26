@@ -81,6 +81,17 @@
         .header__top-link:hover svg{
             stroke: var(--blue-dior);
         }
+            .header__top-link input{
+                color: #fff;
+            }
+            .header__top-link:hover input{
+                color: #a0a0a0;
+                transition: color 0.3s ease;
+            }
+            .header__top-link:focus-within input{
+                color: #a0a0a0;
+                transition: color 0.3s ease;
+            }
             .header__top-action{
                 justify-content: flex-end;
             }

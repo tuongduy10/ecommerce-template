@@ -25,12 +25,18 @@ ul, ol {
 .form-select{
     border: 1px solid #333;
     
-    padding: 4px;
+    padding: 0 4px;
     
     border-color: unset;
     -webkit-box-shadow: unset;
     box-shadow: unset;
     outline: unset;
+}
+
+@media only screen and (max-width: 768px) {
+    .form-select{
+        padding: 4px;
+    }
 }
 
 /* Default body */

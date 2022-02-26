@@ -34,6 +34,10 @@
     <!-- <link rel="icon" href="assets/images/logo/squarelogo.png" type="image/x-icon"> -->
     <title>Web Demo</title>
     <style>
+        .lSpg {
+            display: none;
+        }
+
         .lSAction>.lSPrev {
             background-image: url("assets/images/icon/left.png");
         }
@@ -68,14 +72,20 @@
         }
 
         .product__images-slider .lslide,
-        .product__images-slider .clone{
+        .product__images-slider .clone {
             height: 100%;
             text-align: center;
         }
+
         .product__images-slider .lslide img,
-        .product__images-slider .clone img{
+        .product__images-slider .clone img {
             width: auto;
             height: 100%;
+        }
+
+        /* Demo */
+        .option-title {
+            margin-right: 3px;
         }
     </style>
 </head>
@@ -416,8 +426,8 @@
                                 <div class="product__detail-card">
                                     <div class="product__detail-slider mb-2">
                                         <ul class="lightSlider">
-                                            <li data-thumb="assets/images/products/watch2.jpg">
-                                                <img src="assets/images/products/watch2.jpg" />
+                                            <li data-thumb="assets/images/products/jacket1.jpg">
+                                                <img src="assets/images/products/jacket1.jpg" />
                                             </li>
                                             <li data-thumb="assets/images/products/pro1.png">
                                                 <img src="assets//images/products/pro1.png" />
@@ -520,11 +530,11 @@
                                         <!-- Product options -->
                                         <div class="product__detail-options">
                                             <div class="option-quality d-flex mb-2 align-items-center">
-                                                <div class="option-title">Chọn số lượng</div>
+                                                <div class="option-title">Chọn số lượng </div>
                                                 <input class="text-center" type="number" value="1" min="1" max="50">
                                             </div>
                                             <div class="option-size d-flex mb-2 align-items-center">
-                                                <div class="option-title">Chọn size</div>
+                                                <div class="option-title">Chọn kích cỡ </div>
                                                 <div class="options-wrapper">
                                                     <select class="options form-select w-100"
                                                         aria-label="Default select example">
@@ -544,7 +554,7 @@
                                                 </div>
                                             </div>
                                             <div class="option-color d-flex mb-2 align-items-center">
-                                                <div class="option-title">Chọn màu sắc</div>
+                                                <div class="option-title">Chọn màu sắc </div>
                                                 <div class="options-wrapper">
                                                     <select class="options form-select w-100"
                                                         aria-label="Default select example">
@@ -569,13 +579,15 @@
                                                 <div class="option-title">
                                                     <input class="form-check-input" type="radio"
                                                         name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                                    <label class="form-check-label" for="inlineRadio1">Có
-                                                        sẵn</label>
+                                                    <label class="form-check-label" for="inlineRadio1">
+                                                        Có sẵn
+                                                    </label>
                                                 </div>
-                                                <label class="form-check-label d-flex align-items-center" for="inlineRadio1">
-                                                    <span class="price mr-2">12.500.000 đ</span>
+                                                <label class="form-check-label d-flex align-items-center"
+                                                    for="inlineRadio1">
+                                                    <span class="price mr-2">12.500.000 ₫</span>
                                                     <span class="saleprice">
-                                                        <strike>13.000.000 đ</strike>
+                                                        <strike>13.000.000 ₫</strike>
                                                     </span>
                                                 </label>
                                             </div>
@@ -583,20 +595,46 @@
                                                 <div class="option-title">
                                                     <input class="form-check-input" type="radio"
                                                         name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                                    <label class="form-check-label" for="inlineRadio2">Đặt
-                                                        trước</label>
+                                                    <label class="form-check-label" for="inlineRadio2">
+                                                        Đặt trước
+                                                    </label>
                                                 </div>
-                                                <label class="form-check-label d-flex align-items-center" for="inlineRadio2">
-                                                    <span class="price mr-2">11.500.000 đ</span>
+                                                <label class="form-check-label d-flex align-items-center"
+                                                    for="inlineRadio2">
+                                                    <span class="price mr-2">11.500.000 ₫</span>
                                                     <span class="saleprice">
-                                                        <strike>12.000.000 đ</strike>
+                                                        <strike>12.000.000 ₫</strike>
                                                     </span>
                                                 </label>
+                                            </div>
+                                            <div class="mt-2">
+                                                <div class="product__sale-code w-100 justify-content-between d-flex">
+                                                    <span class="circle-left"></span>
+                                                    <div class="product__sale-content mx-auto">
+                                                        <span class="text">Nhập mã: <strong>SALECODE</strong> để giảm 500.000 ₫</span>
+                                                    </div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1"
+                                                        stroke-linecap="round" stroke-linejoin="round"
+                                                        class="feather feather-chevron-down">
+                                                        <polyline points="6 9 12 15 18 9"></polyline>
+                                                    </svg>
+                                                    <span class="circle-right"></span>
+                                                </div>
+                                                <div class="product__sale-bottom d-none">
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <span class="text">Nhập <strong class="salecode">SALECODE</strong> chỉ còn 
+                                                            <br>12.000.000 ₫ (Có sẵn) 
+                                                            <br>11.000.000 ₫ (Đặt trước) 
+                                                        </span>
+                                                        <button type="button" class="getcode">Lấy mã</button>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
 
                                         <!-- Price -->
-                                        <div class="product__detail-buttons justify-content-between w-100">
+                                        <div class="product__detail-buttons d-flex justify-content-between w-100">
                                             <button class="btn-addtocart"
                                                 style="width: 49%; background-color: #333; color: #fff;">
                                                 Thêm vào giỏ
@@ -611,34 +649,141 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="product__images-slider">
+                    <div class="product__images-slider">
+                        <h1 class="text-center">HÌNH ẢNH THỰC TẾ</h1>
+                        <hr>
                         <ul id="content-slider">
                             <li>
-                                <img src="/assets/images/products/jacket1.jpg" alt="">
+                                <img class="pop" src="/assets/images/products/jacket1.jpg" alt="">
                             </li>
                             <li>
-                                <img src="/assets/images/products/pro1.png" alt="">
+                                <img class="pop" src="/assets/images/products/pro1.png" alt="">
                             </li>
                             <li>
-                                <img src="/assets/images/products/jacket3.jpg" alt="">
+                                <img class="pop" src="/assets/images/products/jacket3.jpg" alt="">
                             </li>
                             <li>
-                                <img src="/assets/images/products/healthycare.jpg" alt="">
+                                <img class="pop" src="/assets/images/products/jacket4.jpg" alt="">
                             </li>
                             <li>
-                                <img src="/assets/images/products/healthycare.jpg" alt="">
+                                <img class="pop" src="/assets/images/products/jacket4.jpg" alt="">
                             </li>
                             <li>
-                                <img src="/assets/images/products/healthycare.jpg" alt="">
+                                <img class="pop" src="/assets/images/products/jacket4.jpg" alt="">
                             </li>
                             <li>
-                                <img src="/assets/images/products/healthycare.jpg" alt="">
-                            </li>
-                            <li>
-                                <img src="/assets/images/products/healthycare.jpg" alt="">
+                                <img class="pop" src="/assets/images/products/jacket4.jpg" alt="">
                             </li>
                         </ul>
-                    </div> -->
+                    </div>
+                    <div class="product__detail-tab">
+                        <div class="product__tab-control">
+                            <ul class="d-flex justify-content-around">
+                                <li class="mx-2">
+                                    <a class="control-tab control__tab-info">Thông tin sản phẩm</a>
+                                </li>
+                                <li class="mx-2">
+                                    <a class="control-tab control__tab-comment active">Đánh giá</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product__tab-content">
+                            <div class="content-tab tab__product-info">
+                                <div class="product-detail">
+                                    <ul class="detail-list d-flex flex-wrap justify-content-between">
+                                        <li class="detail-item">
+                                            <span><b>Mã sản phẩm</b></span>
+                                            <span>22022022</span>
+                                        </li>
+                                        <li class="detail-item">
+                                            <span><b>RAM</b></span>
+                                            <span>6 GB</span>
+                                        </li>
+                                        <li class="detail-item">
+                                            <span><b>Bộ nhớ trong</b></span>
+                                            <span>128 GB</span>
+                                        </li>
+                                        <li class="detail-item">
+                                            <span><b>Màn hình</b></span>
+                                            <span>6.7", Super Retina XDR, OLED, 2778 x 1284 Pixel</span>
+                                        </li>
+                                        <li class="detail-item">
+                                            <span><b>GPU</b></span>
+                                            <span>Apple GPU 4 nhân</span>
+                                        </li>
+                                        <li class="detail-item">
+                                            <span><b>Dung lượng pin	</b></span>
+                                            <span>3687 mAh</span>
+                                        </li>
+                                        <li class="detail-item">
+                                            <span><b>Hệ điều hành</b></span>
+                                            <span>iOS 14</span>
+                                        </li>
+                                        <li class="detail-item">
+                                            <span><b>Xuất xứ</b></span>
+                                            <span>6 GB</span>
+                                        </li>
+                                        <li class="detail-item">
+                                            <span><b>Xuất xứ</b></span>
+                                            <span>Trung Quốc</span>
+                                        </li>
+                                        <li class="detail-item">
+                                            <span><b>Thời gian ra mắt</b></span>
+                                            <span>10/2020</span>
+                                        </li>
+                                        <li class="detail-item">
+                                            <span><b>Camera sau</b></span>
+                                            <span>12.0 MP + 12.0 MP + 12.0 MP</span>
+                                        </li>
+                                        <li class="detail-item">
+                                            <span><b>Camera Selfie</b></span>
+                                            <span>12.0 MP</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="content-tab tab__product-comment active">
+                                <div class="product-comment">
+                                    <div class="text-center">
+                                        <h5>Chia sẻ cảm nhận về sản phẩm</h5>
+                                        <button>Viết bình luận</button>
+                                    </div>
+                                    <form class="mb-4">
+                                        <label for="">Viết nhận xét của bạn bên dưới</label>
+                                        <textarea class="w-100" name="" id="" style="border:1px solid #333;"></textarea>
+                                    </form>
+                                    <form class="mb-4">
+                                        <label for="">Thông tin cá nhân của bạn</label>
+                                        <input type="text" class="w-100 mb-2" placeholder="Họ tên của bạn" style="border:1px solid #333;">
+                                        <div class="d-flex justify-content-between">
+                                            <input type="text" placeholder="Số điện thoại" style="border:1px solid #333; width: 49%">
+                                            <input type="text" placeholder="Email" style="border:1px solid #333; width: 49%">
+                                        </div>
+                                    </form>
+                                    <div>
+                                        <label for="">
+                                            <input type="file" accept="image/*" style="display: none">
+                                            Chọn ảnh
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal"><span
+                                aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <img src="" class="imagepreview" style="width: 100%;">
+                    </div>
                 </div>
             </div>
         </div>
@@ -764,8 +909,10 @@
     <script type="text/javascript">
         $(document).ready(function () {
             $('.lSPager').css('height', $('.lSPager li').width() + 4)
-            $(window).resize(function () {
+            $('#content-slider').css('height', $('#content-slider li').width())
+            $(document).resize(function () {
                 $('.lSPager').css('height', $('.lSPager li').width() + 4)
+                $('#content-slider').css('height', $('#content-slider li').width())
             })
         });
     </script>
@@ -779,9 +926,21 @@
             thumbItem: 6
         });
         $('#content-slider').lightSlider({
-            keyPress:false,
-            item:5,
-            loop:true 
+            keyPress: false,
+            item: 5,
+            loop: false
+        })
+        $(function () {
+            $('.pop').on('click', function () {
+                $('.imagepreview').attr('src', $(this).attr('src'));
+                $('#imagemodal').modal('show');
+            });
+        });
+        $('.control-tab').click(function () {
+            if ($('.control-tab').hasClass('active')) {
+                $('.control-tab').removeClass('active')
+            }
+            $(this).addClass('active')
         })
     </script>
 </body>
