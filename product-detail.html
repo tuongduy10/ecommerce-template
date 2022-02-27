@@ -872,15 +872,14 @@
                                                         <div class="upload-image">
                                                             <label for="image-upload" class="input-tile mb-2">
                                                                 <a class="upload">Chọn ảnh</a>
-                                                                <span>Thêm hình ảnh sản phẩm nếu có</span>
+                                                                <span>Thêm hình ảnh sản phẩm nếu có (*Tối đa 3)</span>
                                                             </label>
-                                                            <input id="image-upload" type="file" accept="image/*"
-                                                                hidden>
+                                                            <input id="image-upload" type="file" multiple hidden />
+                                                            <output class="d-flex" id="image-preview" />
                                                         </div>
                                                     </form>
                                                 </div>
-                                                <div class="modal-footer" style="padding-top: 0;
-                                                            border: unset;">
+                                                <div class="modal-footer" style="padding-top: 0; border: unset;">
                                                     <button type="button">Gửi bình luận</button>
                                                 </div>
                                             </div>
@@ -998,9 +997,8 @@
                                         <span class="label-new">Hot</span>
                                         <a class="product-heart" style="cursor: pointer;">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none" stroke="#333"
-                                                stroke-width="1" stroke-linecap="round"
-                                                stroke-linejoin="round"
+                                                viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1"
+                                                stroke-linecap="round" stroke-linejoin="round"
                                                 class="add-to-wishlist feather feather-heart">
                                                 <path
                                                     d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
@@ -1033,9 +1031,8 @@
                                         <span class="label-sales"> -10%</span>
                                         <a class="product-heart" style="cursor: pointer;">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none" stroke="#333"
-                                                stroke-width="1" stroke-linecap="round"
-                                                stroke-linejoin="round"
+                                                viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1"
+                                                stroke-linecap="round" stroke-linejoin="round"
                                                 class="add-to-wishlist feather feather-heart">
                                                 <path
                                                     d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
@@ -1068,9 +1065,8 @@
                                         <span class="label-new">Hot</span>
                                         <a class="product-heart" style="cursor: pointer;">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none" stroke="#333"
-                                                stroke-width="1" stroke-linecap="round"
-                                                stroke-linejoin="round"
+                                                viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1"
+                                                stroke-linecap="round" stroke-linejoin="round"
                                                 class="add-to-wishlist feather feather-heart">
                                                 <path
                                                     d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
@@ -1094,7 +1090,7 @@
                                         </div>
                                     </div>
                                 </div>
-            
+
                                 <div class="product">
                                     <a class="product-img" href="/WebDemo/product-detail.html">
                                         <img src="assets/images/products/jacket1.jpg" alt="">
@@ -1105,9 +1101,8 @@
                                         <span class="label-new">Hot</span>
                                         <a class="product-heart" style="cursor: pointer;">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none" stroke="#333"
-                                                stroke-width="1" stroke-linecap="round"
-                                                stroke-linejoin="round"
+                                                viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1"
+                                                stroke-linecap="round" stroke-linejoin="round"
                                                 class="add-to-wishlist feather feather-heart">
                                                 <path
                                                     d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
@@ -1140,9 +1135,8 @@
                                         <span class="label-sales"> -10%</span>
                                         <a class="product-heart" style="cursor: pointer;">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none" stroke="#333"
-                                                stroke-width="1" stroke-linecap="round"
-                                                stroke-linejoin="round"
+                                                viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1"
+                                                stroke-linecap="round" stroke-linejoin="round"
                                                 class="add-to-wishlist feather feather-heart">
                                                 <path
                                                     d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
@@ -1175,9 +1169,8 @@
                                         <span class="label-new">Hot</span>
                                         <a class="product-heart" style="cursor: pointer;">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none" stroke="#333"
-                                                stroke-width="1" stroke-linecap="round"
-                                                stroke-linejoin="round"
+                                                viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1"
+                                                stroke-linecap="round" stroke-linejoin="round"
                                                 class="add-to-wishlist feather feather-heart">
                                                 <path
                                                     d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
@@ -1217,8 +1210,10 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-body">
-                        <button type="button" class="close" data-dismiss="modal"><span
-                                aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                            <span class="sr-only">Close</span>
+                        </button>
                         <img src="" class="imagepreview" style="width: 100%;">
                     </div>
                 </div>
@@ -1379,6 +1374,37 @@
             }
             $(this).addClass('active')
         })
+
+        window.onload = function () {
+            if (window.File && window.FileList && window.FileReader) {
+                var filesInput = document.getElementById("image-upload");
+                filesInput.addEventListener("change", function (event) {
+                    var files = event.target.files; //FileList object
+                    if (files.length > 3) {
+                        return;
+                    }
+                    var output = document.getElementById("image-preview");
+                    $('#image-preview').empty();
+                    for (var i = 0; i < files.length; i++) {
+                        var file = files[i];
+                        //Only pics
+                        if (!file.type.match('image'))
+                            continue;
+                        var picReader = new FileReader();
+                        picReader.addEventListener("load", function (event) {
+                            var picFile = event.target;
+                            var div = document.createElement("div");
+                            div.innerHTML = "<div style='width: 100px; height: 100px; margin-right: 4px'><img src='" + picFile.result + "'" + "title='" + picFile.name + "' style='width: 100%; height: auto'/></div>";
+                            output.insertBefore(div, null);
+                        });
+                        //Read the image
+                        picReader.readAsDataURL(file);
+                    }
+                });
+            } else {
+                console.log("Your browser does not support File API");
+            }
+        }
     </script>
 </body>
 
