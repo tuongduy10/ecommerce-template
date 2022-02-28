@@ -1253,6 +1253,7 @@ hr {
                         height: 130px;
                     }
                     .user-comment .image .image-list li{
+                        height: 100%;
                         width: 130px;
                         text-align: center;
                         margin-right: 10px;
