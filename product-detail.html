@@ -71,6 +71,13 @@
             margin: 0 auto;
         }
 
+        .lSAction > .lSPrev{
+            left: -8px;
+        }
+        .lSAction > .lSNext{
+            right: -8px;
+        }
+
         .product__images-slider .lslide,
         .product__images-slider .clone {
             height: 100%;
@@ -808,13 +815,9 @@
                                 </div>
                             </div>
                             <div class="content-tab tab__product-comment">
-                                <div class="product-comment">
-                                    <!-- <div class="text-center mb-4">
-                                        <button class="write-comment">Viết bình luận</button>
-                                    </div> -->
-
+                                <div class="product-comment">   
                                     <!-- Button trigger modal -->
-                                    <div class="text-center mb-4">
+                                    <!-- <div class="text-center mb-4 d-none">
                                         <button class="d-flex mx-auto" data-toggle="modal"
                                             data-target="#exampleModalCenter">
                                             <span style="height: 24px; margin-right: 10px;">
@@ -829,16 +832,14 @@
                                             </span>
                                             <span>Viết bình luận</span>
                                         </button>
-                                    </div>
-
+                                    </div> -->
                                     <!-- Modal -->
-                                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                                    <!-- <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
                                         aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                         <div class="modal-dialog modal-dialog-centered" role="document">
                                             <div class="modal-content">
                                                 <div class="modal-header" style="padding-bottom: 0;
                                                             border: unset;">
-                                                    <!-- <h5 class="modal-title" id="exampleModalLongTitle">Bình luận</h5> -->
                                                     <button class="close" data-dismiss="modal" aria-label="Close" style="border: unset;
                                                                                   background-color: unset;
                                                                                   color: #333 !important;">
@@ -875,7 +876,9 @@
                                                                 <span>Thêm hình ảnh sản phẩm nếu có (*Tối đa 3)</span>
                                                             </label>
                                                             <input id="image-upload" type="file" multiple hidden />
-                                                            <output class="d-flex" id="image-preview" />
+                                                            <output class="d-flex" id="image-preview">
+
+                                                            </output>
                                                         </div>
                                                     </form>
                                                 </div>
@@ -884,8 +887,37 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> -->
 
+                                    <form class="tab__content-block">
+                                        <label class="input-title mb-2" for="">VIẾT NHẬN XÉT CỦA BẠN BÊN
+                                            DƯỚI</label>
+                                        <div class="rating d-flex mb-2 align-items-center">
+                                            <span>Đánh giá</span>
+                                            <div class="stars ml-2">
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                            </div>
+                                        </div>
+                                        <textarea class="w-100 mb-2" name="" id=""
+                                            placeholder="Nhận xét của bạn về sản phẩm này"></textarea>
+                                        <div class="upload-image">
+                                            <label for="image-upload" class="input-tile mb-2">
+                                                <a class="upload">Chọn ảnh</a>
+                                                <span>Thêm hình ảnh sản phẩm nếu có (*Tối đa 3)</span>
+                                            </label>
+                                            <input id="image-upload" type="file" multiple hidden />
+                                            <output class="d-flex" id="image-preview">
+
+                                            </output>
+                                        </div>
+                                        <div class="text-right">
+                                            <button type="button">Gửi bình luận</button>
+                                        </div>
+                                    </form>
                                     <form class="tab__content-block d-block">
                                         <div class="user-comment mb-4">
                                             <div class="d-flex align-items-center">
@@ -1337,6 +1369,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <!-- Lightslider -->
+    <script src='https://sachinchoolur.github.io/lightslider/dist/js/lightslider.js'></script>
 
     <script type="text/javascript">
         $(document).ready(function () {
@@ -1346,10 +1380,11 @@
                 $('.lSPager').css('height', $('.lSPager li').width() + 4)
                 $('#content-slider').css('height', $('#content-slider li').width())
             })
+            $('.remove__upload').click(function () {
+                alert('hello')
+            })
         });
-    </script>
-    <script src='https://sachinchoolur.github.io/lightslider/dist/js/lightslider.js'></script>
-    <script>
+
         $('.lightSlider').lightSlider({
             gallery: true,
             item: 1,
@@ -1380,9 +1415,8 @@
                 var filesInput = document.getElementById("image-upload");
                 filesInput.addEventListener("change", function (event) {
                     var files = event.target.files; //FileList object
-                    if (files.length > 3) {
+                    if (files.length > 3)
                         return;
-                    }
                     var output = document.getElementById("image-preview");
                     $('#image-preview').empty();
                     for (var i = 0; i < files.length; i++) {
@@ -1394,7 +1428,12 @@
                         picReader.addEventListener("load", function (event) {
                             var picFile = event.target;
                             var div = document.createElement("div");
-                            div.innerHTML = "<div style='width: 100px; height: 100px; margin-right: 4px'><img src='" + picFile.result + "'" + "title='" + picFile.name + "' style='width: 100%; height: auto'/></div>";
+                            div.classList.add(`image__upload-item`);
+                            div.innerHTML = "<div class='image-uploaded' style='position: relative; width: 100px; height: 100px; margin-right: 4px'><img src='" + picFile.result + "'" + "title='" + picFile.name + "' style='height: 100%; width: 100%; object-fit: cover'/><span class='remove__upload' style='position: absolute; top: 0; right: 0; cursor: pointer'><svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='red' stroke-width='1' stroke-linecap='round' stroke-linejoin='round' class='feather feather-x'><line x1='18' y1='6' x2='6' y2='18'></line><line x1='6' y1='6' x2='18' y2='18'></line></svg><span></div>";
+                            var removeUpload = div.querySelector(".image-uploaded .remove__upload");
+                            removeUpload.addEventListener("click", function(evt){
+                                div.remove();
+                            })
                             output.insertBefore(div, null);
                         });
                         //Read the image
@@ -1405,6 +1444,7 @@
                 console.log("Your browser does not support File API");
             }
         }
+
     </script>
 </body>
 

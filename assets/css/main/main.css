@@ -1009,6 +1009,8 @@ hr {
         }
         .options-wrapper select{
             background-color: #fff;
+            border: 1px solid #333;
+            color: #333;
         }
         .option-title{
             position: relative;
@@ -1190,6 +1192,9 @@ hr {
                 .detail-item span:first-child{
                     width: 32%;
                 }
+                .detail-item span{
+                    width: 68%;
+                }
     .product__tab-content{
 
     }
@@ -1292,8 +1297,8 @@ hr {
     .product__detail-buttons button{
         font-size: 14px;
     }
-    .product__sale-code svg{
-        display: none;
+    .product__sale-content .text{
+        font-size: 14px;
     }
     .detail-item{
         flex-basis: 100%;
