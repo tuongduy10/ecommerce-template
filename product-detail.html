@@ -733,15 +733,15 @@
                         <div class="product__tab-control">
                             <ul class="d-flex justify-content-around">
                                 <li class="mx-2">
-                                    <a class="control-tab detail-title control__tab-info active">Thông tin sản phẩm</a>
+                                    <a class="control-tab detail-title control__tab-info">Thông tin sản phẩm</a>
                                 </li>
                                 <li class="mx-2">
-                                    <a class="control-tab detail-title control__tab-comment">Đánh giá sản phẩm</a>
+                                    <a class="control-tab detail-title control__tab-comment active">Đánh giá sản phẩm</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="product__tab-content">
-                            <div class="content-tab tab__product-info active">
+                            <div class="content-tab tab__product-info">
                                 <div class="product-detail">
                                     <ul class="detail-list d-flex mb-4 flex-wrap justify-content-between">
                                         <li class="detail-item">
@@ -800,7 +800,7 @@
                                             <br><br>
                                             Swarovski Crystal Frost không chỉ sở hữu vẻ đẹp nữ tính mà còn mang đến sự
                                             trẻ trung hiếm có qua những đường nét phá cách. Tạo tác này phô diễn nét đẹp
-                                            của viên đá pha lê với 178 tinh thể pha lê được sắp xếpkhéo trên vành bezel
+                                            của viên đá pha lê với 178 tinh thể pha lê được sắp xếp khéo trên vành bezel
                                             mang đến hiệu ứng như những bông tuyết nổi bật trên nền kim loại vàng hồng.
                                             <br><br>
                                             Trẻ trung, thời thượng và phá cách với mặt số đồng hồ là bức tranh đầy biểu
@@ -814,7 +814,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="content-tab tab__product-comment">
+                            <div class="content-tab tab__product-comment active">
                                 <div class="product-comment">   
                                     <!-- Button trigger modal -->
                                     <!-- <div class="text-center mb-4 d-none">
@@ -904,7 +904,7 @@
                                         </div>
                                         <textarea class="w-100 mb-2" name="" id=""
                                             placeholder="Nhận xét của bạn về sản phẩm này"></textarea>
-                                        <div class="upload-image">
+                                        <div class="upload-image mb-2">
                                             <label for="image-upload" class="input-tile mb-2">
                                                 <a class="upload">Chọn ảnh</a>
                                                 <span>Thêm hình ảnh sản phẩm nếu có (*Tối đa 3)</span>
@@ -940,12 +940,14 @@
                                             <div class="image">
                                                 <ul class="image-list d-flex">
                                                     <li>
-                                                        <img class="pop" src="assets/images/products/jacket1.jpg"
-                                                            alt="">
-                                                    </li>
-                                                    <!-- <li>
                                                         <img class="pop" src="assets/images/products/pro1.png" alt="">
-                                                    </li> -->
+                                                    </li>
+                                                    <li>
+                                                        <img class="pop" src="assets/images/banner/snidel.jpg" alt="">
+                                                    </li>
+                                                    <li>
+                                                        <img class="pop" src="assets/images/products/jacket3.jpg" alt="">
+                                                    </li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -1429,7 +1431,7 @@
                             var picFile = event.target;
                             var div = document.createElement("div");
                             div.classList.add(`image__upload-item`);
-                            div.innerHTML = "<div class='image-uploaded' style='position: relative; width: 100px; height: 100px; margin-right: 4px'><img src='" + picFile.result + "'" + "title='" + picFile.name + "' style='height: 100%; width: 100%; object-fit: cover'/><span class='remove__upload' style='position: absolute; top: 0; right: 0; cursor: pointer'><svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='red' stroke-width='1' stroke-linecap='round' stroke-linejoin='round' class='feather feather-x'><line x1='18' y1='6' x2='6' y2='18'></line><line x1='6' y1='6' x2='18' y2='18'></line></svg><span></div>";
+                            div.innerHTML = "<div class='image-uploaded' style='position: relative; width: 100px; height: 100px; margin-right: 4px'><img src='" + picFile.result + "'" + "title='" + picFile.name + "' style='height: 100%; width: 100%; object-fit: contain'/><span class='remove__upload' style='position: absolute; top: 0; right: 0; cursor: pointer'><svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='red' stroke-width='1' stroke-linecap='round' stroke-linejoin='round' class='feather feather-x'><line x1='18' y1='6' x2='6' y2='18'></line><line x1='6' y1='6' x2='18' y2='18'></line></svg><span></div>";
                             var removeUpload = div.querySelector(".image-uploaded .remove__upload");
                             removeUpload.addEventListener("click", function(evt){
                                 div.remove();

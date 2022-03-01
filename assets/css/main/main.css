@@ -1232,8 +1232,12 @@ hr {
             border: solid 1px #d4d4d4;
             font-size: calc(14px + (16 - 14) * ((100vw - 375px)/ (1920 - 375)));
             height: auto;
-            line-height: calc(48px + (57 - 48) * ((100vw - 375px)/ (1920 - 375)));
+            /* line-height: calc(48px + (57 - 48) * ((100vw - 375px)/ (1920 - 375))); */
             padding: 0 calc(13px + (31 - 13) * ((100vw - 375px)/ (1920 - 375)));
+        }
+        .tab__content-block textarea{
+            padding: calc(16px + (57 - 48) * ((100vw - 375px)/ (1920 - 375))) calc(13px + (31 - 13) * ((100vw - 375px)/ (1920 - 375)));
+
         }
             .upload-image span{
                 font-size: calc(14px + (16 - 14) * ((100vw - 375px)/ (1920 - 375)));
@@ -1253,6 +1257,7 @@ hr {
                         height: 130px;
                     }
                     .user-comment .image .image-list li{
+                        cursor: pointer;
                         height: 100%;
                         width: 130px;
                         text-align: center;
@@ -1260,7 +1265,8 @@ hr {
                     }
                     .user-comment .image .image-list img{
                         height: 100%;
-                        width: auto;
+                        width: 100%;
+                        object-fit: contain;
                     }
         .product__grid-4 .product{
             width: calc(25% - 4px) !important;
