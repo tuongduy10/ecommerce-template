@@ -142,6 +142,36 @@
         .logo{
             max-height: 55px;
         }
+        .cart-action{
+            position: relative;
+        }
+            .mini__cart-content{
+                opacity: 1;
+                visibility: hidden;
+                position: absolute;
+                z-index: 99;
+                right: 0;
+                top: 46px;
+                width: 475px;
+                padding-bottom: 1px;
+                background-color: #fff;
+                box-sizing: border-box;
+                border: solid 1px #383838;
+                overflow: hidden;
+                box-shadow: 0 2px 6px 1px rgb(181 181 181 / 50%);
+                transform: translateY(4px);
+                transition: all .3s ease;
+            }   
+                .mini__cart-content .header-title{
+                    font-size: 1.29rem;
+                    text-transform: uppercase;
+                    margin: 0 auto;
+                    border-bottom: 1px solid #dbdcdc;
+                    text-align: center;
+                }
+                .mini__cart-inner{
+
+                }
             .action__icon{
                 max-height: calc(10px + (24 - 10) * ((100vw - 375px)/ (1920 - 375)));
                 max-width: calc(10px + (24 - 10) * ((100vw - 375px)/ (1920 - 375)));

@@ -37,38 +37,26 @@
         .lSpg {
             display: none;
         }
-
         .lSAction>.lSPrev {
             background-image: url("assets/images/icon/left.png");
         }
-
         .lSAction>.lSNext {
             background-image: url("assets/images/icon/right.png");
         }
-
         .lSSlideOuter .lSPager.lSGallery li.active {
             border: 2px solid var(--blue-dior);
         }
-
         .lSPager li {
             height: 100%;
         }
-
         .lSSlideOuter .lSPager.lSGallery img {
             height: 100%;
-            max-width: unset;
             width: auto;
             margin: 0 auto;
+            object-fit: contain;
         }
-
-        .lSSlide .lslide {
-            height: 100%;
-        }
-
-        .lSSlide .lslide img {
-            height: 100%;
-            width: auto;
-            margin: 0 auto;
+        .product__detail-content .lSSlideWrapper{
+            height: 600px;
         }
 
         .lSAction > .lSPrev{
@@ -83,7 +71,6 @@
             height: 100%;
             text-align: center;
         }
-
         .product__images-slider .lslide img,
         .product__images-slider .clone img {
             width: 100%;
@@ -108,7 +95,21 @@
         #imagemodal .modal-dialog {
             max-width: 80%;
         }
-
+        @media only screen and (max-width: 1400px){
+            .product__detail-content .lSSlideWrapper{
+                height: 467.64px;
+            }
+        }
+        @media only screen and (max-width: 1200px){
+            .product__detail-content .lSSlideWrapper{
+                height: 381px;
+            }
+        }
+        @media only screen and (max-width: 992px){
+            .product__detail-content .lSSlideWrapper{
+                height: 374px;
+            }
+        }
         @media only screen and (max-width: 768px) {
             #imagemodal .modal-dialog {
                 max-width: 100%;
@@ -448,39 +449,35 @@
                         </li>
                     </ul>
                     <div class="product__detail-content">
-                        <div class="row no-gutters">
+                        <div class="row no-gutters"> 
                             <div class="product__detail-image col-md-5">
                                 <div class="product__detail-card">
                                     <div class="product__detail-slider mb-2">
-                                        <ul class="lightSlider">
-                                            <li data-thumb="assets/images/products/jacket1.jpg">
-                                                <img class="pop" src="assets/images/products/jacket1.jpg" />
+                                        <ul class="lightSlider h-100">
+                                            <li class="h-100" data-thumb="assets/images/products/jacket4.jpg">
+                                                <img class="pop h-100" src="assets/images/products/jacket4.jpg" />
                                             </li>
-                                            <!-- <li data-thumb="assets/images/banner/snidel.jpg">
-                                                <img src="assets/images/banner/snidel.jpg" />
-                                            </li> -->
-                                            <li data-thumb="assets/images/products/pro1.png">
-                                                <img class="pop" src="assets//images/products/pro1.png" />
+                                            <li class="h-100" data-thumb="assets/images/products/pro1.png">
+                                                <img class="pop h-100" src="assets//images/products/pro1.png" />
                                             </li>
-                                            <li data-thumb="assets/images/products/jacket4.jpg">
-                                                <img class="pop" src="assets/images/products/jacket4.jpg" />
+                                            <li class="h-100" data-thumb="assets/images/products/watch3.jpg">
+                                                <img class="pop h-100" src="assets/images/products/watch3.jpg" />
                                             </li>
-                                            <li data-thumb="assets/images/products/watch3.jpg">
-                                                <img class="pop" src="assets/images/products/watch3.jpg" />
+                                            <li class="h-100" data-thumb="assets/images/products/jacket3.jpg">
+                                                <img class="pop h-100" src="assets//images/products/jacket3.jpg" />
                                             </li>
-                                            <li data-thumb="assets/images/products/jacket3.jpg">
-                                                <img class="pop" src="assets//images/products/jacket3.jpg" />
+                                            <li class="h-100" data-thumb="assets/images/products/jacket2.jpg">
+                                                <img class="pop h-100" src="assets/images/products/jacket2.jpg" />
                                             </li>
-                                            <li data-thumb="assets/images/products/jacket2.jpg">
-                                                <img class="pop" src="assets/images/products/jacket2.jpg" />
+                                            <li class="h-100" data-thumb="assets/images/products/watch4.jpg">
+                                                <img class="pop h-100" src="assets//images/products/watch4.jpg" />
                                             </li>
-                                            <li data-thumb="assets/images/products/watch4.jpg">
-                                                <img class="pop" src="assets//images/products/watch4.jpg" />
+                                            <li class="h-100" data-thumb="assets/images/banner/snidel.jpg">
+                                                <img class="pop h-100 w-100" src="assets/images/banner/snidel.jpg"/>
                                             </li>
                                         </ul>
                                     </div>
-                                    <a class="size-guide" href="" style="text-decoration: underline;">Hướng dẫn chọn
-                                        size</a>
+                                    <a class="size-guide" href="" style="text-decoration: underline;">Hướng dẫn chọn size</a>
                                 </div>
                             </div>
                             <div class="product__detail-info col-md-7">
