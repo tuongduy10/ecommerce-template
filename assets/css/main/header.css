@@ -145,14 +145,14 @@
         .cart-action{
             position: relative;
         }
-            .mini__cart-content{
+            .minicart-content{
                 opacity: 1;
                 visibility: hidden;
                 position: absolute;
                 z-index: 99;
                 right: 0;
                 top: 46px;
-                width: 475px;
+                width: 521px;
                 padding-bottom: 1px;
                 background-color: #fff;
                 box-sizing: border-box;
@@ -162,15 +162,18 @@
                 transform: translateY(4px);
                 transition: all .3s ease;
             }   
-                .mini__cart-content .header-title{
+                .minicart-content .header-title{
                     font-size: 1.29rem;
                     text-transform: uppercase;
                     margin: 0 auto;
                     border-bottom: 1px solid #dbdcdc;
                     text-align: center;
                 }
-                .mini__cart-inner{
-
+                    .minicart-product .name{
+                        text-transform: uppercase;
+                    }
+                .minicart-totals{
+                    border-top: 1px solid #333;
                 }
             .action__icon{
                 max-height: calc(10px + (24 - 10) * ((100vw - 375px)/ (1920 - 375)));

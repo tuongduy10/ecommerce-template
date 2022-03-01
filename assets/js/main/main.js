@@ -51,7 +51,9 @@ $('.search__overlay').click(function () {
 //         $(this).find('.mini__cart-content').removeClass('open')
 //     }
 // )
-
+$('.remove-minicartProduct').click(function(){
+    $(this).parent().remove();
+})
 
 function closeSearchForm() {
     $('.searchform__wrapper').addClass('d-none')
