@@ -192,26 +192,28 @@ $(document).ready(function(){
         $temp.remove();
         $('.getcode').text('Đã lấy mã')
     })
+
+    $('.control__tab-info').click(function(){
+        $('.content-tab').removeClass('active');
+        if(!$('.tab__product-info').hasClass('active')){
+            $('.tab__product-info').addClass('active');
+            return;
+        }
+    
+        $('.tab__product-info').removeClass('active');
+    })
+    $('.control__tab-comment').click(function(){
+        $('.content-tab').removeClass('active');
+        if(!$('.tab__product-comment').hasClass('active')){
+            $('.tab__product-comment').addClass('active');
+            return;
+        }
+    
+        $('.tab__product-comment').removeClass('active');
+    })
 })
 
-$('.control__tab-info').click(function(){
-    $('.content-tab').removeClass('active');
-    if(!$('.tab__product-info').hasClass('active')){
-        $('.tab__product-info').addClass('active');
-        return;
-    }
 
-    $('.tab__product-info').removeClass('active');
-})
-$('.control__tab-comment').click(function(){
-    $('.content-tab').removeClass('active');
-    if(!$('.tab__product-comment').hasClass('active')){
-        $('.tab__product-comment').addClass('active');
-        return;
-    }
-
-    $('.tab__product-comment').removeClass('active');
-})
 
 $('.rating .stars span').click(function(){
     if(!$(this).hasClass('rated')){
