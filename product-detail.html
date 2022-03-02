@@ -727,6 +727,7 @@
                         </ul>
                     </div>
                     <div class="product__detail-tab">
+                        <!-- Control -->
                         <div class="product__tab-control">
                             <ul class="d-flex justify-content-around">
                                 <li class="mx-2">
@@ -737,6 +738,7 @@
                                 </li>
                             </ul>
                         </div>
+                        <!-- Content -->
                         <div class="product__tab-content">
                             <div class="content-tab tab__product-info">
                                 <div class="product-detail">
@@ -1379,9 +1381,6 @@
                 $('.lSPager').css('height', $('.lSPager li').width() + 4)
                 $('#content-slider').css('height', $('#content-slider li').width())
             })
-            $('.remove__upload').click(function () {
-                alert('hello')
-            })
         });
 
         $('.lightSlider').lightSlider({
@@ -1400,12 +1399,6 @@
             $('.imagepreview').attr('src', $(this).attr('src'));
             $('#imagemodal').modal('show');
         });
-        $('.control-tab').click(function () {
-            if ($('.control-tab').hasClass('active')) {
-                $('.control-tab').removeClass('active')
-            }
-            $(this).addClass('active')
-        })
 
         window.onload = function () {
             if (window.File && window.FileList && window.FileReader) {

@@ -192,7 +192,12 @@ $(document).ready(function(){
         $temp.remove();
         $('.getcode').text('Đã lấy mã')
     })
-
+    $('.control-tab').click(function () {
+        if ($('.control-tab').hasClass('active')) {
+            $('.control-tab').removeClass('active');
+        }
+        $(this).addClass('active')
+    })
     $('.control__tab-info').click(function(){
         $('.content-tab').removeClass('active');
         if(!$('.tab__product-info').hasClass('active')){
