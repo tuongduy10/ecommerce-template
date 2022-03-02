@@ -43,15 +43,15 @@ $(".header__mobile-searchicon").click(function () {
 $('.search__overlay').click(function () {
     closeSearchForm()
 })
-// $('.cart-action').hover(
-//     function(){
-//         $(this).find('.mini__cart-content').addClass('open')
-//     },
-//     function(){
-//         $(this).find('.mini__cart-content').removeClass('open')
-//     }
-// )
-$('.remove-minicartProduct').click(function(){
+$('.cart-action').hover(
+    function(){
+        $(this).find('.minicart-content').addClass('open')
+    },
+    function(){
+        $(this).find('.minicart-content').removeClass('open')
+    }
+)
+$('.minicart-remove').click(function(){
     $(this).parent().remove();
 })
 

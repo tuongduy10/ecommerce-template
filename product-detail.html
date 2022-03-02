@@ -731,10 +731,10 @@
                         <div class="product__tab-control">
                             <ul class="d-flex justify-content-around">
                                 <li class="mx-2">
-                                    <a class="control-tab detail-title control__tab-info" style="color: red;">Thông tin sản phẩm</a>
+                                    <a class="control-tab detail-title control__tab-info">Thông tin sản phẩm</a>
                                 </li>
                                 <li class="mx-2">
-                                    <a class="control-tab detail-title control__tab-comment active" style="color: red;">Đánh giá sản phẩm</a>
+                                    <a class="control-tab detail-title control__tab-comment active">Đánh giá sản phẩm</a>
                                 </li>
                             </ul>
                         </div>
@@ -1374,15 +1374,6 @@
     <script src='https://sachinchoolur.github.io/lightslider/dist/js/lightslider.js'></script>
 
     <script type="text/javascript">
-        $(document).ready(function () {
-            $('.lSPager').css('height', $('.lSPager li').width() + 4)
-            $('#content-slider').css('height', $('#content-slider li').width())
-            $(document).resize(function () {
-                $('.lSPager').css('height', $('.lSPager li').width() + 4)
-                $('#content-slider').css('height', $('#content-slider li').width())
-            })
-        });
-
         $('.lightSlider').lightSlider({
             gallery: true,
             item: 1,
@@ -1395,6 +1386,15 @@
             item: 5,
             loop: true
         })
+
+        $(document).ready(function () {
+            $('.lSPager').css('height', $('.lSPager li').width() + 4)
+            $('#content-slider').css('height', $('#content-slider li').width())
+            $(document).resize(function () {
+                $('.lSPager').css('height', $('.lSPager li').width() + 4)
+                $('#content-slider').css('height', $('#content-slider li').width())
+            })
+        });
         $('.pop').on('click', function () {
             $('.imagepreview').attr('src', $(this).attr('src'));
             $('#imagemodal').modal('show');
