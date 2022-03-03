@@ -1399,26 +1399,26 @@
     <!-- Personal Script -->
     <script type="text/javascript" src="assets/js/main/main.js"></script>
     <script type="text/javascript">
-        $(document).ready(function(){
-            $('.lightSlider').lightSlider({
-                gallery: true,
-                item: 1,
-                loop: true,
-                slideMargin: 0,
-                thumbItem: 6
-            });
-            $('#content-slider').lightSlider({
-                keyPress: false,
-                item: 5,
-                loop: true
-            })
+        $('.lightSlider').lightSlider({
+            gallery: true,
+            item: 1,
+            loop: true,
+            slideMargin: 0,
+            thumbItem: 6
+        });
+        $('#content-slider').lightSlider({
+            keyPress: false,
+            item: 5,
+            loop: true
+        })
+
+        $('.lSPager').css('height', $('.lSPager li').width() + 4)
+        $('#content-slider').css('height', $('#content-slider li').width())
+        $(document).resize(function () {
             $('.lSPager').css('height', $('.lSPager li').width() + 4)
             $('#content-slider').css('height', $('#content-slider li').width())
-            $(document).resize(function () {
-                $('.lSPager').css('height', $('.lSPager li').width() + 4)
-                $('#content-slider').css('height', $('#content-slider li').width())
-            })
         })
+
         $('.pop').on('click', function () {
             $('.imagepreview').attr('src', $(this).attr('src'));
             $('#imagemodal').modal('show');
@@ -1458,8 +1458,6 @@
                 console.log("Your browser does not support File API");
             }
         }
-
     </script>
 </body>
-
 </html>
