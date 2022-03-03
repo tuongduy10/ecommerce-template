@@ -940,7 +940,8 @@ hr {
     }
 .product__detail-info a:hover,
 .product__detail-info a:hover svg,
-.product__detail-info a:hover span{
+.product__detail-info a:hover .text,
+.product__detail-info a:hover .icon{
     color: var(--blue-dior);
     stroke: var(--blue-dior);
 }

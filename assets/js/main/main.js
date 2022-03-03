@@ -151,7 +151,6 @@ $('.add-to-wishlist').click(function(){
     }
     $(this).addClass('fill')
 })
-
 // $('.options-wrapper select').on('click',function(){
 //     if(!$(this).siblings('svg').hasClass('svg-up')){
 //         $(this).siblings('svg').addClass('svg-up') 
@@ -197,6 +196,30 @@ $(document).ready(function(){
             $('.control-tab').removeClass('active');
         }
         $(this).addClass('active')
+    })
+    $('.product-rating').click(function(){
+        var node = document.querySelector(".product__detail-tab");
+        var yourHeight = $('header').height();
+        // scroll to your element
+        node.scrollIntoView(true);
+        var scrolledY = window.scrollY;
+        if(scrolledY){
+            window.scrollTo({top: scrolledY - yourHeight});
+        }
+        // Tab-control
+        if ($('.control-tab').hasClass('active')) {
+            $('.control-tab').removeClass('active');
+        }
+        $('.control__tab-comment').addClass('active');
+
+        // Tab-content
+        $('.content-tab').removeClass('active');
+        if(!$('.tab__product-comment').hasClass('active')){
+            $('.tab__product-comment').addClass('active');
+            return;
+        }
+    
+        $('.tab__product-comment').removeClass('active');
     })
     $('.control__tab-info').click(function(){
         $('.content-tab').removeClass('active');

@@ -277,10 +277,16 @@
                     line-height: 1;
                 }
 @media only screen and (max-width: 1400px) {
+    .minicart-content{
+        width: 452px;
+    }
     .minicart-products{
         max-height: 298px;
         font-size: 16px;
     }        
+    .minicart-product .name{
+        width: 300px;
+    }
     .minicart-totals,
     .minicart__product-info .total-price{
         font-size: 18px;

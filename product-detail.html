@@ -484,7 +484,17 @@
                                 <div class="product__detail-card">
                                     <div class="about">
                                         <div class="product__detail-id d-flex">
-                                            <a class="d-flex">Mã sản phẩm: 22082022</a>
+                                            <a class="d-flex w-50">Mã sản phẩm: 22082022</a>
+                                            <a class="product-rating d-flex w-50">
+                                                <div class="stars mr-3">
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                </div>
+                                                <u style="cursor: pointer;">6 Đánh giá</u>
+                                            </a>
                                         </div>
                                         <div class="d-flex mb-4">
                                             <div class="w-50">
@@ -522,6 +532,7 @@
                                         <div class="product__detail-brand">
                                             <a href="">Shop Demo 01</a>
                                         </div>
+
 
                                         <div class="product__detail-desciption">
                                             <div class="bullets">
@@ -727,20 +738,18 @@
                         </ul>
                     </div>
                     <div class="product__detail-tab">
-                        <!-- Control -->
                         <div class="product__tab-control">
                             <ul class="d-flex justify-content-around">
                                 <li class="mx-2">
-                                    <a class="control-tab detail-title control__tab-info">Thông tin sản phẩm</a>
+                                    <a class="control-tab detail-title control__tab-info active">Thông tin sản phẩm</a>
                                 </li>
                                 <li class="mx-2">
-                                    <a class="control-tab detail-title control__tab-comment active">Đánh giá sản phẩm</a>
+                                    <a class="control-tab detail-title control__tab-comment">Đánh giá sản phẩm</a>
                                 </li>
                             </ul>
                         </div>
-                        <!-- Content -->
                         <div class="product__tab-content">
-                            <div class="content-tab tab__product-info">
+                            <div class="content-tab tab__product-info active">
                                 <div class="product-detail">
                                     <ul class="detail-list d-flex mb-4 flex-wrap justify-content-between">
                                         <li class="detail-item">
@@ -813,12 +822,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="content-tab tab__product-comment active">
+                            <div class="content-tab tab__product-comment">
                                 <div class="product-comment">   
                                     <!-- Button trigger modal -->
-                                    <!-- <div class="text-center mb-4 d-none">
-                                        <button class="d-flex mx-auto" data-toggle="modal"
-                                            data-target="#exampleModalCenter">
+                                    <div class="text-center mb-4">
+                                        <button class="d-flex mx-auto">
                                             <span style="height: 24px; margin-right: 10px;">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                     viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1"
@@ -831,7 +839,7 @@
                                             </span>
                                             <span>Viết bình luận</span>
                                         </button>
-                                    </div> -->
+                                    </div>
                                     <!-- Modal -->
                                     <!-- <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
                                         aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -887,7 +895,14 @@
                                             </div>
                                         </div>
                                     </div> -->
-
+                                    <!-- <form class="tab__content-block">
+                                        <label class="input-title">THÔNG TIN CÁ NHÂN CỦA BẠN</label>
+                                        <input type="text" class="w-100 mb-2"
+                                            placeholder="Họ tên của bạn">
+                                        <input type="text" class="w-100 mb-2"
+                                            placeholder="Số điện thoại">
+                                        <input type="text" class="w-100 mb-2" placeholder="Email">
+                                    </form> -->
                                     <form class="tab__content-block">
                                         <label class="input-title mb-2" for="">VIẾT NHẬN XÉT CỦA BẠN BÊN
                                             DƯỚI</label>
@@ -917,6 +932,15 @@
                                             <button type="button">Gửi bình luận</button>
                                         </div>
                                     </form>
+
+                                    <!-- <div class="text-center mb-4">
+                                        <div>*Bạn cần <a href=""><u>đăng nhập</u></a> để bình luận sản phẩm này</div>
+                                    </div> -->
+
+                                    <!-- <div class="text-center mb-4">
+                                        *Bạn chưa mua sản phẩm này
+                                    </div> -->
+
                                     <form class="tab__content-block d-block">
                                         <div class="user-comment mb-4">
                                             <div class="d-flex align-items-center">
@@ -1015,6 +1039,7 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Recommend products -->
                     <div class="products__list mx-auto w-100">
                         <h1 class="detail-title mb-0"><strong>GỢI Ý CHO BẠN</strong></h1>
                         <hr class="my-0">
@@ -1360,8 +1385,6 @@
         </div>
     </footer>
 
-    <!-- Personal Script -->
-    <script type="text/javascript" src="assets/js/main/main.js"></script>
     <!-- Ajax -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
@@ -1373,6 +1396,8 @@
     <!-- Lightslider -->
     <script src='https://sachinchoolur.github.io/lightslider/dist/js/lightslider.js'></script>
 
+    <!-- Personal Script -->
+    <script type="text/javascript" src="assets/js/main/main.js"></script>
     <script type="text/javascript">
         $('.lightSlider').lightSlider({
             gallery: true,
@@ -1387,14 +1412,13 @@
             loop: true
         })
 
-        $(document).ready(function () {
+        $('.lSPager').css('height', $('.lSPager li').width() + 4)
+        $('#content-slider').css('height', $('#content-slider li').width())
+        $(document).resize(function () {
             $('.lSPager').css('height', $('.lSPager li').width() + 4)
             $('#content-slider').css('height', $('#content-slider li').width())
-            $(document).resize(function () {
-                $('.lSPager').css('height', $('.lSPager li').width() + 4)
-                $('#content-slider').css('height', $('#content-slider li').width())
-            })
-        });
+        })
+
         $('.pop').on('click', function () {
             $('.imagepreview').attr('src', $(this).attr('src'));
             $('#imagemodal').modal('show');
