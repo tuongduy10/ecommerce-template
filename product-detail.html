@@ -482,7 +482,7 @@
                             <div class="product__detail-info col-md-7">
                                 <div class="product__detail-card">
                                     <div class="about">
-                                        <div class="product__detail-id d-flex">
+                                        <div class="product__detail-id d-flex align-items-center">
                                             <a class="d-flex">Mã sản phẩm: 22082022</a>
                                             <a class="product-rating d-flex">
                                                 <div class="stars">
@@ -1406,12 +1406,12 @@
                 slideMargin: 0,
                 thumbItem: 6
             });
+            $('.lSSlideOuter .lSPager').css('height', $('.lSSlideOuter .lSPager li').width() + 4)
             $('#content-slider').lightSlider({
                 keyPress: false,
                 item: 5,
                 loop: true
-            })
-            $('.lSPager').css('height', $('.lSPager li').width() + 4)
+            })      
             $('#content-slider').css('height', $('#content-slider li').width())
             $(document).resize(function () {
                 $('.lSPager').css('height', $('.lSPager li').width() + 4)
