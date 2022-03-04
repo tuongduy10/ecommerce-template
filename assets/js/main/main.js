@@ -240,7 +240,13 @@ $(document).ready(function(){
         $('.tab__product-comment').removeClass('active');
     })
 })
-
+$('.cart-product__amount').on('change', function(){
+    let totalvalue = this.value * $(this).parent().siblings('.cart-product--auto').children('.price').children('.value').text();
+    $(this).parent().siblings('.totalprice').children('.total-value').text(totalvalue);
+})
+$('.cart-product__remove').click(function(){
+    $(this).parent().remove();
+})
 
 
 $('.rating .stars span').click(function(){
