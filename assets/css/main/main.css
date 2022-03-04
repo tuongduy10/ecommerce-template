@@ -949,6 +949,12 @@ hr {
         margin-bottom: calc(5px + (11 - 5) * ((100vw - 375px)/ (1920 - 375)));
         font-weight: 600;
     }
+    .product__detail-id a{
+        width: 50%;
+    }
+    .product__detail-id .stars{
+        margin-right: 1rem;
+    }
     .product__detail-action{
         cursor: pointer;
     }
@@ -1278,6 +1284,9 @@ hr {
             width: calc(25% - 4px) !important;
         }
 @media only screen and (max-width: 992px) {
+    .product__detail-id .stars{
+        margin-right: .45rem;
+    }
     .option-title{
         width: 137px;
     }

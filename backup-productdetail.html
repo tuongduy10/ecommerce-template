@@ -34,86 +34,43 @@
     <!-- <link rel="icon" href="assets/images/logo/squarelogo.png" type="image/x-icon"> -->
     <title>Web Demo</title>
     <style>
-        .lSpg {
-            display: none;
-        }
-        .lSAction>.lSPrev {
-            background-image: url("assets/images/icon/left.png");
-        }
-        .lSAction>.lSNext {
-            background-image: url("assets/images/icon/right.png");
-        }
-        .lSSlideOuter .lSPager.lSGallery li.active {
-            border: 2px solid var(--blue-dior);
-        }
-        .lSPager li {
+        .slider-for .slick-track{
+            display: flex;
+            align-items: center;
             height: 100%;
         }
-        .lSSlideOuter .lSPager.lSGallery img {
-            height: 100%;
-            width: auto;
-            margin: 0 auto;
-            object-fit: contain;
+        .slider-nav .slick-track{
+            display: flex;
+            align-items: center;
+            height: 100px;
         }
-        .product__detail-content .lSSlideWrapper{
-            height: 600px;
+        .slider-nav .slick-track li{
+            width: 100px !important;
         }
-
-        .lSAction > .lSPrev{
-            left: -8px;
+        .slick-dots{
+            display: none !important;
         }
-        .lSAction > .lSNext{
-            right: -8px;
+        .slider-nav{
+            margin-bottom: 0 !important;
         }
-
-        .product__images-slider .lslide,
-        .product__images-slider .clone {
-            height: 100%;
-            text-align: center;
+        .slick-list {
+            padding: 0 !important;
         }
-        .product__images-slider .lslide img,
-        .product__images-slider .clone img {
+        .slider-for{
+            max-height: 634px; 
+            max-width: 634px; 
             width: 100%;
             height: 100%;
-
-            object-fit: contain;
+            margin-bottom: 5px;
         }
-
-        /* Demo */
-        .option-title {
-            margin-right: 3px;
-        }
-
         .stars .checked {
             color: orange;
         }
-
         .rating .stars span {
             cursor: pointer;
         }
-
-        #imagemodal .modal-dialog {
-            max-width: 80%;
-        }
-        @media only screen and (max-width: 1400px){
-            .product__detail-content .lSSlideWrapper{
-                height: 467.64px;
-            }
-        }
-        @media only screen and (max-width: 1200px){
-            .product__detail-content .lSSlideWrapper{
-                height: 381px;
-            }
-        }
-        @media only screen and (max-width: 992px){
-            .product__detail-content .lSSlideWrapper{
-                height: 374px;
-            }
-        }
-        @media only screen and (max-width: 768px) {
-            #imagemodal .modal-dialog {
-                max-width: 100%;
-            }
+        .slider-nav .slick-current{
+            border: 2px solid var(--blue-dior);
         }
     </style>
 </head>
@@ -453,29 +410,65 @@
                             <div class="product__detail-image col-md-5">
                                 <div class="product__detail-card">
                                     <div class="product__detail-slider mb-2">
-                                        <ul class="lightSlider h-100">
-                                            <li class="h-100" data-thumb="assets/images/products/jacket4.jpg">
-                                                <img class="pop h-100" src="assets/images/products/jacket4.jpg" />
-                                            </li>
-                                            <li class="h-100" data-thumb="assets/images/products/pro1.png">
-                                                <img class="pop h-100" src="assets//images/products/pro1.png" />
-                                            </li>
-                                            <li class="h-100" data-thumb="assets/images/products/watch3.jpg">
-                                                <img class="pop h-100" src="assets/images/products/watch3.jpg" />
-                                            </li>
-                                            <li class="h-100" data-thumb="assets/images/products/jacket3.jpg">
-                                                <img class="pop h-100" src="assets//images/products/jacket3.jpg" />
-                                            </li>
-                                            <li class="h-100" data-thumb="assets/images/products/jacket2.jpg">
-                                                <img class="pop h-100" src="assets/images/products/jacket2.jpg" />
-                                            </li>
-                                            <li class="h-100" data-thumb="assets/images/products/watch4.jpg">
-                                                <img class="pop h-100" src="assets//images/products/watch4.jpg" />
-                                            </li>
-                                            <li class="h-100" data-thumb="assets/images/banner/snidel.jpg">
-                                                <img class="pop h-100 w-100" src="assets/images/banner/snidel.jpg"/>
-                                            </li>
-                                        </ul>
+                                        <div class="slider-for d-flex" style="">
+                                            <!-- <img class="h-100 w-auto" src="assets/images/products/jacket1.jpg" alt=""> -->
+                                            <img class="h-100 w-auto" src="assets/images/banner/snidel.jpg" alt="">
+                                            <img class="h-100 w-auto" src="assets/images/products/pro1.png" alt="">
+                                            <img class="h-100 w-auto" src="assets/images/products/jacket4.jpg" alt="">
+
+                                            <img class="h-100 w-auto" src="assets/images/products/jacket1.jpg" alt="">
+                                            <img class="h-100 w-auto" src="assets/images/products/jacket2.jpg" alt="">
+                                            <img class="h-100 w-auto" src="assets/images/products/jacket3.jpg" alt="">
+
+                                            <img class="h-100 w-auto" src="assets/images/products/jacket2.jpg" alt="">
+                                            <img class="h-100 w-auto" src="assets/images/products/jacket3.jpg" alt="">
+                                            <img class="h-100 w-auto" src="assets/images/products/jacket4.jpg" alt="">
+
+                                            <img class="h-100 w-auto" src="assets/images/products/jacket1.jpg" alt="">
+                                            <img class="h-100 w-auto" src="assets/images/products/jacket2.jpg" alt="">
+                                            <img class="h-100 w-auto" src="assets/images/products/jacket3.jpg" alt="">
+                                        </div>
+                                        <div>
+                                            <ul class="slider-nav">
+                                                <li class="h-100" style="margin: 0 5px;">
+                                                    <img class="pop h-100 w-100" src="assets/images/products/jacket4.jpg" alt="">
+                                                </li>
+                                                <li class="h-100" style="margin: 0 5px;">
+                                                    <img class="pop h-100 w-100" src="assets/images/banner/snidel.jpg" alt="">
+                                                </li>
+                                                <li class="h-100" style="margin: 0 5px;">
+                                                    <img class="pop h-100 w-100" src="assets/images/products/pro1.png" alt="">
+                                                </li>
+                                                <li class="h-100" style="margin: 0 5px;">
+                                                    <img class="pop h-100 w-100" src="assets/images/products/jacket1.jpg" alt="">
+                                                </li>
+                                                <li class="h-100" style="margin: 0 5px;">
+                                                    <img class="pop h-100 w-100" src="assets/images/products/jacket2.jpg" alt="">
+                                                </li>
+                                                <li class="h-100" style="margin: 0 5px;">
+                                                    <img class="pop h-100 w-100" src="assets/images/products/jacket3.jpg" alt="">
+                                                </li>
+
+                                                <li class="h-100" style="margin: 0 5px;">
+                                                    <img class="pop h-100 w-100" src="assets/images/products/jacket2.jpg" alt="">
+                                                </li>
+                                                <li class="h-100" style="margin: 0 5px;">
+                                                    <img class="pop h-100 w-100" src="assets/images/products/jacket3.jpg" alt="">
+                                                </li>
+                                                <li class="h-100" style="margin: 0 5px;">
+                                                    <img class="pop h-100 w-100" src="assets/images/products/jacket4.jpg" alt="">
+                                                </li>
+                                                <li class="h-100" style="margin: 0 5px;">
+                                                    <img class="pop h-100 w-100" src="assets/images/products/jacket1.jpg" alt="">
+                                                </li>
+                                                <li class="h-100" style="margin: 0 5px;">
+                                                    <img class="pop h-100 w-100" src="assets/images/products/jacket2.jpg" alt="">
+                                                </li>
+                                                <li class="h-100" style="margin: 0 5px;">
+                                                    <img class="pop h-100 w-100" src="assets/images/products/jacket3.jpg" alt="">
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
                                     <a class="size-guide" href="" style="text-decoration: underline;">Hướng dẫn chọn size</a>
                                 </div>
@@ -615,16 +608,6 @@
                                                         <option value="4">Vàng</option>
                                                         <option value="1">Xanh</option>
                                                         <option value="2">Đỏ</option>
-                                                        <option value="3">Tím</option>
-                                                        <option value="4">Vàng</option>
-                                                        <option value="1">Xanh</option>
-                                                        <option value="2">Đỏ</option>
-                                                        <option value="3">Tím</option>
-                                                        <option value="4">Vàng</option>
-                                                        <option value="1">Xanh</option>
-                                                        <option value="2">Đỏ</option>
-                                                        <option value="3">Tím</option>
-                                                        <option value="4">Vàng</option>
                                                     </select>
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                         viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1"
@@ -840,69 +823,6 @@
                                             <span>Viết bình luận</span>
                                         </button>
                                     </div>
-                                    <!-- Modal -->
-                                    <!-- <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-                                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                                        <div class="modal-dialog modal-dialog-centered" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header" style="padding-bottom: 0;
-                                                            border: unset;">
-                                                    <button class="close" data-dismiss="modal" aria-label="Close" style="border: unset;
-                                                                                  background-color: unset;
-                                                                                  color: #333 !important;">
-                                                        <span aria-hidden="true">&times;</span>
-                                                    </button>
-                                                </div>
-                                                <div class="modal-body" style="padding: 0 1rem;">
-                                                    <form class="tab__content-block">
-                                                        <label class="input-title">THÔNG TIN CÁ NHÂN CỦA BẠN</label>
-                                                        <input type="text" class="w-100 mb-2"
-                                                            placeholder="Họ tên của bạn">
-                                                        <input type="text" class="w-100 mb-2"
-                                                            placeholder="Số điện thoại">
-                                                        <input type="text" class="w-100 mb-2" placeholder="Email">
-                                                    </form>
-                                                    <form class="tab__content-block">
-                                                        <label class="input-title mb-2" for="">VIẾT NHẬN XÉT CỦA BẠN BÊN
-                                                            DƯỚI</label>
-                                                        <div class="rating d-flex mb-2 align-items-center">
-                                                            <span>Đánh giá</span>
-                                                            <div class="stars ml-2">
-                                                                <span class="fa fa-star checked"></span>
-                                                                <span class="fa fa-star checked"></span>
-                                                                <span class="fa fa-star checked"></span>
-                                                                <span class="fa fa-star checked"></span>
-                                                                <span class="fa fa-star checked"></span>
-                                                            </div>
-                                                        </div>
-                                                        <textarea class="w-100 mb-2" name="" id=""
-                                                            placeholder="Nhận xét của bạn về sản phẩm này"></textarea>
-                                                        <div class="upload-image">
-                                                            <label for="image-upload" class="input-tile mb-2">
-                                                                <a class="upload">Chọn ảnh</a>
-                                                                <span>Thêm hình ảnh sản phẩm nếu có (*Tối đa 3)</span>
-                                                            </label>
-                                                            <input id="image-upload" type="file" multiple hidden />
-                                                            <output class="d-flex" id="image-preview">
-
-                                                            </output>
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                                <div class="modal-footer" style="padding-top: 0; border: unset;">
-                                                    <button type="button">Gửi bình luận</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div> -->
-                                    <!-- <form class="tab__content-block">
-                                        <label class="input-title">THÔNG TIN CÁ NHÂN CỦA BẠN</label>
-                                        <input type="text" class="w-100 mb-2"
-                                            placeholder="Họ tên của bạn">
-                                        <input type="text" class="w-100 mb-2"
-                                            placeholder="Số điện thoại">
-                                        <input type="text" class="w-100 mb-2" placeholder="Email">
-                                    </form> -->
                                     <form class="tab__content-block">
                                         <label class="input-title mb-2" for="">VIẾT NHẬN XÉT CỦA BẠN BÊN
                                             DƯỚI</label>
@@ -1399,31 +1319,32 @@
     <!-- Personal Script -->
     <script type="text/javascript" src="assets/js/main/main.js"></script>
     <script type="text/javascript">
-        $('.lightSlider').lightSlider({
-            gallery: true,
-            item: 1,
-            loop: true,
-            slideMargin: 0,
-            thumbItem: 6
+        $('.slider-for').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '.slider-nav',
         });
-        $('#content-slider').lightSlider({
-            keyPress: false,
-            item: 5,
-            loop: true
-        })
-
-        $('.lSPager').css('height', $('.lSPager li').width() + 4)
-        $('#content-slider').css('height', $('#content-slider li').width())
-        $(document).resize(function () {
-            $('.lSPager').css('height', $('.lSPager li').width() + 4)
-            $('#content-slider').css('height', $('#content-slider li').width())
-        })
-
-        $('.pop').on('click', function () {
-            $('.imagepreview').attr('src', $(this).attr('src'));
-            $('#imagemodal').modal('show');
+        $('.slider-nav').slick({
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            asNavFor: '.slider-for',
+            // dots: true,
+            // centerMode: true,
+            focusOnSelect: true,
+            prevArrow: "<button type='button' class='slick-prev pull-left'><svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='#333' stroke-width='1' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevron-left'><polyline points='15 18 9 12 15 6'></polyline></svg></button>",
+            nextArrow: "<button type='button' class='slick-next pull-right'><svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='#333' stroke-width='1' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevron-right'><polyline points='9 18 15 12 9 6'></polyline></svg></button>"
         });
-
+        $(document).ready(function(){
+            $('.slider-for').css('height', $('.slider-for').width());
+                $('.slider-nav .slick-track').css('height', $('.slider-nav .slick-track li').width());
+            $(window).resize(function(){
+                $('.slider-for').css('height', $('.slider-for').width());
+                $('.slider-nav .slick-track').css('height', $('.slider-nav .slick-track li').width());
+            })
+        })
+        
         window.onload = function () {
             if (window.File && window.FileList && window.FileReader) {
                 var filesInput = document.getElementById("image-upload");
@@ -1458,6 +1379,8 @@
                 console.log("Your browser does not support File API");
             }
         }
+
     </script>
 </body>
+
 </html>
