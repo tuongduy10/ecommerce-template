@@ -1486,16 +1486,65 @@ hr {
             font-size: calc(16px + (18 - 16) * ((100vw - 375px)/ (1920 - 375)));
         }
         .continue-shopping:hover{
-
+            
         }
 .secondary-cartcontent{
-    width: 315px;
+    width: 375px;
     margin-left: 40px;
-
-    padding: calc(15px + (26 - 15) * ((100vw - 375px)/ (1920 - 375)));
-    background: #f8f8f8;
     color: #383838;
 }
+    .order-summary{
+        padding: calc(15px + (26 - 15) * ((100vw - 375px)/ (1920 - 375)));
+        background: #f8f8f8;
+    }
+        .order-summary-title{
+            margin-bottom: calc(15px + (30 - 15) * ((100vw - 375px)/ (1920 - 375)));
+            
+        }
+        .payment-coupon{
+            margin-bottom: calc(22px + (50 - 22) * ((100vw - 375px)/ (1920 - 375)));
+            color: #383838;
+        }
+            .input-coupon{
+                flex: 1;
+                border: none;
+                position: relative;
+                overflow: hidden;
+            }
+            .input-coupon input{
+                height: 38px;
+                font-size: calc(14px + (16 - 14) * ((100vw - 375px)/ (1920 - 375)));
+                line-height: calc(48px + (57 - 48) * ((100vw - 375px)/ (1920 - 375)));
+                padding: 0 calc(13px + (31 - 13) * ((100vw - 375px)/ (1920 - 375)));
+                width: 100%;
+                background-color: #fff;
+                color: #707070;
+            }
+            .input-coupon:before{
+                content: '';
+                position: absolute;
+                border: 7px dashed #ddd;
+                top: -5px;
+                bottom: -5px;
+                left: -5px;
+                right: -5px;
+                pointer-events: none;
+            }
+            .submit-coupon{
+                cursor: pointer;
+                margin-left: 20px;
+                padding: 0 10px;
+                background-color: #4d4d4d;
+                color: #fff;
+            }
+            .checkout{
+                cursor: pointer;
+                line-height: calc(40px + (52.5 - 50) * ((100vw - 375px)/ (1920 - 375)));
+                font-size: calc(16px + (18 - 16) * ((100vw - 375px)/ (1920 - 375)));
+                background-color: #4d4d4d;
+                color: #fff;
+            }
+
 @media only screen and (max-width: 1200px) {
     .cart-product--col,
     .cart-head span:not(:first-child){
