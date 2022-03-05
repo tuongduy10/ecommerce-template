@@ -560,7 +560,9 @@
         border-bottom: 1px solid #ddd;
     }
         .signup__inner{
-            max-width: 300px;
+            max-width: 442px;
+            background: #f8f8f8;
+            color: #383838;
         }  
         .signup__inner input,
         .signup__inner button{
@@ -598,6 +600,33 @@
     }
     .verifycode-signup input{
         width: 65%;
+    }
+            .form-input{
+                position: relative;
+                border-bottom: 1px solid #ddd;
+            }
+            .form-input input{
+                border: unset !important;
+                padding: 0.5rem 2rem;
+            }
+            .form-input input:focus{
+                box-shadow: unset !important;
+            }
+            .form-input span{
+                position: absolute;
+                left: 0;
+                height: 100%;
+                align-items: center;
+                display: flex;
+            }
+    .signup-info{
+        font-size: calc(16px + (20 - 16) * ((100vw - 375px)/ (1920 - 375)));
+        line-height: 25px;
+        color: #383838;
+        margin-bottom: calc(10px + (17 - 10) * ((100vw - 375px)/ (1920 - 375)));
+    }
+    .signup-block:not(:last-child){
+        margin-bottom: calc(22px + (17 - 10) * ((100vw - 375px)/ (1920 - 375)));
     }
 @media only screen and (max-width: 768px){
     .signup__inner h3{
@@ -1400,7 +1429,7 @@ hr {
     font-size: calc(20px + (35 - 20) * ((100vw - 375px)/ (1920 - 375)));
     line-height: 1.2;
     padding-bottom: calc(5px + (20 - 5) * ((100vw - 375px)/ (1920 - 375)));
-    border-bottom: solid 1px #ddd;
+    /* border-bottom: solid 1px #ddd; */
     margin-bottom: calc(28px + (30 - 28) * ((100vw - 375px)/ (1920 - 375)));
     color: #383838;
 }
@@ -1413,14 +1442,16 @@ hr {
         margin-bottom: calc(15px + (30 - 15) * ((100vw - 375px)/ (1920 - 375)));
         display: flex;
         padding: calc(15px + (26 - 15) * ((100vw - 375px)/ (1920 - 375))) 0 calc(10px + (19 - 10) * ((100vw - 375px)/ (1920 - 375)));
-        background: #ddd;
+        /* background: #ddd; */
+        border-bottom: 1px solid #ddd;
     }
         .cart-head span:first-child {
             flex: 1;
             margin-left: calc(10px + (24 - 10) * ((100vw - 375px)/ (1920 - 375)));
         }
-        .cart-head span:not(:first-child){
-            flex-basis: calc(64px + (265 - 50) * ((100vw - 375px)/ (1920 - 375)));
+        .cart-head span:not(:first-child),
+        .cart-product--col{
+            flex-basis: calc(50px + (265 - 50) * ((100vw - 375px)/ (1920 - 375)));
         }
             .cart-product{
                 position: relative;
@@ -1458,12 +1489,6 @@ hr {
                         .cart-product--auto{
                             flex: 1;
                         }
-                        .cart-product--col{
-                            flex-basis: calc(64px + (265 - 50) * ((100vw - 375px)/ (1920 - 375)));
-                        }
-                        .cart-product__info .totalprice{
-                            color: var(--blue-dior);
-                        }
                     .cart-product__info input{
                         border: 1px solid #ddd; 
                         text-align: center; padding: 4px 0;
@@ -1473,7 +1498,7 @@ hr {
                 .cart-product__remove{
                     cursor: pointer;
                     position: absolute;
-                    height: 100%;
+                    /* height: 100%; */
                     right: 0;
                     align-items: center;
                 }
@@ -1482,6 +1507,8 @@ hr {
             border: 1px solid #333;
             padding: 0.5rem 1rem;
             font-size: calc(16px + (18 - 16) * ((100vw - 375px)/ (1920 - 375)));
+            color: #fff !important;
+            background-color: #4d4d4d;
         }
         .continue-shopping:hover{
 
@@ -1565,7 +1592,6 @@ hr {
     }
 }
 @media only screen and (max-width: 768px) {
-    
     .cart-head{
         display: none;
     }
@@ -1590,6 +1616,65 @@ hr {
         align-items: unset;
     }
     .continue-shopping{
+        width: 100%;
+    }
+}
+/* Payment */
+.billing-summary{
+    padding: calc(30px + (60 - 30) * ((100vw - 375px)/ (1920 - 375))) calc(30px + (65 - 30) * ((100vw - 375px)/ (1920 - 375))) calc(30px + (47 - 30) * ((100vw - 375px)/ (1920 - 375)));
+    background: #f8f8f8;
+    color: #383838;
+}
+    .billing-total .attr{
+        width: 30%;
+    }
+        .billing-total span{
+            font-size: calc(14px + (20 - 14) * ((100vw - 375px)/ (1920 - 375)));
+        }
+        .billing-total .text{
+            font-size: calc(18px + (20 - 18) * ((100vw - 375px)/ (1920 - 375)));
+        }
+        .billing-total .value{
+            font-size: calc(20px + (20 - 18) * ((100vw - 375px)/ (1920 - 375)));
+        }
+    .billing-summary .title{
+        font-size: calc(16px + (20 - 16) * ((100vw - 375px)/ (1920 - 375)));
+        line-height: 25px;
+        color: #383838;
+        padding: calc(10px + (24 - 10) * ((100vw - 375px)/ (1920 - 375))) 0 calc(6px + (20 - 6) * ((100vw - 375px)/ (1920 - 375)));
+        margin-bottom: calc(10px + (17 - 10) * ((100vw - 375px)/ (1920 - 375)));
+        border-bottom: 2px solid #4d4d4d;
+    }
+        .payment-info__line{
+            margin-bottom: calc(10px + (30 - 10) * ((100vw - 375px)/ (1920 - 375)));
+        }
+        .payment-info__line input{
+            border: solid 1px #d4d4d4;
+            font-size: calc(14px + (16 - 14) * ((100vw - 375px)/ (1920 - 375)));
+            height: auto;
+            line-height: calc(48px + (57 - 48) * ((100vw - 375px)/ (1920 - 375)));
+            padding: 0 calc(13px + (31 - 13) * ((100vw - 375px)/ (1920 - 375)));
+        }
+    .payment-checkout a{
+        cursor: pointer;
+        background-color: #4d4d4d;
+        color: #fff !important;
+        
+        padding: 0;
+        width: 288px;
+        line-height: calc(50px + (52.5 - 50) * ((100vw - 375px)/ (1920 - 375)));
+        font-size: calc(16px + (18 - 16) * ((100vw - 375px)/ (1920 - 375)));
+    }
+    .payment-method .payment-info__line{
+        border-bottom: solid 1px #d4d4d4;
+    }
+@media only screen and (max-width: 1200px) {
+    .billing-total .attr{
+        width: 40%;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .billing-total .attr{
         width: 100%;
     }
 }

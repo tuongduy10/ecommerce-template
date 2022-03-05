@@ -33,6 +33,9 @@ input:focus-within,
 button:focus-within{
     outline: none;
 }
+.main{
+    margin-bottom: 6rem;
+}
 
 /* Reset Bootstrap */
 .form-select{

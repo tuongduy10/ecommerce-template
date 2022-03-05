@@ -116,7 +116,7 @@
                             </span>
                         </a>
                     </li>
-                    <li class="cart-action">
+                    <li class="">
                         <a href="" class="header__top-link">
                             <span class="icon cart">
                                 <span class="quality">1</span>
@@ -446,7 +446,7 @@
         </div>
     </header>
 
-    <main class="main">
+    <main class="main mb-5">
         <!-- Main content -->
         <div class="custom-container">
             <div class="content__inner">
@@ -459,9 +459,15 @@
                     <div class="cart-body d-flex flex-wrap">
                         <div class="primary-cartcontent">
                             <div class="cart-head">
-                                <span>Sản phẩm</span>
-                                <span class="">Số lượng</span>
-                                <span class="">Thành tiền</span>
+                                <span>
+                                    <strong>Sản phẩm</strong>
+                                </span>
+                                <span class="">
+                                    <strong>Số lượng</strong>
+                                </span>
+                                <span class="">
+                                    <strong>Thành tiền</strong>
+                                </span>
                             </div>
                             <div class="cart-products">
                                 <div class="cart-product d-flex flex-wrap w-100">
@@ -479,7 +485,7 @@
                                             </div>
                                         </div>
                                         <div class="cart-product--col">
-                                            <input class="cart-product__amount" type="number" value="2">
+                                            <input class="cart-product__amount" type="number" value="2" min="1">
                                         </div>
                                         <div class="cart-product--col totalprice">
                                             <span class="total-value">200000000</span>
@@ -510,7 +516,7 @@
                                             </div>
                                         </div>
                                         <div class="cart-product--col">
-                                            <input class="cart-product__amount" type="number" value="2">
+                                            <input class="cart-product__amount" type="number" value="2" min="1">
                                         </div>
                                         <div class="cart-product--col totalprice">
                                             <span class="total-value">200000000</span>
@@ -541,7 +547,7 @@
                                             </div>
                                         </div>
                                         <div class="cart-product--col">
-                                            <input class="cart-product__amount" type="number" value="2">
+                                            <input class="cart-product__amount" type="number" value="2" min="1">
                                         </div>
                                         <div class="cart-product--col totalprice">
                                             <span class="total-value">200000000</span>
@@ -559,20 +565,27 @@
                                 </div>
                             </div>
                             <div class="cart-bottom">
-                                <a class="continue-shopping d-inline-block text-center">Tiếp tục mua sắm</a>
+                                <a class="continue-shopping d-inline-block text-center">
+                                    <strong>Tiếp tục mua sắm</strong>
+                                </a>
                             </div>
                         </div>
                         <div class="secondary-cartcontent">
+                            <div class="cart-head mb-0" style="visibility: hidden;">
+                                <span class="text-center">ĐƠN HÀNG CỦA BẠN</span>
+                            </div>
                             <div class="order-summary">
                                 <div class="order-summary-title text-center">
-                                    <span>TÓM TẮT ĐƠN HÀNG</span>
+                                    <span>ĐƠN HÀNG CỦA BẠN</span>
                                 </div>
                                 <div class="payment-coupon">
                                     <div class="d-flex">
                                         <div class="input-coupon">
                                             <input type="text" placeholder="MÃ GIẢM GIÁ">
                                         </div>
-                                        <button class="submit-coupon">ÁP DỤNG</button>
+                                        <button class="submit-coupon">
+                                            <strong>ÁP DỤNG</strong>
+                                        </button>
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-between mb-2">
@@ -586,9 +599,13 @@
                                 <hr>
                                 <div class="d-flex justify-content-between mb-4">
                                     <span>TỔNG CỘNG:</span>
-                                    <span>100000000 ₫</span>
+                                    <span>
+                                        <strong>100000000 ₫</strong>
+                                    </span>
                                 </div>
-                                <button class="w-100 checkout">THANH TOÁN</button>
+                                <button class="w-100 checkout">
+                                    <strong>THANH TOÁN</strong>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -715,16 +732,7 @@
     <!-- Personal Script -->
     <script type="text/javascript" src="assets/js/main/main.js"></script>
     <script type="text/javascript">
-        $(document).ready(function () {
-            $('.autoplay').slick({
-                slidesToShow: 5,
-                slidesToScroll: 5,
-                autoplay: true,
-                autoplaySpeed: 3000,
-                prevArrow: "<button type='button' class='slick-prev pull-left'><svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='#333' stroke-width='1' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevron-left'><polyline points='15 18 9 12 15 6'></polyline></svg></button>",
-                nextArrow: "<button type='button' class='slick-next pull-right'><svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='#333' stroke-width='1' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevron-right'><polyline points='9 18 15 12 9 6'></polyline></svg></button>"
-            });
-        });
+        // $('.secondary-cartcontent').css('padding-top', $('.cart-head').height());
     </script>
 </body>
 

@@ -241,6 +241,9 @@ $(document).ready(function(){
     })
 })
 $('.cart-product__amount').on('change', function(){
+    if(this.value == 0){
+        $(this).parent().parent().parent().remove();
+    }
     let totalvalue = this.value * $(this).parent().siblings('.cart-product--auto').children('.price').children('.value').text();
     $(this).parent().siblings('.totalprice').children('.total-value').text(totalvalue);
 })
