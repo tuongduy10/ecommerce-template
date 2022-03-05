@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Lightslider -->
+    <link rel='stylesheet' href='https://sachinchoolur.github.io/lightslider/dist/css/lightslider.css'>
 
     <!-- Personal Style -->
     <link rel="stylesheet" href="assets/css/main/global.css" />
@@ -31,6 +33,88 @@
 
     <!-- <link rel="icon" href="assets/images/logo/squarelogo.png" type="image/x-icon"> -->
     <title>Web Demo</title>
+    <style>
+        .lSpg {
+            display: none;
+        }
+        .lSAction>.lSPrev {
+            background-image: url("assets/images/icon/left.png");
+        }
+        .lSAction>.lSNext {
+            background-image: url("assets/images/icon/right.png");
+        }
+        .lSSlideOuter .lSPager.lSGallery li.active {
+            border: 2px solid var(--blue-dior);
+        }
+        .lSPager li {
+            height: 100%;
+        }
+        .lSSlideOuter .lSPager.lSGallery img {
+            height: 100%;
+            width: auto;
+            margin: 0 auto;
+            object-fit: contain;
+        }
+        .product__detail-content .lSSlideWrapper{
+            height: 600px;
+        }
+
+        .lSAction > .lSPrev{
+            left: -8px;
+        }
+        .lSAction > .lSNext{
+            right: -8px;
+        }
+
+        .product__images-slider .lslide,
+        .product__images-slider .clone {
+            height: 100%;
+            text-align: center;
+        }
+        .product__images-slider .lslide img,
+        .product__images-slider .clone img {
+            width: 100%;
+            height: 100%;
+
+            object-fit: contain;
+        }
+
+        /* Demo */
+        .option-title {
+            margin-right: 3px;
+        }
+
+        .stars .checked {
+            color: orange;
+        }
+        .rating .stars span {
+            cursor: pointer;
+        }
+
+        #imagemodal .modal-dialog {
+            max-width: 80%;
+        }
+        @media only screen and (max-width: 1400px){
+            .product__detail-content .lSSlideWrapper{
+                height: 467.64px;
+            }
+        }
+        @media only screen and (max-width: 1200px){
+            .product__detail-content .lSSlideWrapper{
+                height: 381px;
+            }
+        }
+        @media only screen and (max-width: 992px){
+            .product__detail-content .lSSlideWrapper{
+                height: 374px;
+            }
+        }
+        @media only screen and (max-width: 768px) {
+            #imagemodal .modal-dialog {
+                max-width: 100%;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -79,10 +163,9 @@
                                 <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                                 <circle cx="12" cy="7" r="4"></circle>
                             </svg>
-                            <span class="quality">99</span>
                         </span>
                         <span class="text">
-                            Hi, Nguyễn Văn A
+                            Tài khoản của tôi
                         </span>
                     </a>
                 </div>
@@ -116,7 +199,7 @@
                             </span>
                         </a>
                     </li>
-                    <li class="cart-action">
+                    <li>
                         <a href="" class="header__top-link">
                             <span class="icon cart">
                                 <span class="quality">1</span>
@@ -129,119 +212,6 @@
                                 </svg>
                             </span>
                         </a>
-                        <div class="minicart-content">
-                            <div class="w-100">
-                                <div class="header-title pb-4 pt-3">Giỏ hàng: 4</div>
-                            </div>
-                            <div class="minicart-products filter--scrollbar px-4">
-                                <div class="minicart-product d-flex py-4">
-                                    <div class="minicart__product-image text-center mr-2">
-                                        <img class="h-100 w-auto" src="assets/images/products/pro1.png" alt="">
-                                    </div>
-                                    <div class="minicart__product-info d-flex flex-column">
-                                        <div class="name">
-                                            <strong>Samsung Galaxy S20 Ultra 5G</strong>
-                                        </div>
-                                        <div class="detail mb-auto">(Đỏ, M)</div>
-                                        <div class="amount">x2</div>
-                                        <div class="price">10.000.000 ₫</div>
-                                        <div class="total-price">
-                                            20.000.000 ₫
-                                        </div>
-                                    </div>
-                                    <span class="minicart-remove">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1"
-                                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-x">
-                                            <line x1="18" y1="6" x2="6" y2="18"></line>
-                                            <line x1="6" y1="6" x2="18" y2="18"></line>
-                                        </svg>
-                                    </span>
-                                </div>
-                                <div class="minicart-product d-flex py-4">
-                                    <div class="minicart__product-image mr-2">
-                                        <img class="h-100 w-auto" src="assets/images/products/jacket1.jpg" alt="">
-                                    </div>
-                                    <div class="minicart__product-info d-flex flex-column">
-                                        <div class="name">
-                                            <strong>Samsung Galaxy S20 Ultra 5G</strong>
-                                        </div>
-                                        <div class="detail mb-auto">(Xanh, L)</div>
-                                        <div class="amount">x2</div>
-                                        <div class="price">20.000.000 ₫</div>
-                                        <div class="total-price">
-                                            40.000.000 ₫
-                                        </div>
-                                    </div>
-                                    <span class="minicart-remove">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1"
-                                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-x">
-                                            <line x1="18" y1="6" x2="6" y2="18"></line>
-                                            <line x1="6" y1="6" x2="18" y2="18"></line>
-                                        </svg>
-                                    </span>
-                                </div>
-                                <div class="minicart-product d-flex py-4">
-                                    <div class="minicart__product-image mr-2">
-                                        <img class="h-100 w-100" src="assets/images/banner/snidel.jpg" alt="">
-                                    </div>
-                                    <div class="minicart__product-info d-flex flex-column">
-                                        <div class="name">
-                                            <strong>Samsung Galaxy S20 Ultra 5G</strong>
-                                        </div>
-                                        <div class="detail mb-auto">(Đen, XL)</div>
-                                        <div class="amount">x2</div>
-                                        <div class="price">30.000.000 ₫</div>
-                                        <div class="total-price">
-                                            60.000.000 ₫
-                                        </div>
-                                    </div>
-                                    <span class="minicart-remove">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1"
-                                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-x">
-                                            <line x1="18" y1="6" x2="6" y2="18"></line>
-                                            <line x1="6" y1="6" x2="18" y2="18"></line>
-                                        </svg>
-                                    </span>
-                                </div>
-                                <div class="minicart-product d-flex py-4">
-                                    <div class="minicart__product-image mr-2">
-                                        <img class="h-100 w-auto" src="assets/images/products/jacket1.jpg" alt="">
-                                    </div>
-                                    <div class="minicart__product-info d-flex flex-column">
-                                        <div class="name">
-                                            <strong>Samsung Galaxy S20 Ultra 5G</strong>
-                                        </div>
-                                        <div class="detail mb-auto">(Xanh, L)</div>
-                                        <div class="amount">x2</div>
-                                        <div class="price">20.000.000 ₫</div>
-                                        <div class="total-price">
-                                            40.000.000 ₫
-                                        </div>
-                                    </div>
-                                    <span class="minicart-remove">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1"
-                                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-x">
-                                            <line x1="18" y1="6" x2="6" y2="18"></line>
-                                            <line x1="6" y1="6" x2="18" y2="18"></line>
-                                        </svg>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="minicart-totals px-4 pb-3">
-                                <div class="d-flex justify-content-between pt-3 pb-4">
-                                    <div>Tạm tính</div>
-                                    <div class="total-price"><strong>120.000.000 ₫</strong></div>
-                                </div>
-                                <div class="text-center d-block">
-                                    <a class="minicart-checkout d-inline-block w-100 py-3 mb-4" href="">THANH TOÁN</a>
-                                    <a href=""><u>Xem/Chỉnh sửa</u></a>
-                                </div>
-                            </div>
-                        </div>
                     </li>
                 </ul>
             </div>
@@ -296,7 +266,6 @@
                                 <li class="pb-4">
                                     <a href="/sign-up.html" class="d-flex w-100">
                                         <span class="icon">
-                                            <span class="quality">1</span>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                 viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1"
                                                 stroke-linecap="round" stroke-linejoin="round"
@@ -306,7 +275,7 @@
                                             </svg>
                                         </span>
                                         <span class="text">
-                                            Hi, Nguyễn Văn A
+                                            Tài khoản của tôi
                                         </span>
                                     </a>
                                 </li>
@@ -327,6 +296,23 @@
                                         </span>
                                     </a>
                                 </li>
+                                <!-- <li class="">
+                                    <a href="/sign-up.html" class="d-flex w-100">
+                                        <span class="icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-log-in">
+                                                <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+                                                <polyline points="10 17 15 12 10 7"></polyline>
+                                                <line x1="15" y1="12" x2="3" y2="12"></line>
+                                            </svg>
+                                        </span>
+                                        <span class="text">
+                                            Đăng nhập
+                                        </span>
+                                    </a>
+                                </li> -->
                             </ul>
                             <div class="nav__mobile-info p-4">
                                 <p><a href="">Phone: 0123456789 (Mr.A)</a></p>
@@ -357,8 +343,7 @@
                             </svg>
                         </a>
 
-                        <a class="profile-mobile">
-                            <span class="quality">1</span>
+                        <a>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="#333" stroke-width="1" stroke-linecap="round"
                                 stroke-linejoin="round" class="feather feather-user">
@@ -447,151 +432,18 @@
     </header>
 
     <main class="main">
-        <!-- Main content -->
+        <!-- Main contain -->
         <div class="custom-container">
-            <div class="content__inner">
-                <ul class="web__directional">
-                    <li><a href="/index.html">Trang chủ</a></li>
-                    <li><a href="">Giỏ hàng</a></li>
-                </ul>
-                <div class="">
-                    <div class="cart-title text-center">GIỎ HÀNG</div>
-                    <div class="cart-body d-flex flex-wrap">
-                        <div class="primary-cartcontent">
-                            <div class="cart-head">
-                                <span>Sản phẩm</span>
-                                <span class="">Số lượng</span>
-                                <span class="">Thành tiền</span>
-                            </div>
-                            <div class="cart-products">
-                                <div class="cart-product d-flex flex-wrap w-100">
-                                    <div class="cart-product__image">
-                                        <img src="assets/images/banner/snidel.jpg" alt="">
-                                    </div>
-                                    <div class="cart-product__info">
-                                        <div class="cart-product--auto">
-                                            <div><strong>Samsung Galaxy S22 Ultra 5G</strong></div>
-                                            <div>Shop Demo 01</div>
-                                            <div>(Đỏ, L)</div>
-                                            <div class="price">
-                                                <span class="value">100000000</span>
-                                                <span>₫</span>
-                                            </div>
-                                        </div>
-                                        <div class="cart-product--col">
-                                            <input class="cart-product__amount" type="number" value="2">
-                                        </div>
-                                        <div class="cart-product--col totalprice">
-                                            <span class="total-value">200000000</span>
-                                            <span>₫</span>
-                                        </div>
-                                    </div>
-                                    <span class="cart-product__remove d-flex">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                            viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1"
-                                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-x">
-                                            <line x1="18" y1="6" x2="6" y2="18"></line>
-                                            <line x1="6" y1="6" x2="18" y2="18"></line>
-                                        </svg>
-                                    </span>
-                                </div>
-                                <div class="cart-product d-flex flex-wrap w-100">
-                                    <div class="cart-product__image">
-                                        <img src="assets/images/products/pro1.png" alt="">
-                                    </div>
-                                    <div class="cart-product__info">
-                                        <div class="cart-product--auto">
-                                            <div><strong>Samsung Galaxy S22 Ultra 5G</strong></div>
-                                            <div>Shop Demo 02</div>
-                                            <div>(Đỏ, L)</div>
-                                            <div class="price">
-                                                <span class="value">100000000</span>
-                                                <span>₫</span>
-                                            </div>
-                                        </div>
-                                        <div class="cart-product--col">
-                                            <input class="cart-product__amount" type="number" value="2">
-                                        </div>
-                                        <div class="cart-product--col totalprice">
-                                            <span class="total-value">200000000</span>
-                                            <span>₫</span>
-                                        </div>
-                                    </div>
-                                    <span class="cart-product__remove d-flex">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                            viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1"
-                                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-x">
-                                            <line x1="18" y1="6" x2="6" y2="18"></line>
-                                            <line x1="6" y1="6" x2="18" y2="18"></line>
-                                        </svg>
-                                    </span>
-                                </div>
-                                <div class="cart-product d-flex flex-wrap w-100">
-                                    <div class="cart-product__image">
-                                        <img src="assets/images/products/jacket1.jpg" alt="">
-                                    </div>
-                                    <div class="cart-product__info">
-                                        <div class="cart-product--auto">
-                                            <div><strong>Samsung Galaxy S22 Ultra 5G</strong></div>
-                                            <div>Shop Demo 02</div>
-                                            <div>(Đỏ, L)</div>
-                                            <div class="price">
-                                                <span class="value">100000000</span>
-                                                <span>₫</span>
-                                            </div>
-                                        </div>
-                                        <div class="cart-product--col">
-                                            <input class="cart-product__amount" type="number" value="2">
-                                        </div>
-                                        <div class="cart-product--col totalprice">
-                                            <span class="total-value">200000000</span>
-                                            <span>₫</span>
-                                        </div>
-                                    </div>
-                                    <span class="cart-product__remove d-flex">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                            viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1"
-                                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-x">
-                                            <line x1="18" y1="6" x2="6" y2="18"></line>
-                                            <line x1="6" y1="6" x2="18" y2="18"></line>
-                                        </svg>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="cart-bottom">
-                                <a class="continue-shopping d-inline-block text-center">Tiếp tục mua sắm</a>
-                            </div>
-                        </div>
-                        <div class="secondary-cartcontent">
-                            <div class="order-summary">
-                                <div class="order-summary-title text-center">
-                                    <span>TÓM TẮT ĐƠN HÀNG</span>
-                                </div>
-                                <div class="payment-coupon">
-                                    <div class="d-flex">
-                                        <div class="input-coupon">
-                                            <input type="text" placeholder="MÃ GIẢM GIÁ">
-                                        </div>
-                                        <button class="submit-coupon">ÁP DỤNG</button>
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-between mb-2">
-                                    <span>Số lượng:</span>
-                                    <span>3</span>
-                                </div>
-                                <div class="d-flex justify-content-between mb-2">
-                                    <span>Tạm tính:</span>
-                                    <span>100000000 ₫</span>
-                                </div>
-                                <hr>
-                                <div class="d-flex justify-content-between mb-4">
-                                    <span>TỔNG CỘNG:</span>
-                                    <span>100000000 ₫</span>
-                                </div>
-                                <button class="w-100 checkout">THANH TOÁN</button>
-                            </div>
-                        </div>
-                    </div>
+            <div class="content__wrapper products__content-wrapper">
+                <div class="content__inner w-100">
+                    <ul class="web__directional">
+                        <li>
+                            <a href="/index.html">Trang chủ</a>
+                        </li>
+                        <li>
+                            <a href="">Hồ sơ cá nhân</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -711,21 +563,13 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <!-- Lightslider -->
+    <script src='https://sachinchoolur.github.io/lightslider/dist/js/lightslider.js'></script>
 
     <!-- Personal Script -->
     <script type="text/javascript" src="assets/js/main/main.js"></script>
     <script type="text/javascript">
-        $(document).ready(function () {
-            $('.autoplay').slick({
-                slidesToShow: 5,
-                slidesToScroll: 5,
-                autoplay: true,
-                autoplaySpeed: 3000,
-                prevArrow: "<button type='button' class='slick-prev pull-left'><svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='#333' stroke-width='1' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevron-left'><polyline points='15 18 9 12 15 6'></polyline></svg></button>",
-                nextArrow: "<button type='button' class='slick-next pull-right'><svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='#333' stroke-width='1' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevron-right'><polyline points='9 18 15 12 9 6'></polyline></svg></button>"
-            });
-        });
+
     </script>
 </body>
-
 </html>

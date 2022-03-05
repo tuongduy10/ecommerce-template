@@ -584,9 +584,8 @@
                 outline: none;
             }
             .signup__inner button{
-                background-color: var(--blue-dior);
+                background-color: #4d4d4d;
                 color: #fff;
-                border-radius: 2px;
                 /* border: 1px solid #333; */
                 padding: 5px 10px;
                 cursor: pointer;
@@ -1391,9 +1390,8 @@ hr {
 .login button{
     cursor: pointer;
     color: #fff;
-    background-color: var(--blue-dior);
+    background-color: #4d4d4d;
     padding: 0.5rem 1rem;
-    border-radius: 3px;
 }
 
 /* Cart */
@@ -1486,7 +1484,7 @@ hr {
             font-size: calc(16px + (18 - 16) * ((100vw - 375px)/ (1920 - 375)));
         }
         .continue-shopping:hover{
-            
+
         }
 .secondary-cartcontent{
     width: 375px;
