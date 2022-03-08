@@ -280,5 +280,13 @@ $('.write-comment').click(function(){
     $('.tab__content-block').addClass('d-none');
 })
 
-
+$('.payment-method').change(function(){
+    if($('#bank').is(':checked')){
+        if($('.payment-expand').hasClass('d-none')){
+            $('.payment-expand').removeClass('d-none');
+        }
+        return;
+    }
+    $('.payment-expand').addClass('d-none');
+})
 

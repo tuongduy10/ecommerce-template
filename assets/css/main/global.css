@@ -30,7 +30,8 @@ ul, ol {
 }
 textarea:focus-within,
 input:focus-within,
-button:focus-within{
+button:focus-within,
+select:focus-within{
     outline: none;
 }
 .main{

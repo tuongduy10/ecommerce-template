@@ -1668,6 +1668,34 @@ hr {
     .payment-method .payment-info__line{
         border-bottom: solid 1px #d4d4d4;
     }
+    .payment-info__line .location{
+        border: solid 1px #d4d4d4;
+        font-size: calc(14px + (16 - 14) * ((100vw - 375px)/ (1920 - 375)));
+        height: calc(48px + (57 - 48) * ((100vw - 375px)/ (1920 - 375)));
+        padding: 0 calc(13px + (31 - 13) * ((100vw - 375px)/ (1920 - 375)));
+    }
+    
+    .bank{
+        margin-bottom: calc(18px + (24 - 18) * ((100vw - 375px)/ (1920 - 375)));
+    }
+        .bank-image{
+            width: calc(72px + (190 - 117) * ((100vw - 375px)/ (1920 - 375)));
+            height: calc(72px + (190 - 117) * ((100vw - 375px)/ (1920 - 375)));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8px;
+            border: solid 1px #ddd;
+            background: #f8f8f8;
+            margin-right: 15px;
+        }
+        .bank-info{
+            flex: 1;
+        }
+        .bank-info *{
+            font-size: calc(14px + (20 - 14) * ((100vw - 375px)/ (1920 - 375)));
+            line-height: calc(17px + (24 - 17) * ((100vw - 375px)/ (1920 - 375)));
+        }
 @media only screen and (max-width: 1200px) {
     .billing-total .attr{
         width: 40%;
@@ -1675,6 +1703,11 @@ hr {
 }
 @media only screen and (max-width: 992px) {
     .billing-total .attr{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .payment-checkout a{
         width: 100%;
     }
 }

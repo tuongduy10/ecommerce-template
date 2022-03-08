@@ -489,8 +489,7 @@
                                             x2
                                         </div>
                                         <div class="cart-product--col totalprice text-right">
-                                            <span class="total-value">200000000</span>
-                                            <span>₫</span>
+                                            <span class="total-value">200000000 ₫</span>
                                         </div>
                                     </div>
                                 </div>
@@ -512,8 +511,7 @@
                                             x2
                                         </div>
                                         <div class="cart-product--col totalprice text-right">
-                                            <span class="total-value">200000000</span>
-                                            <span>₫</span>
+                                            <span class="total-value">200000000 ₫</span>
                                         </div>
                                     </div>
                                 </div>
@@ -535,8 +533,7 @@
                                             x2
                                         </div>
                                         <div class="cart-product--col totalprice text-right">
-                                            <span class="total-value">200000000</span>
-                                            <span>₫</span>
+                                            <span class="total-value">200000000 ₫</span>
                                         </div>
                                     </div>
                                 </div>
@@ -576,14 +573,27 @@
                             </div>
                             <div class="payment-info__line w-100 d-flex align-items-center" style="position: relative;">
                                 <span style="color: red; position: absolute; left: 8px; top: 3px;">*</span>
-                                <input class="w-100" type="text" placeholder="Địa chỉ">
+                                <input class="w-100" type="text" placeholder="Số điện thoại">
                             </div>
                             <div class="payment-info__line w-100 d-flex align-items-center" style="position: relative;">
                                 <span style="color: red; position: absolute; left: 8px; top: 3px;">*</span>
+                                <input class="w-100" type="text" placeholder="Địa chỉ">
+                            </div>
+                            <div class="payment-info__line w-100 d-flex align-items-center justify-content-between">
+                                <select name="" id="" class="location">
+                                    <option value="" disabled selected>Tỉnh/Thành</option>
+                                </select>
+                                <select name="" id="" class="location">
+                                    <option value="" disabled selected>Quận/Huyện</option>
+                                </select>
+                                <select name="" id="" class="location">
+                                    <option value="" disabled selected>Phường/Xã</option>
+                                </select>
+                            </div>
+                            <div class="payment-info__line w-100 d-flex align-items-center" style="position: relative;">
                                 <input class="w-100" type="text" placeholder="Email">
                             </div>
                             <div class="payment-info__line w-100 d-flex align-items-center" style="position: relative;">
-                                <span style="color: red; position: absolute; left: 8px; top: 3px;">*</span>
                                 <input class="w-100" type="text" placeholder="Ghi chú">
                             </div>
                         </div>
@@ -598,6 +608,39 @@
                             <div class="payment-info__line w-100 align-items-center d-flex">
                                 <input name="payment-method" id="bank" type="radio" style="height: calc(48px + (57 - 48) * ((100vw - 375px)/ (1920 - 375)));">
                                 <label class="ml-2 mb-0" for="bank" style="cursor: pointer;">Chuyển khoản</label>
+                            </div>
+                            <div class="payment-expand d-none">
+                                <div class="text-center mb-2">THÔNG TIN CHUYỂN KHOẢN</div>
+                                <ul class="bank-list">
+                                    <li class="bank">
+                                        <div class="d-flex">
+                                            <div class="bank-image">
+                                                <img class="mw-100 mh-100" src="assets/images/logo/bidv.png" alt="">
+                                            </div>
+                                            <div class="bank-info d-flex align-items-center">
+                                                <div class="">
+                                                    <div class="bank-name">Ngân hàng Thương mại cổ phần Đầu tư và Phát triển Việt Nam</div>
+                                                    <div class="bank-accnumber">STK: <strong>000123456789</strong></div>
+                                                    <div class="bank-username">Tên: NGUYEN VAN A</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="bank">
+                                        <div class="d-flex">
+                                            <div class="bank-image">
+                                                <img class="mw-100 mh-100" src="assets/images/logo/sacombank.png" alt="">
+                                            </div>
+                                            <div class="bank-info d-flex align-items-center">
+                                                <div class="">
+                                                    <div class="bank-name">Ngân hàng thương mại cổ phần Sài Gòn Thương Tín</div>
+                                                    <div class="bank-accnumber">STK: <strong>000123456789</strong></div>
+                                                    <div class="bank-username">Tên: NGUYEN VAN A</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
                             <div class="payment-checkout text-center d-block">
                                 <a class="d-inline-block">THANH TOÁN</a>
@@ -723,11 +766,61 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-
     <!-- Personal Script -->
     <script type="text/javascript" src="assets/js/main/main.js"></script>
     <script type="text/javascript">
+        const api = 'https://provinces.open-api.vn/api/?depth=3';
+        function fetchData(){
+            fetch(api)
+                .then(function(response){
+                    if(!response.ok){
+                        alert('lỗi')
+                        return;
+                    }
+                    return response.json();
+                })
+                .then(function(data){
+                    console.log(data[0].name);
+                    console.log(data[0].districts[0].name);
+                    console.log(data[0].districts[0].wards[0].name);
 
+                    var htmlTinhThanh = `<option value=""> -------- SELECT -------- </option>`
+                    data.forEach(element => {
+                        htmlTinhThanh += `<option value="`+element.Id+`">`+element.Name+`</option>`
+                    });
+                    $("#country_default")[0].innerHTML = htmlTinhThanh;
+                    $("#country_default").on('change', function() {
+                        var htmlQuanHuyen = `<option value=""> -------- SELECT -------- </option>`
+                        data.forEach(element => {
+                            if (element.Id == this.value){
+                                element.Districts.forEach(element1=> {
+                                    htmlQuanHuyen += `<option value="`+element1.Id+`">`+element1.Name+`</option>`
+                                })
+                                $("#districs_default")[0].innerHTML = htmlQuanHuyen
+                            }
+                        })
+                    });
+
+                    $("#districs_default").on('change', function() {
+                        var valueTinhThanh = $("#country_default")[0].value
+                        var valueQuanHuyen = this.value
+                        var htmlPhuongXa = `<option value=""> -------- SELECT -------- </option>`
+                        data.forEach(element => {
+                            if (element.Id == valueTinhThanh){
+                                element.Districts.forEach(element1 => {
+                                    if (element1.Id == valueQuanHuyen){
+                                        element1.Wards.forEach(element2 =>{
+                                            htmlPhuongXa+= `<option value="`+element2.Id+`">`+element2.Name+`</option>`
+                                        })
+                                        $("#wards_default")[0].innerHTML = htmlPhuongXa
+                                    }
+                                })
+                            }
+                        })
+                    });
+                })
+        }
+        fetchData();
     </script>
 </body>
 
