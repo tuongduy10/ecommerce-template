@@ -575,20 +575,29 @@
                                 <span style="color: red; position: absolute; left: 8px; top: 3px;">*</span>
                                 <input class="w-100" type="text" placeholder="Số điện thoại">
                             </div>
+                            <div class="payment-info__line payment-bank w-100 d-flex align-items-center justify-content-between flex-wrap">
+                                <div class="location">
+                                    <span style="color: red; position: absolute; left: 8px; top: 3px;">*</span>
+                                    <select name="" id="" class="city-select w-100">
+                                        <option value="" disabled selected>Tỉnh/Thành...</option>
+                                    </select>
+                                </div>
+                                <div class="location">
+                                    <span style="color: red; position: absolute; left: 8px; top: 3px;">*</span>
+                                    <select name="" id="" class="district-select w-100">
+                                        <option value="" disabled selected>Quận/Huyện...</option>
+                                    </select>
+                                </div>
+                                <div class="location">
+                                    <span style="color: red; position: absolute; left: 8px; top: 3px;">*</span>
+                                    <select name="" id="" class="ward-select w-100">
+                                        <option value="" disabled selected>Phường/Xã...</option>
+                                    </select>
+                                </div>
+                            </div>
                             <div class="payment-info__line w-100 d-flex align-items-center" style="position: relative;">
                                 <span style="color: red; position: absolute; left: 8px; top: 3px;">*</span>
                                 <input class="w-100" type="text" placeholder="Địa chỉ">
-                            </div>
-                            <div class="payment-info__line w-100 d-flex align-items-center justify-content-between">
-                                <select name="" id="" class="location">
-                                    <option value="" disabled selected>Tỉnh/Thành</option>
-                                </select>
-                                <select name="" id="" class="location">
-                                    <option value="" disabled selected>Quận/Huyện</option>
-                                </select>
-                                <select name="" id="" class="location">
-                                    <option value="" disabled selected>Phường/Xã</option>
-                                </select>
                             </div>
                             <div class="payment-info__line w-100 d-flex align-items-center" style="position: relative;">
                                 <input class="w-100" type="text" placeholder="Email">
@@ -602,11 +611,14 @@
                                 <strong>PHƯƠNG THỨC THANH TOÁN</strong>
                             </div>
                             <div class="payment-info__line w-100 align-items-center d-flex">
-                                <input name="payment-method" id="cod" type="radio" style="height: calc(48px + (57 - 48) * ((100vw - 375px)/ (1920 - 375)));">
-                                <label class="ml-2 mb-0" for="cod" style="cursor: pointer;">Thanh toán khi nhận hàng</label>
+                                <input name="payment-method" id="cod" type="radio"
+                                    style="height: calc(48px + (57 - 48) * ((100vw - 375px)/ (1920 - 375)));">
+                                <label class="ml-2 mb-0" for="cod" style="cursor: pointer;">Thanh toán khi nhận
+                                    hàng</label>
                             </div>
                             <div class="payment-info__line w-100 align-items-center d-flex">
-                                <input name="payment-method" id="bank" type="radio" style="height: calc(48px + (57 - 48) * ((100vw - 375px)/ (1920 - 375)));">
+                                <input name="payment-method" id="bank" type="radio"
+                                    style="height: calc(48px + (57 - 48) * ((100vw - 375px)/ (1920 - 375)));">
                                 <label class="ml-2 mb-0" for="bank" style="cursor: pointer;">Chuyển khoản</label>
                             </div>
                             <div class="payment-expand d-none">
@@ -619,7 +631,8 @@
                                             </div>
                                             <div class="bank-info d-flex align-items-center">
                                                 <div class="">
-                                                    <div class="bank-name">Ngân hàng Thương mại cổ phần Đầu tư và Phát triển Việt Nam</div>
+                                                    <div class="bank-name">Ngân hàng Thương mại cổ phần Đầu tư và Phát
+                                                        triển Việt Nam</div>
                                                     <div class="bank-accnumber">STK: <strong>000123456789</strong></div>
                                                     <div class="bank-username">Tên: NGUYEN VAN A</div>
                                                 </div>
@@ -629,11 +642,13 @@
                                     <li class="bank">
                                         <div class="d-flex">
                                             <div class="bank-image">
-                                                <img class="mw-100 mh-100" src="assets/images/logo/sacombank.png" alt="">
+                                                <img class="mw-100 mh-100" src="assets/images/logo/sacombank.png"
+                                                    alt="">
                                             </div>
                                             <div class="bank-info d-flex align-items-center">
                                                 <div class="">
-                                                    <div class="bank-name">Ngân hàng thương mại cổ phần Sài Gòn Thương Tín</div>
+                                                    <div class="bank-name">Ngân hàng thương mại cổ phần Sài Gòn Thương
+                                                        Tín</div>
                                                     <div class="bank-accnumber">STK: <strong>000123456789</strong></div>
                                                     <div class="bank-username">Tên: NGUYEN VAN A</div>
                                                 </div>
@@ -769,58 +784,45 @@
     <!-- Personal Script -->
     <script type="text/javascript" src="assets/js/main/main.js"></script>
     <script type="text/javascript">
-        const api = 'https://provinces.open-api.vn/api/?depth=3';
-        function fetchData(){
-            fetch(api)
-                .then(function(response){
-                    if(!response.ok){
-                        alert('lỗi')
-                        return;
+        // const api = 'https://provinces.pen-api.vn/api/?depth=3';
+        $.get("assets/js/json/provinces-open-api.json", function (data) {
+            // Cities
+            var htmlTinhThanh = `<option value="" disabled selected>Tỉnh/Thành...</option>`
+            data.forEach(element => {
+                htmlTinhThanh += `<option value="` + element.code + `">` + element.name + `</option>`
+            });
+            $(".city-select")[0].innerHTML = htmlTinhThanh;
+            // Districts
+            $(".city-select").on('change', function () {
+                var htmlQuanHuyen = `<option value="" disabled selected>Quận/Huyện...</option>`
+                data.forEach(element => {
+                    if (element.code == this.value) {
+                        element.districts.forEach(element1 => {
+                            htmlQuanHuyen += `<option value="` + element1.code + `">` + element1.name + `</option>`
+                        })
+                        $(".district-select")[0].innerHTML = htmlQuanHuyen
                     }
-                    return response.json();
                 })
-                .then(function(data){
-                    console.log(data[0].name);
-                    console.log(data[0].districts[0].name);
-                    console.log(data[0].districts[0].wards[0].name);
-
-                    var htmlTinhThanh = `<option value=""> -------- SELECT -------- </option>`
-                    data.forEach(element => {
-                        htmlTinhThanh += `<option value="`+element.Id+`">`+element.Name+`</option>`
-                    });
-                    $("#country_default")[0].innerHTML = htmlTinhThanh;
-                    $("#country_default").on('change', function() {
-                        var htmlQuanHuyen = `<option value=""> -------- SELECT -------- </option>`
-                        data.forEach(element => {
-                            if (element.Id == this.value){
-                                element.Districts.forEach(element1=> {
-                                    htmlQuanHuyen += `<option value="`+element1.Id+`">`+element1.Name+`</option>`
+            });
+            // Wards
+            $(".district-select").on('change', function () {
+                var valueTinhThanh = $(".city-select")[0].value
+                var valueQuanHuyen = this.value
+                var htmlPhuongXa = `<option value="" disabled selected>Phường/Xã...</option>`
+                data.forEach(element => {
+                    if (element.code == valueTinhThanh) {
+                        element.districts.forEach(element1 => {
+                            if (element1.code == valueQuanHuyen) {
+                                element1.wards.forEach(element2 => {
+                                    htmlPhuongXa += `<option value="` + element2.code + `">` + element2.name + `</option>`
                                 })
-                                $("#districs_default")[0].innerHTML = htmlQuanHuyen
+                                $(".ward-select")[0].innerHTML = htmlPhuongXa
                             }
                         })
-                    });
-
-                    $("#districs_default").on('change', function() {
-                        var valueTinhThanh = $("#country_default")[0].value
-                        var valueQuanHuyen = this.value
-                        var htmlPhuongXa = `<option value=""> -------- SELECT -------- </option>`
-                        data.forEach(element => {
-                            if (element.Id == valueTinhThanh){
-                                element.Districts.forEach(element1 => {
-                                    if (element1.Id == valueQuanHuyen){
-                                        element1.Wards.forEach(element2 =>{
-                                            htmlPhuongXa+= `<option value="`+element2.Id+`">`+element2.Name+`</option>`
-                                        })
-                                        $("#wards_default")[0].innerHTML = htmlPhuongXa
-                                    }
-                                })
-                            }
-                        })
-                    });
+                    }
                 })
-        }
-        fetchData();
+            });
+        })
     </script>
 </body>
 

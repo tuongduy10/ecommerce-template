@@ -34,6 +34,12 @@ button:focus-within,
 select:focus-within{
     outline: none;
 }
+select{
+     /* for Firefox */
+    -moz-appearance: none; /**/
+    /* for Chrome */
+    -webkit-appearance: none;
+}
 .main{
     margin-bottom: 6rem;
 }

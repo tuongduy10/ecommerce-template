@@ -1669,11 +1669,16 @@ hr {
         border-bottom: solid 1px #d4d4d4;
     }
     .payment-info__line .location{
-        border: solid 1px #d4d4d4;
-        font-size: calc(14px + (16 - 14) * ((100vw - 375px)/ (1920 - 375)));
-        height: calc(48px + (57 - 48) * ((100vw - 375px)/ (1920 - 375)));
-        padding: 0 calc(13px + (31 - 13) * ((100vw - 375px)/ (1920 - 375)));
+        position: relative;
+        width: calc(100%/3 - 10px);
     }
+        .payment-info__line .location select{
+            border: solid 1px #d4d4d4;
+            font-size: calc(14px + (16 - 14) * ((100vw - 375px)/ (1920 - 375)));
+            height: calc(48px + (57 - 48) * ((100vw - 375px)/ (1920 - 375)));
+            padding: 0 calc(13px + (31 - 13) * ((100vw - 375px)/ (1920 - 375)));
+            color: inherit;
+        }
     
     .bank{
         margin-bottom: calc(18px + (24 - 18) * ((100vw - 375px)/ (1920 - 375)));
@@ -1699,6 +1704,13 @@ hr {
 @media only screen and (max-width: 1200px) {
     .billing-total .attr{
         width: 40%;
+    }
+    .payment-bank{
+        margin-bottom: 0;
+    }
+    .payment-info__line .location{
+        width: 100%;
+        margin-bottom: calc(10px + (30 - 10) * ((100vw - 375px)/ (1920 - 375)));
     }
 }
 @media only screen and (max-width: 992px) {
