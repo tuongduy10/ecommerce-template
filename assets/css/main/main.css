@@ -1626,7 +1626,7 @@ hr {
     color: #383838;
 }
     .billing-total .attr{
-        width: 30%;
+        width: calc(100%/3);
     }
         .billing-total span{
             font-size: calc(14px + (20 - 14) * ((100vw - 375px)/ (1920 - 375)));
@@ -1670,9 +1670,13 @@ hr {
     }
     .payment-info__line .location{
         position: relative;
-        width: calc(100%/3 - 10px);
+        width: calc(100%/3 - 8px);
+    }
+    .payment-bank{
+        margin-bottom: 10px !important;
     }
         .payment-info__line .location select{
+            cursor: pointer;
             border: solid 1px #d4d4d4;
             font-size: calc(14px + (16 - 14) * ((100vw - 375px)/ (1920 - 375)));
             height: calc(48px + (57 - 48) * ((100vw - 375px)/ (1920 - 375)));
@@ -1684,8 +1688,8 @@ hr {
         margin-bottom: calc(18px + (24 - 18) * ((100vw - 375px)/ (1920 - 375)));
     }
         .bank-image{
-            width: calc(72px + (190 - 117) * ((100vw - 375px)/ (1920 - 375)));
-            height: calc(72px + (190 - 117) * ((100vw - 375px)/ (1920 - 375)));
+            width: calc(36px + (190 - 117) * ((100vw - 375px)/ (1920 - 375)));
+            height: calc(36px + (190 - 117) * ((100vw - 375px)/ (1920 - 375)));
             display: flex;
             align-items: center;
             justify-content: center;
