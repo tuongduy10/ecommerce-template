@@ -1727,3 +1727,12 @@ hr {
         width: 100%;
     }
 }
+
+/* User Profile */
+.user__profile-wrapper *{
+    font-size: calc(14px + (20 - 14) * ((100vw - 375px)/ (1920 - 375)));
+    line-height: calc(17px + (24 - 17) * ((100vw - 375px)/ (1920 - 375)));
+}
+.control-list li:hover a{
+    color: var(--blue-dior);
+}

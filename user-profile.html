@@ -33,88 +33,6 @@
 
     <!-- <link rel="icon" href="assets/images/logo/squarelogo.png" type="image/x-icon"> -->
     <title>Web Demo</title>
-    <style>
-        .lSpg {
-            display: none;
-        }
-        .lSAction>.lSPrev {
-            background-image: url("assets/images/icon/left.png");
-        }
-        .lSAction>.lSNext {
-            background-image: url("assets/images/icon/right.png");
-        }
-        .lSSlideOuter .lSPager.lSGallery li.active {
-            border: 2px solid var(--blue-dior);
-        }
-        .lSPager li {
-            height: 100%;
-        }
-        .lSSlideOuter .lSPager.lSGallery img {
-            height: 100%;
-            width: auto;
-            margin: 0 auto;
-            object-fit: contain;
-        }
-        .product__detail-content .lSSlideWrapper{
-            height: 600px;
-        }
-
-        .lSAction > .lSPrev{
-            left: -8px;
-        }
-        .lSAction > .lSNext{
-            right: -8px;
-        }
-
-        .product__images-slider .lslide,
-        .product__images-slider .clone {
-            height: 100%;
-            text-align: center;
-        }
-        .product__images-slider .lslide img,
-        .product__images-slider .clone img {
-            width: 100%;
-            height: 100%;
-
-            object-fit: contain;
-        }
-
-        /* Demo */
-        .option-title {
-            margin-right: 3px;
-        }
-
-        .stars .checked {
-            color: orange;
-        }
-        .rating .stars span {
-            cursor: pointer;
-        }
-
-        #imagemodal .modal-dialog {
-            max-width: 80%;
-        }
-        @media only screen and (max-width: 1400px){
-            .product__detail-content .lSSlideWrapper{
-                height: 467.64px;
-            }
-        }
-        @media only screen and (max-width: 1200px){
-            .product__detail-content .lSSlideWrapper{
-                height: 381px;
-            }
-        }
-        @media only screen and (max-width: 992px){
-            .product__detail-content .lSSlideWrapper{
-                height: 374px;
-            }
-        }
-        @media only screen and (max-width: 768px) {
-            #imagemodal .modal-dialog {
-                max-width: 100%;
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -444,6 +362,92 @@
                             <a href="">Hồ sơ cá nhân</a>
                         </li>
                     </ul>
+                    <hr>
+                    <div class="user__profile-wrapper row">
+                        <div class="col-md-3 col-xs-12 mb-2">
+                            <div class="tabs-control">
+                                <!-- <select name="" id="">
+                                    <option value="">Thông tin cá nhân</option>
+                                    <option value="">Thông tin đơn hàng</option>
+                                </select> -->
+                                <ul class="control-list">
+                                    <li class="mb-2">
+                                        <a href="" style="font-weight: bolder;">Thông tin cá nhân</a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="">Thông tin đơn hàng</a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="">Đổi mật khẩu</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-9 col-xs-12 mb-2">
+                            <div class="tabs-content">
+                                <div class="tab-content">
+                                    <div class="d-flex mb-2">
+                                        <div class="label" style="width: 200px;">Họ tên:</div>
+                                        <div class="info">Nguyễn Văn A</div>
+                                    </div>
+                                    <div class="d-flex mb-2">
+                                        <div class="label" style="width: 200px;">Số điện thoại:</div>
+                                        <div class="info">0123456789</div>
+                                    </div>
+                                    <div class="d-flex mb-2">
+                                        <div class="label" style="width: 200px;">Email:</div>
+                                        <div class="info">mail@gmail.com</div>
+                                    </div>
+                                    <div class="d-flex mb-2">
+                                        <div class="label" style="width: 200px;">Địa chỉ: </div>
+                                        <div class="info">Số 01 Lê Lợi, phường 01, quận 01, Thành phố Hồ Chí Minh</div>
+                                    </div>
+                                </div>
+                                <div class="tab-content">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">Mã đơn hàng</th>
+                                                <th scope="col">Ngày tạo</th>
+                                                <th scope="col">Tổng tiền</th>
+                                                <th scope="col">Trạng thái</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>1</th>
+                                                <td>Mark</td>
+                                                <td>Otto</td>
+                                                <td>@mdo</td>
+                                                <td>@mdo</td>
+                                            </tr>
+                                            <tr>
+                                                <th>2</th>
+                                                <td>Jacob</td>
+                                                <td>Thornton</td>
+                                                <td>@fat</td>
+                                                <td>@fat</td>
+                                            </tr>
+                                            <tr>
+                                                <th>3</th>
+                                                <td>Larry</td>
+                                                <td>the Bird</td>
+                                                <td>@twitter</td>
+                                                <td>@fat</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="tab-content">
+
+                                </div>
+                                <div class="tab-content">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -572,4 +576,5 @@
 
     </script>
 </body>
+
 </html>
