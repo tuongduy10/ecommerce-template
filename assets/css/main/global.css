@@ -449,7 +449,10 @@ a:hover{
 :root{
     --black: #333;
     --white: #fafafa;
+    --success: #29b474;
+    --fail: #ea4335;
     --blue-dior: #3b99fc;
+
 
     --font-title: 'Noto Serif', serif;
 }

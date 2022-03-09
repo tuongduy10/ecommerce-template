@@ -6,14 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
+    <!-- JQuery -->
+    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
+    <!-- <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-3.0.1.min.js"></script> -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <!-- JQuery -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-3.0.1.min.js"></script>
     <!-- Slick slider -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
@@ -375,7 +376,7 @@
                                         <a href="" style="font-weight: bolder;">Thông tin cá nhân</a>
                                     </li>
                                     <li class="mb-2">
-                                        <a href="">Thông tin đơn hàng</a>
+                                        <a href="">Lịch sử đơn hàng</a>
                                     </li>
                                     <li class="mb-2">
                                         <a href="">Đổi mật khẩu</a>
@@ -404,40 +405,96 @@
                                     </div>
                                 </div>
                                 <div class="tab-content">
-                                    <table class="table">
-                                        <thead>
-                                            <tr>
-                                                <th scope="col">#</th>
-                                                <th scope="col">Mã đơn hàng</th>
-                                                <th scope="col">Ngày tạo</th>
-                                                <th scope="col">Tổng tiền</th>
-                                                <th scope="col">Trạng thái</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <th>1</th>
-                                                <td>Mark</td>
-                                                <td>Otto</td>
-                                                <td>@mdo</td>
-                                                <td>@mdo</td>
-                                            </tr>
-                                            <tr>
-                                                <th>2</th>
-                                                <td>Jacob</td>
-                                                <td>Thornton</td>
-                                                <td>@fat</td>
-                                                <td>@fat</td>
-                                            </tr>
-                                            <tr>
-                                                <th>3</th>
-                                                <td>Larry</td>
-                                                <td>the Bird</td>
-                                                <td>@twitter</td>
-                                                <td>@fat</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                    <div class="card shadow mb-4">
+                                        <div class="card-body">
+                                            <div class="d-flex">
+                                                <div class='col-md-5'>
+                                                    <div class="form-group">
+                                                        <label>Date To:</label>
+                                                        <div class='input-group date' id='datetimepicker6'>
+                                                            <input type='text' class="form-control" />
+                                                            <span class="input-group-addon">
+                                                                <span class="glyphicon glyphicon-calendar"></span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class='col-md-5'>
+                                                    <div class="form-group">
+                                                        <label>Date From:</label>
+                                                        <div class='input-group date' id='datetimepicker7'>
+                                                            <input type='text' class="form-control" />
+                                                            <span class="input-group-addon">
+                                                                <span class="glyphicon glyphicon-calendar"></span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="table-responsive">
+                                                <table class="table table-bordered" id="dataTable" width="100%"
+                                                    cellspacing="0">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Ngày tạo</th>
+                                                            <th>Mã hóa đơn</th>
+                                                            <th>Tổng tiền</th>
+                                                            <th>Trạng thái</th>
+                                                            <th></th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>08/03/2022 00:11:11</td>
+                                                            <td>11011011</td>
+                                                            <td>10,000,000 ₫</td>
+                                                            <td style="color: var(--success);">Hoàn thành</td>
+                                                            <td class="text-center">
+                                                                <a href="" style="color: var(--blue-dior);">Chi tiết</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>08/03/2022 00:22:22</td>
+                                                            <td>22022022</td>
+                                                            <td>10,000,000 ₫</td>
+                                                            <td style="color: var(--fail);">Hủy</td>
+                                                            <td class="text-center">
+                                                                <a href="" style="color: var(--blue-dior);">Chi tiết</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>08/03/2022 00:33:33</td>
+                                                            <td>3303033</td>
+                                                            <td>10,000,000 ₫</td>
+                                                            <td>Chờ xác nhận...</td>
+                                                            <td class="text-center">
+                                                                <a href="" style="color: var(--blue-dior);">Chi tiết</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>08/03/2022 00:44:44</td>
+                                                            <td>44044044</td>
+                                                            <td>10,000,000 ₫</td>
+                                                            <td>Chờ lấy hàng...</td>
+                                                            <td class="text-center">
+                                                                <a href="" style="color: var(--blue-dior);">Chi tiết</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>08/03/2022 00:55:55</td>
+                                                            <td>55055055</td>
+                                                            <td>10,000,000 ₫</td>
+                                                            <td>Đang giao...</td>
+                                                            <td class="text-center">
+                                                                <a href="" style="color: var(--blue-dior);">Chi tiết</a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="tab-content">
 

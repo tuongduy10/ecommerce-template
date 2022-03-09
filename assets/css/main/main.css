@@ -1688,8 +1688,8 @@ hr {
         margin-bottom: calc(18px + (24 - 18) * ((100vw - 375px)/ (1920 - 375)));
     }
         .bank-image{
-            width: calc(36px + (190 - 117) * ((100vw - 375px)/ (1920 - 375)));
-            height: calc(36px + (190 - 117) * ((100vw - 375px)/ (1920 - 375)));
+            width: calc(68px + (190 - 117) * ((100vw - 375px)/ (1920 - 375)));
+            height: calc(68px + (190 - 117) * ((100vw - 375px)/ (1920 - 375)));
             display: flex;
             align-items: center;
             justify-content: center;
