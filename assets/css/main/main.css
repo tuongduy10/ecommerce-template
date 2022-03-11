@@ -1736,3 +1736,85 @@ hr {
 .control-list li:hover a{
     color: var(--blue-dior);
 }
+.control-selectlist{
+    position: relative;
+    display: none;
+}
+    .control-selectlist span{
+        position: absolute;
+        top: 0;
+        bottom: 0; 
+        right: 0.5rem;
+    }
+.tab-content{
+    background: #f8f8f8;
+    padding: 1rem;
+    color: #383838;
+}
+    .tab-content .title{
+        font-size: calc(16px + (20 - 16) * ((100vw - 375px)/ (1920 - 375)));
+        line-height: 25px;
+        color: #383838;
+        padding: calc(10px + (24 - 10) * ((100vw - 375px)/ (1920 - 375))) 0 calc(6px + (20 - 6) * ((100vw - 375px)/ (1920 - 375)));
+        margin-bottom: calc(10px + (17 - 10) * ((100vw - 375px)/ (1920 - 375)));
+    }
+        .tabs-content .label{
+            flex-basis: calc(50px + (265 - 50) * ((100vw - 375px)/ (1920 - 375)));
+        }
+        .tabs-content .info{
+            flex: 1;
+        }
+    .order-table th,
+    .order-table td{
+        white-space: nowrap;
+    }
+    .edit-userinfo{
+        cursor: pointer;
+        background-color: #4d4d4d;
+        color: #fff !important;
+        /* line-height: calc(50px + (52.5 - 50) * ((100vw - 375px)/ (1920 - 375))); */
+        font-size: calc(16px + (18 - 16) * ((100vw - 375px)/ (1920 - 375)));
+    }
+    .user__info-form{
+        width: 26rem;
+    }
+.tab-content .form-group{
+    margin-bottom: 0;
+}
+    .select-form{
+        position: relative;
+    }
+    .select-form span{
+        position: absolute;
+        right: 8px;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+@media only screen and (max-width: 992px){
+    .order-filter{
+        width: 100%;
+        margin-bottom: 10px !important;
+    }
+        .order-filter label{
+            flex-basis: 100px;
+        }
+        .order-filter .filter-type{
+            flex: 1;
+        }
+}
+@media only screen and (max-width: 768px){
+    .control-selectlist{
+        display: block;
+    }
+    .control-list{
+        display: none;
+    }
+    .tabs-content .label{
+        flex-basis: 136px;
+    }
+    .user__info-form{
+        width: 100%;
+    }
+
+}

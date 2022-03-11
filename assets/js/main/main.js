@@ -289,4 +289,3 @@ $('.payment-method').change(function(){
     }
     $('.payment-expand').addClass('d-none');
 })
-

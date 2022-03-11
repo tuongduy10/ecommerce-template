@@ -24,8 +24,8 @@
     <script src='https://sachinchoolur.github.io/lightslider/dist/js/lightslider.js'></script>
     <!-- Ajax -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/main/global.css" />
     <link rel="stylesheet" href="assets/css/main/header.css" />
     <link rel="stylesheet" href="assets/css/main/main.css" />
@@ -457,7 +457,51 @@
                     <li><a href="">Thanh toán</a></li>
                 </ul>
                 <div class="billing-summary">
-                    <div class="cart-title text-center">HÓA ĐƠN CỦA BẠN</div>
+                    <div class="cart-title text-center">CHI TIẾT ĐƠN HÀNG</div>
+                    <div class="row justify-content-between mb-4">
+                        <div class="col-md-5 col-xs-12">
+                            <div class="text-center mb-4"><strong>Thông tin đơn hàng</strong></div>
+                            <div class="cart-bottom billing-total">
+                                <div class="mb-2 d-flex justify-content-between ml-auto mr-0">
+                                    <span>Mã đơn hàng:</span>
+                                    <span class="">#22022022</span>
+                                </div>
+                                <div class="mb-2 d-flex justify-content-between ml-auto mr-0">
+                                    <span>Ngày:</span>
+                                    <span class="">22/02/2022 12:30:13</span>
+                                </div>
+                                <div class="mb-2 d-flex justify-content-between ml-auto mr-0">
+                                    <span>Trạng thái:</span>
+                                    <span class="" style="color: var(--success);">Đã hoàn thành</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-xs-12">
+                            <div class="text-center mb-4"><strong>Giá trị đơn hàng</strong></div>
+                            <div class="cart-bottom billing-total">
+                                <div class="mb-2 d-flex justify-content-between ml-auto mr-0">
+                                    <span>Số lượng:</span>
+                                    <span class="">2</span>
+                                </div>
+                                <div class="mb-2 d-flex justify-content-between ml-auto mr-0">
+                                    <span>Tạm tính:</span>
+                                    <span class="">100.000.000 ₫</span>
+                                </div>
+                                <div class="mb-2 d-flex justify-content-between ml-auto mr-0">
+                                    <span>Giảm (-10%):</span>
+                                    <span class="">10.000.000 ₫</span>
+                                </div>
+                                <div class="mb-2 d-flex justify-content-between ml-auto mr-0">
+                                    <span class="text">
+                                        TỔNG CỘNG:
+                                    </span>
+                                    <span class="value">
+                                        <strong>90.000.000 ₫</strong>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="d-flex flex-wrap mb-5">
                         <div class="primary-cartcontent">
                             <div class="cart-head">
@@ -538,169 +582,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="cart-bottom billing-total">
-                                    <div class="attr mb-2 d-flex justify-content-between ml-auto mr-0">
-                                        <span>Số lượng:</span>
-                                        <span class="">2</span>
-                                    </div>
-                                    <div class="attr mb-2 d-flex justify-content-between ml-auto mr-0">
-                                        <span>Tạm tính:</span>
-                                        <span class="">100.000.000 ₫</span>
-                                    </div>
-                                    <div class="attr mb-2 d-flex justify-content-between ml-auto mr-0">
-                                        <span>Giảm (-10%):</span>
-                                        <span class="">10.000.000 ₫</span>
-                                    </div>
-                                    <div class="attr mb-2 d-flex justify-content-between ml-auto mr-0">
-                                        <span class="text">
-                                            TỔNG CỘNG:
-                                        </span>
-                                        <span class="value">
-                                            <strong>90.000.000 ₫</strong>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="user-info col-md-7 col-xs-12">
-                            <div class="title">
-                                <strong>THÔNG TIN GIAO HÀNG</strong>
-                            </div>
-                            <div class="payment-info__line w-100 d-flex align-items-center" style="position: relative;">
-                                <span style="color: red; position: absolute; left: 8px; top: 3px;">*</span>
-                                <input class="w-100" type="text" placeholder="Họ tên">
-                            </div>
-                            <div class="payment-info__line w-100 d-flex align-items-center" style="position: relative;">
-                                <span style="color: red; position: absolute; left: 8px; top: 3px;">*</span>
-                                <input class="w-100" type="text" placeholder="Số điện thoại">
-                            </div>
-                            <div class="payment-info__line payment-bank w-100 d-flex align-items-center justify-content-between flex-wrap">
-                                <div class="location">
-                                    <span style="color: red; position: absolute; left: 8px; top: 3px;">*</span>
-                                    <select name="" id="" class="city-select w-100">
-                                        <option value="" disabled selected>Tỉnh/Thành...</option>
-                                    </select>
-                                </div>
-                                <div class="location">
-                                    <span style="color: red; position: absolute; left: 8px; top: 3px;">*</span>
-                                    <select name="" id="" class="district-select w-100">
-                                        <option value="" disabled selected>Quận/Huyện...</option>
-                                    </select>
-                                </div>
-                                <div class="location">
-                                    <span style="color: red; position: absolute; left: 8px; top: 3px;">*</span>
-                                    <select name="" id="" class="ward-select w-100">
-                                        <option value="" disabled selected>Phường/Xã...</option>
-                                    </select>
-                                </div>
-                                <script>
-                                    // const api = 'https://provinces.pen-api.vn/api/?depth=3';
-                                    $.get("assets/js/json/provinces-open-api.json", function (data) {
-                                        // Cities
-                                        var htmlTinhThanh = `<option value="" disabled selected>Tỉnh/Thành...</option>`
-                                        data.forEach(element => {
-                                            htmlTinhThanh += `<option value="` + element.code + `">` + element.name + `</option>`
-                                        });
-                                        $(".city-select")[0].innerHTML = htmlTinhThanh;
-                                        // Districts
-                                        $(".city-select").on('change', function () {
-                                            var htmlQuanHuyen = `<option value="" disabled selected>Quận/Huyện...</option>`
-                                            data.forEach(element => {
-                                                if (element.code == this.value) {
-                                                    element.districts.forEach(element1 => {
-                                                        htmlQuanHuyen += `<option value="` + element1.code + `">` + element1.name + `</option>`
-                                                    })
-                                                    $(".district-select")[0].innerHTML = htmlQuanHuyen
-                                                }
-                                            })
-                                        });
-                                        // Wards
-                                        $(".district-select").on('change', function () {
-                                            var valueTinhThanh = $(".city-select")[0].value
-                                            var valueQuanHuyen = this.value
-                                            var htmlPhuongXa = `<option value="" disabled selected>Phường/Xã...</option>`
-                                            data.forEach(element => {
-                                                if (element.code == valueTinhThanh) {
-                                                    element.districts.forEach(element1 => {
-                                                        if (element1.code == valueQuanHuyen) {
-                                                            element1.wards.forEach(element2 => {
-                                                                htmlPhuongXa += `<option value="` + element2.code + `">` + element2.name + `</option>`
-                                                            })
-                                                            $(".ward-select")[0].innerHTML = htmlPhuongXa
-                                                        }
-                                                    })
-                                                }
-                                            })
-                                        });
-                                    })
-                                </script>
-                            </div>
-                            <div class="payment-info__line w-100 d-flex align-items-center" style="position: relative;">
-                                <span style="color: red; position: absolute; left: 8px; top: 3px;">*</span>
-                                <input class="w-100" type="text" placeholder="Địa chỉ">
-                            </div>
-                            <div class="payment-info__line w-100 d-flex align-items-center" style="position: relative;">
-                                <input class="w-100" type="text" placeholder="Email">
-                            </div>
-                            <div class="payment-info__line w-100 d-flex align-items-center" style="position: relative;">
-                                <input class="w-100" type="text" placeholder="Ghi chú">
-                            </div>
-                        </div>
-                        <div class="payment-method col-md-5 col-xs-12">
-                            <div class="title">
-                                <strong>PHƯƠNG THỨC THANH TOÁN</strong>
-                            </div>
-                            <div class="payment-info__line w-100 align-items-center d-flex">
-                                <input name="payment-method" id="cod" type="radio"
-                                    style="height: calc(48px + (57 - 48) * ((100vw - 375px)/ (1920 - 375)));">
-                                <label class="ml-2 mb-0" for="cod" style="cursor: pointer;">Thanh toán khi nhận
-                                    hàng</label>
-                            </div>
-                            <div class="payment-info__line w-100 align-items-center d-flex">
-                                <input name="payment-method" id="bank" type="radio"
-                                    style="height: calc(48px + (57 - 48) * ((100vw - 375px)/ (1920 - 375)));">
-                                <label class="ml-2 mb-0" for="bank" style="cursor: pointer;">Chuyển khoản</label>
-                            </div>
-                            <div class="payment-expand d-none">
-                                <div class="text-center mb-4">THÔNG TIN CHUYỂN KHOẢN</div>
-                                <ul class="bank-list">
-                                    <li class="bank">
-                                        <div class="d-flex">
-                                            <div class="bank-image">
-                                                <img class="mw-100 mh-100" src="assets/images/logo/bidv.png" alt="">
-                                            </div>
-                                            <div class="bank-info d-flex align-items-center">
-                                                <div class="">
-                                                    <div class="bank-name">Ngân hàng Thương mại cổ phần Đầu tư và Phát
-                                                        triển Việt Nam</div>
-                                                    <div class="bank-accnumber">STK: <strong>000123456789</strong></div>
-                                                    <div class="bank-username">Tên: NGUYEN VAN A</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="bank">
-                                        <div class="d-flex">
-                                            <div class="bank-image">
-                                                <img class="mw-100 mh-100" src="assets/images/logo/sacombank.png"
-                                                    alt="">
-                                            </div>
-                                            <div class="bank-info d-flex align-items-center">
-                                                <div class="">
-                                                    <div class="bank-name">Ngân hàng thương mại cổ phần Sài Gòn Thương
-                                                        Tín</div>
-                                                    <div class="bank-accnumber">STK: <strong>000123456789</strong></div>
-                                                    <div class="bank-username">Tên: NGUYEN VAN A</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="payment-checkout text-center d-block">
-                                <a class="d-inline-block">THANH TOÁN</a>
+
                             </div>
                         </div>
                     </div>
@@ -815,7 +697,10 @@
         </div>
     </footer>
     <!-- Personal Script -->
-    <script type="text/javascript" src="assets/js/main/main.js"></script>
+    <script type="text/javascript" src="assets/js/main/main.js">
+        
+
+    </script>
 </body>
 
 </html>

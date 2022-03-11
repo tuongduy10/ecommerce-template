@@ -24,8 +24,8 @@
     <script src='https://sachinchoolur.github.io/lightslider/dist/js/lightslider.js'></script>
     <!-- Ajax -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/main/global.css" />
     <link rel="stylesheet" href="assets/css/main/header.css" />
     <link rel="stylesheet" href="assets/css/main/main.css" />
@@ -364,76 +364,223 @@
                     </ul>
                     <hr>
                     <div class="user__profile-wrapper row">
-                        <div class="col-md-3 col-xs-12 mb-2">
+                        <div class="col-md-3 col-xs-12 mb-4">
                             <div class="tabs-control">
-                                <!-- <select name="" id="">
-                                    <option value="">Thông tin cá nhân</option>
-                                    <option value="">Thông tin đơn hàng</option>
-                                </select> -->
+                                <div class="control-selectlist">
+                                    <select name="" id="" class="form-control">
+                                        <option value="">Thông tin cá nhân</option>
+                                        <option value="" selected>Lịch sử đơn hàng</option>
+                                        <option value="">Đổi mật khẩu</option>
+                                    </select>
+                                    <span class="d-flex align-items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-chevron-down">
+                                            <polyline points="6 9 12 15 18 9"></polyline>
+                                        </svg>
+                                    </span>
+                                </div>
+
                                 <ul class="control-list">
                                     <li class="mb-2">
-                                        <a href="" style="font-weight: bolder;">Thông tin cá nhân</a>
+                                        <a href="">Thông tin cá nhân</a>
                                     </li>
                                     <li class="mb-2">
                                         <a href="">Lịch sử đơn hàng</a>
                                     </li>
                                     <li class="mb-2">
-                                        <a href="">Đổi mật khẩu</a>
+                                        <a href="" style="font-weight: bolder;">Đổi mật khẩu</a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-md-9 col-xs-12 mb-2">
+                        <div class="col-md-9 col-xs-12 mb-4">
                             <div class="tabs-content">
                                 <div class="tab-content">
-                                    <div class="d-flex mb-2">
-                                        <div class="label" style="width: 200px;">Họ tên:</div>
-                                        <div class="info">Nguyễn Văn A</div>
+                                    <div class="text-center">
+                                        <div class="title"><strong>THÔNG TIN CÁ NHÂN</strong></div>
                                     </div>
-                                    <div class="d-flex mb-2">
-                                        <div class="label" style="width: 200px;">Số điện thoại:</div>
-                                        <div class="info">0123456789</div>
-                                    </div>
-                                    <div class="d-flex mb-2">
-                                        <div class="label" style="width: 200px;">Email:</div>
-                                        <div class="info">mail@gmail.com</div>
-                                    </div>
-                                    <div class="d-flex mb-2">
-                                        <div class="label" style="width: 200px;">Địa chỉ: </div>
-                                        <div class="info">Số 01 Lê Lợi, phường 01, quận 01, Thành phố Hồ Chí Minh</div>
-                                    </div>
-                                </div>
-                                <div class="tab-content">
-                                    <div class="card shadow mb-4">
-                                        <div class="card-body">
-                                            <div class="d-flex">
-                                                <div class='col-md-5'>
-                                                    <div class="form-group">
-                                                        <label>Date To:</label>
-                                                        <div class='input-group date' id='datetimepicker6'>
-                                                            <input type='text' class="form-control" />
-                                                            <span class="input-group-addon">
-                                                                <span class="glyphicon glyphicon-calendar"></span>
-                                                            </span>
-                                                        </div>
-                                                    </div>
+                                    <form class="user__info-form">
+                                        <div class="form-group mb-4">
+                                            <label>Họ tên</label>
+                                            <input type="text" class="form-control" aria-describedby="emailHelp"
+                                                value="Nguyễn Văn A">
+                                        </div>
+                                        <div class="form-group mb-4">
+                                            <label>Số điện thoại</label>
+                                            <div class="d-flex align-items-center">
+                                                <input type="tel" class="form-control mr-2" aria-describedby="emailHelp"
+                                                    value="0123456789" disabled>
+                                                <a class="" style="white-space: nowrap; cursor: pointer;"><u>Thay
+                                                        đổi</u></a>
+                                            </div>
+                                        </div>
+                                        <div class="form-group mb-4">
+                                            <label>Email</label>
+                                            <input type="text" class="form-control" value="mail@gmail.com">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Địa chỉ</label>
+                                            <div class="d-flex flex-wrap">
+                                                <input type="text" class="form-control mb-2" value="01 Lê Lợi">
+                                                <div class="select-form w-100 mb-2">
+                                                    <select name="" id="" class="user-city form-control">
+                                                        <option value="" disabled selected>Tỉnh/Thành...</option>
+                                                    </select>
+                                                    <span class="d-flex align-items-center">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                            viewBox="0 0 24 24" fill="none" stroke="#333"
+                                                            stroke-width="1" stroke-linecap="round"
+                                                            stroke-linejoin="round"
+                                                            class="feather feather-chevron-down">
+                                                            <polyline points="6 9 12 15 18 9"></polyline>
+                                                        </svg>
+                                                    </span>
                                                 </div>
-                                                <div class='col-md-5'>
-                                                    <div class="form-group">
-                                                        <label>Date From:</label>
-                                                        <div class='input-group date' id='datetimepicker7'>
-                                                            <input type='text' class="form-control" />
-                                                            <span class="input-group-addon">
-                                                                <span class="glyphicon glyphicon-calendar"></span>
-                                                            </span>
-                                                        </div>
-                                                    </div>
+                                                <div class="select-form w-100 mb-2">
+                                                    <select name="" id="" class="user-district form-control">
+                                                        <option value="" disabled selected>Quận/Huyện...</option>
+                                                    </select>
+                                                    <span class="d-flex align-items-center">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                            viewBox="0 0 24 24" fill="none" stroke="#333"
+                                                            stroke-width="1" stroke-linecap="round"
+                                                            stroke-linejoin="round"
+                                                            class="feather feather-chevron-down">
+                                                            <polyline points="6 9 12 15 18 9"></polyline>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                                <div class="select-form w-100 mb-2">
+                                                    <select name="" id="" class="user-ward form-control">
+                                                        <option value="" disabled selected>Phường/Xã...</option>
+                                                    </select>
+                                                    <span class="d-flex align-items-center">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                            viewBox="0 0 24 24" fill="none" stroke="#333"
+                                                            stroke-width="1" stroke-linecap="round"
+                                                            stroke-linejoin="round"
+                                                            class="feather feather-chevron-down">
+                                                            <polyline points="6 9 12 15 18 9"></polyline>
+                                                        </svg>
+                                                    </span>
                                                 </div>
                                             </div>
+                                            <script type="text/javascript">
+                                                $.get('assets/js/json/provinces-open-api.json', function (data) {
+                                                    // City
+                                                    var userCity = 'thanh_pho_ho_chi_minh';
+                                                    // District
+                                                    var userDistrict = 'quan_1';
+                                                    // Ward
+                                                    var userWard = 'phuong_da_kao';
 
+                                                    var htmlTinhThanh = `<option value="" disabled>Tỉnh/Thành...</option>`
+                                                    data.forEach(city => {
+                                                        if (city.codename == userCity) {
+                                                            htmlTinhThanh += `<option value="` + city.code + `" selected>` + city.name + `</option>`
+                                                            let htmlQuanHuyen = `<option value="" disabled selected>Quận/Huyện...</option>`
+                                                            city.districts.forEach(dist => {
+                                                                if (dist.codename == userDistrict) {
+                                                                    htmlQuanHuyen += `<option value="` + dist.code + `" selected>` + dist.name + `</option>`
+                                                                    let htmlPhuongXa = `<option value="" disabled selected>Phường/Xã...</option>`
+                                                                    dist.wards.forEach(ward => {
+                                                                        if (ward.codename == userWard) {
+                                                                            htmlPhuongXa += `<option value="` + ward.code + `" selected>` + ward.name + `</option>`
+                                                                        } else {
+                                                                            htmlPhuongXa += `<option value="` + ward.code + `">` + ward.name + `</option>`
+                                                                        }
+                                                                    })
+                                                                    $(".user-ward")[0].innerHTML = htmlPhuongXa;
+                                                                } else {
+                                                                    htmlQuanHuyen += `<option value="` + dist.code + `">` + dist.name + `</option>`
+                                                                }
+                                                            })
+                                                            $(".user-district")[0].innerHTML = htmlQuanHuyen;
+                                                        } else {
+                                                            htmlTinhThanh += `<option value="` + city.code + `">` + city.name + `</option>`
+                                                        }
+                                                    });
+                                                    $(".user-city")[0].innerHTML = htmlTinhThanh;
+
+                                                    // Select Districts
+                                                    $(".user-city").on('change', function () {
+                                                        let htmlQuanHuyen = `<option value="" disabled selected>Quận/Huyện...</option>`
+                                                        data.forEach(city => {
+                                                            if (city.code == this.value) {
+                                                                city.districts.forEach(dist => {
+                                                                    htmlQuanHuyen += `<option value="` + dist.code + `">` + dist.name + `</option>`
+                                                                })
+                                                                $(".user-district")[0].innerHTML = htmlQuanHuyen
+                                                                $(".user-ward")[0].innerHTML = `<option value="" disabled selected>Phường/Xã...</option>`
+                                                            }
+                                                        })
+                                                    });
+                                                    // Select Wards
+                                                    $(".user-district").on('change', function () {
+                                                        let valueTinhThanh = $(".user-city")[0].value
+                                                        let valueQuanHuyen = this.value
+                                                        let htmlPhuongXa = `<option value="" disabled selected>Phường/Xã...</option>`
+                                                        data.forEach(city => {
+                                                            if (city.code == valueTinhThanh) {
+                                                                city.districts.forEach(dist => {
+                                                                    if (dist.code == valueQuanHuyen) {
+                                                                        dist.wards.forEach(ward => {
+                                                                            htmlPhuongXa += `<option value="` + ward.code + `">` + ward.name + `</option>`
+                                                                        })
+                                                                        $(".user-ward")[0].innerHTML = htmlPhuongXa
+                                                                    }
+                                                                })
+                                                            }
+                                                        })
+                                                    });
+                                                })
+                                            </script>
+                                        </div>
+                                        <div class="text-right">
+                                            <button type="submit" class="btn btn-primary">Lưu</button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="tab-content">
+                                    <div class="text-center">
+                                        <div class="title"><strong>LỊCH SỬ ĐƠN HÀNG</strong></div>
+                                    </div>
+                                    <div class="card shadow mb-4">
+                                        <div class="card-body">
+                                            <div class="d-flex flex-wrap align-items-center mb-2">
+                                                <div class="order-filter d-flex form-group align-items-center mr-2">
+                                                    <label class="mb-0 mr-2" style="white-space: nowrap;">Trạng
+                                                        thái:</label>
+                                                    <select class="filter-type form-control pr-4" name="" id="">
+                                                        <option value="">Tất cả</option>
+                                                        <option value="">Hoàn thành</option>
+                                                        <option value="">Hủy</option>
+                                                        <option value="">Đang giao hàng</option>
+                                                        <option value="">Chờ xác nhận</option>
+                                                        <option value="">Chờ lấy hàng</option>
+                                                    </select>
+                                                </div>
+                                                <div class="order-filter d-flex form-group align-items-center mr-2">
+                                                    <label class="mb-0 mr-2" style="white-space: nowrap;">Đến
+                                                        ngày:</label>
+                                                    <div class='filter-type input-group date' style="cursor: pointer;">
+                                                        <input type='date' class="date form-control" />
+                                                    </div>
+                                                </div>
+                                                <div class="order-filter d-flex form-group align-items-center mr-2">
+                                                    <label class="mb-0 mr-2" style="white-space: nowrap;">Từ
+                                                        ngày:</label>
+                                                    <div class='filter-type input-group date' style="cursor: pointer;">
+                                                        <input type='date' class="date form-control" />
+                                                    </div>
+                                                </div>
+                                                <button class="btn btn-primary">Lọc</button>
+                                            </div>
                                             <div class="table-responsive">
-                                                <table class="table table-bordered" id="dataTable" width="100%"
-                                                    cellspacing="0">
+                                                <table class="table table-bordered order-table" id="dataTable"
+                                                    width="100%" cellspacing="0">
                                                     <thead>
                                                         <tr>
                                                             <th>Ngày tạo</th>
@@ -448,9 +595,10 @@
                                                             <td>08/03/2022 00:11:11</td>
                                                             <td>11011011</td>
                                                             <td>10,000,000 ₫</td>
-                                                            <td style="color: var(--success);">Hoàn thành</td>
-                                                            <td class="text-center">
-                                                                <a href="" style="color: var(--blue-dior);">Chi tiết</a>
+                                                            <td style="color: var(--success); white-space: nowrap;">Hoàn
+                                                                thành</td>
+                                                            <td class="text-center" style="white-space: nowrap;">
+                                                                <a href="order-detail.html" style="color: var(--blue-dior);">Chi tiết</a>
                                                             </td>
                                                         </tr>
                                                         <tr>
@@ -459,7 +607,7 @@
                                                             <td>10,000,000 ₫</td>
                                                             <td style="color: var(--fail);">Hủy</td>
                                                             <td class="text-center">
-                                                                <a href="" style="color: var(--blue-dior);">Chi tiết</a>
+                                                                <a href="order-detail.html" style="color: var(--blue-dior);">Chi tiết</a>
                                                             </td>
                                                         </tr>
                                                         <tr>
@@ -468,7 +616,7 @@
                                                             <td>10,000,000 ₫</td>
                                                             <td>Chờ xác nhận...</td>
                                                             <td class="text-center">
-                                                                <a href="" style="color: var(--blue-dior);">Chi tiết</a>
+                                                                <a href="order-detail.html" style="color: var(--blue-dior);">Chi tiết</a>
                                                             </td>
                                                         </tr>
                                                         <tr>
@@ -477,7 +625,7 @@
                                                             <td>10,000,000 ₫</td>
                                                             <td>Chờ lấy hàng...</td>
                                                             <td class="text-center">
-                                                                <a href="" style="color: var(--blue-dior);">Chi tiết</a>
+                                                                <a href="order-detail.html" style="color: var(--blue-dior);">Chi tiết</a>
                                                             </td>
                                                         </tr>
                                                         <tr>
@@ -486,7 +634,7 @@
                                                             <td>10,000,000 ₫</td>
                                                             <td>Đang giao...</td>
                                                             <td class="text-center">
-                                                                <a href="" style="color: var(--blue-dior);">Chi tiết</a>
+                                                                <a href="order-detail.html" style="color: var(--blue-dior);">Chi tiết</a>
                                                             </td>
                                                         </tr>
                                                     </tbody>
@@ -496,9 +644,24 @@
                                     </div>
                                 </div>
                                 <div class="tab-content">
-
+                                    <div class="text-center">
+                                        <div class="title"><strong>ĐỔI MẬT KHẨU</strong></div>
+                                    </div>
+                                    <form action="" class="user__info-form">
+                                        <div class="form-group mb-4">
+                                            <label>Mật khẩu mới</label>
+                                            <input type="password" class="form-control">
+                                        </div>
+                                        <div class="form-group mb-4">
+                                            <label>Nhập lại mật khẩu</label>
+                                            <input type="password" class="form-control">
+                                        </div>
+                                        <div class="text-right">
+                                            <button class="btn btn-primary">Đổi mật khẩu</button>
+                                        </div>
+                                    </form>
                                 </div>
-                                <div class="tab-content">
+                                <div class="tab-content d-none">
 
                                 </div>
                             </div>
@@ -614,22 +777,12 @@
             </div>
         </div>
     </footer>
-
-    <!-- Ajax -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <!-- Bootstrap -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    <!-- Lightslider -->
-    <script src='https://sachinchoolur.github.io/lightslider/dist/js/lightslider.js'></script>
-
     <!-- Personal Script -->
     <script type="text/javascript" src="assets/js/main/main.js"></script>
     <script type="text/javascript">
-
+        // $('.date').datepicker({
+        //     dateFormat: 'dd-mm-yy'
+        // });
     </script>
 </body>
 
