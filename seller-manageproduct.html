@@ -372,7 +372,7 @@
                                         <option value="user-orderhistory.html">Lịch sử đơn hàng</option>
                                         <option value="user-changepassword.html">Đổi mật khẩu</option>
                                         <option value="" disabled>-- Quản lý bán hàng --</option>
-                                        <option value="seller-manageproduct.html">Quản lý sản phẩm</option>
+                                        <option value="seller-manageproduct.html" selected>Quản lý sản phẩm</option>
                                     </select>
                                     <span class="d-flex align-items-center">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -383,10 +383,9 @@
                                         </svg>
                                     </span>
                                 </div>
-
                                 <ul class="control-list">
                                     <li class="mb-2">
-                                        <a href="user-profile.html"><strong>Thông tin cá nhân</strong></a>
+                                        <a href="user-profile.html">Thông tin cá nhân</a>
                                     </li>
                                     <li class="mb-2">
                                         <a href="user-orderhistory.html">Lịch sử đơn hàng</a>
@@ -396,7 +395,7 @@
                                     </li>
                                     <hr>
                                     <li>
-                                        <a href="seller-manageproduct.html">Quản lý sản phẩm</a>
+                                        <a href="seller-manageproduct.html"><strong>Quản lý sản phẩm</strong></a>
                                     </li>
                                 </ul>
                             </div>
@@ -405,149 +404,86 @@
                             <div class="tabs-content">
                                 <div class="tab-content">
                                     <div class="text-center">
-                                        <div class="title"><strong>THÔNG TIN CÁ NHÂN</strong></div>
+                                        <div class="title"><strong>QUẢN LÝ SẢN PHẨM</strong></div>
                                     </div>
-                                    <form class="user__info-form mx-auto">
-                                        <div class="form-group mb-4">
-                                            <label>Họ tên</label>
-                                            <input type="text" class="form-control" aria-describedby="emailHelp"
-                                                value="Nguyễn Văn A">
-                                        </div>
-                                        <div class="form-group mb-4">
-                                            <label>Số điện thoại</label>
-                                            <div class="d-flex align-items-center">
-                                                <input type="tel" class="form-control mr-2" aria-describedby="emailHelp"
-                                                    value="0123456789" disabled>
-                                                <a class="" style="white-space: nowrap; cursor: pointer;"><u>Thay
-                                                        đổi</u></a>
-                                            </div>
-                                        </div>
-                                        <div class="form-group mb-4">
-                                            <label>Email</label>
-                                            <input type="text" class="form-control" value="mail@gmail.com">
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Địa chỉ</label>
-                                            <div class="d-flex flex-wrap">
-                                                <input type="text" class="form-control mb-2" value="01 Lê Lợi">
-                                                <div class="select-form w-100 mb-2">
-                                                    <select name="" id="" class="user-city form-control">
-                                                        <option value="" disabled selected>Tỉnh/Thành...</option>
-                                                    </select>
-                                                    <span class="d-flex align-items-center">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                            viewBox="0 0 24 24" fill="none" stroke="#333"
-                                                            stroke-width="1" stroke-linecap="round"
-                                                            stroke-linejoin="round"
-                                                            class="feather feather-chevron-down">
-                                                            <polyline points="6 9 12 15 18 9"></polyline>
-                                                        </svg>
-                                                    </span>
-                                                </div>
-                                                <div class="select-form w-100 mb-2">
-                                                    <select name="" id="" class="user-district form-control">
-                                                        <option value="" disabled selected>Quận/Huyện...</option>
-                                                    </select>
-                                                    <span class="d-flex align-items-center">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                            viewBox="0 0 24 24" fill="none" stroke="#333"
-                                                            stroke-width="1" stroke-linecap="round"
-                                                            stroke-linejoin="round"
-                                                            class="feather feather-chevron-down">
-                                                            <polyline points="6 9 12 15 18 9"></polyline>
-                                                        </svg>
-                                                    </span>
-                                                </div>
-                                                <div class="select-form w-100 mb-2">
-                                                    <select name="" id="" class="user-ward form-control">
-                                                        <option value="" disabled selected>Phường/Xã...</option>
-                                                    </select>
-                                                    <span class="d-flex align-items-center">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                            viewBox="0 0 24 24" fill="none" stroke="#333"
-                                                            stroke-width="1" stroke-linecap="round"
-                                                            stroke-linejoin="round"
-                                                            class="feather feather-chevron-down">
-                                                            <polyline points="6 9 12 15 18 9"></polyline>
-                                                        </svg>
-                                                    </span>
+                                    <div class="card shadow mb-4">
+                                        <div class="card-body p-2">
+                                            <div class="d-flex flex-wrap align-items-center mb-2">
+                                                <div class="order-filter d-flex form-group align-items-center mr-2 mb-2">
+                                                    <label class="mb-0 mr-2" style="white-space: nowrap;">Trạng thái:</label>
+                                                    <div class="filter-type select-form">
+                                                        <select class="form-control pr-5" name="" id="">
+                                                            <option value="">Danh sách sản phẩm</option>
+                                                            <option value="">Thêm sản phẩm</option>
+                                                        </select>
+                                                        <span class="d-flex align-items-center">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                                viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1"
+                                                                stroke-linecap="round" stroke-linejoin="round"
+                                                                class="feather feather-chevron-down">
+                                                                <polyline points="6 9 12 15 18 9"></polyline>
+                                                            </svg>
+                                                        </span>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <script type="text/javascript">
-                                                $.get('assets/js/json/provinces-open-api.json', function (data) {
-                                                    // City
-                                                    var userCity = 'thanh_pho_ho_chi_minh';
-                                                    // District
-                                                    var userDistrict = 'quan_1';
-                                                    // Ward
-                                                    var userWard = 'phuong_da_kao';
-
-                                                    var htmlTinhThanh = `<option value="" disabled>Tỉnh/Thành...</option>`
-                                                    data.forEach(city => {
-                                                        if (city.codename == userCity) {
-                                                            htmlTinhThanh += `<option value="` + city.code + `" selected>` + city.name + `</option>`
-                                                            let htmlQuanHuyen = `<option value="" disabled selected>Quận/Huyện...</option>`
-                                                            city.districts.forEach(dist => {
-                                                                if (dist.codename == userDistrict) {
-                                                                    htmlQuanHuyen += `<option value="` + dist.code + `" selected>` + dist.name + `</option>`
-                                                                    let htmlPhuongXa = `<option value="" disabled selected>Phường/Xã...</option>`
-                                                                    dist.wards.forEach(ward => {
-                                                                        if (ward.codename == userWard) {
-                                                                            htmlPhuongXa += `<option value="` + ward.code + `" selected>` + ward.name + `</option>`
-                                                                        } else {
-                                                                            htmlPhuongXa += `<option value="` + ward.code + `">` + ward.name + `</option>`
-                                                                        }
-                                                                    })
-                                                                    $(".user-ward")[0].innerHTML = htmlPhuongXa;
-                                                                } else {
-                                                                    htmlQuanHuyen += `<option value="` + dist.code + `">` + dist.name + `</option>`
-                                                                }
-                                                            })
-                                                            $(".user-district")[0].innerHTML = htmlQuanHuyen;
-                                                        } else {
-                                                            htmlTinhThanh += `<option value="` + city.code + `">` + city.name + `</option>`
-                                                        }
-                                                    });
-                                                    $(".user-city")[0].innerHTML = htmlTinhThanh;
-
-                                                    // Select Districts
-                                                    $(".user-city").on('change', function () {
-                                                        let htmlQuanHuyen = `<option value="" disabled selected>Quận/Huyện...</option>`
-                                                        data.forEach(city => {
-                                                            if (city.code == this.value) {
-                                                                city.districts.forEach(dist => {
-                                                                    htmlQuanHuyen += `<option value="` + dist.code + `">` + dist.name + `</option>`
-                                                                })
-                                                                $(".user-district")[0].innerHTML = htmlQuanHuyen
-                                                                $(".user-ward")[0].innerHTML = `<option value="" disabled selected>Phường/Xã...</option>`
-                                                            }
-                                                        })
-                                                    });
-                                                    // Select Wards
-                                                    $(".user-district").on('change', function () {
-                                                        let valueTinhThanh = $(".user-city")[0].value
-                                                        let valueQuanHuyen = this.value
-                                                        let htmlPhuongXa = `<option value="" disabled selected>Phường/Xã...</option>`
-                                                        data.forEach(city => {
-                                                            if (city.code == valueTinhThanh) {
-                                                                city.districts.forEach(dist => {
-                                                                    if (dist.code == valueQuanHuyen) {
-                                                                        dist.wards.forEach(ward => {
-                                                                            htmlPhuongXa += `<option value="` + ward.code + `">` + ward.name + `</option>`
-                                                                        })
-                                                                        $(".user-ward")[0].innerHTML = htmlPhuongXa
-                                                                    }
-                                                                })
-                                                            }
-                                                        })
-                                                    });
-                                                })
-                                            </script>
+                                            <div class="table-responsive">
+                                                <table class="table table-bordered order-table" id="dataTable" width="100%" cellspacing="0">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="text-center"><input type="checkbox"></th>
+                                                            <th>Sản phẩm</th>
+                                                            <th>Giá bán</th>
+                                                            <th>Trạng thái</th>
+                                                            <th></th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="text-center"><input type="checkbox"></td>
+                                                            <td>
+                                                                <div class="d-flex">
+                                                                    <div style="height: 100px; width: 100px;">
+                                                                        <img class="w-auto h-100" src="assets/images/products/jacket1.jpg" alt="">
+                                                                    </div>
+                                                                    <div>
+                                                                        <div>Samsung Galaxy S22 Ultra 5G</div>
+                                                                        <div>Samsung</div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td>10,000,000 ₫</td>
+                                                            <td style="color: var(--success); white-space: nowrap;">Đang bán</td>
+                                                            <td class="text-center" style="white-space: nowrap;">
+                                                                <a href="" style="color: var(--blue-dior);">Chi tiết</a> /
+                                                                <a href="" style="color: var(--blue-dior);">Sửa</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center"><input type="checkbox"></td>
+                                                            <td>
+                                                                <div class="d-flex">
+                                                                    <div style="height: 100px; width: 100px; display: flex; justify-content: center; align-items: center;">
+                                                                        <img class="mw-100 mh-100" src="assets/images/banner/snidel.jpg" alt="">
+                                                                    </div>
+                                                                    <div>
+                                                                        <div>Samsung Galaxy S22 Ultra 5G</div>
+                                                                        <div>Samsung</div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td>10,000,000 ₫</td>
+                                                            <td style="white-space: nowrap;">Đã ẩn</td>
+                                                            <td class="text-center" style="white-space: nowrap;">
+                                                                <a href="" style="color: var(--blue-dior);">Chi tiết</a> /
+                                                                <a href="" style="color: var(--blue-dior);">Sửa</a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
                                         </div>
-                                        <div class="text-right">
-                                            <button type="submit" class="btn btn-primary">Lưu</button>
-                                        </div>
-                                    </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>

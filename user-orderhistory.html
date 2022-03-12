@@ -364,13 +364,15 @@
                     </ul>
                     <hr>
                     <div class="user__profile-wrapper row">
-                        <div class="col-md-3 col-xs-12 mb-4">
+                        <div class="col-md-2 col-xs-12 mb-4">
                             <div class="tabs-control">
                                 <div class="control-selectlist">
                                     <select name="" id="" class="form-control" onchange="location = this.value">
                                         <option value="user-profile.html">Thông tin cá nhân</option>
                                         <option value="user-orderhistory.html" selected>Lịch sử đơn hàng</option>
                                         <option value="user-changepassword.html">Đổi mật khẩu</option>
+                                        <option value="" disabled>-- Quản lý bán hàng --</option>
+                                        <option value="seller-manageproduct.html">Quản lý sản phẩm</option>
                                     </select>
                                     <span class="d-flex align-items-center">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -392,10 +394,14 @@
                                     <li class="mb-2">
                                         <a href="user-changepassword.html">Đổi mật khẩu</a>
                                     </li>
+                                    <hr>
+                                    <li>
+                                        <a href="seller-manageproduct.html">Quản lý sản phẩm</a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-md-9 col-xs-12 mb-4">
+                        <div class="col-md-10 col-xs-12 mb-4">
                             <div class="tabs-content">
                                 <div class="tab-content">
                                     <div class="text-center">
@@ -438,7 +444,7 @@
                                                         <input type='date' class="date form-control" />
                                                     </div>
                                                 </div>
-                                                <button class="btn btn-primary mb-2">Lọc</button>
+                                                <button class="btn btn-primary mb-2 ">Lọc</button>
                                             </div>
                                             <div class="table-responsive">
                                                 <table class="table table-bordered order-table" id="dataTable" width="100%" cellspacing="0">
