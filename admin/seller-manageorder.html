@@ -437,98 +437,79 @@
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Quản lý sản phẩm</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">Quản lý đơn hàng</h6>
                         </div>
-                        <div class="card-body">
-                            <div class="d-flex align-items-center mb-2">
-                                <div class="mr-4">
-                                    <input type="checkbox" name="select-all" id="select-all">
-                                    <label class="mb-0" for="select-all">Chọn tất cả</label>
+                        <div class="card-body p-2">
+                            <div class="d-flex flex-wrap align-items-center mb-2">
+                                <div class="order-filter d-flex form-group align-items-center mr-2 mb-2">
+                                    <label class="mb-0 mr-2" style="white-space: nowrap;">Từ ngày:</label>
+                                    <div class='filter-type input-group date' style="cursor: pointer;">
+                                        <input type='date' class="date form-control" />
+                                    </div>
                                 </div>
-                                <div class="select-actions d-flex align-items-center">
-
+                                <div class="order-filter d-flex form-group align-items-center mr-2 mb-2">
+                                    <label class="mb-0 mr-2" style="white-space: nowrap;">Đến ngày:</label>
+                                    <div class='filter-type input-group date' style="cursor: pointer;">
+                                        <input type='date' class="date form-control" />
+                                    </div>
                                 </div>
+                                <button class="btn btn-primary mb-2 ">Lọc</button>
                             </div>
                             <div class="table-responsive">
-                                <table class="table table-bordered order-table" id="dataTable" width="100%"
-                                    cellspacing="0">
+                                <table class="table table-bordered order-table" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th class="text-center"></th>
-                                            <th>Sản phẩm</th>
-                                            <th>Giá bán</th>
+                                            <th>Ngày tạo</th>
+                                            <th>Mã hóa đơn</th>
+                                            <th>Tổng tiền</th>
                                             <th>Trạng thái</th>
                                             <th></th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td class="text-center">
-                                                <input type="checkbox" class="select-product">
-                                            </td>
-                                            <td>
-                                                <div class="d-flex">
-                                                    <div class="mr-2 d-flex align-items-center justify-content-between"
-                                                        style="height: 100px; width: 100px;">
-                                                        <img class="w-auto h-100"
-                                                            src="../assets/images/products/jacket1.jpg" alt="">
-                                                    </div>
-                                                    <div>
-                                                        <div>Samsung Galaxy S22 Ultra 5G</div>
-                                                        <div>Samsung</div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>10,000,008 ₫</td>
-                                            <td style="color: var(--success); white-space: nowrap;">Đang bán</td>
-                                            <td class="text-center">
-                                                <a href="" style="color: var(--blue-dior);">Chi tiết</a>
+                                            <td>08/03/2022 00:11:11</td>
+                                            <td>#11011011</td>
+                                            <td>10,000,000 ₫</td>
+                                            <td style="color: var(--success); white-space: nowrap;">Hoàn thành</td>
+                                            <td class="text-center" style="white-space: nowrap;">
+                                                <a href="order-detail.html" style="color: var(--blue-dior);">Chi tiết</a>
                                             </td>
                                         </tr>
                                         <tr>
+                                            <td>08/03/2022 00:22:22</td>
+                                            <td>#22022022</td>
+                                            <td>10,000,000 ₫</td>
+                                            <td style="color: var(--red);">Hủy</td>
                                             <td class="text-center">
-                                                <input type="checkbox" class="select-product">
-                                            </td>
-                                            <td>
-                                                <div class="d-flex">
-                                                    <div class="d-flex align-items-center justify-content-center mr-2"
-                                                        style="height: 100px; width: 100px;">
-                                                        <img class="mw-100 mh-100"
-                                                            src="../assets/images/banner/snidel.jpg" alt="">
-                                                    </div>
-                                                    <div>
-                                                        <div>Samsung Galaxy S22 Ultra 5G</div>
-                                                        <div>Samsung</div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>10,000,001 ₫</td>
-                                            <td style="white-space: nowrap;">Đã ẩn</td>
-                                            <td class="text-center">
-                                                <a href="" style="color: var(--blue-dior);">Chi tiết</a>
+                                                <a href="order-detail.html" style="color: var(--blue-dior);">Chi tiết</a>
                                             </td>
                                         </tr>
                                         <tr>
+                                            <td>08/03/2022 00:33:33</td>
+                                            <td>#33033033</td>
+                                            <td>10,000,000 ₫</td>
+                                            <td>Chờ xác nhận...</td>
                                             <td class="text-center">
-                                                <input type="checkbox" class="select-product">
+                                                <a href="order-detail.html" style="color: var(--blue-dior);">Chi tiết</a>
                                             </td>
-                                            <td>
-                                                <div class="d-flex">
-                                                    <div class="d-flex align-items-center justify-content-center mr-2"
-                                                        style="height: 100px; width: 100px;">
-                                                        <img class="mw-100 mh-100"
-                                                            src="../assets/images/products/pro1.png" alt="">
-                                                    </div>
-                                                    <div>
-                                                        <div>Samsung Galaxy S22 Ultra 5G</div>
-                                                        <div>Samsung</div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>10,000,002 ₫</td>
-                                            <td style="white-space: nowrap;">Đã ẩn</td>
+                                        </tr>
+                                        <tr>
+                                            <td>08/03/2022 00:44:44</td>
+                                            <td>#44044044</td>
+                                            <td>10,000,000 ₫</td>
+                                            <td>Chờ lấy hàng...</td>
                                             <td class="text-center">
-                                                <a href="" style="color: var(--blue-dior);">Chi tiết</a>
+                                                <a href="order-detail.html" style="color: var(--blue-dior);">Chi tiết</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>08/03/2022 00:55:55</td>
+                                            <td>#55055055</td>
+                                            <td>10,000,000 ₫</td>
+                                            <td>Đang giao...</td>
+                                            <td class="text-center">
+                                                <a href="order-detail.html" style="color: var(--blue-dior);">Chi tiết</a>
                                             </td>
                                         </tr>
                                     </tbody>

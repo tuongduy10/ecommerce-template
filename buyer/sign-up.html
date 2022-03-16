@@ -353,18 +353,18 @@
         <div class="custom-container py-4">
             <div class="signup__wrapper">
                 <ul class="web__directional">
-                    <li><a href="/index.html">Trang chủ</a></i>
+                    <li><a href="/buyer/index.html">Trang chủ</a></i>
                     </li>
                     <li><a href="">Đăng ký tài khoản</a></li>
                 </ul>
                 <div class="signup__inner mx-auto p-4">
-                    <form class="d-none flex-column">
+                    <form class="d-flex flex-column">
                         <h3 class="text-center">Tạo tài khoản mới</h3>
                         <input class="mb-2 w-100" type="text" id="number" placeholder="Số điện thoại">
                         <div class="mb-2" id="recaptcha-container"></div>
                         <button type="button" onclick="test()">Xác minh</button>
                     </form>
-                    <form class="verifycode-signup d-none pt-2 justify-content-between">
+                    <form class="verifycode-signup d-flex pt-2 justify-content-between">
                         <input type="text" id="verificationCode" placeholder="Nhập mã OTP">
                         <button type="button" onclick="test2()">Tiếp theo</button>
                     </form>
@@ -375,15 +375,22 @@
                             <input class="mb-2 w-100" type="text" placeholder="Địa chỉ">
                             <input class="mb-2 w-100" type="email" placeholder="Email">
                             
-                            <select class="w-100 mb-2" name="" id="" style="border: 1px solid #ddd;">
-                                <option value="" disabled selected>Thành phố</option>
-                            </select>
-                            <select class="w-100 mb-2" name="" id="" style="border: 1px solid #ddd;">
-                                <option value="" disabled selected>Quận/Huyện</option>
-                            </select>
-                            <select class="w-100 mb-2" name="" id="" style="border: 1px solid #ddd;">
-                                <option value="" disabled selected>Phường</option>
-                            </select>
+                            <div class="location mb-2">
+                                <select name="" id="" class="city-select w-100">
+                                    <option value="" disabled selected>Tỉnh/Thành...</option>
+                                </select>
+                            </div>
+                            <div class="location mb-2">
+                                <select name="" id="" class="district-select w-100">
+                                    <option value="" disabled selected>Quận/Huyện...</option>
+                                </select>
+                            </div>
+                            <div class="location mb-2">
+                                <select name="" id="" class="ward-select w-100">
+                                    <option value="" disabled selected>Phường/Xã...</option>
+                                </select>
+                            </div>
+
                         </div>
                         <div class="signup-block">
                             <div class="signup-info"><strong>THÔNG TIN ĐĂNG NHẬP</strong></div>
@@ -554,9 +561,6 @@
         }
         function test(){
             $('.verifycode-signup').css('visibility','visible')
-        }
-        function test2(){
-
         }
     </script>
 </body>

@@ -29,7 +29,6 @@
 
         <!-- Sidebar -->
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
-
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
                 <div class="sidebar-brand-text mx-3" style="text-transform: uppercase;">QUẢN TRỊ</div>
@@ -70,7 +69,6 @@
                 </div>
             </li>
 
-            <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUser"
                     aria-expanded="true" aria-controls="collapseUser">
@@ -88,7 +86,6 @@
                 </div>
             </li>
 
-            <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseStore"
                     aria-expanded="true" aria-controls="collapseStore">
@@ -133,7 +130,6 @@
                 </div>
             </li>
 
-            <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseStatistics"
                     aria-expanded="true" aria-controls="collapseStatistics">                    
@@ -150,7 +146,6 @@
                 </div>
             </li>
 
-            <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBlog"
                     aria-expanded="true" aria-controls="collapseBlog">                    
@@ -162,6 +157,22 @@
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" href="">Danh sách các blog</a>
                         <a class="collapse-item" href="">Thêm blog</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseInfo"
+                    aria-expanded="true" aria-controls="collapseInfo">                    
+                    <i class="fas fa-fw fa-info"></i>
+                    <span>Quản lý thông tin</span>
+                </a>
+                <div id="collapseInfo" class="collapse" aria-labelledby="headingUtilities"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="">Thông tin thanh toán</a>
+                        <a class="collapse-item" href="" >Thông tin liên hệ</a>
+                        <a class="collapse-item" href="">Mạng xã hội</a>
                     </div>
                 </div>
             </li>
@@ -183,7 +194,7 @@
                 </a>
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="">Danh sách sản phẩm</a>
+                        <a class="collapse-item" href="seller-manageproduct.html">Danh sách sản phẩm</a>
                         <a class="collapse-item" href="">Thêm sản phẩm</a>
                     </div>
                 </div>
@@ -199,10 +210,11 @@
                 <div id="orderManage" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Danh sách đơn hàng</h6>
-                        <a class="collapse-item" href="">
-                            Chờ xác nhận
+                        <a class="collapse-item" href="seller-manageorder.html">
+                            Chờ xác nhận...
                             <span class="position-absolute" style="height: 8px; width: 8px; background-color: red; border-radius: 50%;"></span>
                         </a>
+                        <a class="collapse-item" href="">Đơn đang giao...</a>
                         <a class="collapse-item" href="">Đơn hoàn thành</a>
                         <a class="collapse-item" href="">Đơn hủy</a>
                     </div>
@@ -749,7 +761,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2021</span>
+                        <span>Copyright &copy; WebDemo 2021</span>
                     </div>
                 </div>
             </footer>

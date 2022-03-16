@@ -575,7 +575,8 @@
         .signup__inner button{
             font-size: calc(4px + (24 - 10) * ((100vw - 375px)/ (1920 - 375)))
         }
-            .signup__inner input{
+            .signup__inner input,
+            .signup__inner select{
                 border: 1px solid #ddd;
                 padding: 5px 10px;
             }
@@ -1799,6 +1800,13 @@ hr {
         bottom: 0;
         z-index: 1;
     }
+    .control-list .active,
+    .control-list .active svg,
+    .control-list li:hover a,
+    .control-list li:hover span svg{
+        color: var(--blue-dior);
+        stroke: var(--blue-dior);
+    }
 @media only screen and (max-width: 992px){
     .order-filter{
         width: 100%;
@@ -1824,5 +1832,4 @@ hr {
     .user__info-form{
         width: 100%;
     }
-
 }
