@@ -19,8 +19,12 @@
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="../assets/css/all.css" rel="stylesheet">
     <!-- Custom styles for this page -->
     <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+
+    <!-- Custom styles for year picker -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.2.0/css/datepicker.min.css" rel="stylesheet">
 
 </head>
 
@@ -203,7 +207,7 @@
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" href="seller-manageproduct.html">Danh sách sản phẩm</a>
-                        <a class="collapse-item" href="">Thêm sản phẩm</a>
+                        <a class="collapse-item" href="seller-addproduct.html">Thêm sản phẩm</a>
                     </div>
                 </div>
             </li>
@@ -240,7 +244,7 @@
                 <div id="sellerStatistics" class="collapse" aria-labelledby="headingPages"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="">Doanh thu</a>
+                        <a class="collapse-item" href="seller-finance.html">Doanh thu</a>
                         <a class="collapse-item" href="">Sản phẩm</a>
                     </div>
                 </div>
@@ -442,15 +446,15 @@
                         <div class="card-body p-2">
                             <div class="d-flex flex-wrap align-items-center mb-2">
                                 <div class="order-filter d-flex form-group align-items-center mr-2 mb-2">
-                                    <label class="mb-0 mr-2" style="white-space: nowrap;">Từ ngày:</label>
-                                    <div class='filter-type input-group date' style="cursor: pointer;">
-                                        <input type='date' class="date form-control" />
+                                    <div class="" style="cursor: pointer; position: relative;">
+                                        <input type='text' class="date-picker form-control" placeholder="Từ ngày"/>
+                                        <span class="d-flex align-items-center" style="position: absolute; right: 0.5rem; top: 0; bottom: 0;"><i class="fas fa-calendar fa-1x text-gray-300"></i></span>
                                     </div>
                                 </div>
                                 <div class="order-filter d-flex form-group align-items-center mr-2 mb-2">
-                                    <label class="mb-0 mr-2" style="white-space: nowrap;">Đến ngày:</label>
-                                    <div class='filter-type input-group date' style="cursor: pointer;">
-                                        <input type='date' class="date form-control" />
+                                    <div class="" style="cursor: pointer; position: relative;">
+                                        <input type='text' class="date-picker form-control" placeholder="Đến ngày"/>
+                                        <span class="d-flex align-items-center" style="position: absolute; right: 0.5rem; top: 0; bottom: 0;"><i class="fas fa-calendar fa-1x text-gray-300"></i></span>
                                     </div>
                                 </div>
                                 <button class="btn btn-primary mb-2 ">Lọc</button>
@@ -517,7 +521,6 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
                 <!-- /.container-fluid -->
 
@@ -554,6 +557,9 @@
 
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
+    <!-- Date-picker -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.2.0/js/bootstrap-datepicker.min.js"></script>
+
 
     <!-- Page level plugins -->
     <script src="vendor/chart.js/Chart.min.js"></script>
@@ -564,7 +570,7 @@
     <script src="js/demo/chart-area-demo.js"></script>
     <script src="js/demo/chart-pie-demo.js"></script>
     <script src="js/demo/datatables-demo.js"></script>
-    <script>
+    <script type="text/javascript">
         $(document).ready(function () {
             $('#select-all').click(function () {
                 if ($('#select-all').is(":checked")) {
@@ -604,8 +610,21 @@
                 }
             }
         })
-
-
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.year-picker').datepicker({
+                format: 'yyyy',
+                viewMode: "years", 
+                minViewMode: "years",
+                autoclose:true //to close picker once year is selected
+            }) 
+            $('.date-picker').datepicker({
+                format: 'dd-mm-yyyy',
+                autoclose: true,
+                todayHighlight: true,
+            })  
+        })
     </script>
 </body>
 
