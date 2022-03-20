@@ -1714,6 +1714,12 @@ hr {
             font-size: calc(14px + (20 - 14) * ((100vw - 375px)/ (1920 - 375)));
             line-height: calc(17px + (24 - 17) * ((100vw - 375px)/ (1920 - 375)));
         }
+    .trans-input{
+        border-color: #ddd !important;
+    }
+    .trans-input:focus-within{
+        border-color: var(--blue-dior) !important;
+    }
 @media only screen and (max-width: 1200px) {
     .billing-total .attr{
         width: 40%;

@@ -11,6 +11,7 @@
 
     <title>Quản trị</title>
 
+    <script type="text/javascript" src="http://js.nicedit.com/nicEdit-latest.js"></script>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -448,44 +449,34 @@
                                         <div class="text-center mb-2"><strong>Thông tin cơ bản</strong></div>
                                         <div class="form-group mb-4">
                                             <label>Tên sản phẩm</label>
-                                            <input type="text" class="form-control" value="">
+                                            <input type="text" class="form-control" value="Samsung Galaxy S22 Ultra 5G">
                                         </div>
                                         <div class="form-group mb-4">
-                                            <label>Giá có sẵn</label>
+                                            <label>Giá</label>
                                             <div class="d-flex align-items-center">
-                                                <input type="number" class="form-control" value="" min="0" step="1000">
+                                                <input type="number" class="form-control" value="30000000" min="0" step="1000">
                                             </div>
                                         </div>
                                         <div class="form-group mb-4">
-                                            <label>Giá đặt trước</label>
-                                            <div class="d-flex align-items-center">
-                                                <input type="number" class="form-control" value="" min="0" step="1000">
+                                            <label>Loại hàng</label>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault" checked>
+                                                <label class="form-check-label" for="flexCheckDefault">Hàng có
+                                                    sẵn</label>
                                             </div>
-                                        </div>
-                                        <div class="form-group mb-4">
-                                            <label>Giảm giá</label>
-                                            <div class="form-check mb-4">
-                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                                <label class="form-check-label" for="flexRadioDefault1">
-                                                  Giảm theo %
-                                                </label>
-                                                <input type="number" class="form-control mb-2" placeholder="% giảm" value="" min="0" step="1000">
-                                            </div>
-                                            <div class="form-check mb-4">
-                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                                                <label class="form-check-label" for="flexRadioDefault2">
-                                                  Giảm theo giá
-                                                </label>
-                                                <input type="number" class="form-control mb-2" placeholder="Giá giảm có sẵn" value="" min="0" step="1000">
-                                                <input type="number" class="form-control mb-2" placeholder="Giá giảm đặt trước" value="" min="0" step="1000">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckChecked">
+                                                <label class="form-check-label" for="flexCheckChecked">Hàng đặt
+                                                    trước</label>
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label>Thương hiệu</label>
                                             <div class="select-form w-100 mb-2">
                                                 <select name="" id="" class="user-city form-control">
-                                                    <option value="" disabled selected>--Chọn--</option>
-                                                    <option value="">Samsung</option>
+                                                    <option value="" selected>Samsung</option>
                                                     <option value="">Apple</option>
                                                     <option value="">Sony</option>
                                                 </select>
@@ -495,7 +486,7 @@
                                             <label>Danh mục sản phẩm</label>
                                             <div class="select-form w-100 mb-2">
                                                 <select name="" id="" class="user-city form-control">
-                                                    <option value="" disabled selected>--Chọn--</option>
+                                                    <option value="" selected>Điện thoại</option>
                                                     <option value="">Đồng hồ</option>
                                                     <option value="">Quần áo</option>
                                                     <option value="">Giày dép</option>
@@ -510,54 +501,31 @@
                                         <div class="text-center mb-2"><strong>Thông tin chi tiết</strong></div>
                                         <div class="form-group mb-4">
                                             <label>Màu sắc</label>
-                                            <div class="d-flex">
-                                                <div class="dropdown mr-2">
-                                                    <input class="form-control dropdown-toggle" type="text"
-                                                        id="dropdownMenuButton" data-toggle="dropdown"
-                                                        aria-haspopup="true" aria-expanded="false" autocomplete="off">
-                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                    </div>
-                                                </div>
-                                                <a class="add-option btn btn-primary">Thêm</a>
-                                            </div>
+                                            <ul class="list-group">
+                                                <li class="list-group-item">Màu xanh</li>
+                                                <li class="list-group-item">Màu đỏ</li>
+                                                <li class="list-group-item">Màu tím</li>
+                                                <li class="list-group-item">Màu vàng</li>
+                                            </ul>
                                         </div>
                                         <div class="form-group mb-4">
                                             <label>Kích thước</label>
-                                            <div class="d-flex">
-                                                <div class="dropdown mr-2">
-                                                    <input class="form-control dropdown-toggle" type="text"
-                                                        id="dropdownMenuButton" data-toggle="dropdown"
-                                                        aria-haspopup="true" aria-expanded="false" autocomplete="off">
-                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                    </div>
-                                                </div>
-                                                <a class="add-option btn btn-primary">Thêm</a>
-                                            </div>
+                                            <ul class="list-group">
+                                                <li class="list-group-item">S</li>
+                                                <li class="list-group-item">M</li>
+                                                <li class="list-group-item">L</li>
+                                                <li class="list-group-item">XL</li>
+                                            </ul>
                                         </div>
                                         <div class="form-group mb-4">
                                             <label>Hướng dẫn chọn kích thước</label>
                                             <div class="d-flex flex-wrap">
                                                 <div class="">
                                                     <div class="border" style="height: 100px; width: 100px;">
-                                                        <label
-                                                            class="mb-0 w-100 h-100 d-flex align-items-center justify-content-center"
-                                                            for="pic-size" style="cursor: pointer">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                                                height="24" viewBox="0 0 24 24" fill="none"
-                                                                stroke="#ddd" stroke-width="1" stroke-linecap="round"
-                                                                stroke-linejoin="round"
-                                                                class="feather feather-plus-circle">
-                                                                <circle cx="12" cy="12" r="10"></circle>
-                                                                <line x1="12" y1="8" x2="12" y2="16"></line>
-                                                                <line x1="8" y1="12" x2="16" y2="12"></line>
-                                                            </svg>
-                                                        </label>
-                                                        <input type="file" class="form-control-file image-uploaded"
-                                                            id="pic-size" hidden>
                                                         <div
-                                                            class="image-wrapper w-100 h-100 position-relative d-none align-items-center justify-content-center">
+                                                            class="image-wrapper w-100 h-100 position-relative d-flex align-items-center justify-content-center">
                                                             <img class="mw-100 mh-100"
-                                                                src="../assets/images/products/pro1.png" alt="">
+                                                                src="../assets/images/sizepicker.jpg" alt="">
                                                             <span class="position-absolute remove-upload"
                                                                 style="right: 0; top: 0; cursor: pointer;">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="18"
@@ -575,39 +543,10 @@
                                         </div>
                                         <div class="form-group mb-4">
                                             <label>Loại da</label>
-                                            <div class="d-flex">
-                                                <div class="dropdown mr-2">
-                                                    <input class="form-control dropdown-toggle" type="text"
-                                                        id="dropdownMenuButton" data-toggle="dropdown"
-                                                        aria-haspopup="true" aria-expanded="false" autocomplete="off">
-                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                    </div>
-                                                </div>
-                                                <a class="add-option btn btn-primary">Thêm</a>
-                                            </div>
-                                        </div>
-                                        <div class="form-group mb-4">
-                                            <label>Test</label>
-                                            <div class="d-flex mb-2">
-                                                <div class="dropdown mr-2">
-                                                    <input class="form-control" type="text">
-                                                </div>
-                                                <a class="add-option btn btn-primary">Thêm</a>
-                                            </div>
-                                            <ul class="pl-0">
-                                                <li class="d-inline p-1 mr-2 mb-2"
-                                                    style="background-color: #ddd; border-radius: 4px;">
-                                                    <span class="text">${val}</span>
-                                                    <span class="remove-tag ml-2" style="cursor: pointer;">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                            viewBox="0 0 24 24" fill="none" stroke="#333"
-                                                            stroke-width="1" stroke-linecap="round"
-                                                            stroke-linejoin="round" class="feather feather-x">
-                                                            <line x1="18" y1="6" x2="6" y2="18"></line>
-                                                            <line x1="6" y1="6" x2="18" y2="18"></line>
-                                                        </svg>
-                                                    </span>
-                                                </li>
+                                            <ul class="list-group">
+                                                <li class="list-group-item">Dây da</li>
+                                                <li class="list-group-item">Dây kim loại</li>
+                                                <li class="list-group-item">Dây nhựa</li>
                                             </ul>
                                         </div>
                                         <!-- <div class="form-group mb-4">
@@ -638,8 +577,9 @@
                                         </div> -->
                                         <div class="form-group mb-4">
                                             <label>Mô tả</label>
-                                            <textarea class="form-control" id="product-desciptions" rows="4"
-                                                cols="50"></textarea>
+                                            <textarea class="form-control" id="product-desciptions" rows="4" cols="50">
+                                                Mô tả sản phẩm
+                                            </textarea>
                                         </div>
                                     </div>
                                     <div class="col-sm-12 mb-4">
@@ -1392,7 +1332,6 @@
     <script src="js/demo/chart-area-demo.js"></script>
     <script src="js/demo/chart-pie-demo.js"></script>
     <script src="js/demo/datatables-demo.js"></script>
-    <script src="js/demo/nicEdit-latest.js"></script>
 
     <script type="text/javascript">
         $(document).ready(function () {
@@ -1402,7 +1341,9 @@
                     $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
                 });
             });
-            bkLib.onDomLoaded(function() { nicEditors.allTextAreas() });
+            bkLib.onDomLoaded(function () {
+                new nicEditor().panelInstance('product-desciptions');
+            });
         });
     </script>
     <script type="text/javascript">
@@ -1426,35 +1367,6 @@
             // Display label
             $(this).parent().siblings('label').removeClass('d-none');
             $(this).parent().siblings('label').addClass('d-flex');
-        })
-    </script>
-    <script type="text/javascript">
-        $('.add-option').click(function () {
-            let val = $(this).siblings('.dropdown').find('input').val();
-            if (!val?.trim()) { return; }
-            
-            $(this).parent().siblings('ul').append(`
-                <li class="d-inline p-1 mr-2 mb-2"
-                    style="background-color: #ddd; border-radius: 4px;">
-                    <span class="text">${val}</span>
-                    <span class="remove-tag ml-2" style="cursor: pointer;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                            viewBox="0 0 24 24" fill="none" stroke="#333"
-                            stroke-width="1" stroke-linecap="round"
-                            stroke-linejoin="round" class="feather feather-x">
-                            <line x1="18" y1="6" x2="6" y2="18"></line>
-                            <line x1="6" y1="6" x2="18" y2="18"></line>
-                        </svg>
-                    </span>
-                </li>
-            `)
-
-            $(this).siblings('.dropdown').find('input').val('');
-        })
-    </script>
-    <script type="text/javascript">
-        $('.remove-tag').click(function(){
-            $(this).parent().remove();
         })
     </script>
 </body>

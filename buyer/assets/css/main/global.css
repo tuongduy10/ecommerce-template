@@ -447,6 +447,11 @@ a:hover{
     width: calc(14px + (13 - 9) * ((100vw - 375px)/ (1920 - 375)));
     height: calc(14px + (13 - 9) * ((100vw - 375px)/ (1920 - 375)));
 }
+@media (min-width: 576px){
+    .modal-dialog{
+        max-width: 640px;
+    }
+}
 
 .--tooltip {
     position: relative;

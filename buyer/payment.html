@@ -570,7 +570,7 @@
                             </div>
                             <div class="payment-info__line w-100 d-flex align-items-center" style="position: relative;">
                                 <span style="color: red; position: absolute; left: 8px; top: 3px;">*</span>
-                                <input class="w-100" type="text" placeholder="Họ tên">
+                                <input class="w-100" type="text" placeholder="Họ tên" >
                             </div>
                             <div class="payment-info__line w-100 d-flex align-items-center" style="position: relative;">
                                 <span style="color: red; position: absolute; left: 8px; top: 3px;">*</span>
@@ -621,72 +621,97 @@
                                     style="height: calc(48px + (57 - 48) * ((100vw - 375px)/ (1920 - 375)));">
                                 <label class="ml-2 mb-0" for="bank" style="cursor: pointer;">Chuyển khoản</label>
                             </div>
-                            <div class="payment-expand d-none">
-                                <div class="text-center mb-4">THÔNG TIN CHUYỂN KHOẢN</div>
-                                <ul class="bank-list">
-                                    <li class="bank">
-                                        <div class="d-flex">
-                                            <div class="bank-image">
-                                                <img class="mw-100 mh-100" src="assets/images/logo/bidv.png" alt="">
-                                            </div>
-                                            <div class="bank-info d-flex align-items-center">
-                                                <div class="">
-                                                    <div class="bank-name mb-2">Ngân hàng Thương mại cổ phần Đầu tư và
-                                                        Phát
-                                                        triển Việt Nam</div>
-                                                    <div class="bank-accnumber d-flex mb-2">
-                                                        <span class="mr-2">STK: <strong class="stk">987654321000</strong></span>
-                                                        <button class="--tooltip copy-stk" style="height: 22px; background: none; cursor: pointer;">
-                                                            <span class="--tooltip-text">Sao chép</span>
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="22"
-                                                                height="22" viewBox="0 0 24 24" fill="none"
-                                                                stroke="#333" stroke-width="1"
-                                                                stroke-linecap="round" stroke-linejoin="round"
-                                                                class="feather feather-copy">
-                                                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                                                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-                                                            </svg>
-                                                        </button>
-                                                    </div>
-                                                    <div class="bank-username">Tên: NGUYEN VAN A</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="bank">
-                                        <div class="d-flex">
-                                            <div class="bank-image">
-                                                <img class="mw-100 mh-100" src="assets/images/logo/sacombank.png"
-                                                    alt="">
-                                            </div>
-                                            <div class="bank-info d-flex align-items-center">
-                                                <div class="">
-                                                    <div class="bank-name mb-2">Ngân hàng thương mại cổ phần Sài Gòn Thương Tín</div>
-                                                    <div class="bank-accnumber mb-2 d-flex align-items-center">
-                                                        <span class="mr-2">
-                                                            STK: <strong class="stk">000123456789</strong>
-                                                        </span>
-                                                        <button class="--tooltip copy-stk" style="height: 22px; background: none; cursor: pointer;">
-                                                            <span class="--tooltip-text">Sao chép</span>
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="22"
-                                                                height="22" viewBox="0 0 24 24" fill="none"
-                                                                stroke="#333" stroke-width="1"
-                                                                stroke-linecap="round" stroke-linejoin="round"
-                                                                class="feather feather-copy">
-                                                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                                                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-                                                            </svg>
-                                                        </button>
-                                                    </div>
-                                                    <div class="bank-username">Tên: NGUYEN VAN A</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
                             <div class="payment-checkout text-center d-block">
-                                <a class="d-inline-block">THANH TOÁN</a>
+                                <a type="button" class="d-inline-block" data-toggle="modal" data-target="#exampleModal">
+                                    Thanh toán
+                                </a>
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Thông tin chuyển khoản</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        </div>
+                                        <div class="modal-body text-left">
+                                            <div class="payment-expand">
+                                                <div class="mb-4">
+                                                    Cảm ơn quý khách đã mua hàng tại Vua Hàng Hiệu. 
+                                                    Quý khách vui lòng chuyển khoản để thanh toán đơn hàng với thông tin:
+                                                </div>
+                                                <hr>
+                                                <ul class="bank-list">
+                                                    <li class="bank">
+                                                        <div class="d-flex">
+                                                            <div class="bank-image">
+                                                                <img class="mw-100 mh-100" src="assets/images/logo/bidv.png" alt="">
+                                                            </div>
+                                                            <div class="bank-info d-flex align-items-center">
+                                                                <div class="">
+                                                                    <div class="bank-name mb-2">Ngân hàng Thương mại cổ phần Đầu tư và
+                                                                        Phát
+                                                                        triển Việt Nam</div>
+                                                                    <div class="bank-accnumber d-flex mb-2">
+                                                                        <span class="mr-2">STK: <strong class="stk">987654321000</strong></span>
+                                                                        <button class="--tooltip copy-stk" style="height: 22px; background: none; cursor: pointer;">
+                                                                            <span class="--tooltip-text">Sao chép</span>
+                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="22"
+                                                                                height="22" viewBox="0 0 24 24" fill="none"
+                                                                                stroke="#333" stroke-width="1"
+                                                                                stroke-linecap="round" stroke-linejoin="round"
+                                                                                class="feather feather-copy">
+                                                                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                                                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                                                            </svg>
+                                                                        </button>
+                                                                    </div>
+                                                                    <div class="bank-username">Tên: <strong>NGUYEN VAN A</strong></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="bank">
+                                                        <div class="d-flex">
+                                                            <div class="bank-image">
+                                                                <img class="mw-100 mh-100" src="assets/images/logo/sacombank.png"
+                                                                    alt="">
+                                                            </div>
+                                                            <div class="bank-info d-flex align-items-center">
+                                                                <div class="">
+                                                                    <div class="bank-name mb-2">Ngân hàng thương mại cổ phần Sài Gòn Thương Tín</div>
+                                                                    <div class="bank-accnumber mb-2 d-flex align-items-center">
+                                                                        <span class="mr-2">
+                                                                            STK: <strong class="stk">000123456789</strong>
+                                                                        </span>
+                                                                        <button class="--tooltip copy-stk" style="height: 22px; background: none; cursor: pointer;">
+                                                                            <span class="--tooltip-text">Sao chép</span>
+                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="22"
+                                                                                height="22" viewBox="0 0 24 24" fill="none"
+                                                                                stroke="#333" stroke-width="1"
+                                                                                stroke-linecap="round" stroke-linejoin="round"
+                                                                                class="feather feather-copy">
+                                                                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                                                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                                                            </svg>
+                                                                        </button>
+                                                                    </div>
+                                                                    <div class="bank-username">Tên: <strong>NGUYEN VAN A</strong></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <div>Nội dung chuyển khoản: <strong>Thanh toan cho don hang so 265787</strong></div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btn" style="background-color: #4d4d4d; color: #fff;">Ok</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -802,6 +827,12 @@
     </footer>
     <!-- Personal Script -->
     <script type="text/javascript" src="assets/js/main/main.js"></script>
+    <script>
+        $('#trans-info').change(function(e){
+            let fileName = e.target.files[0].name;
+            $('#trans-pic').text(fileName);
+        })
+    </script>
 </body>
 
 </html>
