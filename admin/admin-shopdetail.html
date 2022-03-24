@@ -15,17 +15,15 @@
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="css/sb-admin-2.css" rel="stylesheet">
     <link href="../assets/css/all.css" rel="stylesheet">
     <!-- Custom styles for this page -->
     <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
-
-    <!-- Custom styles for year picker -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.2.0/css/datepicker.min.css" rel="stylesheet">
-
 
 </head>
 
@@ -245,7 +243,7 @@
                 <div id="sellerStatistics" class="collapse" aria-labelledby="headingPages"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="">Doanh thu</a>
+                        <a class="collapse-item" href="seller-finance.html">Doanh thu</a>
                         <a class="collapse-item" href="">Sản phẩm</a>
                     </div>
                 </div>
@@ -439,76 +437,140 @@
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
-                    <!-- <div class="card shadow mb-4">
-                        <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Thống kê theo tháng</h6>
-                        </div>
-                        <div class="card-body p-2">
-                            <div class="d-flex flex-wrap align-items-center mb-2">
-                                <div class="order-filter d-flex form-group align-items-center mr-2 mb-2">
-                                    <label class="mb-0 mr-2" style="white-space: nowrap;">Từ ngày:</label>
-                                    <div class='filter-type input-group date' style="cursor: pointer;">
-                                        <input type='date' class="date form-control" />
-                                    </div>
-                                </div>
-                                <div class="order-filter d-flex form-group align-items-center mr-2 mb-2">
-                                    <label class="mb-0 mr-2" style="white-space: nowrap;">Đến ngày:</label>
-                                    <div class='filter-type input-group date' style="cursor: pointer;">
-                                        <input type='date' class="date form-control" />
-                                    </div>
-                                </div>
-                                <button class="btn btn-primary mb-2 ">Lọc</button>
-                            </div>
-                            <div class="chart-area">
-                                <canvas id="myAreaChart"></canvas>
-                            </div>
-                        </div>
-                    </div>
+                    <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Thống kê theo năm</h6>
+                            <h6 class="m-0 font-weight-bold text-primary text-center">Thông tin shop</h6>
                         </div>
                         <div class="card-body p-2">
-                            <div class="d-flex flex-wrap align-items-center mb-2">
-                                <div class="order-filter d-flex form-group align-items-center mr-2 mb-2">
-                                    <label class="mb-0 mr-2" style="white-space: nowrap;">Từ ngày:</label>
-                                    <div class='filter-type input-group date' style="cursor: pointer;">
-                                        <input type='text' class="year-picker form-control" />
+                            <div class="row justify-content-around">
+                                <div class="col-md-4 col-xs-12 mb-4 px-4">
+                                    <div class="mb-4 text-center"><strong>Thông tin cơ bản</strong></div>
+                                    <div class="form-group row justify-content-between mb-2">
+                                        <label>Tên shop:</label>
+                                        <span>Shop Demo 01</span>
+                                    </div>
+                                    <div class="form-group row justify-content-between mb-2">
+                                        <label>Ngày đăng ký:</label>
+                                        <span>22/02/2022</span>
+                                    </div>
+                                    <div class="form-group row justify-content-between mb-2">
+                                        <label>Số điện thoại:</label>
+                                        <span>0123456789</span>
+                                    </div>
+                                    <div class="form-group row justify-content-between mb-2">
+                                        <label>Email:</label>
+                                        <span>shopdemo01@gmail.com</span>
+                                    </div>
+                                    <div class="form-group row justify-content-between mb-2">
+                                        <label>Địa chỉ:</label>
+                                        <span>Số 01 Lê Lợi, phường Đa Kao, quận 01, TP.HCM</span>
+                                    </div>
+                                    <div class="form-group row justify-content-between mb-2">
+                                        <label>Trạng thái:</label>
+                                        <div>
+                                            <span>Chờ xác nhận...</span>
+                                            <button class="btn btn-danger">Hủy</button>
+                                            <button class="btn btn-success">Xác nhận</button>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row justify-content-between mb-2">
+                                        <label>Trạng thái:</label>
+                                        <div>
+                                            <span class="text-success">Đã xác nhận</span>
+                                            <button class="btn btn-danger">Tạm khóa</button>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row justify-content-between mb-2">
+                                        <label>Trạng thái:</label>
+                                        <div>
+                                            <span class="text-danger">Đã khóa</span>
+                                            <button class="btn btn-success">Mở khóa</button>
+                                        </div>
+                                    </div>
+                                    <div class="mb-4 text-center"><strong>Thông tin thanh toán</strong></div>
+                                    <div class="d-flex">
+                                        <div class="d-flex align-items-center justify-content-center border p-2 mr-2" style="height: 100px; width: 100px;">
+                                            <img class="mh-100 mw-100" src="../assets/images/bidv.png" alt="">
+                                        </div>
+                                        <div>
+                                            <div>Ngân hàng: BIDV</div>
+                                            <div>
+                                                <span>STK: <strong class="stk">987654321000</strong></span>
+                                                <button class="--tooltip copy-stk" style="height: 22px; background: none; cursor: pointer; border: none;">
+                                                    <span class="--tooltip-text">Sao chép</span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="22"
+                                                        height="22" viewBox="0 0 24 24" fill="none"
+                                                        stroke="#333" stroke-width="1"
+                                                        stroke-linecap="round" stroke-linejoin="round"
+                                                        class="feather feather-copy">
+                                                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div>Tên: <strong>NGUYEN VAN A</strong></div>
+                                        </div>
                                     </div>
                                 </div>
-                                <button class="btn btn-primary mb-2 ">Lọc</button>
-                            </div>
-                            <div class="chart-bar">
-                                <div id="chartContainer" style="height: 300px; width: 100%;"></div>
-                            </div>
-                        </div>
-                    </div> -->
-                    <div class="card shadow mb-4">
-                        <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Chi tiết</h6>
-                        </div>
-                        <div class="card-body p-2">
-                            <div class="d-flex flex-wrap align-items-center mb-2">
-                                <div class="order-filter d-flex form-group align-items-center mr-2 mb-2">
-                                    <div class="" style="cursor: pointer; position: relative;">
-                                        <input type='text' class="date-picker form-control" placeholder="Từ ngày"/>
-                                        <span class="d-flex align-items-center" style="position: absolute; right: 0.5rem; top: 0; bottom: 0;"><i class="fas fa-calendar fa-1x text-gray-300"></i></span>
+                                <div class="col-md-4 col-xs-12 mb-4 px-4">
+                                    <div class="mb-4 text-center"><strong>Thông tin chủ shop</strong></div>
+                                    <div class="form-group row justify-content-between mb-2">
+                                        <label>Chủ shop:</label>
+                                        <span>Nguyễn Văn A</span>
+                                    </div>
+                                    <div class="form-group row justify-content-between mb-2">
+                                        <label>Email:</label>
+                                        <span>nguyevana@gmail.com</span>
+                                    </div>
+                                    <div class="form-group row justify-content-between mb-2">
+                                        <label>Số điện thoại:</label>
+                                        <span>0123456789</span>
+                                    </div>
+                                    <div class="form-group row justify-content-between mb-2">
+                                        <label>Ngày đăng ký</label>
+                                        <span>31/12/2022</span>
                                     </div>
                                 </div>
-                                <div class="order-filter d-flex form-group align-items-center mr-2 mb-2">
-                                    <div class="" style="cursor: pointer; position: relative;">
-                                        <input type='text' class="date-picker form-control" placeholder="Đến ngày"/>
-                                        <span class="d-flex align-items-center" style="position: absolute; right: 0.5rem; top: 0; bottom: 0;"><i class="fas fa-calendar fa-1x text-gray-300"></i></span>
-                                    </div>
-                                </div>
-                                <button class="btn btn-primary mb-2 ">Lọc</button>
                             </div>
-                            <div class="table-responsive">
-                                <table class="table table-bordered order-table" id="dataTable" width="100%" cellspacing="0">
+                            
+                            <div class="text-center mb-4"><strong>Thông tin bán hàng</strong></div>
+                            <div class="text-center">
+                                <div class="dropdown mb-4">
+                                    <button class="btn border dropdown-toggle" type="button" data-toggle="dropdown">
+                                        Thương hiệu quản lý 
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu px-2">
+                                        <input class="form-control mb-2" id="myInput" type="text" placeholder="Tìm.." autocomplete="off">
+                                        <li>
+                                            <div>
+                                                <input class="mr-1" id="attr1" type="checkbox" checked>
+                                                <label for="attr1">Samsung</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <input class="mr-1" id="attr1" type="checkbox" checked>
+                                                <label for="attr1">Apple</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <input class="mr-1" id="attr1" type="checkbox">
+                                                <label for="attr1">Sony</label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="table-responsive mb-4">
+                                <table class="table table-bordered order-table" id="dataTable" width="100%"
+                                    cellspacing="0">
                                     <thead>
                                         <tr>
                                             <th>Sản phẩm</th>
-                                            <th>Tổng bán được</th>
+                                            <th>Giá đặt trước</th>
                                             <th>Giá có sẵn</th>
                                             <th>Trạng thái</th>
                                         </tr>
@@ -528,7 +590,7 @@
                                                     </div>
                                                 </div>
                                             </td>
-                                            <td>100</td>
+                                            <td>10,000,008 ₫</td>
                                             <td>10,000,008 ₫</td>
                                             <td style="color: var(--success); white-space: nowrap;">Đang bán</td>
                                         </tr>
@@ -546,7 +608,7 @@
                                                     </div>
                                                 </div>
                                             </td>
-                                            <td>90</td>
+                                            <td>10,000,001 ₫</td>
                                             <td>10,000,008 ₫</td>
                                             <td style="white-space: nowrap;">Đã ẩn</td>
                                         </tr>
@@ -564,12 +626,16 @@
                                                     </div>
                                                 </div>
                                             </td>
-                                            <td>80</td>
-                                            <td>100,000,008 ₫</td>
+                                            <td>10,000,002 ₫</td>
+                                            <td>10,000,008 ₫</td>
                                             <td style="white-space: nowrap;">Đã ẩn</td>
                                         </tr>
                                     </tbody>
                                 </table>
+                            </div>
+                            <div class="text-right">
+                                <button class="btn btn-danger">Hủy</button>
+                                <button class="btn btn-success">Lưu</button>
                             </div>
                         </div>
                     </div>
@@ -610,21 +676,17 @@
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
 
-    <!-- Chart-Column -->
-    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-    <!-- Date-picker -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.2.0/js/bootstrap-datepicker.min.js"></script>
-
     <!-- Page level plugins -->
     <script src="vendor/chart.js/Chart.min.js"></script>
     <script src="vendor/datatables/jquery.dataTables.min.js"></script>
     <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
     <!-- Page level custom scripts -->
-    <!-- <script src="js/demo/chart-col-demo.js"></script> -->
-    <!-- <script src="js/demo/chart-area-demo.js"></script> -->
+    <script src="js/demo/chart-area-demo.js"></script>
     <script src="js/demo/chart-pie-demo.js"></script>
     <script src="js/demo/datatables-demo.js"></script>
+    <script src="//js.nicedit.com/nicEdit-latest.js" type="text/javascript"></script>
+    <script type="text/javascript">bkLib.onDomLoaded(nicEditors.allTextAreas);</script>
 
     <script type="text/javascript">
         $(document).ready(function () {
@@ -634,27 +696,17 @@
                     $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
                 });
             });
-            bkLib.onDomLoaded(function () {
-                new nicEditor().panelInstance('product-desciptions');
-            });
         });
-    </script>
-
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $('.year-picker').datepicker({
-                format: 'yyyy',
-                viewMode: "years", 
-                minViewMode: "years",
-                autoclose:true //to close picker once year is selected
-            }) 
-            $('.date-picker').datepicker({
-                format: 'dd-mm-yyyy',
-                autoclose: true,
-                todayHighlight: true,
-            })  
+        $('.copy-stk').on('click', function(){
+            var $temp = $("<input>");
+            $("body").append($temp);
+            $temp.val($(this).siblings().children('.stk').text()).select();
+            document.execCommand("copy");
+            $temp.remove();
+            $(this).children('.--tooltip-text').text('Đã sao chép');
         })
     </script>
+
 </body>
 
 </html>
