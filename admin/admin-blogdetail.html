@@ -11,8 +11,6 @@
 
     <title>Quản trị</title>
 
-    <script type="text/javascript" src="http://js.nicedit.com/nicEdit-latest.js"></script>
-
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
@@ -20,11 +18,16 @@
         rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="css/sb-admin-2.css" rel="stylesheet">
     <link href="../assets/css/all.css" rel="stylesheet">
     <!-- Custom styles for this page -->
     <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
-
+    <style>
+        input[type="checkbox"] {
+            width: 16px;
+            height: 16px;
+        }
+    </style>
 </head>
 
 <body id="page-top">
@@ -206,7 +209,7 @@
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" href="seller-manageproduct.html">Danh sách sản phẩm</a>
-                        <a class="collapse-item" href="">Thêm sản phẩm</a>
+                        <a class="collapse-item" href="seller-addproduct.html">Thêm sản phẩm</a>
                     </div>
                 </div>
             </li>
@@ -440,98 +443,21 @@
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary text-center">Chi tiết đơn hàng</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">Chi tiết Blog</h6>
                         </div>
-                        <div class="card-body p-2">
-                            <div class="row justify-content-around">
-                                <div class="col-md-4 col-xs-12 mb-4 px-4">
-                                    <div class="mb-4 text-center"><strong>Thông tin đơn hàng</strong></div>
-                                    <div class="form-group row justify-content-between mb-2">
-                                        <label>Mã đơn hàng:</label>
-                                        <span>#22222222</span>
-                                    </div>
-                                    <div class="form-group row justify-content-between mb-2">
-                                        <label>Ngày tạo:</label>
-                                        <span>12:30:13 - 22/02/2022</span>
-                                    </div>
-                                    <div class="form-group row justify-content-between mb-2">
-                                        <label>Phương thức thanh toán:</label>
-                                        <span>Thanh toán khi nhận hàng</span>
-                                    </div>
-                                    <div class="form-group row justify-content-between mb-2">
-                                        <label>Trạng thái:</label>
-                                        <span>
-                                            Chờ xác nhận
-                                            <button class="btn btn-danger">Từ chối</button>
-                                            <button class="btn btn-success">Chấp nhận</button>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-xs-12 mb-4 px-4">
-                                    <div class="mb-4 text-center"><strong>Giá trị đơn hàng</strong></div>
-                                    <div class="form-group row justify-content-between mb-2">
-                                        <label>Số lượng: </label>
-                                        <span>2</span>
-                                    </div>
-                                    <div class="form-group row justify-content-between mb-2">
-                                        <label>Tạm tính:</label>
-                                        <span>100,000,000 ₫</span>
-                                    </div>
-                                    <div class="form-group row justify-content-between mb-2">
-                                        <label>Mã giảm:</label>
-                                        <span>SALECODE</span>
-                                    </div>
-                                    <div class="form-group row justify-content-between mb-2">
-                                        <label>Giảm (-10%):</label>
-                                        <span>10,000,000 ₫</span>
-                                    </div>
-                                    <div class="form-group row justify-content-between mb-2">
-                                        <label>Thanh toán:</label>
-                                        <span><strong>90,000,000 ₫</strong></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <table class="table table-bordered order-table">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col"></th>
-                                            <th scope="col">Sản phẩm</th>
-                                            <th scope="col">Loại hàng</th>
-                                            <th scope="col">Số lượng</th>
-                                            <th scope="col">Thành tiền</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <th scope="row">1</th>
-                                            <td>
-                                                <div class="d-flex">
-                                                    <div class="d-flex align-items-center justify-content-center border p-1 mr-2" style="height: 120px; width: 120px;">
-                                                        <img class="mw-100 mh-100" src="../assets/images/products/pro1.png" alt="">
-                                                    </div>
-                                                    <div>
-                                                        <div>Samsung Galaxy S22 Ultra 5G</div>
-                                                        <div>M</div>
-                                                        <div>Màu đỏ</div>
-                                                        <div><s>100,000,000 ₫</s></div>
-                                                        <div>90,000,000 ₫</div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td> Hàng đặt trước</td>
-                                            <td>
-                                                2
-                                            </td>
-                                            <td>
-                                                180,000,000 ₫
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                        <div class="card-body">
+                            <div class="form-inline mb-2">
+                                <label class="mr-2">Hiển thị</label>
+                                <input class="form-control" value="Giới thiệu công ty">
+                            </div> 
+                            <textarea class="w-100" name="" id="" cols="30" rows="10"></textarea>
+
+                            <div class="text-center">
+                                <button class="btn-primary btn">Cập nhật</button>
                             </div>
                         </div>
                     </div>
+
                 </div>
                 <!-- /.container-fluid -->
 
@@ -567,7 +493,7 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.min.js"></script>
+    <script src="js/sb-admin-2.js"></script>
 
     <!-- Page level plugins -->
     <script src="vendor/chart.js/Chart.min.js"></script>
@@ -578,9 +504,9 @@
     <script src="js/demo/chart-area-demo.js"></script>
     <script src="js/demo/chart-pie-demo.js"></script>
     <script src="js/demo/datatables-demo.js"></script>
-    <script src="//js.nicedit.com/nicEdit-latest.js" type="text/javascript"></script>
-    <script type="text/javascript">bkLib.onDomLoaded(nicEditors.allTextAreas);</script>
 
+    <script src="//js.nicedit.com/nicEdit-latest.js" type="text/javascript"></script>
+    <script type="text/javascript">bkLib.onDomLoaded(nicEditors.allTextAreas);</script> 
 </body>
 
 </html>

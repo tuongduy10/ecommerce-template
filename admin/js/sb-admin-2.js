@@ -54,3 +54,56 @@
   });
 
 })(jQuery); // End of use strict
+
+function loadIamgesWithPreview(upload, preview, amount) {
+  if (window.File && window.FileList && window.FileReader) {
+      var filesInput = document.getElementById(upload);
+      filesInput.addEventListener("change", function (event) {
+          var files = event.target.files; //FileList object
+          var currentFiles = $('.image__upload-item').length + files.length;
+          if (currentFiles > amount) {
+            alert("Vượt quá số ảnh cho phép")
+            return;
+          }
+          var output = document.getElementById(preview);
+          for (var i = 0; i < files.length; i++) {
+            var file = files[i];      
+            //Only pics
+            if (!file.type.match('image')){
+              continue;
+            }
+            var picReader = new FileReader();
+            picReader.addEventListener("load", function (event) {
+              var picFile = event.target;
+              var div = document.createElement("div");
+              div.classList.add(`image__upload-item`, `mr-2`);
+              div.innerHTML = `
+                <div class="border mb-2 mx-auto" style="height: 180px; width: 180px;">
+                    <div class="image-wrapper w-100 h-100 position-relative d-flex align-items-center justify-content-center">
+                        <img id="test" class="mw-100 mh-100" src="${picFile.result}" alt="${picFile.name}">
+                        <span class="position-absolute remove-upload"
+                          style="right: 0; top: 0; cursor: pointer;">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="18"
+                              height="18" viewBox="0 0 24 24" fill="none"
+                              stroke="red" stroke-width="1" stroke-linecap="round"
+                              stroke-linejoin="round" class="feather feather-x">
+                              <line x1="18" y1="6" x2="6" y2="18"></line>
+                              <line x1="6" y1="6" x2="18" y2="18"></line>
+                          </svg>
+                        </span>
+                    </div>
+                </div>
+              `;
+              // Remove event
+              var removeUpload = div.querySelector(".remove-upload");
+              removeUpload.addEventListener("click", function (evt) {
+                  div.remove();
+              })
+              output.insertBefore(div, null);
+            });
+            //Read the image
+            picReader.readAsDataURL(file);
+          }
+      });
+  }
+}

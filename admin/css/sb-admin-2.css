@@ -11283,6 +11283,9 @@ tr,
 td{
   white-space: nowrap;
 }
+th{
+  background-color: #f1f1f1;
+}
 .--tooltip {
   position: relative;
   display: inline-block;

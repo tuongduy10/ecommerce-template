@@ -15,17 +15,15 @@
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
     <link href="../assets/css/all.css" rel="stylesheet">
     <!-- Custom styles for this page -->
     <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
-
-    <!-- Custom styles for year picker -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.2.0/css/datepicker.min.css" rel="stylesheet">
-
 
 </head>
 
@@ -245,7 +243,7 @@
                 <div id="sellerStatistics" class="collapse" aria-labelledby="headingPages"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="">Doanh thu</a>
+                        <a class="collapse-item" href="seller-finance.html">Doanh thu</a>
                         <a class="collapse-item" href="">Sản phẩm</a>
                     </div>
                 </div>
@@ -442,258 +440,71 @@
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Tổng quan</h6>
+                            <h6 class="m-0 font-weight-bold text-primary text-center">Thông tin chi tiết</h6>
                         </div>
                         <div class="card-body p-2">
-                            <div class="row">
-                                <!-- Earnings (Weekly) Card Example -->
-                                <div class="col-xl-3 col-md-6 mb-4">
-                                    <div class="card border-left-primary shadow h-100 py-2">
-                                        <div class="card-body">
-                                            <div class="row no-gutters align-items-center">
-                                                <div class="col mr-2">
-                                                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                        Tuần này
-                                                    </div>
-                                                    <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                                        1,000,000 ₫
+                            <form class="mx-auto">
+                                <div class="row">
+                                    <div class="col-sm-6 mb-4">
+                                        <div class="text-left mb-2 text-primary"><strong>Thông tin cơ bản</strong></div>                                        
+                                        <div class="form-group mb-4">
+                                            <label>Tên</label>
+                                            <input type="text" class="form-control" value="Nguyen Van A">
+                                        </div>
+                                        <div class="form-group mb-4">
+                                            <label>Ngân hàng</label>
+                                            <input type="text" class="form-control" value="BIDV">
+                                        </div>
+                                        <div class="form-group mb-4">
+                                            <label>Số tài khoản</label>
+                                            <input type="text" class="form-control" value="123456789">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 mb-4">
+                                        <div class="form-group mb-4">
+                                            <label>Ảnh ngân hàng</label>
+                                            <div class="d-flex flex-wrap">
+                                                <div class="">
+                                                    <div class="border" style="height: 100px; width: 100px;">
+                                                        <label
+                                                            class="mb-0 w-100 h-100 d-none align-items-center justify-content-center"
+                                                            for="pic-size" style="cursor: pointer">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                height="24" viewBox="0 0 24 24" fill="none"
+                                                                stroke="#ddd" stroke-width="1" stroke-linecap="round"
+                                                                stroke-linejoin="round"
+                                                                class="feather feather-plus-circle">
+                                                                <circle cx="12" cy="12" r="10"></circle>
+                                                                <line x1="12" y1="8" x2="12" y2="16"></line>
+                                                                <line x1="8" y1="12" x2="16" y2="12"></line>
+                                                            </svg>
+                                                        </label>
+                                                        <input type="file" class="form-control-file image-uploaded"
+                                                            id="pic-size" hidden>
+                                                        <div class="image-wrapper w-100 h-100 position-relative d-flex align-items-center justify-content-center p-1">
+                                                            <img class="mw-100 mh-100"
+                                                                src="../assets/images/bidv.png" alt="">
+                                                            <span class="position-absolute remove-upload"
+                                                                style="right: 0; top: 0; cursor: pointer;">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="18"
+                                                                    height="18" viewBox="0 0 24 24" fill="none"
+                                                                    stroke="red" stroke-width="1" stroke-linecap="round"
+                                                                    stroke-linejoin="round" class="feather feather-x">
+                                                                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                                                                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                                                                </svg>
+                                                            </span>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- Earnings (Monthly) Card Example -->
-                                <div class="col-xl-3 col-md-6 mb-4">
-                                    <div class="card border-left-success shadow h-100 py-2">
-                                        <div class="card-body">
-                                            <div class="row no-gutters align-items-center">
-                                                <div class="col mr-2">
-                                                    <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                                        Tháng này
-                                                    </div>
-                                                    <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                                        10,000,000 ₫
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="text-center">
+                                    <button class="btn btn-primary">Cập nhật</button>
                                 </div>
-                                <!-- Earnings (Monthly) Card Example -->
-                                <div class="col-xl-3 col-md-6 mb-4">
-                                    <div class="card border-left-info shadow h-100 py-2">
-                                        <div class="card-body">
-                                            <div class="row no-gutters align-items-center">
-                                                <div class="col mr-2">
-                                                    <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
-                                                        Tổng cộng
-                                                    </div>
-                                                    <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                                        10,000,000 ₫
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div class="card shadow mb-4">
-                        <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Thống kê theo tháng</h6>
-                        </div>
-                        <div class="card-body p-2">
-                            <div class="d-flex flex-wrap align-items-center mb-2">
-                                <div class="order-filter d-flex form-group align-items-center mr-2 mb-2">
-                                    <label class="mb-0 mr-2" style="white-space: nowrap;">Từ ngày:</label>
-                                    <div class='filter-type input-group date' style="cursor: pointer;">
-                                        <input type='date' class="date form-control" />
-                                    </div>
-                                </div>
-                                <div class="order-filter d-flex form-group align-items-center mr-2 mb-2">
-                                    <label class="mb-0 mr-2" style="white-space: nowrap;">Đến ngày:</label>
-                                    <div class='filter-type input-group date' style="cursor: pointer;">
-                                        <input type='date' class="date form-control" />
-                                    </div>
-                                </div>
-                                <button class="btn btn-primary mb-2 ">Lọc</button>
-                            </div>
-                            <div class="chart-area">
-                                <canvas id="myAreaChart"></canvas>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card shadow mb-4">
-                        <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Thống kê theo năm</h6>
-                        </div>
-                        <div class="card-body p-2">
-                            <div class="d-flex flex-wrap align-items-center mb-2">
-                                <div class="order-filter d-flex form-group align-items-center mr-2 mb-2">
-                                    <label class="mb-0 mr-2" style="white-space: nowrap;">Từ ngày:</label>
-                                    <div class='filter-type input-group date' style="cursor: pointer;">
-                                        <input type='text' class="year-picker form-control" />
-                                    </div>
-                                </div>
-                                <button class="btn btn-primary mb-2 ">Lọc</button>
-                            </div>
-                            <div class="chart-bar">
-                                <div id="chartContainer" style="height: 300px; width: 100%;"></div>
-                            </div>
-                        </div>
-                    </div> -->
-                    <div class="card shadow mb-4">
-                        <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Chi tiết</h6>
-                        </div>
-                        <div class="card-body p-2">
-                            <div class="row">
-                                <!-- Earnings (Weekly) Card Example -->
-                                <div class="col-xl-3 col-md-6 mb-4">
-                                    <div class="card border-left-primary shadow h-100 py-2">
-                                        <div class="card-body">
-                                            <div class="row no-gutters align-items-center">
-                                                <div class="col mr-2">
-                                                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                        Hiện tại
-                                                    </div>
-                                                    <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                                        1,000,000 ₫
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Earnings (Weekly) Card Example -->
-                                <div class="col-xl-3 col-md-6 mb-4">
-                                    <div class="card border-left-warning shadow h-100 py-2">
-                                        <div class="card-body">
-                                            <div class="row no-gutters align-items-center">
-                                                <div class="col mr-2">
-                                                    <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-                                                        chưa thanh toán
-                                                    </div>
-                                                    <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                                        1,000,000 ₫
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Earnings (Monthly) Card Example -->
-                                <div class="col-xl-3 col-md-6 mb-4">
-                                    <div class="card border-left-success shadow h-100 py-2">
-                                        <div class="card-body">
-                                            <div class="row no-gutters align-items-center">
-                                                <div class="col mr-2">
-                                                    <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                                        Đơn hoàn thành
-                                                    </div>
-                                                    <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                                        5
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Earnings (Monthly) Card Example -->
-                                <div class="col-xl-3 col-md-6 mb-4">
-                                    <div class="card border-left-danger shadow h-100 py-2">
-                                        <div class="card-body">
-                                            <div class="row no-gutters align-items-center">
-                                                <div class="col mr-2">
-                                                    <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
-                                                        Đơn hủy
-                                                    </div>
-                                                    <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                                        1
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-wrap align-items-center mb-2">
-                                <div class="order-filter d-flex form-group align-items-center mr-2 mb-2">
-                                    <div class="" style="cursor: pointer; position: relative;">
-                                        <input type='text' class="date-picker form-control" placeholder="Từ ngày"/>
-                                        <span class="d-flex align-items-center" style="position: absolute; right: 0.5rem; top: 0; bottom: 0;"><i class="fas fa-calendar fa-1x text-gray-300"></i></span>
-                                    </div>
-                                </div>
-                                <div class="order-filter d-flex form-group align-items-center mr-2 mb-2">
-                                    <div class="" style="cursor: pointer; position: relative;">
-                                        <input type='text' class="date-picker form-control" placeholder="Đến ngày"/>
-                                        <span class="d-flex align-items-center" style="position: absolute; right: 0.5rem; top: 0; bottom: 0;"><i class="fas fa-calendar fa-1x text-gray-300"></i></span>
-                                    </div>
-                                </div>
-                                <button class="btn btn-primary mb-2 ">Lọc</button>
-                            </div>
-                            <div class="table-responsive">
-                                <table class="table table-bordered order-table" id="dataTable" width="100%" cellspacing="0">
-                                    <thead>
-                                        <tr>
-                                            <th>Ngày tạo</th>
-                                            <th>Mã hóa đơn</th>
-                                            <th>Tổng tiền</th>
-                                            <th>Trạng thái</th>
-                                            <th></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>08/03/2022 00:11:11</td>
-                                            <td>#11011011</td>
-                                            <td>10,000,000 ₫</td>
-                                            <td style="color: var(--success); white-space: nowrap;">Hoàn thành</td>
-                                            <td class="text-center" style="white-space: nowrap;">
-                                                <a href="order-detail.html" style="color: var(--blue-dior);">Chi tiết</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>08/03/2022 00:22:22</td>
-                                            <td>#22022022</td>
-                                            <td>10,000,000 ₫</td>
-                                            <td style="color: var(--red);">Hủy</td>
-                                            <td class="text-center">
-                                                <a href="order-detail.html" style="color: var(--blue-dior);">Chi tiết</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>08/03/2022 00:33:33</td>
-                                            <td>#33033033</td>
-                                            <td>10,000,000 ₫</td>
-                                            <td>Chờ xác nhận...</td>
-                                            <td class="text-center">
-                                                <a href="order-detail.html" style="color: var(--blue-dior);">Chi tiết</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>08/03/2022 00:44:44</td>
-                                            <td>#44044044</td>
-                                            <td>10,000,000 ₫</td>
-                                            <td>Chờ lấy hàng...</td>
-                                            <td class="text-center">
-                                                <a href="order-detail.html" style="color: var(--blue-dior);">Chi tiết</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>08/03/2022 00:55:55</td>
-                                            <td>#55055055</td>
-                                            <td>10,000,000 ₫</td>
-                                            <td>Đang giao...</td>
-                                            <td class="text-center">
-                                                <a href="order-detail.html" style="color: var(--blue-dior);">Chi tiết</a>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -731,12 +542,7 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.min.js"></script>
-
-    <!-- Chart-Column -->
-    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-    <!-- Date-picker -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.2.0/js/bootstrap-datepicker.min.js"></script>
+    <script src="js/sb-admin-2.js"></script>
 
     <!-- Page level plugins -->
     <script src="vendor/chart.js/Chart.min.js"></script>
@@ -744,243 +550,33 @@
     <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
     <!-- Page level custom scripts -->
-    <!-- <script src="js/demo/chart-col-demo.js"></script> -->
-    <!-- <script src="js/demo/chart-area-demo.js"></script> -->
+    <script src="js/demo/chart-area-demo.js"></script>
     <script src="js/demo/chart-pie-demo.js"></script>
     <script src="js/demo/datatables-demo.js"></script>
-
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $("#myInput").on("keyup", function () {
-                var value = $(this).val().toLowerCase();
-                $(".dropdown-menu li").filter(function () {
-                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-                });
-            });
-            bkLib.onDomLoaded(function () {
-                new nicEditor().panelInstance('product-desciptions');
-            });
-        });
-    </script>
-    <!-- Chart-Column -->
-    <script type="text/javascript">
-        var chart = new CanvasJS.Chart("chartContainer", {
-                animationEnabled: true,
-                title:{
-                    text: "Thông kê năm 2021"
-                },	
-                axisY: {
-                    title: "Doanh thu",
-                    titleFontColor: "#4F81BC",
-                    lineColor: "#4F81BC",
-                    labelFontColor: "#4F81BC",
-                    tickColor: "#4F81BC"
-                },
-                toolTip: {
-                    shared: true
-                },
-                legend: {
-                    cursor:"pointer",
-                    itemclick: toggleDataSeries
-                },
-                data: [{
-                    type: "column",
-                    name: "Doanh thu",
-                    legendText: "Doanh thu",
-                    showInLegend: true, 
-                    dataPoints:[
-                        { label: "Tháng 01", y: 10000000  },
-                        { label: "Tháng 02", y: 10000000 },
-                        { label: "Tháng 03", y: 10000000 },
-                        { label: "Tháng 04", y: 10000000 },
-                        { label: "Tháng 05", y: 10000000 },
-                        { label: "Tháng 06", y: 10000000 },
-                        { label: "Tháng 07", y: 10000000 },
-                        { label: "Tháng 08", y: 10000000 },
-                        { label: "Tháng 09", y: 10000000 },
-                    ]
-                },
-                {
-                    type: "column",	
-                    name: "Đơn hàng",
-                    legendText: "Đơn hàng",
-                    axisYType: "secondary",
-                    showInLegend: true,
-                    dataPoints:[
-                        { label: "Tháng 01", y: 100 },
-                        { label: "Tháng 02", y: 200 },
-                        { label: "Tháng 03", y: 400 },
-                        { label: "Tháng 04", y: 500 },
-                        { label: "Tháng 05", y: 200 },
-                        { label: "Tháng 06", y: 200},
-                        { label: "Tháng 07", y: 800 },
-                        { label: "Tháng 08", y: 200 },
-                        { label: "Tháng 09", y: 300 },
-                    ]
-                }]
-            });
-            chart.render();
-
-            function toggleDataSeries(e) {
-                if (typeof(e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
-                    e.dataSeries.visible = false;
-                }
-                else {
-                    e.dataSeries.visible = true;
-                }
-                chart.render();
-            }
-    </script>
-    <!-- Chart-Area -->
-    <script type="text/javascript">
-        // Set new default font family and font color to mimic Bootstrap's default styling
-        Chart.defaults.global.defaultFontFamily = 'Nunito', '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
-        Chart.defaults.global.defaultFontColor = '#858796';
-
-        function number_format(number, decimals, dec_point, thousands_sep) {
-        // *     example: number_format(1234.56, 2, ',', ' ');
-        // *     return: '1 234,56'
-        number = (number + '').replace(',', '').replace(' ', '');
-        var n = !isFinite(+number) ? 0 : +number,
-            prec = !isFinite(+decimals) ? 0 : Math.abs(decimals),
-            sep = (typeof thousands_sep === 'undefined') ? ',' : thousands_sep,
-            dec = (typeof dec_point === 'undefined') ? '.' : dec_point,
-            s = '',
-            toFixedFix = function(n, prec) {
-            var k = Math.pow(10, prec);
-            return '' + Math.round(n * k) / k;
-            };
-        // Fix for IE parseFloat(0.55).toFixed(0) = 0;
-        s = (prec ? toFixedFix(n, prec) : '' + Math.round(n)).split('.');
-        if (s[0].length > 3) {
-            s[0] = s[0].replace(/\B(?=(?:\d{3})+(?!\d))/g, sep);
-        }
-        if ((s[1] || '').length < prec) {
-            s[1] = s[1] || '';
-            s[1] += new Array(prec - s[1].length + 1).join('0');
-        }
-        return s.join(dec);
-        }
-
-        // Area Chart Example
-        var ctx = document.getElementById("myAreaChart");
-        var myLineChart = new Chart(ctx, {
-        type: 'line',
-        data: {
-            labels: [
-                "Tháng 01", 
-                "Tháng 02", 
-                "Tháng 03", 
-                "Tháng 04", 
-                "Tháng 05", 
-                "Tháng 06", 
-                "Tháng 07", 
-                "Tháng 08", 
-                "Tháng 09", 
-                "Tháng 10", 
-                "Tháng 11", 
-                "Tháng 12",
-            ],
-            datasets: [{
-                label: "Earnings",
-                lineTension: 0.3,
-                backgroundColor: "rgba(78, 115, 223, 0.05)",
-                borderColor: "rgba(78, 115, 223, 1)",
-                pointRadius: 3,
-                pointBackgroundColor: "rgba(78, 115, 223, 1)",
-                pointBorderColor: "rgba(78, 115, 223, 1)",
-                pointHoverRadius: 3,
-                pointHoverBackgroundColor: "rgba(78, 115, 223, 1)",
-                pointHoverBorderColor: "rgba(78, 115, 223, 1)",
-                pointHitRadius: 10,
-                pointBorderWidth: 2,
-                data: [0, 10000, 5000, 15000, 10000, 20000, 15000, 25000, 20000, 30000, 25000, 40000],
-            }],
-        },
-        options: {
-            maintainAspectRatio: false,
-            layout: {
-            padding: {
-                left: 10,
-                right: 25,
-                top: 25,
-                bottom: 0
-            }
-            },
-            scales: {
-            xAxes: [{
-                time: {
-                    unit: 'date'
-                },
-                gridLines: {
-                    display: false,
-                    drawBorder: false
-                },
-                ticks: {
-                    maxTicksLimit: 7
-                }
-            }],
-            yAxes: [{
-                ticks: {
-                    maxTicksLimit: 5,
-                    padding: 10,
-                    // Include a dollar sign in the ticks
-                    callback: function(value, index, values) {
-                        return '$' + number_format(value);
-                    }
-                },
-                gridLines: {
-                    color: "rgb(234, 236, 244)",
-                    zeroLineColor: "rgb(234, 236, 244)",
-                    drawBorder: false,
-                    borderDash: [2],
-                    zeroLineBorderDash: [2]
-                }
-            }],
-            },
-            legend: {
-                display: false
-            },
-            tooltips: {
-                backgroundColor: "rgb(255,255,255)",
-                bodyFontColor: "#858796",
-                titleMarginBottom: 10,
-                titleFontColor: '#6e707e',
-                titleFontSize: 14,
-                borderColor: '#dddfeb',
-                borderWidth: 1,
-                xPadding: 15,
-                yPadding: 15,
-                displayColors: false,
-                intersect: false,
-                mode: 'index',
-                caretPadding: 10,
-                callbacks: {
-                    label: function(tooltipItem, chart) {
-                    var datasetLabel = chart.datasets[tooltipItem.datasetIndex].label || '';
-                    return datasetLabel + ': $' + number_format(tooltipItem.yLabel);
-                    }
-                }
-            }
-        }
-        });
-    </script>
-
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $('.year-picker').datepicker({
-                format: 'yyyy',
-                viewMode: "years", 
-                minViewMode: "years",
-                autoclose:true //to close picker once year is selected
-            }) 
-            $('.date-picker').datepicker({
-                format: 'dd-mm-yyyy',
-                autoclose: true,
-                todayHighlight: true,
-            })  
+    <script>
+        $('.image-uploaded').change(function () {
+            // Set image src
+            let src = window.URL.createObjectURL(this.files[0]);
+            $(this).siblings('.image-wrapper').children('img').attr('src', src);
+            // hide label
+            $(this).siblings('label').removeClass('d-flex');
+            $(this).siblings('label').addClass('d-none');
+            // display image
+            $(this).siblings('.image-wrapper').removeClass('d-none');
+            $(this).siblings('.image-wrapper').addClass('d-flex');
+        })
+        $('.remove-upload').click(function () {
+            // Remove Image
+            $(this).siblings('img').attr('src', '');
+            // Hide image wrapper
+            $(this).parent().removeClass('d-flex');
+            $(this).parent().addClass('d-none');
+            // Display label
+            $(this).parent().siblings('label').removeClass('d-none');
+            $(this).parent().siblings('label').addClass('d-flex');
         })
     </script>
+    
 </body>
 
 </html>
