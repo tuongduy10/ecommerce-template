@@ -20,7 +20,7 @@
         rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="css/sb-admin-2.css" rel="stylesheet">
     <link href="../assets/css/all.css" rel="stylesheet">
     <!-- Custom styles for this page -->
     <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
@@ -455,12 +455,16 @@
                                         <span>12:30:13 - 22/02/2022</span>
                                     </div>
                                     <div class="form-group row justify-content-between mb-2">
-                                        <label>Trạng thái:</label>
-                                        <span>Chờ xác nhận</span>
-                                    </div>
-                                    <div class="form-group row justify-content-between mb-2">
                                         <label>Thông tin thanh toán:</label>
                                         <span class="text-primary">Chuyển khoản</span>
+                                    </div>
+                                    <div class="form-group row justify-content-between mb-2">
+                                        <label>Trạng thái:</label>
+                                        <span>
+                                            Chờ xác nhận
+                                            <button class="btn btn-danger">Từ chối</button>
+                                            <button class="btn btn-success">Chấp nhận</button>
+                                        </span>
                                     </div>
                                 </div>
                                 <div class="col-md-4 col-xs-12 mb-4 px-4">
@@ -487,32 +491,35 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row justify-content-around">
-                                <div class="col-md-4 col-xs-12 mb-4 px-4">
-                                    <div class="mb-4 text-center"><strong>Thông tin giao hàng</strong></div>
-                                    <div class="form-group row justify-content-between mb-2">
-                                        <label>Người nhận:</label>
-                                        <span>Nguyễn Văn A</span>
-                                    </div>
-                                    <div class="form-group row justify-content-between mb-2">
-                                        <label>Số điện thoại:</label>
-                                        <span>0123456789</span>
-                                    </div>
-                                    <div class="form-group row justify-content-between mb-2">
-                                        <label>Địa chỉ:</label>
-                                        <span>Số 01 Lê Lợi, phường Đa Kao, quận 01, TP.HCM</span>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-xs-12 mb-4 px-4">
-
-                                </div>
+                            <div class="mb-4">
+                                <div class="mb-4"><strong>Thông tin giao hàng</strong></div>
+                                <table class="table table-bordered order-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Người nhận</th>
+                                            <th>Địa chỉ</th>
+                                            <th>Số điện thoại</th>
+                                            <th>Ghi chú từ khách hàng</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Nguyễn Văn A</td>
+                                            <td>Số 1 Lê Lợi, phường da kao, quận 01, TPhcm</td>
+                                            <td>0123456789</td>
+                                            <td>đóng gói cẩn thận, giao hàng giờ hành chính và gọi trước khi giao hàng</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                             <div>
+                                <div class="mb-4"><strong>Sản phẩm của đơn hàng</strong></div>
                                 <table class="table table-bordered order-table">
                                     <thead>
                                         <tr>
                                             <th scope="col"></th>
                                             <th scope="col">Sản phẩm</th>
+                                            <th scope="col">Shop</th>
                                             <th scope="col">Loại hàng</th>
                                             <th scope="col">Số lượng</th>
                                             <th scope="col">Thành tiền</th>
@@ -520,7 +527,7 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <th scope="row">1</th>
+                                            <td scope="row">1</td>
                                             <td>
                                                 <div class="d-flex">
                                                     <div class="d-flex align-items-center justify-content-center border p-1 mr-2" style="height: 120px; width: 120px;">
@@ -535,6 +542,7 @@
                                                     </div>
                                                 </div>
                                             </td>
+                                            <td>Shop Demo 01</td>
                                             <td> Hàng đặt trước</td>
                                             <td>
                                                 2
@@ -545,10 +553,6 @@
                                         </tr>
                                     </tbody>
                                 </table>
-                                <div class="text-right">
-                                    <button class="btn btn-danger">Từ chối</button>
-                                    <button class="btn btn-success">Chấp nhận</button>
-                                </div>
                             </div>
                         </div>
                     </div>
