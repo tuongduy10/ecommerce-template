@@ -446,7 +446,8 @@
                             <form class="mx-auto">
                                 <div class="row">
                                     <div class="col-sm-6 mb-4">
-                                        <div class="text-left mb-2 text-primary"><strong>1. Thông tin cơ bản</strong></div>                                        
+                                        <div class="text-left mb-2 text-primary"><strong>1. Thông tin cơ bản</strong>
+                                        </div>
                                         <div class="form-group mb-4">
                                             <label>Tên sản phẩm</label>
                                             <input type="text" class="form-control" value="Samsung Galaxy S22 Ultra 5G">
@@ -454,13 +455,15 @@
                                         <div class="form-group mb-4">
                                             <label>Giá có sẵn</label>
                                             <div class="d-flex align-items-center">
-                                                <input type="number" class="form-control" value="30000000" min="0" step="1000">
+                                                <input type="number" class="form-control" value="30000000" min="0"
+                                                    step="1000">
                                             </div>
                                         </div>
                                         <div class="form-group mb-4">
                                             <label>Giá đặt trước</label>
                                             <div class="d-flex align-items-center">
-                                                <input type="number" class="form-control" value="25000000" min="0" step="1000">
+                                                <input type="number" class="form-control" value="25000000" min="0"
+                                                    step="1000">
                                             </div>
                                         </div>
                                         <div class="form-group mb-4">
@@ -470,21 +473,64 @@
                                             </div>
                                         </div>
                                         <div class="form-group mb-4">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Sản phẩm chính hãng
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Giao hàng miễn phí
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckChecked" checked>
+                                                <label class="form-check-label" for="flexCheckChecked">
+                                                    Đổi trả miễn phí
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="test004">
+                                                <label class="form-check-label" for="test004">
+                                                    <div>Bảo hành</div>
+                                                    <input class="form-control" type="text" placeholder="Chế độ bảo hành">
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group mb-4">
                                             <label>Giảm giá</label>
                                             <div class="form-check mb-4">
-                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                                                <input class="form-check-input discount-bypercent" type="radio"
+                                                    name="flexRadioDefault" id="flexRadioDefault1" checked>
                                                 <label class="form-check-label" for="flexRadioDefault1">
-                                                  Giảm theo %
+                                                    Giảm theo %
                                                 </label>
-                                                <input type="number" class="form-control mb-2" placeholder="% giảm" value="10" min="0" step="1000">
+                                                <input type="number" class="form-control mb-2" placeholder="% giảm"
+                                                    value="10" min="0" max="100">
                                             </div>
                                             <div class="form-check mb-4">
-                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                                <input class="form-check-input discount-bymoney" type="radio"
+                                                    name="flexRadioDefault" id="flexRadioDefault2">
                                                 <label class="form-check-label" for="flexRadioDefault2">
-                                                  Giảm theo giá
+                                                    Giảm theo giá
                                                 </label>
-                                                <input type="number" class="form-control mb-2 d-none" placeholder="Giá giảm có sẵn" value="20000000" min="0" step="1000">
-                                                <input type="number" class="form-control mb-2 d-none" placeholder="Giá giảm đặt trước" value="2100000" min="0" step="1000">
+                                                <div class="form-group d-none">
+                                                    <label for="">Giá giảm có sẵn</label>
+                                                    <input type="number" class="form-control mb-2" value="20000000"
+                                                        min="0" step="1000">
+                                                </div>
+                                                <div class="form-group d-none">
+                                                    <label for="">Giá giảm đặt trước</label>
+                                                    <input type="number" class="form-control mb-2"
+                                                        placeholder="Giá giảm đặt trước" value="2100000" min="0"
+                                                        step="1000">
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="form-group">
@@ -524,7 +570,8 @@
                                         </div>
                                     </div>
                                     <div class="col-sm-6 mb-4">
-                                        <div class="text-left mb-2 text-primary"><strong>2. Thông tin tùy chọn</strong></div>
+                                        <div class="text-left mb-2 text-primary"><strong>2. Thông tin tùy chọn</strong>
+                                        </div>
                                         <div class="d-flex flex-wrap">
                                             <div class="form-group mr-4 mb-2">
                                                 <label>Màu sắc</label>
@@ -539,9 +586,9 @@
                                                         style="background-color: #ddd; border-radius: 4px;">
                                                         <span class="text">Màu xanh</span>
                                                         <span class="remove-tag ml-2" style="cursor: pointer;">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                                viewBox="0 0 24 24" fill="none" stroke="#333"
-                                                                stroke-width="1" stroke-linecap="round"
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                height="16" viewBox="0 0 24 24" fill="none"
+                                                                stroke="#333" stroke-width="1" stroke-linecap="round"
                                                                 stroke-linejoin="round" class="feather feather-x">
                                                                 <line x1="18" y1="6" x2="6" y2="18"></line>
                                                                 <line x1="6" y1="6" x2="18" y2="18"></line>
@@ -563,9 +610,9 @@
                                                         style="background-color: #ddd; border-radius: 4px;">
                                                         <span class="text">L</span>
                                                         <span class="remove-tag ml-2" style="cursor: pointer;">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                                viewBox="0 0 24 24" fill="none" stroke="#333"
-                                                                stroke-width="1" stroke-linecap="round"
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                height="16" viewBox="0 0 24 24" fill="none"
+                                                                stroke="#333" stroke-width="1" stroke-linecap="round"
                                                                 stroke-linejoin="round" class="feather feather-x">
                                                                 <line x1="18" y1="6" x2="6" y2="18"></line>
                                                                 <line x1="6" y1="6" x2="18" y2="18"></line>
@@ -587,9 +634,9 @@
                                                         style="background-color: #ddd; border-radius: 4px;">
                                                         <span class="text">Dây kim loại</span>
                                                         <span class="remove-tag ml-2" style="cursor: pointer;">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                                viewBox="0 0 24 24" fill="none" stroke="#333"
-                                                                stroke-width="1" stroke-linecap="round"
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                height="16" viewBox="0 0 24 24" fill="none"
+                                                                stroke="#333" stroke-width="1" stroke-linecap="round"
                                                                 stroke-linejoin="round" class="feather feather-x">
                                                                 <line x1="18" y1="6" x2="6" y2="18"></line>
                                                                 <line x1="6" y1="6" x2="18" y2="18"></line>
@@ -602,18 +649,29 @@
                                         <div class="form-group mb-4">
                                             <label>Hướng dẫn chọn kích thước</label>
                                             <div class="border" style="height: 100px; width: 100px;">
-                                                <label class="mb-0 w-100 h-100 align-items-center justify-content-center d-flex" for="pic-size" style="cursor: pointer">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ddd" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus-circle">
+                                                <label
+                                                    class="mb-0 w-100 h-100 align-items-center justify-content-center d-flex"
+                                                    for="pic-size" style="cursor: pointer">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none" stroke="#ddd" stroke-width="1"
+                                                        stroke-linecap="round" stroke-linejoin="round"
+                                                        class="feather feather-plus-circle">
                                                         <circle cx="12" cy="12" r="10"></circle>
                                                         <line x1="12" y1="8" x2="12" y2="16"></line>
                                                         <line x1="8" y1="12" x2="16" y2="12"></line>
                                                     </svg>
                                                 </label>
-                                                <input type="file" class="form-control-file image-uploaded" id="pic-size" hidden="">
-                                                <div class="image-wrapper w-100 h-100 position-relative align-items-center justify-content-center d-none">
+                                                <input type="file" class="form-control-file image-uploaded"
+                                                    id="pic-size" hidden="">
+                                                <div
+                                                    class="image-wrapper w-100 h-100 position-relative align-items-center justify-content-center d-none">
                                                     <img class="mw-100 mh-100" src="" alt="">
-                                                    <span class="position-absolute remove-upload-size" style="right: 0; top: 0; cursor: pointer;">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="red" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x">
+                                                    <span class="position-absolute remove-upload-size"
+                                                        style="right: 0; top: 0; cursor: pointer;">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                            viewBox="0 0 24 24" fill="none" stroke="red"
+                                                            stroke-width="1" stroke-linecap="round"
+                                                            stroke-linejoin="round" class="feather feather-x">
                                                             <line x1="18" y1="6" x2="6" y2="18"></line>
                                                             <line x1="6" y1="6" x2="18" y2="18"></line>
                                                         </svg>
@@ -621,7 +679,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="text-left mb-2 text-primary"><strong>3. Thông tin chi tiết</strong></div>
+                                        <div class="text-left mb-2 text-primary"><strong>3. Thông tin chi tiết</strong>
+                                        </div>
                                         <div class="d-flex flex-wrap">
                                             <div class="form-group mr-2">
                                                 <label>CPU</label>
@@ -675,9 +734,12 @@
                                             <input id="imageProduct-upload" type="file" multiple hidden />
                                             <output class="d-flex flex-wrap" id="imageProduct-preview">
                                                 <div class="image__upload-item mr-2">
-                                                    <div class="border mb-2 mx-auto" style="height: 100px; width: 100px;">
-                                                        <div class="image-wrapper w-100 h-100 position-relative d-flex align-items-center justify-content-center">
-                                                            <img class="mw-100 mh-100" src="../assets/images/products/healthycare.jpg" alt="">
+                                                    <div class="border mb-2 mx-auto"
+                                                        style="height: 100px; width: 100px;">
+                                                        <div
+                                                            class="image-wrapper w-100 h-100 position-relative d-flex align-items-center justify-content-center">
+                                                            <img class="mw-100 mh-100"
+                                                                src="../assets/images/products/healthycare.jpg" alt="">
                                                             <span class="position-absolute remove-upload"
                                                                 style="right: 0; top: 0; cursor: pointer;">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="18"
@@ -692,9 +754,12 @@
                                                     </div>
                                                 </div>
                                                 <div class="image__upload-item mr-2">
-                                                    <div class="border mb-2 mx-auto" style="height: 100px; width: 100px;">
-                                                        <div class="image-wrapper w-100 h-100 position-relative d-flex align-items-center justify-content-center">
-                                                            <img class="mw-100 mh-100" src="../assets/images/products/healthycare.jpg" alt="">
+                                                    <div class="border mb-2 mx-auto"
+                                                        style="height: 100px; width: 100px;">
+                                                        <div
+                                                            class="image-wrapper w-100 h-100 position-relative d-flex align-items-center justify-content-center">
+                                                            <img class="mw-100 mh-100"
+                                                                src="../assets/images/products/healthycare.jpg" alt="">
                                                             <span class="position-absolute remove-upload"
                                                                 style="right: 0; top: 0; cursor: pointer;">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="18"
@@ -725,7 +790,8 @@
                                         </div>
                                         <div class="mb-2 text-primary"><strong>Đánh giá</strong></div>
                                         <div class="table-responsive">
-                                            <table class="table table-bordered order-table" width="100%" cellspacing="0">
+                                            <table class="table table-bordered order-table" width="100%"
+                                                cellspacing="0">
                                                 <thead>
                                                     <tr>
                                                         <th>Ngày</th>
@@ -740,18 +806,26 @@
                                                         <td>Nguyễn Văn A</td>
                                                         <td>
                                                             <div class="d-flex mb-2">
-                                                                <div class="d-flex align-items-center justify-content-between border p-1 mr-1"style="height: 100px; width: 100px;">
-                                                                    <img class="mw-100 mh-100 mx-auto" src="/assets/images/products/black.jpg" alt="">
+                                                                <div class="d-flex align-items-center justify-content-between border p-1 mr-1"
+                                                                    style="height: 100px; width: 100px;">
+                                                                    <img class="mw-100 mh-100 mx-auto"
+                                                                        src="/assets/images/products/black.jpg" alt="">
                                                                 </div>
-                                                                <div class="d-flex align-items-center justify-content-between border p-1 mr-1"style="height: 100px; width: 100px;">
-                                                                    <img class="mw-100 mh-100 mx-auto" src="/assets/images/products/black.jpg" alt="">
+                                                                <div class="d-flex align-items-center justify-content-between border p-1 mr-1"
+                                                                    style="height: 100px; width: 100px;">
+                                                                    <img class="mw-100 mh-100 mx-auto"
+                                                                        src="/assets/images/products/black.jpg" alt="">
                                                                 </div>
-                                                                <div class="d-flex align-items-center justify-content-between border p-1 mr-1"style="height: 100px; width: 100px;">
-                                                                    <img class="mw-100 mh-100 mx-auto" src="/assets/images/products/pro1.png" alt="">
+                                                                <div class="d-flex align-items-center justify-content-between border p-1 mr-1"
+                                                                    style="height: 100px; width: 100px;">
+                                                                    <img class="mw-100 mh-100 mx-auto"
+                                                                        src="/assets/images/products/pro1.png" alt="">
                                                                 </div>
                                                             </div>
                                                             <div>
-                                                                Hi shop.sao chai mình lại có thêm dòng chữ “ Eau De Toilette” trên thân chai vậy shop. Nhờ shop phản hồi lại dùm
+                                                                Hi shop.sao chai mình lại có thêm dòng chữ “ Eau De
+                                                                Toilette” trên thân chai vậy shop. Nhờ shop phản hồi lại
+                                                                dùm
                                                             </div>
                                                         </td>
                                                         <td>5/5</td>
@@ -815,7 +889,7 @@
     <script src="js/demo/chart-pie-demo.js"></script>
     <script src="js/demo/datatables-demo.js"></script>
     <script src="//js.nicedit.com/nicEdit-latest.js" type="text/javascript"></script>
-    <script type="text/javascript">bkLib.onDomLoaded(nicEditors.allTextAreas);</script> 
+    <script type="text/javascript">bkLib.onDomLoaded(nicEditors.allTextAreas);</script>
 
     <script type="text/javascript">
         $(document).ready(function () {
@@ -849,10 +923,22 @@
             $(this).parent().siblings('label').removeClass('d-none');
             $(this).parent().siblings('label').addClass('d-flex');
         })
-        $('.form-check-input').change(function () {
-            $('.form-check-input').siblings('input').addClass('d-none');
+        // $('.form-check-input').change(function () {
+        //     $('.form-check-input').siblings('input').addClass('d-none');
+        //     if ($(this).is(':checked')) {
+        //         $(this).siblings('input').removeClass('d-none');
+        //     }
+        // })
+        $('.discount-bypercent').change(function () {
+            $('.discount-bymoney').siblings('.form-group').addClass('d-none');
             if ($(this).is(':checked')) {
                 $(this).siblings('input').removeClass('d-none');
+            }
+        })
+        $('.discount-bymoney').change(function () {
+            $('.discount-bypercent').siblings('input').addClass('d-none');
+            if ($(this).is(':checked')) {
+                $(this).siblings('.form-group').removeClass('d-none');
             }
         })
     </script>
@@ -863,17 +949,17 @@
         $('.add-option').click(function () {
             let val = $(this).siblings('.dropdown').find('input').val();
             if (!val?.trim()) { return; }
-            
+
             let check = true;
-            if($(this).parent().siblings('ul').children('li').length){
-                $(this).parent().siblings('ul').children('li').find('.text').each(function(index, element){
-                    if(val == element.textContent){
+            if ($(this).parent().siblings('ul').children('li').length) {
+                $(this).parent().siblings('ul').children('li').find('.text').each(function (index, element) {
+                    if (val == element.textContent) {
                         check = false;
                         return;
                     }
                 })
             }
-            if(check == false){ return; }
+            if (check == false) { return; }
 
             $(this).parent().siblings('ul').append(`
                 <li class="attr d-inline p-1 mr-2 mb-2"
@@ -895,10 +981,10 @@
     </script>
     <script type="text/javascript">
         window.onload = function () {
-            loadIamgesWithPreview("imageProduct-upload", "imageProduct-preview",7);
-            loadIamgesWithPreview("imageUser-upload","imageUser-preview",10);
+            loadIamgesWithPreview("imageProduct-upload", "imageProduct-preview", 7);
+            loadIamgesWithPreview("imageUser-upload", "imageUser-preview", 10);
         }
-        $('.remove-upload').click(function(){
+        $('.remove-upload').click(function () {
             $(this).parent().parent().parent().remove();
         })
     </script>

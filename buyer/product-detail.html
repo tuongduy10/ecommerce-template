@@ -24,8 +24,8 @@
     <script src='https://sachinchoolur.github.io/lightslider/dist/js/lightslider.js'></script>
     <!-- Ajax -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/main/global.css" />
     <link rel="stylesheet" href="assets/css/main/header.css" />
     <link rel="stylesheet" href="assets/css/main/main.css" />
@@ -37,35 +37,43 @@
         .lSpg {
             display: none;
         }
+
         .lSAction>.lSPrev {
             background-image: url("assets/images/icon/left.png");
         }
+
         .lSAction>.lSNext {
             background-image: url("assets/images/icon/right.png");
         }
+
         .lSSlideOuter .lSPager.lSGallery li.active {
             border: 2px solid var(--blue-dior);
         }
+
         .lSPager li {
             height: 100%;
         }
+
         .lSSlideOuter .lSPager.lSGallery img {
             height: 100%;
             width: auto;
             margin: 0 auto;
             object-fit: contain;
         }
-        .product__detail-content .lSSlideWrapper{
+
+        .product__detail-content .lSSlideWrapper {
             height: 600px;
         }
 
-        .lSAction > .lSPrev{
+        .lSAction>.lSPrev {
             background-position: 45% 50% !important;
         }
-        .lSAction > .lSNext{
+
+        .lSAction>.lSNext {
             background-position: 55% 50% !important;
         }
-        .lSAction > a{
+
+        .lSAction>a {
             background-color: #c4c4c4c9;
             width: 32px;
             height: 32px;
@@ -80,6 +88,7 @@
             height: 100%;
             text-align: center;
         }
+
         .product__images-slider .lslide img,
         .product__images-slider .clone img {
             width: 100%;
@@ -96,6 +105,7 @@
         .stars .checked {
             color: orange;
         }
+
         .rating .stars span {
             cursor: pointer;
         }
@@ -103,30 +113,52 @@
         #imagemodal .modal-dialog {
             max-width: 80%;
         }
-        @media only screen and (max-width: 1400px){
-            .product__detail-content .lSSlideWrapper{
+
+        @media only screen and (max-width: 1400px) {
+            .product__detail-content .lSSlideWrapper {
                 height: 467.64px;
             }
         }
-        @media only screen and (max-width: 1200px){
-            .product__detail-content .lSSlideWrapper{
+
+        @media only screen and (max-width: 1200px) {
+            .product__detail-content .lSSlideWrapper {
                 height: 381px;
             }
         }
-        @media only screen and (max-width: 992px){
-            .product__detail-content .lSSlideWrapper{
+
+        @media only screen and (max-width: 992px) {
+            .product__detail-content .lSSlideWrapper {
                 height: 374px;
             }
         }
+
         @media only screen and (max-width: 768px) {
             #imagemodal .modal-dialog {
                 max-width: 100%;
             }
-            .product__images-slider .lSAction > .lSPrev,
-            .product__images-slider .lSAction > .lSNext{
-                width: 26px;
-                height: 26px;
+
+            .product__images-slider .lSAction>.lSPrev,
+            .product__images-slider .lSAction>.lSNext {
+                width: 18px;
+                height: 100%;
                 background-size: 12px;
+                top: 0;
+                margin-top: 0;
+                border-radius: 0;
+                opacity: 0.3;
+            }
+
+            .product__images-slider .lSAction>.lSNext {
+                right: 0;
+            }
+
+            .product__images-slider .lSAction>.lSPrev {
+                left: 0;
+            }
+        }
+        @media (min-width: 576px){
+            #sizechart-modal {
+                max-width: 424px;
             }
         }
     </style>
@@ -462,7 +494,7 @@
                         </li>
                     </ul>
                     <div class="product__detail-content">
-                        <div class="row no-gutters"> 
+                        <div class="row no-gutters">
                             <div class="product__detail-image col-md-5">
                                 <div class="product__detail-card">
                                     <div class="product__detail-slider mb-2">
@@ -486,11 +518,14 @@
                                                 <img class="pop h-100" src="assets/images/products/watch4.jpg" />
                                             </li>
                                             <li class="h-100" data-thumb="assets/images/banner/snidel.jpg">
-                                                <img class="pop h-100 w-100" src="assets/images/banner/snidel.jpg"/>
+                                                <img class="pop h-100 w-100" src="assets/images/banner/snidel.jpg" />
                                             </li>
                                         </ul>
                                     </div>
-                                    <a class="size-guide" href="" style="text-decoration: underline;">Hướng dẫn chọn size</a>
+                                    <a class="product__detail-link" style="text-decoration: underline; cursor: pointer;" data-toggle="modal"
+                                        data-target="#sizeguideModal">
+                                        Hướng dẫn chọn size
+                                    </a>
                                 </div>
                             </div>
                             <div class="product__detail-info col-md-7">
@@ -548,6 +583,11 @@
                                         <div class="product__detail-brand">
                                             <a href="">Shop Demo 01</a>
                                         </div>
+                                        <div class="product__detail-brand">
+                                            <span
+                                                style="font-size: calc(16px + (20 - 14) * ((100vw - 375px)/ (1920 - 375)));">Tạm
+                                                hết đến ngày 09/04/2022</span>
+                                        </div>
                                         <div class="product__detail-desciption">
                                             <div class="bullets">
                                                 <div class="d-flex align-items-center mb-2">
@@ -583,7 +623,17 @@
                                         <div class="product__detail-options">
                                             <div class="option-quality d-flex mb-2 align-items-center">
                                                 <div class="option-title">Chọn số lượng </div>
-                                                <input class="text-center" type="number" value="1" min="1" max="50">
+                                                <input class="text-center mr-2" type="number" value="1" min="1"
+                                                    max="50">
+                                                <!-- <button type="button" class="py-0 px-2 btn-productdetail" data-toggle="modal"
+                                                    data-target="#wholesaleModal" 
+                                                    style="color: #fff; font-weight: 700; background-color: #333; border: 1px solid #333; font-size: calc(14px + (24 - 16) * ((100vw - 375px)/ (1920 - 375))); cursor: pointer;">
+                                                    Xem giá mua sỉ
+                                                </button> -->
+                                                <a class="product__detail-link" style="text-decoration: underline; cursor: pointer;" data-toggle="modal"
+                                                    data-target="#wholesaleModal">
+                                                    Xem giá mua sỉ
+                                                </a>
                                             </div>
                                             <div class="option-size d-flex mb-2 align-items-center">
                                                 <div class="option-title">Chọn kích cỡ </div>
@@ -684,10 +734,12 @@
                                                 </label>
                                             </div>
                                             <div class="mt-2">
-                                                <div class="product__sale-code w-100 justify-content-between d-flex align-items-center">
+                                                <div
+                                                    class="product__sale-code w-100 justify-content-between d-flex align-items-center">
                                                     <span class="circle-left"></span>
                                                     <div class="product__sale-content">
-                                                        <div class="text">Nhập mã <strong>SALECODE</strong> giảm 500.000 ₫</div>
+                                                        <div class="text">Nhập mã <strong>SALECODE</strong> giảm 500.000
+                                                            ₫</div>
                                                     </div>
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                         viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1"
@@ -699,7 +751,8 @@
                                                 </div>
                                                 <div class="product__sale-bottom d-none">
                                                     <div class="d-flex align-items-center justify-content-between">
-                                                        <div class="text">Nhập <strong class="salecode">SALECODE</strong> chỉ còn
+                                                        <div class="text">Nhập <strong
+                                                                class="salecode">SALECODE</strong> chỉ còn
                                                             <br>12.000.000 ₫ (Có sẵn)
                                                             <br>11.000.000 ₫ (Đặt trước)
                                                         </div>
@@ -708,14 +761,14 @@
                                                 </div>
                                             </div>
                                         </div>
-
+                                        
                                         <!-- Price -->
                                         <div class="product__detail-buttons d-flex justify-content-between w-100">
-                                            <button class="btn-addtocart" onclick="window.location.href='cart.html'"
+                                            <button class="btn-addtocart btn-black" onclick="window.location.href='cart.html'"
                                                 style="width: 49%; background-color: #333; color: #fff;">
                                                 Thêm vào giỏ
                                             </button>
-                                            <button class="btn-buynow" onclick="window.location.href='cart.html'"
+                                            <button class="btn-buynow btn-black" onclick="window.location.href='cart.html'"
                                                 style="width: 49%; background-color: #333; color: #fff;">
                                                 Mua ngay
                                             </button>
@@ -753,15 +806,15 @@
                         <div class="product__tab-control">
                             <ul class="d-flex justify-content-around">
                                 <li class="mx-2">
-                                    <a class="control-tab detail-title control__tab-info">Thông tin sản phẩm</a>
+                                    <a class="control-tab detail-title control__tab-info active">Thông tin sản phẩm</a>
                                 </li>
                                 <li class="mx-2">
-                                    <a class="control-tab detail-title control__tab-comment active">Đánh giá sản phẩm</a>
+                                    <a class="control-tab detail-title control__tab-comment">Đánh giá sản phẩm</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="product__tab-content">
-                            <div class="content-tab tab__product-info">
+                            <div class="content-tab tab__product-info active">
                                 <div class="product-detail">
                                     <ul class="detail-list d-flex mb-4 flex-wrap justify-content-between">
                                         <li class="detail-item">
@@ -834,8 +887,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="content-tab tab__product-comment active">
-                                <div class="product-comment">   
+                            <div class="content-tab tab__product-comment">
+                                <div class="product-comment">
                                     <!-- Button trigger modal -->
                                     <div class="text-center mb-4">
                                         <button class="d-flex mx-auto">
@@ -930,7 +983,8 @@
                                             </div>
                                         </div>
                                         <div class="d-flex">
-                                            <textarea class="d-flex w-100 mb-2" name="" id="" placeholder="Nhận xét của bạn về sản phẩm này"></textarea>
+                                            <textarea class="d-flex w-100 mb-2" name="" id=""
+                                                placeholder="Nhận xét của bạn về sản phẩm này"></textarea>
                                         </div>
                                         <div class="upload-image mb-2">
                                             <label for="image-upload" class="input-tile mb-2">
@@ -968,7 +1022,8 @@
                                                 <span class="fa fa-star checked"></span>
                                             </div>
                                             <div class="comment">
-                                                Mua cho ck mình lọ này 2 lần rồi, thấy ông bảo lần sau mua cứ mua loại này nhé, công nhận mùi thơm thật sự.
+                                                Mua cho ck mình lọ này 2 lần rồi, thấy ông bảo lần sau mua cứ mua loại
+                                                này nhé, công nhận mùi thơm thật sự.
                                             </div>
                                             <div class="image">
                                                 <ul class="image-list d-flex">
@@ -979,7 +1034,8 @@
                                                         <img class="pop" src="assets/images/banner/snidel.jpg" alt="">
                                                     </li>
                                                     <li>
-                                                        <img class="pop" src="assets/images/products/jacket3.jpg" alt="">
+                                                        <img class="pop" src="assets/images/products/jacket3.jpg"
+                                                            alt="">
                                                     </li>
                                                 </ul>
                                             </div>
@@ -999,7 +1055,8 @@
                                                 <span class="fa fa-star checked"></span>
                                             </div>
                                             <div class="comment">
-                                                Shop đóng bọc hàng cẩn thận, mình ở nội thành đặt 2 ngày là nhận được rồi.
+                                                Shop đóng bọc hàng cẩn thận, mình ở nội thành đặt 2 ngày là nhận được
+                                                rồi.
                                             </div>
                                             <div class="image">
                                                 <ul class="image-list d-flex">
@@ -1027,7 +1084,7 @@
                                                 <span class="fa fa-star checked"></span>
                                                 <span class="fa fa-star checked"></span>
                                             </div>
-                                            <div class="comment"> 
+                                            <div class="comment">
                                                 Hi shop.sao chai mình lại có thêm dòng chữ “ Eau De Toilette” trên
                                                 thân chai vậy shop. Nhờ shop phản hồi lại dùm
                                             </div>
@@ -1278,9 +1335,134 @@
                     <div class="modal-body">
                         <button type="button" class="close" data-dismiss="modal">
                             <span aria-hidden="true">&times;</span>
-                            <span class="sr-only">Close</span>
+                            <span class="sr-only">Đóng</span>
                         </button>
                         <img src="" class="imagepreview" style="width: 100%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="wholesaleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div id="sizechart-modal" class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header" style="border: unset;">
+                        <h5 class="modal-title" id="exampleModalLabel">Bảng giá mua sỉ</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body py-0">
+                        <div class="table-responsive">
+                            <table class="table table-bordered order-table" id="dataTable" width="100%" cellspacing="0">
+                                <thead>
+                                    <tr>
+                                        <th>Số lượng</th>
+                                        <th>Giảm</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>10 - 20</td>
+                                        <td>10%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>21 - 30</td>
+                                        <td>20%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>31 - 40</td>
+                                        <td>30%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>41 - 50</td>
+                                        <td>40%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="modal-footer" style="border: unset;">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="sizeguideModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header pb-0" style="border: unset;">
+                        <h5 class="modal-title" id="exampleModalLabel">Hướng dẫn chọn size</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="table-responsive">
+                            <table class="table table-bordered order-table" id="dataTable" width="100%" cellspacing="0">
+                                <thead style="">
+                                    <tr>
+                                        <th>Size</th>
+                                        <th>UK</th>
+                                        <th>DE</th>
+                                        <th>US</th>
+                                        <th>FR</th>
+                                        <th>IT</th>
+                                        <th>ES</th>
+                                        <th>Length</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>36</td>
+                                        <td>3</td>
+                                        <td>35.5</td>
+                                        <td>5.5</td>
+                                        <td>35.5</td>
+                                        <td>35.5</td>
+                                        <td>35.5</td>
+                                        <td>22cm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>36</td>
+                                        <td>3</td>
+                                        <td>35.5</td>
+                                        <td>5.5</td>
+                                        <td>35.5</td>
+                                        <td>35.5</td>
+                                        <td>35.5</td>
+                                        <td>22cm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>36</td>
+                                        <td>3</td>
+                                        <td>35.5</td>
+                                        <td>5.5</td>
+                                        <td>35.5</td>
+                                        <td>35.5</td>
+                                        <td>35.5</td>
+                                        <td>22cm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>36</td>
+                                        <td>3</td>
+                                        <td>35.5</td>
+                                        <td>5.5</td>
+                                        <td>35.5</td>
+                                        <td>35.5</td>
+                                        <td>35.5</td>
+                                        <td>22cm</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="modal-footer pt-0" style="border: unset;">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
                     </div>
                 </div>
             </div>
@@ -1393,7 +1575,7 @@
     </footer>
     <script type="text/javascript" src="assets/js/main/main.js"></script>
     <script type="text/javascript">
-        $(document).ready(function(){
+        $(document).ready(function () {
             $('.lightSlider').lightSlider({
                 gallery: true,
                 item: 1,
@@ -1406,7 +1588,7 @@
                 keyPress: false,
                 item: 5,
                 loop: true
-            })      
+            })
             $('#content-slider').css('height', $('#content-slider li').width())
             $(document).resize(function () {
                 $('.lSPager').css('height', $('.lSPager li').width() + 4)
@@ -1439,7 +1621,7 @@
                             div.classList.add(`image__upload-item`);
                             div.innerHTML = "<div class='image-uploaded' style='position: relative; width: 100px; height: 100px; margin-right: 4px'><img src='" + picFile.result + "'" + "title='" + picFile.name + "' style='height: 100%; width: 100%; object-fit: contain'/><span class='remove__upload' style='position: absolute; top: 0; right: 0; cursor: pointer'><svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='red' stroke-width='1' stroke-linecap='round' stroke-linejoin='round' class='feather feather-x'><line x1='18' y1='6' x2='6' y2='18'></line><line x1='6' y1='6' x2='18' y2='18'></line></svg><span></div>";
                             var removeUpload = div.querySelector(".image-uploaded .remove__upload");
-                            removeUpload.addEventListener("click", function(evt){
+                            removeUpload.addEventListener("click", function (evt) {
                                 div.remove();
                             })
                             output.insertBefore(div, null);
@@ -1454,4 +1636,5 @@
         }
     </script>
 </body>
+
 </html>

@@ -529,38 +529,49 @@
                                 </table>
                             </div>
                             <div class="mb-4"><strong>Thông tin bán hàng</strong></div>
-                            <div class="d-flex">
-                                <div class="dropdown mb-4 mr-2">
-                                    <button class="btn border dropdown-toggle" type="button" data-toggle="dropdown">
-                                        Thương hiệu quản lý 
-                                        <span class="caret"></span>
-                                    </button>
-                                    <ul class="dropdown-menu px-2">
-                                        <input class="form-control mb-2" id="myInput" type="text" placeholder="Tìm.." autocomplete="off">
-                                        <li>
-                                            <div>
-                                                <input class="mr-1" id="attr1" type="checkbox" checked>
-                                                <label for="attr1">Samsung</label>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div>
-                                                <input class="mr-1" id="attr1" type="checkbox" checked>
-                                                <label for="attr1">Apple</label>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div>
-                                                <input class="mr-1" id="attr1" type="checkbox">
-                                                <label for="attr1">Sony</label>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <button class="btn btn-success">Lưu</button>
+                            <div class="row mb-4">
+                                <div class="col-md-4">
+                                    <div class="form-group mb-2">
+                                        <label class="mr-2">Chiết khấu %</label>
+                                        <input class="form-control" type="number" value="3">
+                                    </div>
+                                    <div class="form-group mb-2">
+                                        <label class="mr-2">Thương hiệu</label>
+                                        <div class="dropdown mb-2 mr-2">
+                                            <button class="btn border dropdown-toggle" type="button" data-toggle="dropdown">
+                                                Thương hiệu quản lý 
+                                                <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu px-2">
+                                                <input class="form-control mb-2" id="myInput" type="text" placeholder="Tìm.." autocomplete="off">
+                                                <li>
+                                                    <div>
+                                                        <input class="mr-1" id="attr1" type="checkbox" checked>
+                                                        <label for="attr1">Samsung</label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <input class="mr-1" id="attr1" type="checkbox" checked>
+                                                        <label for="attr1">Apple</label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <input class="mr-1" id="attr1" type="checkbox">
+                                                        <label for="attr1">Sony</label>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="text-right">
+                                        <button class="btn btn-success">Lưu</button>
+                                    </div>
                                 </div>
                             </div>
+                            
+                            <div class="mb-4"><strong>Danh sách sản phẩm</strong></div>
                             <div class="table-responsive mb-4">
                                 <table class="table table-bordered order-table" id="dataTable" width="100%" cellspacing="0">
                                     <thead>

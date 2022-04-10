@@ -440,7 +440,7 @@
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary text-center">Chi tiết đơn hàng</h6>
+                            <h4 class="m-0 font-weight-bold text-primary text-center">Chi tiết đơn hàng</h4>
                         </div>
                         <div class="card-body p-2">
                             <div class="row justify-content-around">
@@ -462,8 +462,6 @@
                                         <label>Trạng thái:</label>
                                         <span>
                                             Chờ xác nhận
-                                            <button class="btn btn-danger">Từ chối</button>
-                                            <button class="btn btn-success">Chấp nhận</button>
                                         </span>
                                     </div>
                                 </div>
@@ -491,7 +489,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="mb-4">
+                            <div class="table-responsive mb-4">
                                 <div class="mb-4"><strong>Thông tin giao hàng</strong></div>
                                 <table class="table table-bordered order-table">
                                     <thead>
@@ -512,7 +510,7 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <div>
+                            <div class="table-responsive">
                                 <div class="mb-4"><strong>Sản phẩm của đơn hàng</strong></div>
                                 <table class="table table-bordered order-table">
                                     <thead>
@@ -523,6 +521,8 @@
                                             <th scope="col">Loại hàng</th>
                                             <th scope="col">Số lượng</th>
                                             <th scope="col">Thành tiền</th>
+                                            <th scope="col">Trạng thái</th>
+                                            <th scope="col"></th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -550,9 +550,122 @@
                                             <td>
                                                 180,000,000 ₫
                                             </td>
+                                            <td>
+                                                <div class="text-success">
+                                                    Đã xác nhận
+                                                </div>
+                                            </td>
+                                            <td class="text-center">
+                                                <button class="btn btn-danger">Hủy</button>
+                                                <button class="btn btn-success">Đã nhận hàng</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">2</td>
+                                            <td>
+                                                <div class="d-flex">
+                                                    <div class="d-flex align-items-center justify-content-center border p-1 mr-2" style="height: 120px; width: 120px;">
+                                                        <img class="mw-100 mh-100" src="../assets/images/products/pro1.png" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <div>Samsung Galaxy S22 Ultra 5G</div>
+                                                        <div>M</div>
+                                                        <div>Màu đỏ</div>
+                                                        <div><s>100,000,000 ₫</s></div>
+                                                        <div>90,000,000 ₫</div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>Shop Demo 02</td>
+                                            <td> Hàng đặt trước</td>
+                                            <td>
+                                                2
+                                            </td>
+                                            <td>
+                                                180,000,000 ₫
+                                            </td>
+                                            <td>
+                                                <div class="text-success">
+                                                    Đã xác nhận
+                                                </div>
+                                            </td>
+                                            <td class="text-center">
+                                                <button class="btn btn-danger">Hủy</button>
+                                                <button class="btn btn-success">Đã nhận hàng</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">3</td>
+                                            <td>
+                                                <div class="d-flex">
+                                                    <div class="d-flex align-items-center justify-content-center border p-1 mr-2" style="height: 120px; width: 120px;">
+                                                        <img class="mw-100 mh-100" src="../assets/images/products/pro1.png" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <div>Samsung Galaxy S22 Ultra 5G</div>
+                                                        <div>M</div>
+                                                        <div>Màu đỏ</div>
+                                                        <div><s>100,000,000 ₫</s></div>
+                                                        <div>90,000,000 ₫</div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>Shop Demo 02</td>
+                                            <td> Hàng đặt trước</td>
+                                            <td>
+                                                2
+                                            </td>
+                                            <td>
+                                                180,000,000 ₫
+                                            </td>
+                                            <td>
+                                                <div class="text-danger">Hủy</div>
+                                                <div>Hết hàng</div>
+                                            </td>
+                                            <td class="text-center">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">4</td>
+                                            <td>
+                                                <div class="d-flex">
+                                                    <div class="d-flex align-items-center justify-content-center border p-1 mr-2" style="height: 120px; width: 120px;">
+                                                        <img class="mw-100 mh-100" src="../assets/images/products/pro1.png" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <div>Samsung Galaxy S22 Ultra 5G</div>
+                                                        <div>M</div>
+                                                        <div>Màu đỏ</div>
+                                                        <div><s>100,000,000 ₫</s></div>
+                                                        <div>90,000,000 ₫</div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>Shop Demo 03</td>
+                                            <td> 
+                                                <div>Hàng đặt trước</div>
+                                                <div>Tạm hết hàng đến ngày 09/04/2022</div>
+                                            </td>
+                                            <td>
+                                                2
+                                            </td>
+                                            <td>
+                                                180,000,000 ₫
+                                            </td>
+                                            <td>
+                                                <div class="text-success">Đã xác nhận</div>
+                                            </td>
+                                            <td class="text-center">
+                                                <button class="btn btn-danger">Hủy</button>
+                                                <button class="btn btn-success">Xác nhận</button>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
+                                <div class="text-right">
+                                    <button class="btn btn-danger">Hủy đơn</button>
+                                    <button class="btn btn-success">Giao hàng</button>
+                                </div>
                             </div>
                         </div>
                     </div>
