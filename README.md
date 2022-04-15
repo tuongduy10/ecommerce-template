@@ -18,6 +18,7 @@ Set "ECommerce.Data" as start up project then install these packages at "ECommer
 
 `Microft.Extensions.Configuration.Json (5.0.0)`
 
+
 In ECommerce.WebApp too:
 
 `Microft.EntityFrameworkCore.SqlServer (5.0.0)`
@@ -31,6 +32,7 @@ In ECommerce.WebApp too:
 `Microft.VisualStudio.Web.CodeGeneration.Design (5.0.0)`
 
 **Note: Remember to set "ECommerce.WebApp" as start up project after installing Nuget Packages !**
+
 
 ## Models
 
@@ -46,8 +48,8 @@ Updating model classes from database:
 
 Config ECommerceContext in Context at "ECommerce.Data":
 
-// Get connection string from appsettings.json
-	protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+`// Get connection string from appsettings.json
+ protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
   {
     if (!optionsBuilder.IsConfigured)
       {
@@ -57,4 +59,4 @@ Config ECommerceContext in Context at "ECommerce.Data":
             .Build();
         optionsBuilder.UseSqlServer(configuration.GetConnectionString("ECommerceDB"));
       }
-  }
+  }`
