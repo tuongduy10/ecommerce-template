@@ -47,16 +47,16 @@ Updating model classes from database:
 `Scaffold-DbContext 'Data Source=.\SQLEXPRESS;Initial Catalog=ECommerce;Integrated Security=True' Microsoft.EntityFrameworkCore.SqlServer -ContextDir Context -OutputDir Models -force`
 
 Config ECommerceContext in Context at "ECommerce.Data":
-
-`// Get connection string from appsettings.json
+![image](https://user-images.githubusercontent.com/63220379/163608126-548f39c8-c2d1-47b5-8c3e-b05bfb8cebbd.png)
+// Get connection string from appsettings.json
  protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-  {
-    if (!optionsBuilder.IsConfigured)
-      {
-        IConfigurationRoot configuration = new ConfigurationBuilder()
-            .SetBasePath(Directory.GetCurrentDirectory())
-            .AddJsonFile("appsettings.json")
-            .Build();
-        optionsBuilder.UseSqlServer(configuration.GetConnectionString("ECommerceDB"));
-      }
-  }`
+ {
+   if (!optionsBuilder.IsConfigured)
+     {
+       IConfigurationRoot configuration = new ConfigurationBuilder()
+           .SetBasePath(Directory.GetCurrentDirectory())
+           .AddJsonFile("appsettings.json")
+           .Build();
+       optionsBuilder.UseSqlServer(configuration.GetConnectionString("ECommerceDB"));
+     }
+ }
