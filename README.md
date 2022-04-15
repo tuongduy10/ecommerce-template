@@ -6,7 +6,7 @@
 
 ## Nuget Packages
 
-Set "ECommerce.Data" as start up project then install these packages at "ECommerce.Data" project:
+In "ECommerce.Data":
 
 `Microft.EntityFrameworkCore.SqlServer (5.0.0)`
 
@@ -36,7 +36,7 @@ In ECommerce.WebApp too:
 
 ## Models
 
-Set "ECommerce.Data" as start up project before generating or updating.
+Set "ECommerce.Data" as start up project before generating or updating models.
  
 Generate model classes from database:
 
