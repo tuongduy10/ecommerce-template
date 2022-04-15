@@ -48,6 +48,7 @@ Updating model classes from database:
 
 Config ECommerceContext in Context at "ECommerce.Data":
 ![image](https://user-images.githubusercontent.com/63220379/163608126-548f39c8-c2d1-47b5-8c3e-b05bfb8cebbd.png)
+
 // Get connection string from appsettings.json
  protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
  {
