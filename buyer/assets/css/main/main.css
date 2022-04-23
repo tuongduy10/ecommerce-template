@@ -678,10 +678,15 @@
 }
 .product{
     position: relative;
-    width: calc(100% / 3 - 4px);
     margin-right: 4px;
     margin-bottom: 6px; 
     background-color: #fff;
+}
+.product-3{
+    width: calc(100% / 3 - 4px);
+}
+.product-4{
+    width: calc(100% / 4 - 4px);
 }
     .product-heart{
         margin-right: 10px;
@@ -843,7 +848,8 @@
 .product__grid-title{
     font-size: 18px;
 }
-    .product{
+    .product-3,
+    .product-4{
         width: calc(50% - 4px);
     }
     .product-btn a{
@@ -1438,6 +1444,7 @@ hr {
     cursor: pointer;
     color: #fff;
     background-color: #4d4d4d;
+    border: 1px solid #4d4d4d;
     padding: 0.5rem 1rem;
 }
 
