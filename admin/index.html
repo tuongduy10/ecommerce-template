@@ -56,6 +56,35 @@
             <div class="sidebar-heading">Quản trị</div>
 
             <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#orderAdminManageRequest"
+                    aria-expanded="true" aria-controls="orderAdminManageRequest">
+                    <i class="fas fa-fw fa-check"></i>
+                    <span>Kiểm duyệt</span>
+                    <span class="position-absolute" style="height: 8px; width: 8px; background-color: red; border-radius: 50%; top: 10px; right: 30px;"></span>
+                </a>
+                <div id="orderAdminManageRequest" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="admin-manageorder.html">
+                            Đơn hàng mới
+                            <span class="position-absolute" style="height: 8px; width: 8px; background-color: red; border-radius: 50%;"></span>
+                        </a> 
+                        <a class="collapse-item" href="admin-manageshop.html">
+                            Cửa hàng mới
+                            <span class="position-absolute" style="height: 8px; width: 8px; background-color: red; border-radius: 50%;"></span>
+                        </a>
+                        <a class="collapse-item" href="">
+                            Sản phẩm đăng bán mới
+                            <span class="position-absolute" style="height: 8px; width: 8px; background-color: red; border-radius: 50%;"></span>
+                        </a>
+                        <a class="collapse-item" href="">
+                            Chưa thanh toán cho shop
+                            <span class="position-absolute" style="height: 8px; width: 8px; background-color: red; border-radius: 50%;"></span>
+                        </a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#orderAdminManage"
                     aria-expanded="true" aria-controls="orderAdminManage">
                     <i class="fas fa-fw fa-list"></i>
@@ -64,11 +93,6 @@
                 </a>
                 <div id="orderAdminManage" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Danh sách đơn hàng</h6>
-                        <a class="collapse-item" href="admin-manageorder.html">
-                            Chờ xác nhận
-                            <span class="position-absolute" style="height: 8px; width: 8px; background-color: red; border-radius: 50%;"></span>
-                        </a>
                         <a class="collapse-item" href="admin-manageorder.html">Đơn đang giao...</a>
                         <a class="collapse-item" href="admin-manageorder.html">Đơn hoàn thành</a>
                         <a class="collapse-item" href="admin-manageorder.html">Đơn hủy</a>
@@ -104,20 +128,10 @@
 
                         <h6 class="collapse-header">Cửa hàng</h6>
                         <a class="collapse-item" href="admin-manageshop.html">Danh sách cửa hàng</a>
-                        <a class="collapse-item" href="admin-manageshop.html">
-                            Duyệt cửa hàng
-                            <span class="position-absolute" style="height: 8px; width: 8px; background-color: red; border-radius: 50%;"></span>
-                        </a>
 
                         <h6 class="collapse-header">Thương hiệu</h6>
                         <a class="collapse-item" href="admin-managebrand.html">Danh sách thương hiệu</a>
                         <a class="collapse-item" href="admin-addbrand.html">Thêm thương hiệu</a>
-
-                        <h6 class="collapse-header">Sản phẩm</h6>
-                        <a href="" class="collapse-item">
-                            Sản phẩm đăng bán
-                            <span class="position-absolute" style="height: 8px; width: 8px; background-color: red; border-radius: 50%;"></span>
-                        </a>
                     </div>
                 </div>
             </li>
