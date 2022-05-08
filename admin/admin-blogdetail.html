@@ -447,15 +447,21 @@
                         </div>
                         <div class="card-body">
                             <div class="form-group mb-2">
+                                <label class="mr-2">Cột</label>
+                                <select class="form-control">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                </select>
+                            </div>
+                            <div class="form-group mb-2">
                                 <label class="mr-2">Tiêu đề</label>
                                 <input class="form-control" value="Giới thiệu công ty">
                             </div> 
                             
                             <div class="form-group mb-2">
                                 <label>Nội dung</label>
-                                <textarea class="w-100" name="" id="" cols="30" rows="10"></textarea>
+                                <textarea>Welcome to TinyMCE!</textarea>                            
                             </div>
-
                             <div class="text-center mt-4">
                                 <button class="btn-primary btn">Cập nhật</button>
                             </div>
@@ -509,8 +515,17 @@
     <script src="js/demo/chart-pie-demo.js"></script>
     <script src="js/demo/datatables-demo.js"></script>
 
-    <script src="//js.nicedit.com/nicEdit-latest.js" type="text/javascript"></script>
-    <script type="text/javascript">bkLib.onDomLoaded(nicEditors.allTextAreas);</script> 
+    <script src="https://cdn.tiny.cloud/1/4ctr9pi6o8mlflu8si6gdszgl62tn4zl73knhf3tkqalszsx/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>
+        tinymce.init({
+          selector: 'textarea',
+          plugins: 'a11ychecker advcode casechange export formatpainter image editimage linkchecker autolink lists checklist media mediaembed pageembed permanentpen powerpaste table advtable tableofcontents tinycomments tinymcespellchecker',
+          toolbar: 'a11ycheck addcomment showcomments casechange checklist code export formatpainter image editimage pageembed permanentpen table tableofcontents',
+          toolbar_mode: 'floating',
+          tinycomments_mode: 'embedded',
+          tinycomments_author: 'Author name',
+        });
+    </script>
 </body>
 
 </html>
