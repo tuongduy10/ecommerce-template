@@ -597,6 +597,7 @@
         $('.remove-upload').click(function () {
             // Remove Image
             $(this).siblings('img').attr('src', '');
+            $('.image-uploaded').val(null);
             // Hide image wrapper
             $(this).parent().removeClass('d-flex');
             $(this).parent().addClass('d-none');
