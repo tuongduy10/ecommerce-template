@@ -341,6 +341,37 @@
                                 <input class="form-control mb-2" type="text" value="Hàng Order">
                                 <input class="form-control mb-2" type="text" value="Hàng có sẵn">
                             </div>
+                            <div class="table-responsive">
+                                <table class="table table-bordered order-table" width="100%"
+                                    cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>Danh mục</th>
+                                            <th>Trạng thái</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>
+                                                <input class="form-control mb-2" type="text" value="Trang chủ">
+                                            </td>
+                                            <td>
+                                                <select class="form-control">
+                                                    <option value="">Đang ẩn</option>
+                                                    <option value="">Đang hiển thị</option>
+                                                </select>
+                                            </td>
+                                            <td class="text-center">
+                                                <a class="btn btn-success">Cập nhật</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
                             <div class="mb-2">Logo</div>
                             <div class="mb-2">
                                 <label class="btn btn-secondary" for="logo">Chọn ảnh</label>
@@ -400,7 +431,8 @@
                                             <div class="image-wrapper w-100 h-100 position-relative d-flex align-items-center justify-content-center">
                                                 <img id="test" class="mw-100 mh-100" src="" alt="">
                                                 <span class="position-absolute remove-upload"
-                                                  style="right: 0; top: 0; cursor: pointer;">
+                                                  style="right: 0; top: 0; cursor: pointer;"
+                                                  onclick="">
                                                   <svg xmlns="http://www.w3.org/2000/svg" width="18"
                                                       height="18" viewBox="0 0 24 24" fill="none"
                                                       stroke="red" stroke-width="1" stroke-linecap="round"
@@ -414,8 +446,6 @@
                                     </div>
                                 </output>
                             </div>
-
-
                             <div class="text-right">
                                 <button class="btn btn-primary">Lưu</button>
                             </div>
@@ -467,12 +497,81 @@
     <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
     <!-- Page level custom scripts -->
-    <script src="js/demo/chart-area-demo.js"></script>
-    <script src="js/demo/chart-pie-demo.js"></script>
     <script src="js/demo/datatables-demo.js"></script>
     <script>
+        $('#logo').change(function(){
+            console.log($("#logo")[0].files[0])
+            var src = window.URL.createObjectURL(this.files[0])
+            document.getElementById('logo-preview').src = src
+        })
+    </script>
+    <script>
+        document.querySelectorAll('.remove-upload').forEach(item => {
+            item.addEventListener('click', event => {
+                item.parentElement.parentElement.remove();
+            });
+        })
+        var arrFiles = [];
         window.onload = function () {
             loadIamgesWithPreview("banner-upload", "banner-preview", 10);
+            function loadIamgesWithPreview(upload, preview, lim) {
+                if (window.File && window.FileList && window.FileReader) {
+                    var filesInput = document.getElementById(upload);
+                    $(`#${upload}`).change(function(event){
+                        var files = event.target.files; //FileList object
+                        var currentFiles = $('.image__upload-item').length + files.length
+                        if (currentFiles > lim) {
+                            return;
+                        }
+                        var output = document.getElementById(preview);
+                        for (var i = 0; i < files.length; i++){
+                            var file = files[i];
+                            //Only pics
+                            if (!file.type.match('image'))
+                                continue;
+
+                            arrFiles.push(file);
+                            
+                            var picReader = new FileReader();
+                            picReader.fileName = file.name;
+                            picReader.addEventListener("load", function (event){
+                                var picFile = event.target;
+                                var div = document.createElement("div");
+                                div.classList.add(`image__upload-item`, `mr-2`);
+                                div.innerHTML = `
+                                    <div class="border mb-2 mx-auto" style="height: 100px; width: 100px;">
+                                        <div class="image-wrapper w-100 h-100 position-relative d-flex align-items-center justify-content-center">
+                                            <img class="mw-100 mh-100" src="${picFile.result}" alt="${event.target.fileName}">
+                                            <span class="position-absolute remove-upload"
+                                                style="right: 0; top: 0; cursor: pointer;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18"
+                                                    height="18" viewBox="0 0 24 24" fill="none"
+                                                    stroke="red" stroke-width="1" stroke-linecap="round"
+                                                    stroke-linejoin="round" class="feather feather-x">
+                                                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                                                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                `;
+                                var removeUpload = div.querySelector(".remove-upload");
+                                removeUpload.addEventListener("click", function (evt) {
+                                    arrFiles.forEach(function(file, index){
+                                        if(file.name == event.target.fileName){
+                                            arrFiles.splice(index, 1);
+                                        }
+                                    })
+                                    div.remove();
+                                });
+                                $(`#${preview}`).append(div);
+                            });
+                            //Read the image
+                            picReader.readAsDataURL(file);
+                        }
+                    })
+                }
+            }
         }
     </script>
 </body>

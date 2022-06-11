@@ -764,6 +764,15 @@
 
             $(this).siblings('.dropdown').find('input').val('');
         })
+        $('.form-check-input').click(function () {
+            if (this.previous) {
+                this.checked = false;
+            }
+            this.previous = this.checked;
+            if(!this.checked){
+                $(this).siblings('input').addClass('d-none');
+            }
+        })
         $('.form-check-input').change(function () {
             $('.form-check-input').siblings('input').addClass('d-none');
             if ($(this).is(':checked')) {
@@ -772,9 +781,16 @@
         })
     </script>
     <script type="text/javascript">
+        // Remove current banner
+        $('.remove-tag').click(function(){
+            alert('hello')
+            $(this).parent().remove();
+        })
+        // Remove new added banner
         $(document).on('click', ".remove-tag", function () {
             $(this).parent().remove();
         });
+
         window.onload = function () {
             loadIamgesWithPreview("imageProduct-upload", "imageProduct-preview");
             loadIamgesWithPreview("imageUser-upload","imageUser-preview");
