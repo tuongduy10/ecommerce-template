@@ -156,7 +156,8 @@
                 left: 0;
             }
         }
-        @media (min-width: 576px){
+
+        @media (min-width: 576px) {
             #sizechart-modal {
                 max-width: 424px;
             }
@@ -522,8 +523,8 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <a class="product__detail-link" style="text-decoration: underline; cursor: pointer;" data-toggle="modal"
-                                        data-target="#sizeguideModal">
+                                    <a class="product__detail-link" style="text-decoration: underline; cursor: pointer;"
+                                        data-toggle="modal" data-target="#sizeguideModal">
                                         Hướng dẫn chọn size
                                     </a>
                                 </div>
@@ -630,8 +631,9 @@
                                                     style="color: #fff; font-weight: 700; background-color: #333; border: 1px solid #333; font-size: calc(14px + (24 - 16) * ((100vw - 375px)/ (1920 - 375))); cursor: pointer;">
                                                     Xem giá mua sỉ
                                                 </button> -->
-                                                <a class="product__detail-link" style="text-decoration: underline; cursor: pointer;" data-toggle="modal"
-                                                    data-target="#wholesaleModal">
+                                                <a class="product__detail-link"
+                                                    style="text-decoration: underline; cursor: pointer;"
+                                                    data-toggle="modal" data-target="#wholesaleModal">
                                                     Xem giá mua sỉ
                                                 </a>
                                             </div>
@@ -761,14 +763,16 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        
+
                                         <!-- Price -->
                                         <div class="product__detail-buttons d-flex justify-content-between w-100">
-                                            <button class="btn-addtocart btn-black" onclick="window.location.href='cart.html'"
+                                            <button class="btn-addtocart btn-black"
+                                                onclick="window.location.href='cart.html'"
                                                 style="width: 49%; background-color: #333; color: #fff;">
                                                 Thêm vào giỏ
                                             </button>
-                                            <button class="btn-buynow btn-black" onclick="window.location.href='cart.html'"
+                                            <button class="btn-buynow btn-black"
+                                                onclick="window.location.href='cart.html'"
                                                 style="width: 49%; background-color: #333; color: #fff;">
                                                 Mua ngay
                                             </button>
@@ -806,15 +810,16 @@
                         <div class="product__tab-control">
                             <ul class="d-flex justify-content-around">
                                 <li class="mx-2">
-                                    <a class="control-tab detail-title control__tab-info active">Thông tin sản phẩm</a>
+                                    <a class="control-tab detail-title control__tab-info">Thông tin sản phẩm</a>
                                 </li>
                                 <li class="mx-2">
-                                    <a class="control-tab detail-title control__tab-comment">Đánh giá sản phẩm</a>
+                                    <a class="control-tab detail-title control__tab-comment active">Đánh giá sản
+                                        phẩm</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="product__tab-content">
-                            <div class="content-tab tab__product-info active">
+                            <div class="content-tab tab__product-info">
                                 <div class="product-detail">
                                     <ul class="detail-list d-flex mb-4 flex-wrap justify-content-between">
                                         <li class="detail-item">
@@ -887,7 +892,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="content-tab tab__product-comment">
+                            <div class="content-tab tab__product-comment active">
                                 <div class="product-comment">
                                     <!-- Button trigger modal -->
                                     <div class="text-center mb-4">
@@ -1008,12 +1013,18 @@
                                     </div> -->
                                     <div class="tab__content-block d-block">
                                         <div class="user-comment mb-4">
+                                            <!-- Name -->
                                             <div class="d-flex align-items-center">
                                                 <span class="user__comment-name">
                                                     <strong>Nguyễn Văn A </strong>
                                                 </span>
                                                 <span class="user__comment-time ml-2">12:22, 01/11/2021</span>
+                                                <span class="user__comment-time ml-2">
+                                                    <img class="verifyImg" width="15" height="15" src="/assets/icon/verify.png">
+                                                    <span class="verify" style="font-size: 12px; color: #4caf50;">Đã mua hàng</span>
+                                                </span>
                                             </div>
+                                            <!-- Rate value -->
                                             <div class="d-flex stars">
                                                 <span class="fa fa-star checked"></span>
                                                 <span class="fa fa-star checked"></span>
@@ -1021,25 +1032,133 @@
                                                 <span class="fa fa-star checked"></span>
                                                 <span class="fa fa-star checked"></span>
                                             </div>
-                                            <div class="comment">
+                                            <!-- Comment -->
+                                            <div class="comment my-2">
                                                 Mua cho ck mình lọ này 2 lần rồi, thấy ông bảo lần sau mua cứ mua loại
                                                 này nhé, công nhận mùi thơm thật sự.
                                             </div>
+                                            <!-- Image -->
                                             <div class="image">
                                                 <ul class="image-list d-flex">
-                                                    <li>
+                                                    <li class="border">
                                                         <img class="pop" src="assets/images/products/pro1.png" alt="">
                                                     </li>
-                                                    <li>
+                                                    <li class="border">
                                                         <img class="pop" src="assets/images/banner/snidel.jpg" alt="">
                                                     </li>
-                                                    <li>
+                                                    <li class="border">
                                                         <img class="pop" src="assets/images/products/jacket3.jpg"
                                                             alt="">
                                                     </li>
                                                 </ul>
                                             </div>
+
+                                            <a style="color: #288ad9;" href="javascript:void(0)">Trả lời</a>
+                                            <!-- <div class="d-flex">
+                                                <textarea class="d-flex w-100 mb-2" name="" id="" placeholder="Bình luận">@Nguyễn Văn A</textarea>
+                                            </div>
+                                            <div class="text-right">
+                                                <button type="button">Gửi</button>
+                                            </div> -->
+
+                                            <div class="listreply mt-2">
+                                                <div class="reply mb-2">
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="user__comment-name">
+                                                            <strong>Nguyễn Văn A </strong>
+                                                        </span>
+                                                        <span class="user__comment-time ml-2">12:22, 01/11/2021</span>
+                                                    </div>
+                                                    <div class="comment my-2">
+                                                        <span style="color: #288ad9;">@Nguyễn Văn A</span>
+                                                        Mua cho ck mình lọ này 2 lần rồi, thấy ông bảo lần sau mua cứ
+                                                        mua loại
+                                                        này nhé, công nhận mùi thơm thật sự.
+                                                    </div>
+                                                    <div class="d-flex align-items-center reply-action">
+                                                        <a href="javascript:alert('hello')" style="margin-right: 5px; color: #288ad9;">Trả lời</a>
+                                                        <a class="favor" href="javascript:void(0)" style="margin-right: 5px; height: 18px;color: #288ad9;">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="18"
+                                                                height="18" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="1.5"
+                                                                stroke-linecap="round" stroke-linejoin="round"
+                                                                class="feather feather-thumbs-up">
+                                                                <path
+                                                                    d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3">
+                                                                </path>
+                                                            </svg>
+                                                        </a>
+                                                        <a class="favor" href="javascript:void(0)" style="margin-right: 5px; height: 18px;color: #288ad9;">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="18"
+                                                                height="18" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="1.5"
+                                                                stroke-linecap="round" stroke-linejoin="round"
+                                                                class="feather feather-thumbs-down">
+                                                                <path
+                                                                    d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17">
+                                                                </path>
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                    <!-- <div class="send-reply">
+                                                        <div class="d-flex">
+                                                            <textarea class="d-flex w-100 mb-2" name="" id="" placeholder="Bình luận">@Nguyễn Văn A</textarea>
+                                                        </div>
+                                                        <div class="text-right">
+                                                            <button type="button">Gửi</button>
+                                                        </div>
+                                                    </div> -->
+                                                </div>
+                                                <div class="reply mb-2">
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="user__comment-name">
+                                                            <strong>Nguyễn Văn A </strong>
+                                                        </span>
+                                                        <span class="user__comment-time ml-2">12:22, 01/11/2021</span>
+                                                    </div>
+                                                    <div class="comment my-2">
+                                                        <span style="color: #288ad9;">@Nguyễn Văn A</span>
+                                                        Mua cho ck mình lọ này 2 lần rồi, thấy ông bảo lần sau mua cứ
+                                                        mua loại
+                                                        này nhé, công nhận mùi thơm thật sự.
+                                                    </div>
+                                                    <div class="d-flex align-items-center reply-action">
+                                                        <a href="javascript:void(0)" style="margin-right: 5px; color: #288ad9;">Trả lời</a>
+                                                        <a class="favor" href="javascript:void(0)" style="margin-right: 5px; height: 18px;color: #288ad9;">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="18"
+                                                                height="18" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="1.5"
+                                                                stroke-linecap="round" stroke-linejoin="round"
+                                                                class="feather feather-thumbs-up">
+                                                                <path
+                                                                    d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3">
+                                                                </path>
+                                                            </svg>
+                                                        </a>
+                                                        <a class="favor" href="javascript:void(0)" style="margin-right: 5px; height: 18px;color: #288ad9;">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="18"
+                                                                height="18" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="1.5"
+                                                                stroke-linecap="round" stroke-linejoin="round"
+                                                                class="feather feather-thumbs-down">
+                                                                <path
+                                                                    d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17">
+                                                                </path>
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                    <!-- <div class="send-reply">
+                                                        <div class="d-flex">
+                                                            <textarea class="d-flex w-100 mb-2" name="" id="" placeholder="Bình luận">@Nguyễn Văn A</textarea>
+                                                        </div>
+                                                        <div class="text-right">
+                                                            <button type="button">Gửi</button>
+                                                        </div>
+                                                    </div> -->
+                                                </div>
+                                            </div>
                                         </div>
+
                                         <div class="user-comment mb-4">
                                             <div class="d-flex align-items-center">
                                                 <span class="user__comment-name">
