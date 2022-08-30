@@ -1931,5 +1931,20 @@ hr {
     right: 0;
 }
 .notification-list .notification:hover{
+    cursor: pointer;
     background-color: white;
+}
+.search-notifications .header-searchform{
+    border-color: #f8f8f8;
+}
+.search-notifications .header-searchform::after{
+    border-color: #f8f8f8;
+}
+.search-notifications .header-searchform .text input::placeholder{
+    color: #f8f8f8;
+}
+@media only screen and (max-width: 1400px){
+    .search-notifications .header-searchform input {
+        width: 12.5rem;
+    }
 }
