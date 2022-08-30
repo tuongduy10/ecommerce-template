@@ -1902,7 +1902,7 @@ hr {
 }
 
 .notification-list{
-
+    max-height: ;
 }
 .notification-list .notification{
     position: relative;
@@ -1925,7 +1925,11 @@ hr {
     border-bottom: 1px solid #dfdfdf;
 }
 .notification-list .notification .remove{
+    cursor: pointer;
     position: absolute;
     top: 10px;
     right: 0;
+}
+.notification-list .notification:hover{
+    background-color: white;
 }
