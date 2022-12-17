@@ -471,6 +471,12 @@ a:hover{
     }
 }
 
+.flex-al-jus-center {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
 .--tooltip {
     position: relative;
     display: inline-block;

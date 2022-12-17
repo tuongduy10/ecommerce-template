@@ -882,11 +882,12 @@
         <div class="chat-header d-flex align-items-center justify-content-between">
             <div class="chat-header-wrapper d-flex align-items-center justify-content-center">
                 <div class="header-img mr-2">
-                    <img src="https://hihichi.com//images/favicon/favicon_f31fb1e8-d495-4b29-8a3d-ebf12fb69910.png" alt="">
+                    <img src="https://hihichi.com//images/favicon/favicon_f31fb1e8-d495-4b29-8a3d-ebf12fb69910.png"
+                        alt="">
                 </div>
                 <span>HiHiChi</span>
             </div>
-            
+
             <span class="close-chat-box">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="white"
                     stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
@@ -941,8 +942,50 @@
                 </div>
             </div>
         </div>
+        <div class="box-message-log d-none">
+            <div class="message-list">
+                <div class="message-wrapper message-right">
+                    <span class="user-name" style="height: 24px;">
+                        Nguyễn Văn A
+                    </span>
+                    <div class="text text-right" title="15:51:34, 17/12/2022">
+                        Bắt đầu
+                    </div>
+                </div>
+                <div class="message-wrapper message-left">
+                    <span class="user-name">
+                        <img src="https://hihichi.com//images/favicon/favicon_f31fb1e8-d495-4b29-8a3d-ebf12fb69910.png" alt="">
+                        <label class="mb-0" style="margin-top: 0.5px;">Admin</label>
+                    </span>
+                    <div class="text text-left" title="15:51:34, 17/12/2022">
+                        Xin chào, đây là hệ thống hỗ trợ khách hàng của HihiChi. Anh/chị vui lòng cho biết thông tin cần
+                        hỗ trợ?
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex-al-jus-center chat-input d-none">
+            <input type="text" placeholder="Nhập tin nhắn">
+            <label class="mb-0" for="chat-input-file" style="height: 20px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-paperclip">
+                    <path
+                        d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48">
+                    </path>
+                </svg>
+            </label>
+            <input id="chat-input-file" type="file" hidden>
+            <button class="button-send">
+                <svg class="ml-1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                    fill="none" stroke="#707070" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+            </button>
+        </div>
         <div class="chat-footer">
-            <p><i class="far fa-copyright"></i> 2022 - Copyright by HiHiChi</p>
+            <p class="mb-0"><i class="far fa-copyright"></i> 2022 - Copyright by HiHiChi</p>
         </div>
     </div>
 
@@ -967,11 +1010,11 @@
 
     <!-- chat box -->
     <script>
-        $(".chat-box-min").click(function() {
+        $(".chat-box-min").click(function () {
             $(this).addClass("d-none");
             $(".chat-box").removeClass("d-none");
         });
-        $(".close-chat-box").click(function() {
+        $(".close-chat-box").click(function () {
             $(".chat-box").addClass("d-none");
             $(".chat-box-min").removeClass("d-none");
         });
@@ -980,7 +1023,9 @@
                 $(this).siblings("label").addClass("label-active");
             })
             .blur(function () {
-                $(this).siblings("label").removeClass("label-active");
+                if(!$(this).val()){
+                    $(this).siblings("label").removeClass("label-active");
+                }
             });
         $(".chat-box-label").click(function () {
             $(this).siblings(".chat-box-input").focus();
