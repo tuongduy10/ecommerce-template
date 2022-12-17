@@ -1968,6 +1968,7 @@ hr {
 
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    padding: 0 20px;
 }
 .chat-body {
     display: flex;
@@ -1981,18 +1982,24 @@ hr {
     
     background-color: var(--cb-background-color);
 }
+.chat-body .welcome-message p { 
+    font-size: 1rem;
+    text-align: justify;
+}
 .chat-box-form-container {
     background: white;
     width: 100%;
     padding: 1rem;
     border-left: 5px solid var(--red-noti);
     border-radius: 5px;
+    box-shadow: 0 2px 3px rgb(0 0 0 / 8%);
 }
 .chat-box-form-control { 
     position: relative;
     margin-bottom: 1rem;
+    z-index: 0;
 }
-.chat-box-form-control input {
+.chat-box-form-control .chat-box-input {
     height: 2.5rem;
     vertical-align: middle;
     display: inline-block;
@@ -2010,7 +2017,12 @@ hr {
     font-size: .812rem;
     -webkit-appearance: none;
 }
+textarea.chat-box-input  {
+    resize: none;
+    height: 5rem !important;
+}
 .chat-box-form-control label {
+    cursor: auto;
     position: absolute;
     top: 0;
     left: 0;
@@ -2019,10 +2031,9 @@ hr {
     transform: translateY(0.7rem);
     color: #545454;
     background-color: transparent;
-    padding: 0 0.5rem;
     transition: all .3s ease-in-out;
 
-    margin-left: 0.5rem;
+    margin-left: 1rem;
     display: block;
     font-size: .812rem;
     line-height: normal;
@@ -2030,6 +2041,34 @@ hr {
 .chat-box-form-control .label-active {
     transform: translateY(-10px) scale(.9);
     background-color: white;
+    padding: 0 0.5rem;
+    margin-left: 0.5rem;
+}
+.chat-box-button-wrapper button { 
+    position: relative;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: var(--red-noti);
+    color: #ffffff;
+    text-transform: none;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0.5rem 1rem;
+    vertical-align: middle;
+    font-size: 1rem;
+
+    line-height: 1.5rem;
+    text-decoration: none;
+}
+.chat-box-button-wrapper button:hover::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(247,247,249,.2);
+    border-radius: 5px;
 }
 .chat-footer {
     line-height: 18px;
@@ -2042,4 +2081,20 @@ hr {
     border-radius: 0 0 8px 8px;
     background-color: var(--cb-background-color);
     height: var(--cb-footer-height);
+}
+.close-chat-box {
+    cursor: pointer;
+    display: flex;
+    padding: 10px;
+    position: relative;
+}
+.close-chat-box:hover::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(247,247,249,.2);
+    border-radius: 5px;
 }
