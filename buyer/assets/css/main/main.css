@@ -1991,7 +1991,7 @@ hr {
     display: block;
     background: white;
     border-radius: 50%;
-    padding: 8px;
+    padding: 6px;
 }
 .chat-header .chat-header-wrapper .header-img img {
     float: left; 
