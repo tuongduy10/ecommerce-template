@@ -877,81 +877,29 @@
     </footer>
 
     <!-- Chat box -->
-    <!-- <div class="chat-box">
+    <button class="chat-box-min">Gửi tin nhắn</button>
+    <div class="chat-box d-none">
         <div class="chat-header d-flex align-items-center justify-content-between">
-            <div></div>
-            <span class="close-chat-box">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                    class="feather feather-x">
-                    <line x1="18" y1="6" x2="6" y2="18"></line>
-                    <line x1="6" y1="6" x2="18" y2="18"></line>
-                </svg>
-            </span>
-        </div>
-        <div class="chat-body">
-            <div class="welcome-message">
-                <p>Hãy để lại thông tin của bạn chúng tôi sẽ liên hệ lại với bạn sớm nhất có thể</p>
-            </div>
-            <div class="chat-box-form-container">
-                <form class="chat-box-form">
-                    <div class="chat-box-form-control">
-                        <input class="chat-box-input" name="name" type="text">
-                        <label class="chat-box-label" for="name">
-                            <span style="color: var(--red-noti);">*</span>
-                            Tên
-                        </label>
-                    </div>
-                    <div class="chat-box-form-control">
-                        <input class="chat-box-input" name="phone" type="text">
-                        <label class="chat-box-label" for="phone">
-                            <span style="color: var(--red-noti);">*</span>
-                            Số điện thoại
-                        </label>
-                    </div>
-                    <div class="chat-box-form-control">
-                        <textarea class="chat-box-input" name="text-content" type="text"></textarea>
-                        <label class="chat-box-label" for="text-content">
-                            <span style="color: var(--red-noti);">*</span>
-                            Lời nhắn
-                        </label>
-                    </div>
-                </form>
-                <div class="chat-box-button-wrapper">
-                    <button class="w-100">
-                        <p class="mb-0 d-flex align-items-center justify-content-center">
-                            Gửi
-                            <svg class="ml-1" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                                stroke-linecap="round" stroke-linejoin="round" class="feather feather-send">
-                                <line x1="22" y1="2" x2="11" y2="13"></line>
-                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-                            </svg>
-                        </p>
-                    </button>
+            <div class="chat-header-wrapper d-flex align-items-center justify-content-center">
+                <div class="header-img mr-2">
+                    <img src="https://hihichi.com//images/favicon/favicon_f31fb1e8-d495-4b29-8a3d-ebf12fb69910.png" alt="">
                 </div>
+                <span>HiHiChi</span>
             </div>
-        </div>
-        <div class="chat-footer">
-
-        </div>
-    </div> -->
-
-    <div class="chat-box">
-        <div class="chat-header d-flex align-items-center justify-content-between">
-            <div></div>
+            
             <span class="close-chat-box">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="white"
                     stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                    class="feather feather-x">
-                    <line x1="18" y1="6" x2="6" y2="18"></line>
-                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                    class="feather feather-minus">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
                 </svg>
             </span>
         </div>
         <div class="chat-body">
             <div class="welcome-message">
-                <p>Xin chào, đây là hệ thống hỗ trợ khách hàng của HiHiChi. Anh/chị vui lòng cho biết thông tin cần hỗ trợ?"</p>
+                <!-- <p>Xin chào, đây là hệ thống hỗ trợ khách hàng của HiHiChi. Anh/chị vui lòng cho biết thông tin cần hỗ
+                    trợ?</p> -->
+                <p>Hãy để lại thông tin của bạn chúng tôi sẽ liên hệ lại với bạn sớm nhất có thể</p>
             </div>
             <div class="chat-box-form-container">
                 <form class="chat-box-form">
@@ -980,7 +928,8 @@
                 <div class="chat-box-button-wrapper">
                     <button class="w-100">
                         <p class="mb-0 d-flex align-items-center justify-content-center">
-                            Bắt đầu
+                            <!-- Bắt đầu -->
+                            Gửi
                             <svg class="ml-1" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
                                 stroke-linecap="round" stroke-linejoin="round" class="feather feather-send">
@@ -993,7 +942,7 @@
             </div>
         </div>
         <div class="chat-footer">
-
+            <p><i class="far fa-copyright"></i> 2022 - Copyright by HiHiChi</p>
         </div>
     </div>
 
@@ -1018,6 +967,14 @@
 
     <!-- chat box -->
     <script>
+        $(".chat-box-min").click(function() {
+            $(this).addClass("d-none");
+            $(".chat-box").removeClass("d-none");
+        });
+        $(".close-chat-box").click(function() {
+            $(".chat-box").addClass("d-none");
+            $(".chat-box-min").removeClass("d-none");
+        });
         $(".chat-box-input")
             .focus(function () {
                 $(this).siblings("label").addClass("label-active");
