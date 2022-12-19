@@ -1,0 +1,501 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.css" rel="stylesheet">
+    <link href="../assets/css/all.css" rel="stylesheet">
+    <link href="../assets/css/admin-chat.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-text mx-3" style="text-transform: uppercase;">QUẢN TRỊ</div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">
+                    <i class="fas fa-fw fa-home"></i>
+                    <span>Trang chủ</span></a>
+            </li>
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+            <!-- Heading -->
+            <div class="sidebar-heading">Quản trị</div>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#orderAdminManage"
+                    aria-expanded="true" aria-controls="orderAdminManage">
+                    <i class="fas fa-fw fa-list"></i>
+                    <span>Quản lý đơn hàng</span>
+                    <span class="position-absolute"
+                        style="height: 8px; width: 8px; background-color: red; border-radius: 50%;"></span>
+                </a>
+                <div id="orderAdminManage" class="collapse" aria-labelledby="headingPages"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Danh sách đơn hàng</h6>
+                        <a class="collapse-item" href="">
+                            Chờ xác nhận
+                            <span class="position-absolute"
+                                style="height: 8px; width: 8px; background-color: red; border-radius: 50%;"></span>
+                        </a>
+                        <a class="collapse-item" href="">Đơn đang giao...</a>
+                        <a class="collapse-item" href="">Đơn hoàn thành</a>
+                        <a class="collapse-item" href="">Đơn hủy</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUser"
+                    aria-expanded="true" aria-controls="collapseUser">
+                    <i class="fas fa-fw fa-user"></i>
+                    <span>Quản lý người dùng</span>
+                </a>
+                <div id="collapseUser" class="collapse" aria-labelledby="headingUtilities"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="">
+                            Danh sách người dùng
+                        </a>
+                        <a class="collapse-item" href="">Danh sách phân quyền</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseStore"
+                    aria-expanded="true" aria-controls="collapseStore">
+                    <i class="fas fa-fw fa-store"></i>
+                    <span>Quản lý bán hàng</span>
+                    <span class="position-absolute"
+                        style="height: 8px; width: 8px; background-color: red; border-radius: 50%;"></span>
+                </a>
+                <div id="collapseStore" class="collapse" aria-labelledby="headingUtilities"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+
+                        <h6 class="collapse-header">Cửa hàng</h6>
+                        <a class="collapse-item" href="">Danh sách cửa hàng</a>
+                        <a class="collapse-item" href="">
+                            Duyệt cửa hàng
+                            <span class="position-absolute"
+                                style="height: 8px; width: 8px; background-color: red; border-radius: 50%;"></span>
+                        </a>
+
+                        <h6 class="collapse-header">Thương hiệu</h6>
+                        <a class="collapse-item" href="">Danh sách thương hiệu</a>
+                        <a class="collapse-item" href="">Thêm thương hiệu</a>
+
+                        <h6 class="collapse-header">Sản phẩm</h6>
+                        <a href="" class="collapse-item">
+                            Sản phẩm đăng bán
+                            <span class="position-absolute"
+                                style="height: 8px; width: 8px; background-color: red; border-radius: 50%;"></span>
+                        </a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#orderSale"
+                    aria-expanded="true" aria-controls="orderSale">
+                    <i class="fas fa-fw fa-tags"></i>
+                    <span>Giảm giá</span>
+                </a>
+                <div id="orderSale" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="">Quản lý mã giảm</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseStatistics"
+                    aria-expanded="true" aria-controls="collapseStatistics">
+                    <i class="fas fa-fw fa-chart-bar"></i>
+                    <span>Thống kê</span>
+                </a>
+                <div id="collapseStatistics" class="collapse" aria-labelledby="headingUtilities"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="">Doanh thu</a>
+                        <a class="collapse-item" href="">Sản phẩm</a>
+                        <a class="collapse-item" href="">Người dùng</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBlog"
+                    aria-expanded="true" aria-controls="collapseBlog">
+                    <i class="fas fa-fw fa-pager"></i>
+                    <span>Blog</span>
+                </a>
+                <div id="collapseBlog" class="collapse" aria-labelledby="headingUtilities"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="">Danh sách các blog</a>
+                        <a class="collapse-item" href="">Thêm blog</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseInfo"
+                    aria-expanded="true" aria-controls="collapseInfo">
+                    <i class="fas fa-fw fa-info"></i>
+                    <span>Quản lý thông tin</span>
+                </a>
+                <div id="collapseInfo" class="collapse" aria-labelledby="headingUtilities"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="">Thông tin thanh toán</a>
+                        <a class="collapse-item" href="">Thông tin liên hệ</a>
+                        <a class="collapse-item" href="">Mạng xã hội</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Quản lý bán hàng
+            </div>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
+                    aria-expanded="true" aria-controls="collapsePages">
+                    <i class="fas fa-fw fa-box"></i>
+                    <span>Quản lý sản phẩm</span>
+                </a>
+                <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="seller-manageproduct.html">Danh sách sản phẩm</a>
+                        <a class="collapse-item" href="seller-addproduct.html">Thêm sản phẩm</a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#orderManage"
+                    aria-expanded="true" aria-controls="orderManage">
+                    <i class="fas fa-fw fa-list"></i>
+                    <span>Quản lý đơn hàng</span>
+                    <span class="position-absolute"
+                        style="height: 8px; width: 8px; background-color: red; border-radius: 50%;"></span>
+
+                </a>
+                <div id="orderManage" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Danh sách đơn hàng</h6>
+                        <a class="collapse-item" href="seller-manageorder.html">
+                            Chờ xác nhận...
+                            <span class="position-absolute"
+                                style="height: 8px; width: 8px; background-color: red; border-radius: 50%;"></span>
+                        </a>
+                        <a class="collapse-item" href="">Đơn đang giao...</a>
+                        <a class="collapse-item" href="">Đơn hoàn thành</a>
+                        <a class="collapse-item" href="">Đơn hủy</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#sellerStatistics"
+                    aria-expanded="true" aria-controls="sellerStatistics">
+                    <i class="fas fa-fw fa-chart-bar"></i>
+                    <span>Thống kê</span>
+                </a>
+                <div id="sellerStatistics" class="collapse" aria-labelledby="headingPages"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="seller-finance.html">Doanh thu</a>
+                        <a class="collapse-item" href="">Sản phẩm</a>
+                    </div>
+                </div>
+            </li>
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+        </ul>
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+
+                        <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+                        <li class="nav-item dropdown no-arrow d-sm-none">
+                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-search fa-fw"></i>
+                            </a>
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                                aria-labelledby="searchDropdown">
+                                <form class="form-inline mr-auto w-100 navbar-search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control bg-light border-0 small"
+                                            placeholder="Search for..." aria-label="Search"
+                                            aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="button">
+                                                <i class="fas fa-search fa-sm"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Nguyễn Văn A</span>
+                            </a>
+                            <!-- Dropdown - User Information -->
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Hồ sơ
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Đăng xuất
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+
+                </nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+                    <!-- DataTales Example -->
+                    <div class="card shadow mb-4">
+                        <div class="messaging">
+                            <div class="inbox_msg">
+                                <div class="inbox_people">
+                                    <div class="inbox_chat scroll">
+                                        <div class="chat_list active_chat">
+                                            <div class="chat_people">
+                                                <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png"
+                                                        alt="sunil"> </div>
+                                                <div class="chat_ib">
+                                                    <h5>Sunil Rajput <span class="chat_date">Dec 25</span></h5>
+                                                    <p>Test, which is a new approach to have all solutions
+                                                        astrology under one roof.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="chat_list">
+                                            <div class="chat_people">
+                                                <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png"
+                                                        alt="sunil"> </div>
+                                                <div class="chat_ib">
+                                                    <h5>Sunil Rajput <span class="chat_date">Dec 25</span></h5>
+                                                    <p>Test, which is a new approach to have all solutions
+                                                        astrology under one roof.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="chat_list">
+                                            <div class="chat_people">
+                                                <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png"
+                                                        alt="sunil"> </div>
+                                                <div class="chat_ib">
+                                                    <h5>Sunil Rajput <span class="chat_date">Dec 25</span></h5>
+                                                    <p>Test, which is a new approach to have all solutions
+                                                        astrology under one roof.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="chat_list">
+                                            <div class="chat_people">
+                                                <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png"
+                                                        alt="sunil"> </div>
+                                                <div class="chat_ib">
+                                                    <h5>Sunil Rajput <span class="chat_date">Dec 25</span></h5>
+                                                    <p>Test, which is a new approach to have all solutions
+                                                        astrology under one roof.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="chat_list">
+                                            <div class="chat_people">
+                                                <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png"
+                                                        alt="sunil"> </div>
+                                                <div class="chat_ib">
+                                                    <h5>Sunil Rajput <span class="chat_date">Dec 25</span></h5>
+                                                    <p>Test, which is a new approach to have all solutions
+                                                        astrology under one roof.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="chat_list">
+                                            <div class="chat_people">
+                                                <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png"
+                                                        alt="sunil"> </div>
+                                                <div class="chat_ib">
+                                                    <h5>Sunil Rajput <span class="chat_date">Dec 25</span></h5>
+                                                    <p>Test, which is a new approach to have all solutions
+                                                        astrology under one roof.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="chat_list">
+                                            <div class="chat_people">
+                                                <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png"
+                                                        alt="sunil"> </div>
+                                                <div class="chat_ib">
+                                                    <h5>Sunil Rajput <span class="chat_date">Dec 25</span></h5>
+                                                    <p>Test, which is a new approach to have all solutions
+                                                        astrology under one roof.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mesgs">
+                                    <div class="msg_history">
+                                        <div class="incoming_msg">
+                                            <div class="incoming_msg_img"> <img src="https://ptetutorials.com/images/user-profile.png"
+                                                    alt="sunil"> </div>
+                                            <div class="received_msg">
+                                                <div class="received_withd_msg">
+                                                    <p>Test which is a new approach to have all
+                                                        solutions</p>
+                                                    <span class="time_date"> 11:01 AM | June 9</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="outgoing_msg">
+                                            <div class="sent_msg">
+                                                <p>Test which is a new approach to have all
+                                                    solutions</p>
+                                                <span class="time_date"> 11:01 AM | June 9</span>
+                                            </div>
+                                        </div>
+                                        <div class="incoming_msg">
+                                            <div class="incoming_msg_img"> <img src="https://ptetutorials.com/images/user-profile.png"
+                                                    alt="sunil"> </div>
+                                            <div class="received_msg">
+                                                <div class="received_withd_msg">
+                                                    <p>Test, which is a new approach to have</p>
+                                                    <span class="time_date"> 11:01 AM | Yesterday</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="outgoing_msg">
+                                            <div class="sent_msg">
+                                                <p>Apollo University, Delhi, India Test</p>
+                                                <span class="time_date"> 11:01 AM | Today</span>
+                                            </div>
+                                        </div>
+                                        <div class="incoming_msg">
+                                            <div class="incoming_msg_img"> <img src="https://ptetutorials.com/images/user-profile.png"
+                                                    alt="sunil"> </div>
+                                            <div class="received_msg">
+                                                <div class="received_withd_msg">
+                                                    <p>We work directly with our designers and suppliers,
+                                                        and sell direct to you, which means quality, exclusive
+                                                        products, at a price anyone can afford.</p>
+                                                    <span class="time_date"> 11:01 AM | Today</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="type_msg">
+                                        <div class="input_msg_write">
+                                            <input type="text" class="write_msg" placeholder="Type a message" />
+                                            <button class="msg_send_btn" type="button"><i class="fa fa-paper-plane"
+                                                    aria-hidden="true"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; Your Website 2021</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.js"></script>
+</body>
+
+</html>

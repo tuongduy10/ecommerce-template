@@ -22,6 +22,10 @@
     <!-- Lightslider -->
     <link rel='stylesheet' href='https://sachinchoolur.github.io/lightslider/dist/css/lightslider.css'>
     <script src='https://sachinchoolur.github.io/lightslider/dist/js/lightslider.js'></script>
+    <!-- Zoomed image -->
+    <script src="https://unpkg.com/js-image-zoom/js-image-zoom.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-image-zoom/js-image-zoom.min.js"></script>
+
     <!-- Ajax -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
@@ -500,26 +504,38 @@
                                 <div class="product__detail-card">
                                     <div class="product__detail-slider mb-2">
                                         <ul class="lightSlider h-100">
-                                            <li class="h-100" data-thumb="assets/images/products/jacket4.jpg">
+                                            <li class="h-100" data-thumb="assets/images/products/jacket4.jpg" id="zoom-img">
                                                 <img class="pop h-100" src="assets/images/products/jacket4.jpg" />
                                             </li>
                                             <li class="h-100" data-thumb="assets/images/products/pro1.png">
-                                                <img class="pop h-100" src="assets/images/products/pro1.png" />
+                                                <div class="zoom-img">
+                                                    <img class="pop h-100" src="assets/images/products/pro1.png" />
+                                                </div>
                                             </li>
                                             <li class="h-100" data-thumb="assets/images/products/watch3.jpg">
-                                                <img class="pop h-100" src="assets/images/products/watch3.jpg" />
+                                                <div class="zoom-img">
+                                                    <img class="pop h-100" src="assets/images/products/watch3.jpg" />
+                                                </div>
                                             </li>
                                             <li class="h-100" data-thumb="assets/images/products/jacket3.jpg">
-                                                <img class="pop h-100" src="assets/images/products/jacket3.jpg" />
+                                                <div class="zoom-img">
+                                                    <img class="pop h-100" src="assets/images/products/jacket3.jpg" />
+                                                </div>
                                             </li>
                                             <li class="h-100" data-thumb="assets/images/products/jacket2.jpg">
-                                                <img class="pop h-100" src="assets/images/products/jacket2.jpg" />
+                                                <div class="zoom-img">
+                                                    <img class="pop h-100" src="assets/images/products/jacket2.jpg" />
+                                                </div>
                                             </li>
                                             <li class="h-100" data-thumb="assets/images/products/watch4.jpg">
-                                                <img class="pop h-100" src="assets/images/products/watch4.jpg" />
+                                                <div class="zoom-img">
+                                                    <img class="pop h-100" src="assets/images/products/watch4.jpg" />
+                                                </div>
                                             </li>
                                             <li class="h-100" data-thumb="assets/images/banner/snidel.jpg">
-                                                <img class="pop h-100 w-100" src="assets/images/banner/snidel.jpg" />
+                                                <div class="zoom-img">
+                                                    <img class="pop h-100 w-100" src="assets/images/banner/snidel.jpg" />
+                                                </div>
                                             </li>
                                         </ul>
                                     </div>
@@ -1715,6 +1731,15 @@
                 console.log("Your browser does not support File API");
             }
         }
+    </script>
+    <script type="text/javascript">
+        var options = {
+            width: 364.75, // required
+            // more options here
+            zoomWidth: 500,
+            zoomPosition: 'right',
+        };
+        new ImageZoom(document.getElementById("zoom-img"), options);
     </script>
 </body>
 
