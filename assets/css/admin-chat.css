@@ -111,7 +111,18 @@
     height: 550px;
     overflow-y: scroll;
 }
-
+.inbox_chat::-webkit-scrollbar {
+    width: 8px;
+    background: #f0f0f0;
+}
+.inbox_chat::-webkit-scrollbar-thumb { 
+    margin: 2px;
+    border-radius: 10px;
+    background: rgba(0,0,0,.2);
+}
+.inbox_chat::-webkit-scrollbar-track{
+    border-radius: 0;
+}
 .active_chat {
     background: #e8f6ff;
 }

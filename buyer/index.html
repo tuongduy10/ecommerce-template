@@ -877,7 +877,19 @@
     </footer>
 
     <!-- Chat box -->
-    <button class="chat-box-min">Gửi tin nhắn</button>
+    <button class="chat-box-min">
+        <span class="text">Gửi tin nhắn</span>
+        <svg class="feather feather-message-square icon" xmlns="http://www.w3.org/2000/svg" width="42" height="42" 
+            viewBox="0 0 24 24" fill="white" stroke="white" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" style="margin: auto;">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+        </svg>
+        <div class="dot-wrapper">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </button>
     <div class="chat-box d-none">
         <div class="chat-header d-flex align-items-center justify-content-between">
             <div class="chat-header-wrapper d-flex align-items-center justify-content-center">
@@ -896,7 +908,7 @@
                 </svg>
             </span>
         </div>
-        <div class="chat-body">
+        <div class="chat-body d-none">
             <div class="welcome-message">
                 <!-- <p>Xin chào, đây là hệ thống hỗ trợ khách hàng của HiHiChi. Anh/chị vui lòng cho biết thông tin cần hỗ
                     trợ?</p> -->
@@ -942,7 +954,7 @@
                 </div>
             </div>
         </div>
-        <div class="box-message-log d-none">
+        <div class="box-message-log">
             <div class="message-list">
                 <div class="message-wrapper message-right">
                     <span class="user-name" style="height: 24px;">
@@ -964,7 +976,7 @@
                 </div>
             </div>
         </div>
-        <div class="flex-al-jus-center chat-input d-none">
+        <div class="flex-al-jus-center chat-input">
             <input type="text" placeholder="Nhập tin nhắn">
             <label class="mb-0" for="chat-input-file" style="height: 20px;">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
