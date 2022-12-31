@@ -1998,8 +1998,9 @@ hr {
     }
 }
     .chat-box {
+        margin-left: 20px;
         position: fixed;
-        width: 350px;
+        z-index: 100;
         bottom: 20px;
         right: 20px;
         box-shadow: 1px 1px 10px 2px rgb(0 0 0 / 22%);
