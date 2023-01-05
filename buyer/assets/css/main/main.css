@@ -1998,11 +1998,11 @@ hr {
     }
 }
 .chat-box {
-    margin-left: 20px;
+    /* margin-left: 20px; */
     position: fixed;
     z-index: 100;
     max-width: 350px;
-    width: 100%;
+    width: calc(100% - 40px);
     bottom: 20px;
     right: 20px;
     box-shadow: 1px 1px 10px 2px rgb(0 0 0 / 22%);
@@ -2305,17 +2305,16 @@ textarea.chat-box-input {
     position: absolute;
     display: flex;
     bottom: 20px;
-    right: 0;
+    right: -40px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-start;
-
+    box-shadow: 1px 1px 10px 2px rgb(0 0 0 / 22%);
     width: 226px;
     background: white;
     border-radius: 5px;
     padding: 10px;
-
     max-height: 350px;
     overflow: auto;
 }
