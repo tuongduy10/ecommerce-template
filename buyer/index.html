@@ -879,7 +879,7 @@
     <!-- Chat box -->
     <button class="chat-box-min">
         <span class="text">Gửi tin nhắn</span>
-        <svg class="feather feather-message-square icon" xmlns="http://www.w3.org/2000/svg" width="42" height="42" 
+        <svg class="feather feather-message-square icon" xmlns="http://www.w3.org/2000/svg" width="42" height="42"
             viewBox="0 0 24 24" fill="white" stroke="white" stroke-width="2" stroke-linecap="round"
             stroke-linejoin="round" style="margin: auto;">
             <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
@@ -956,20 +956,22 @@
         </div>
         <div class="box-message-log">
             <div class="message-list">
+                <div class="message-wrapper message-left">
+                    <span class="user-name">
+                        <img src="https://hihichi.com//images/favicon/favicon_f31fb1e8-d495-4b29-8a3d-ebf12fb69910.png"
+                            alt="">
+                        <label class="mb-0" style="margin-top: 0.5px;">Admin</label>
+                    </span>
+                    <div class="text msg-left" title="15:51:34, 17/12/2022">
+                        Xin chào, đây là hệ thống hỗ trợ khách hàng của HihiChi. Anh/chị vui lòng cho biết thông tin cần
+                        hỗ trợ?
+                    </div>
+                </div>
                 <div class="message-wrapper message-right">
                     <span class="user-name" style="height: 24px;">
                         Nguyễn Văn A
                     </span>
-                    <div class="text text-right" title="15:51:34, 17/12/2022">
-                        Bắt đầu
-                    </div>
-                </div>
-                <div class="message-wrapper message-left">
-                    <span class="user-name">
-                        <img src="https://hihichi.com//images/favicon/favicon_f31fb1e8-d495-4b29-8a3d-ebf12fb69910.png" alt="">
-                        <label class="mb-0" style="margin-top: 0.5px;">Admin</label>
-                    </span>
-                    <div class="text text-left" title="15:51:34, 17/12/2022">
+                    <div class="text msg-right" title="15:51:34, 17/12/2022">
                         Xin chào, đây là hệ thống hỗ trợ khách hàng của HihiChi. Anh/chị vui lòng cho biết thông tin cần
                         hỗ trợ?
                     </div>
@@ -977,17 +979,165 @@
             </div>
         </div>
         <div class="flex-al-jus-center chat-input">
-            <input type="text" placeholder="Nhập tin nhắn">
-            <label class="mb-0" for="chat-input-file" style="height: 20px;">
+            <input id="messageInput" type="text" placeholder="Nhập tin nhắn">
+            <div class="emoji-wrapper d-none">
+                <ul class="emoji-list">
+                    <li>😀</li>
+                    <li>😃</li>
+                    <li>😄</li>
+                    <li>😁</li>
+                    <li>😆</li>
+                    <li>😅</li>
+                    <li>🤣</li>
+                    <li>😂</li>
+                    <li>🙂</li>
+                    <li>🙃</li>
+                    <li>😉</li>
+                    <li>😊</li>
+                    <li>😀</li>
+                    <li>😃</li>
+                    <li>😄</li>
+                    <li>😁</li>
+                    <li>😆</li>
+                    <li>😅</li>
+                    <li>🤣</li>
+                    <li>😂</li>
+                    <li>🙂</li>
+                    <li>🙃</li>
+                    <li>😉</li>
+                    <li>😊</li>
+                    <li>😀</li>
+                    <li>😃</li>
+                    <li>😄</li>
+                    <li>😁</li>
+                    <li>😆</li>
+                    <li>😅</li>
+                    <li>🤣</li>
+                    <li>😂</li>
+                    <li>🙂</li>
+                    <li>🙃</li>
+                    <li>😉</li>
+                    <li>😊</li>
+                    <li>😀</li>
+                    <li>😃</li>
+                    <li>😄</li>
+                    <li>😁</li>
+                    <li>😆</li>
+                    <li>😅</li>
+                    <li>🤣</li>
+                    <li>😂</li>
+                    <li>🙂</li>
+                    <li>🙃</li>
+                    <li>😉</li>
+                    <li>😊</li>
+                    <li>😀</li>
+                    <li>😃</li>
+                    <li>😄</li>
+                    <li>😁</li>
+                    <li>😆</li>
+                    <li>😅</li>
+                    <li>🤣</li>
+                    <li>😂</li>
+                    <li>🙂</li>
+                    <li>🙃</li>
+                    <li>😉</li>
+                    <li>😊</li>
+                    <li>😀</li>
+                    <li>😃</li>
+                    <li>😄</li>
+                    <li>😁</li>
+                    <li>😆</li>
+                    <li>😅</li>
+                    <li>🤣</li>
+                    <li>😂</li>
+                    <li>🙂</li>
+                    <li>🙃</li>
+                    <li>😉</li>
+                    <li>😊</li>
+                    <li>😀</li>
+                    <li>😃</li>
+                    <li>😄</li>
+                    <li>😁</li>
+                    <li>😆</li>
+                    <li>😅</li>
+                    <li>🤣</li>
+                    <li>😂</li>
+                    <li>🙂</li>
+                    <li>🙃</li>
+                    <li>😉</li>
+                    <li>😊</li>
+                    <li>😀</li>
+                    <li>😃</li>
+                    <li>😄</li>
+                    <li>😁</li>
+                    <li>😆</li>
+                    <li>😅</li>
+                    <li>🤣</li>
+                    <li>😂</li>
+                    <li>🙂</li>
+                    <li>🙃</li>
+                    <li>😉</li>
+                    <li>😊</li>
+                    <li>😀</li>
+                    <li>😃</li>
+                    <li>😄</li>
+                    <li>😁</li>
+                    <li>😆</li>
+                    <li>😅</li>
+                    <li>🤣</li>
+                    <li>😂</li>
+                    <li>🙂</li>
+                    <li>🙃</li>
+                    <li>😉</li>
+                    <li>😊</li>
+                    <li>😀</li>
+                    <li>😃</li>
+                    <li>😄</li>
+                    <li>😁</li>
+                    <li>😆</li>
+                    <li>😅</li>
+                    <li>🤣</li>
+                    <li>😂</li>
+                    <li>🙂</li>
+                    <li>🙃</li>
+                    <li>😉</li>
+                    <li>😊</li>
+                    <li>😀</li>
+                    <li>😃</li>
+                    <li>😄</li>
+                    <li>😁</li>
+                    <li>😆</li>
+                    <li>😅</li>
+                    <li>🤣</li>
+                    <li>😂</li>
+                    <li>🙂</li>
+                    <li>🙃</li>
+                    <li>😉</li>
+                    <li>😊</li>
+                    <li>😀</li>
+                    <li>😃</li>
+                    <li>😄</li>
+                    <li>😁</li>
+                    <li>😆</li>
+                    <li>😅</li>
+                    <li>🤣</li>
+                    <li>😂</li>
+                    <li>🙂</li>
+                    <li>🙃</li>
+                    <li>😉</li>
+                    <li>😊</li>
+                </ul>
+            </div>
+            <button id="button-emoji" class="button-send">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                    class="feather feather-paperclip">
-                    <path
-                        d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48">
-                    </path>
+                    stroke="#707070" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-smile">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                    <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                    <line x1="15" y1="9" x2="15.01" y2="9"></line>
                 </svg>
-            </label>
-            <input id="chat-input-file" type="file" hidden>
+            </button>
             <button class="button-send">
                 <svg class="ml-1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                     fill="none" stroke="#707070" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -1035,13 +1185,27 @@
                 $(this).siblings("label").addClass("label-active");
             })
             .blur(function () {
-                if(!$(this).val()){
+                if (!$(this).val()) {
                     $(this).siblings("label").removeClass("label-active");
                 }
             });
         $(".chat-box-label").click(function () {
             $(this).siblings(".chat-box-input").focus();
         });
+
+        $("#button-emoji").click(function() {
+            if(!$(".emoji-wrapper").hasClass("d-none")){
+                $(".emoji-wrapper").addClass("d-none");
+            } else {
+                $(".emoji-wrapper").removeClass("d-none");
+            }
+        });
+
+        $(".emoji-list li").click(function () {
+            var text = $("#messageInput").val() + $(this).html();
+            $("#messageInput").val(text);
+            $(".emoji-wrapper").addClass("d-none");
+        })
     </script>
 
 </body>

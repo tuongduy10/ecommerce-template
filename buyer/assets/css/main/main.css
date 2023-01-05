@@ -1997,16 +1997,18 @@ hr {
         background-color: #AC0833;
     }
 }
-    .chat-box {
-        margin-left: 20px;
-        position: fixed;
-        z-index: 100;
-        bottom: 20px;
-        right: 20px;
-        box-shadow: 1px 1px 10px 2px rgb(0 0 0 / 22%);
-        border-radius: 10px;
-        transition: all .2s ease-in-out;
-    }
+.chat-box {
+    margin-left: 20px;
+    position: fixed;
+    z-index: 100;
+    max-width: 350px;
+    width: 100%;
+    bottom: 20px;
+    right: 20px;
+    box-shadow: 1px 1px 10px 2px rgb(0 0 0 / 22%);
+    border-radius: 10px;
+    transition: all .2s ease-in-out;
+}
 
 .chat-header {
     height: 58px;
@@ -2062,17 +2064,20 @@ hr {
     background-color: var(--cb-background-color);
 }
 
+    .emoji-list::-webkit-scrollbar,
     .chat-box .box-message-log::-webkit-scrollbar {
         width: 8px;
         background: #f0f0f0;
     }
 
+    .emoji-list::-webkit-scrollbar-thumb,
     .chat-box .box-message-log::-webkit-scrollbar-thumb {
         margin: 2px;
         border-radius: 10px;
         background: rgba(0,0,0,.2);
     }
 
+    .emoji-list::-webkit-scrollbar-track,
     .chat-box .box-message-log::-webkit-scrollbar-track {
         border-radius: 0;
     }
@@ -2291,3 +2296,29 @@ textarea.chat-box-input {
         background-color: rgba(247,247,249,.2);
         border-radius: 5px;
     }
+
+.emoji-wrapper {
+    position: relative;
+    transition: bottom 0.3s ease, opacity 0.3s ease;
+}
+.emoji-list {
+    position: absolute;
+    display: flex;
+    bottom: 20px;
+    right: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    width: 226px;
+    background: white;
+    border-radius: 5px;
+    padding: 10px;
+
+    max-height: 350px;
+    overflow: auto;
+}
+.emoji-list li {
+    cursor: pointer;
+}
